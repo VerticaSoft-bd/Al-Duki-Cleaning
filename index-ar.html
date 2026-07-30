@@ -17,25 +17,86 @@
         .pxl-header-box, .pxl-header-main, .pxl-nav-primary, .pxl-topbar-inner {
             direction: rtl !important;
         }
+        
+        /* Move Green Quote SVG cb3b371 & decorative icons completely to the left in RTL */
+        .elementor-element.elementor-element-cb3b371,
+        html[dir="rtl"] .elementor-element-cb3b371,
+        body .elementor-element-cb3b371 {
+            right: auto !important;
+            left: 25px !important;
+            top: -24px !important;
+            z-index: 10 !important;
+        }
+
+        .elementor-element.elementor-element-6e444b3,
+        html[dir="rtl"] .elementor-element-6e444b3,
+        body .elementor-element-6e444b3 {
+            right: auto !important;
+            left: -188px !important;
+        }
+
         /* Flip SVG arrow icons only, maintaining outer container positioning & centering */
         html[dir="rtl"] .btn svg,
         html[dir="rtl"] .pxl-btn svg,
         html[dir="rtl"] .btn-icon-left svg,
         html[dir="rtl"] .btn-icon-right svg,
         html[dir="rtl"] .pxl--btn-icon svg,
-        html[dir="rtl"] .pxl-service__btn-icon svg,
         html[dir="rtl"] .pxl-button-icon svg {
             transform: scaleX(-1) !important;
         }
         html[dir="rtl"] .btn-icon-left,
         html[dir="rtl"] .btn-icon-right,
-        html[dir="rtl"] .pxl--btn-icon,
-        html[dir="rtl"] .pxl-service__btn-icon {
+        html[dir="rtl"] .pxl--btn-icon {
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
             overflow: hidden !important;
         }
+
+        /* Perfect RTL non-overlapping layout for Service Cards 'اقرأ المزيد' Buttons */
+        html[dir="rtl"] .pxl-service__btn {
+            display: inline-flex !important;
+            flex-direction: row-reverse !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 12px !important;
+            padding: 6px 16px 6px 6px !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            box-sizing: border-box !important;
+            position: relative !important;
+            width: auto !important;
+        }
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-text {
+            margin: 0 !important;
+            padding: 0 4px !important;
+            white-space: nowrap !important;
+            font-weight: 700 !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+        }
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon {
+            margin: 0 !important;
+            flex-shrink: 0 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 50% !important;
+            background: #ffffff !important;
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            transform: none !important;
+        }
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon svg {
+            transform: scaleX(-1) !important;
+            margin: 0 !important;
+        }
+
         .pxl-service__feature-icon {
             margin-left: 10px !important;
             margin-right: 0 !important;
@@ -854,7 +915,7 @@
 </head>
 
 <body
-    class="wp-singular page-template-default page page-id-6202 wp-theme-genfresco   pxl-redux-page  body-default-font   heading-default-font   bd-px-header--default  woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page elementor-page-6202">
+    class="rtl wp-singular page-template-default page page-id-6202 wp-theme-genfresco   pxl-redux-page  body-default-font   heading-default-font   bd-px-header--default  woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page elementor-page-6202">
     <div id="pxl-wapper" class="pxl-wapper">
         <!--<div id="pxl-loadding" class="pxl-loader loader-premium"> 
         <div class="bg-bubbles">
@@ -2074,20 +2135,17 @@
                                                                         <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill active"
                                                                             data-target="#pxl_tab_service-3411548-6950-1401">
-                                                                            <span class="pxl-title--text"> House
-                                                                                Cleaning </span> </span> <span
+                                                                            <span class="pxl-title--text"> تنظيف المنازل والفلل </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1399">
-                                                                            <span class="pxl-title--text"> Office
-                                                                                Cleaning </span> </span> <span
+                                                                            <span class="pxl-title--text"> تنظيف المكاتب والشركات </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1397">
                                                                             <span class="pxl-title--text"> التنظيف الشامل والعميق
                                                                             </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1395">
-                                                                            <span class="pxl-title--text"> General /
-                                                                                Flexible </span> </span>
+                                                                            <span class="pxl-title--text"> تنظيف شامل ومرن </span> </span>
                                                                     </div>
                                                                     <div
                                                                         class="pxl-tabs--content pxl-tab-service__content-wrapper">
@@ -4548,8 +4606,7 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/house-cleaning/"
-                                                                                                rel="tag">House
-                                                                                                Cleaning</a></span>
+                                                                                                rel="tag">تنظيف المنازل والفلل</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/daily-habits-for-a-cleaner-living-space/">
@@ -4634,8 +4691,7 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/house-cleaning/"
-                                                                                                rel="tag">House
-                                                                                                Cleaning</a></span>
+                                                                                                rel="tag">تنظيف المنازل والفلل</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/the-deep-cleaning-and-organizing/">
@@ -4761,8 +4817,7 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/office-cleaning/"
-                                                                                                rel="tag">Office
-                                                                                                Cleaning</a></span>
+                                                                                                rel="tag">تنظيف المكاتب والشركات</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/benefits-of-eco-friendly-cleaning/">
@@ -5174,13 +5229,11 @@
                                                     class="pxl-link pxl-link-l1 style-divider type-vertical">
                                                     <li class="pxl-item--link"> <a href="#"> <span>تنظيف المنازل والفلل</span>
                                                         </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>Office
-                                                                Cleaning</span> </a></li>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف المكاتب والشركات</span> </a></li>
                                                     <li class="pxl-item--link"> <a href="#"> <span>التنظيف الشامل والعميق</span>
                                                         </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>General /
-                                                                Flexible</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>Move In Out
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف شامل ومرن</span> </a></li>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف الانتقال والرحيل
                                                                 Cleaning</span> </a></li>
                                                     <li class="pxl-item--link"> <a href="#"> <span>Flexible
                                                                 Cleaning</span> </a></li>
