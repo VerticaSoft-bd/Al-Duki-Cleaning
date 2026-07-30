@@ -53,100 +53,195 @@
             overflow: hidden !important;
         }
 
-        /* High-Quality Saffron Yellow RTL Call-To-Action (CTA) Button Design */
+        /* Modern Ultra-Professional Saffron Gold RTL CTA Button Design */
         html[dir="rtl"] .pxl-service__btn,
+        html[dir="rtl"] .pxl-button a,
+        html[dir="rtl"] .btn,
+        html[dir="rtl"] a.btn,
         .rtl .pxl-service__btn,
+        .rtl .pxl-button a,
         .rtl-cta-button {
             display: inline-flex !important;
             flex-direction: row !important;
             align-items: center !important;
             justify-content: space-between !important;
             gap: 16px !important;
-            padding: 6px 20px 6px 8px !important;
+            padding: 6px 22px 6px 8px !important;
             border-radius: 9999px !important;
-            background-color: #E6C200 !important;
-            color: #1A1A1A !important;
+            background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
+            color: #0F172A !important;
             text-decoration: none !important;
             box-sizing: border-box !important;
             position: relative !important;
             width: auto !important;
-            box-shadow: 0 6px 20px rgba(230, 194, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.06) !important;
-            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            border: 1px solid rgba(255, 255, 255, 0.4) !important;
+            box-shadow: 0 8px 24px -4px rgba(229, 161, 0, 0.4), 0 3px 8px rgba(15, 23, 42, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
             cursor: pointer !important;
-            border: none !important;
             outline: none !important;
             direction: rtl !important;
+            overflow: visible !important;
         }
 
         html[dir="rtl"] .pxl-service__btn:hover,
+        html[dir="rtl"] .pxl-button a:hover,
+        html[dir="rtl"] .btn:hover,
+        html[dir="rtl"] a.btn:hover,
         .rtl .pxl-service__btn:hover,
+        .rtl .pxl-button a:hover,
         .rtl-cta-button:hover {
-            background-color: #D9B700 !important;
-            box-shadow: 0 8px 25px rgba(230, 194, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+            background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
+            box-shadow: 0 12px 30px -4px rgba(229, 161, 0, 0.55), 0 6px 14px rgba(15, 23, 42, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.7) !important;
             transform: translateY(-2px) !important;
+            color: #0F172A !important;
         }
 
         html[dir="rtl"] .pxl-service__btn:active,
-        .rtl .pxl-service__btn:active,
-        .rtl-cta-button:active {
+        html[dir="rtl"] .pxl-button a:active,
+        html[dir="rtl"] .btn:active,
+        html[dir="rtl"] a.btn:active {
             transform: translateY(0) !important;
-            box-shadow: 0 4px 12px rgba(230, 194, 0, 0.4) !important;
+            box-shadow: 0 4px 14px -2px rgba(229, 161, 0, 0.4) !important;
         }
 
+        /* Order 1: Elegant Arabic Typography on the RIGHT side */
         html[dir="rtl"] .pxl-service__btn .pxl-service__btn-text,
+        html[dir="rtl"] .pxl-button .pxl--btn-text,
+        html[dir="rtl"] .btn .pxl--btn-text,
+        html[dir="rtl"] a.btn .pxl--btn-text,
         .rtl .pxl-service__btn .pxl-service__btn-text,
         .rtl-cta-button .rtl-cta-btn-text {
+            order: 1 !important;
             margin: 0 !important;
-            padding: 0 6px 0 0 !important;
+            padding: 0 4px 0 0 !important;
             white-space: nowrap !important;
             font-weight: 700 !important;
-            font-size: 16px !important;
-            color: #1A1A1A !important;
+            font-size: 15px !important;
+            color: #0F172A !important;
             position: relative !important;
             left: auto !important;
             right: auto !important;
-            font-family: 'Cairo', sans-serif !important;
+            font-family: 'Cairo', system-ui, -apple-system, sans-serif !important;
             line-height: 1 !important;
+            letter-spacing: -0.2px !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            display: inline-block !important;
+            overflow: hidden !important;
         }
 
+        /* Suppress Theme Pseudo-Element Duplicate Text (data-text) */
+        html[dir="rtl"] .pxl--btn-text::before,
+        html[dir="rtl"] .pxl--btn-text::after,
+        html[dir="rtl"] .btn-text-nina .pxl--btn-text::before,
+        html[dir="rtl"] .btn-text-nina .pxl--btn-text::after,
+        html[dir="rtl"] .btn .pxl--btn-text::before,
+        html[dir="rtl"] .btn .pxl--btn-text::after {
+            display: none !important;
+            content: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            width: 0 !important;
+        }
+
+        html[dir="rtl"] .pxl-button .pxl--btn-text span,
+        html[dir="rtl"] .btn .pxl--btn-text span {
+            color: #0F172A !important;
+            font-weight: 700 !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            display: inline-block !important;
+            position: relative !important;
+            transform: none !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Order 2: Circular Pure White Badge Container on the LEFT side */
         html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon,
+        html[dir="rtl"] .btn-icon-left,
+        html[dir="rtl"] .btn-icon-right,
+        html[dir="rtl"] .pxl--btn-icon,
         .rtl .pxl-service__btn .pxl-service__btn-icon,
         .rtl-cta-button .rtl-cta-btn-icon {
+            order: 2 !important;
             margin: 0 !important;
             flex-shrink: 0 !important;
             display: inline-flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
             align-items: center !important;
             justify-content: center !important;
-            width: 38px !important;
-            height: 38px !important;
+            width: 36px !important;
+            height: 36px !important;
+            min-width: 36px !important;
+            min-height: 36px !important;
             border-radius: 50% !important;
-            background-color: #FFFFFF !important;
-            color: #1A1A1A !important;
+            background: #FFFFFF !important;
+            color: #0F172A !important;
             position: relative !important;
             top: auto !important;
             left: auto !important;
             right: auto !important;
+            bottom: auto !important;
             transform: none !important;
-            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
-            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12), inset 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            z-index: 2 !important;
+        }
+
+        /* Prevent double icon: Hide redundant .btn-icon-right whenever .btn-icon-left is present */
+        html[dir="rtl"] .btn-icon-left ~ .btn-icon-right,
+        html[dir="rtl"] .btn:has(.btn-icon-left) .btn-icon-right,
+        html[dir="rtl"] a:has(.btn-icon-left) .btn-icon-right,
+        html[dir="rtl"] .pxl-button:has(.btn-icon-left) .btn-icon-right {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+            min-width: 0 !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
         }
 
         html[dir="rtl"] .pxl-service__btn:hover .pxl-service__btn-icon,
-        .rtl .pxl-service__btn:hover .pxl-service__btn-icon,
+        html[dir="rtl"] .btn:hover .btn-icon-left,
+        html[dir="rtl"] .btn:hover .btn-icon-right,
         .rtl-cta-button:hover .rtl-cta-btn-icon {
-            transform: scale(1.06) !important;
+            transform: scale(1.08) !important;
         }
 
+        /* Flipped Diagonal Arrow (↖) inside White Circle */
         html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon svg,
+        html[dir="rtl"] .btn-icon-left svg,
+        html[dir="rtl"] .btn-icon-right svg,
+        html[dir="rtl"] .pxl--btn-icon svg,
         .rtl .pxl-service__btn .pxl-service__btn-icon svg,
         .rtl-cta-button .rtl-cta-btn-icon svg {
             transform: scaleX(-1) !important;
-            stroke: #1A1A1A !important;
-            color: #1A1A1A !important;
+            stroke: #0F172A !important;
+            fill: none !important;
+            color: #0F172A !important;
             margin: 0 !important;
-            width: 16px !important;
-            height: 16px !important;
-            stroke-width: 2.5 !important;
+            width: 15px !important;
+            height: 15px !important;
+            stroke-width: 2.2 !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            display: block !important;
+        }
+
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon svg path,
+        html[dir="rtl"] .btn-icon-left svg path,
+        html[dir="rtl"] .btn-icon-right svg path {
+            stroke: #0F172A !important;
         }
 
         .pxl-service__feature-icon {
