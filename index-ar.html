@@ -53,48 +53,100 @@
             overflow: hidden !important;
         }
 
-        /* Perfect RTL non-overlapping layout for Service Cards 'اقرأ المزيد' Buttons */
-        html[dir="rtl"] .pxl-service__btn {
+        /* High-Quality Saffron Yellow RTL Call-To-Action (CTA) Button Design */
+        html[dir="rtl"] .pxl-service__btn,
+        .rtl .pxl-service__btn,
+        .rtl-cta-button {
             display: inline-flex !important;
-            flex-direction: row-reverse !important;
+            flex-direction: row !important;
             align-items: center !important;
             justify-content: space-between !important;
-            gap: 12px !important;
-            padding: 6px 16px 6px 6px !important;
-            border-radius: 50px !important;
+            gap: 16px !important;
+            padding: 6px 20px 6px 8px !important;
+            border-radius: 9999px !important;
+            background-color: #E6C200 !important;
+            color: #1A1A1A !important;
             text-decoration: none !important;
             box-sizing: border-box !important;
             position: relative !important;
             width: auto !important;
+            box-shadow: 0 6px 20px rgba(230, 194, 0, 0.35), 0 2px 8px rgba(0, 0, 0, 0.06) !important;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
+            cursor: pointer !important;
+            border: none !important;
+            outline: none !important;
+            direction: rtl !important;
         }
-        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-text {
+
+        html[dir="rtl"] .pxl-service__btn:hover,
+        .rtl .pxl-service__btn:hover,
+        .rtl-cta-button:hover {
+            background-color: #D9B700 !important;
+            box-shadow: 0 8px 25px rgba(230, 194, 0, 0.5), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+            transform: translateY(-2px) !important;
+        }
+
+        html[dir="rtl"] .pxl-service__btn:active,
+        .rtl .pxl-service__btn:active,
+        .rtl-cta-button:active {
+            transform: translateY(0) !important;
+            box-shadow: 0 4px 12px rgba(230, 194, 0, 0.4) !important;
+        }
+
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-text,
+        .rtl .pxl-service__btn .pxl-service__btn-text,
+        .rtl-cta-button .rtl-cta-btn-text {
             margin: 0 !important;
-            padding: 0 4px !important;
+            padding: 0 6px 0 0 !important;
             white-space: nowrap !important;
             font-weight: 700 !important;
+            font-size: 16px !important;
+            color: #1A1A1A !important;
             position: relative !important;
             left: auto !important;
             right: auto !important;
+            font-family: 'Cairo', sans-serif !important;
+            line-height: 1 !important;
         }
-        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon {
+
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon,
+        .rtl .pxl-service__btn .pxl-service__btn-icon,
+        .rtl-cta-button .rtl-cta-btn-icon {
             margin: 0 !important;
             flex-shrink: 0 !important;
             display: inline-flex !important;
             align-items: center !important;
             justify-content: center !important;
-            width: 36px !important;
-            height: 36px !important;
+            width: 38px !important;
+            height: 38px !important;
             border-radius: 50% !important;
-            background: #ffffff !important;
+            background-color: #FFFFFF !important;
+            color: #1A1A1A !important;
             position: relative !important;
             top: auto !important;
             left: auto !important;
             right: auto !important;
             transform: none !important;
+            box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08) !important;
+            transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1) !important;
         }
-        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon svg {
+
+        html[dir="rtl"] .pxl-service__btn:hover .pxl-service__btn-icon,
+        .rtl .pxl-service__btn:hover .pxl-service__btn-icon,
+        .rtl-cta-button:hover .rtl-cta-btn-icon {
+            transform: scale(1.06) !important;
+        }
+
+        html[dir="rtl"] .pxl-service__btn .pxl-service__btn-icon svg,
+        .rtl .pxl-service__btn .pxl-service__btn-icon svg,
+        .rtl-cta-button .rtl-cta-btn-icon svg {
             transform: scaleX(-1) !important;
+            stroke: #1A1A1A !important;
+            color: #1A1A1A !important;
             margin: 0 !important;
+            width: 16px !important;
+            height: 16px !important;
+            stroke-width: 2.5 !important;
         }
 
         .pxl-service__feature-icon {
