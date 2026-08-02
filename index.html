@@ -562,6 +562,81 @@
             #pxl-header-elementor .px-header--left_sidebar {
                 border-style: solid;
             }
+        /* Custom Header Compact Height, Full Width (0 X-Padding) & Enlarge Logo */
+        #pxl-header-elementor .pxl-header-elementor-main {
+            padding: 0 !important;
+        }
+        #pxl-header-elementor .pxl-header-content {
+            padding: 0 !important;
+        }
+        #pxl-header-elementor .pxl-header-content .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+        #pxl-header-elementor .pxl-header-content .col-12 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+        #pxl-header-elementor .elementor-element-67d316b,
+        #pxl-header-elementor .elementor-element-67d316b.e-parent {
+            padding-top: 0px !important;
+            padding-bottom: 12px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            min-height: auto !important;
+            height: auto !important;
+            width: 100% !important;
+            max-width: 100% !important;
+        }
+        #pxl-header-elementor .elementor-element-67d316b .e-con-inner {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            min-height: auto !important;
+            align-items: center !important;
+            max-width: 100% !important;
+            width: 100% !important;
+        }
+        #pxl-header-elementor .elementor-element-ca903cf,
+        #pxl-header-elementor .elementor-element-ba3c59a,
+        #pxl-header-elementor .elementor-element-2cb3631 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+        #pxl-header-elementor .elementor-shape-bottom {
+            height: 18px !important;
+            bottom: -1px !important;
+        }
+        #pxl-header-elementor .elementor-shape-bottom svg {
+            height: 18px !important;
+        }
+        .elementor-widget-pxl_logo .pxl-logo img {
+            max-height: 100px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+            margin: 0 auto !important;
+            transition: all 0.3s ease !important;
+        }
+        .pxl-header-branding img,
+        .pxl-logo-mobile img {
+            max-height: 75px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+        @media (max-width: 991px) {
+            #pxl-header-mobile #pxl-header-main {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+            }
+            .pxl-header-branding img,
+            .pxl-logo-mobile img {
+                max-height: 70px !important;
+            }
         }
 
         /*# sourceURL=pxl-style-inline-css */
@@ -600,10 +675,11 @@
     <link rel="canonical" href="https://demo.casethemes.net/genfresco/home-1-onepage/" />
     <link rel='shortlink' href='https://demo.casethemes.net/genfresco/?p=6202' />
     <meta name="generator" content="Redux 4.5.13" />
-    <link rel="icon" type="image/png" sizes="32x32"
-        href="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/favicon.png" />
-    <link rel="icon" type="image/png" sizes="16x16"
-        href="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/favicon-16x16.png" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicon.png" />
+    <link rel="apple-touch-icon" href="assets/images/favicon.png" />
     <meta name="generator"
         content="Elementor 4.1.4; features: additional_custom_breakpoints; settings: css_print_method-external, google_font-enabled, font_display-swap">
     <style id="pxl-page-dynamic-css" data-type="redux-output-css">
@@ -1100,11 +1176,9 @@
             <div class="bubble-bg b6"></div>
         </div>
         <div class="scene">
-            <div class="shine"></div> <img fetchpriority="high" width="477" height="114"
-                src="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/logo.png" class="logo-svg" alt=""
-                style="" decoding="async"
-                srcset="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/logo.png 477w, https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/logo-300x72.png 300w"
-                sizes="(max-width: 477px) 100vw, 477px" />
+            <div class="shine"></div> <img fetchpriority="high"
+                src="assets/images/logo/logo.png" class="logo-svg" alt="Al-Duki Cleaning"
+                style="max-height: 70px; width: auto;" decoding="async" />
             <div class="leaf-wrap"> <span class="foam f1"></span> <span class="foam f2"></span> <span
                     class="foam f3"></span> <span class="foam f4"></span> <svg class="leaf-svg" viewBox="0 0 64 64"
                     xmlns="http://www.w3.org/2000/svg">
@@ -1162,7 +1236,7 @@
                                                     <div class="pxl--item pxl-list__item">
                                                         <div class="pxl-item-content pxl-list__item-content"> <span
                                                                 class="pxl-empty">Email:</span> <a
-                                                                href="mailto:Genfresco@example.com">Genfresco@example.com</a>
+                                                                href="mailto:aldokhi.co@hotmail.com">aldokhi.co@hotmail.com</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1172,11 +1246,10 @@
                                             data-id="ba3c59a" data-element_type="widget" data-e-type="widget"
                                             data-widget_type="pxl_logo.default">
                                             <div class="elementor-widget-container">
-                                                <div class="pxl-logo " data-wow-delay="ms"> <a
-                                                        href="https://demo.casethemes.net/genfresco/"> <img width="477"
-                                                            height="114"
-                                                            src="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/logo.png"
-                                                            class="attachment-full" alt="" /> </a></div>
+                                                <div class="pxl-logo " data-wow-delay="ms"> <a href="index.html"> <img
+                                                            src="assets/images/logo/logo.png"
+                                                            style="max-height: 110px; width: auto; object-fit: contain;"
+                                                            class="attachment-full" alt="Al-Duki Cleaning" /> </a></div>
                                             </div>
                                         </div>
                                         <div class="elementor-element elementor-element-2cb3631 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
@@ -1663,10 +1736,10 @@
                     <div class="container">
                         <div class="row">
                             <div class="pxl-header-mobile-default">
-                                <div class="pxl-header-branding"> <a href="https://demo.casethemes.net/genfresco/"
-                                        title="Genfresco" rel="home"><img
-                                            src="https://demo.casethemes.net/genfresco/wp-content/themes/genfresco/assets/img/logo.png"
-                                            alt="Genfresco" /></a></div>
+                                <div class="pxl-header-branding"> <a href="index.html" title="Al-Duki Cleaning"
+                                        rel="home"><img src="assets/images/logo/logo.png"
+                                            style="max-height: 80px; width: auto; object-fit: contain;"
+                                            alt="Al-Duki Cleaning" /></a></div>
                                 <div id="pxl-nav-mobile">
                                     <div class="pxl-nav-mobile-button pxl-anchor-divider pxl-cursor--cta"> <span
                                             class="pxl-icon-line pxl-icon-line1"></span> <span
@@ -1677,11 +1750,10 @@
                             <div class="pxl-header-menu">
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
-                                    <div class="pxl-logo-mobile pxl-hide-xl"> <a
-                                            href="https://demo.casethemes.net/genfresco/" title="Genfresco"
-                                            rel="home"><img
-                                                src="https://demo.casethemes.net/genfresco/wp-content/themes/genfresco/assets/img/logo.png"
-                                                alt="Genfresco" /></a></div>
+                                    <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index.html"
+                                            title="Al-Duki Cleaning" rel="home"><img src="assets/images/logo/logo.png"
+                                                style="max-height: 80px; width: auto; object-fit: contain;"
+                                                alt="Al-Duki Cleaning" /></a></div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
                                         <form role="search" method="get"
                                             action="https://demo.casethemes.net/genfresco/">
@@ -5511,11 +5583,10 @@
                                     data-id="a727bd2" data-element_type="widget" data-e-type="widget"
                                     data-widget_type="pxl_logo.default">
                                     <div class="elementor-widget-container">
-                                        <div class="pxl-logo " data-wow-delay="ms"> <a
-                                                href="https://demo.casethemes.net/genfresco/"> <img loading="lazy"
-                                                    decoding="async" width="477" height="114"
-                                                    src="https://demo.casethemes.net/genfresco/wp-content/uploads/2026/05/logo.png"
-                                                    class="attachment-full" alt="" /> </a></div>
+                                        <div class="pxl-logo " data-wow-delay="ms"> <a href="index.html"> <img
+                                                    loading="lazy" decoding="async" src="assets/images/logo/logo.png"
+                                                    style="max-height: 120px; width: auto; object-fit: contain;"
+                                                    class="attachment-full" alt="Al-Duki Cleaning" /> </a></div>
                                     </div>
                                 </div>
                                 <div class="elementor-element elementor-element-e9c4659 elementor-widget elementor-widget-pxl_heading"
