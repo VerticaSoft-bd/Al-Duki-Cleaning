@@ -286,6 +286,16 @@
         input[name="your-email"] {
             text-transform: none !important;
         }
+
+        .wpcf7-response-output,
+        div.wpcf7-response-output {
+            margin-top: 15px !important;
+            padding: 12px 20px !important;
+            border-radius: 8px !important;
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            text-align: center !important;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -5902,6 +5912,33 @@
                         form.appendChild(responseOutput);
                     }
 
+                    const showMsg = (text, type = 'info') => {
+                        responseOutput.style.setProperty('display', 'block', 'important');
+                        responseOutput.style.setProperty('visibility', 'visible', 'important');
+                        responseOutput.style.setProperty('opacity', '1', 'important');
+                        responseOutput.style.setProperty('margin-top', '15px', 'important');
+                        responseOutput.style.setProperty('padding', '12px 20px', 'important');
+                        responseOutput.style.setProperty('border-radius', '8px', 'important');
+                        responseOutput.style.setProperty('font-size', '15px', 'important');
+                        responseOutput.style.setProperty('font-weight', '600', 'important');
+                        responseOutput.style.setProperty('text-align', 'center', 'important');
+
+                        if (type === 'success') {
+                            responseOutput.style.setProperty('color', '#155724', 'important');
+                            responseOutput.style.setProperty('background-color', '#d4edda', 'important');
+                            responseOutput.style.setProperty('border', '1px solid #c3e6cb', 'important');
+                        } else if (type === 'error') {
+                            responseOutput.style.setProperty('color', '#721c24', 'important');
+                            responseOutput.style.setProperty('background-color', '#f8d7da', 'important');
+                            responseOutput.style.setProperty('border', '1px solid #f5c6cb', 'important');
+                        } else {
+                            responseOutput.style.setProperty('color', '#004085', 'important');
+                            responseOutput.style.setProperty('background-color', '#cce5ff', 'important');
+                            responseOutput.style.setProperty('border', '1px solid #b8daff', 'important');
+                        }
+                        responseOutput.innerText = text;
+                    };
+
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
                     const phoneInput = form.querySelector('[name="your-phone"]');
@@ -5915,13 +5952,7 @@
                     const message = messageInput ? messageInput.value.trim() : '';
 
                     if (!name || !email) {
-                        responseOutput.style.display = 'block';
-                        responseOutput.style.color = '#721c24';
-                        responseOutput.style.padding = '10px 15px';
-                        responseOutput.style.marginTop = '15px';
-                        responseOutput.style.borderRadius = '8px';
-                        responseOutput.style.backgroundColor = '#f8d7da';
-                        responseOutput.innerText = 'الرجاء ملء جميع الحقول المطلوبة (*الاسم، *البريد الإلكتروني).';
+                        showMsg('الرجاء ملء جميع الحقول المطلوبة (*الاسم، *البريد الإلكتروني).', 'error');
                         return;
                     }
 
@@ -5931,13 +5962,7 @@
                         submitBtn.innerText = 'جاري الإرسال...';
                     }
 
-                    responseOutput.style.display = 'block';
-                    responseOutput.style.color = '#004085';
-                    responseOutput.style.padding = '10px 15px';
-                    responseOutput.style.marginTop = '15px';
-                    responseOutput.style.borderRadius = '8px';
-                    responseOutput.style.backgroundColor = '#cce5ff';
-                    responseOutput.innerText = 'جاري إرسال طلبك...';
+                    showMsg('جاري إرسال طلبك...', 'info');
 
                     const result = await submitContact({
                         apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
@@ -5955,14 +5980,10 @@
                     }
 
                     if (result.success) {
-                        responseOutput.style.color = '#155724';
-                        responseOutput.style.backgroundColor = '#d4edda';
-                        responseOutput.innerText = 'شكراً لك! تم إرسال طلبك بنجاح.';
+                        showMsg('شكراً لك! تم إرسال طلبك بنجاح.', 'success');
                         form.reset();
                     } else {
-                        responseOutput.style.color = '#721c24';
-                        responseOutput.style.backgroundColor = '#f8d7da';
-                        responseOutput.innerText = 'فشل الإرسال: ' + (result.error || 'يرجى المحاولة لاحقاً.');
+                        showMsg('فشل الإرسال: ' + (result.error || 'يرجى المحاولة لاحقاً.'), 'error');
                     }
                 }, true);
             });

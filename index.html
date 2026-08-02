@@ -61,6 +61,26 @@
         input[name="your-email"] {
             text-transform: none !important;
         }
+
+        .wpcf7-response-output:empty,
+        div.wpcf7-response-output:empty {
+            display: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+            height: 0 !important;
+            min-height: 0 !important;
+        }
+
+        .wpcf7-response-output,
+        div.wpcf7-response-output {
+            margin-top: 15px !important;
+            padding: 12px 20px !important;
+            border-radius: 8px !important;
+            font-size: 15px !important;
+            font-weight: 600 !important;
+            text-align: center !important;
+        }
     </style>
     <link rel='stylesheet' id='pxl-main-css-css'
         href='https://demo.casethemes.net/genfresco/wp-content/plugins/case-addons/assets/css/pxl-main-css.min.css?ver=1.0.0'
@@ -5734,42 +5754,47 @@
     <!-- Contact Form API Integration -->
     <script>
         async function submitContact(data = {}) {
-            const baseUrl = 'https://data-engine.verticasoft.com'
-            const endpoint = baseUrl.replace(/\/$/, '') + '/api/contact';
+            const urls = [
+                data.baseUrl,
+                'https://data-engine.verticasoft.com',
+                'http://localhost:3000'
+            ].filter(Boolean);
 
             const { baseUrl: _, apiKey, name, email, phone, subject, message, customFields, ...extraFields } = data;
             const resolvedCustomFields = customFields || (Object.keys(extraFields).length > 0 ? extraFields : undefined);
 
             let lastError = null;
 
-            try {
-                const response = await fetch(endpoint, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        ...(apiKey ? { 'X-API-Key': apiKey } : {}),
-                    },
-                    body: JSON.stringify({
-                        apiKey: apiKey || 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
-                        name,
-                        email,
-                        phone: phone || '',
-                        subject,
-                        message,
-                        ...(resolvedCustomFields ? { customFields: resolvedCustomFields } : {}),
-                    }),
-                });
+            for (const url of urls) {
+                const endpoint = url.replace(/\/$/, '') + '/api/contact';
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...(apiKey ? { 'X-API-Key': apiKey } : {}),
+                        },
+                        body: JSON.stringify({
+                            apiKey: apiKey || 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            name,
+                            email,
+                            phone: phone || '',
+                            subject,
+                            message,
+                            ...(resolvedCustomFields ? { customFields: resolvedCustomFields } : {}),
+                        }),
+                    });
 
-                const result = await response.json();
-                if (response.ok && result.success !== false) {
-                    return result;
+                    const result = await response.json();
+                    if (response.ok && result.success !== false) {
+                        return result;
+                    }
+                    lastError = result.error || `HTTP ${response.status}`;
+                } catch (err) {
+                    console.warn(`Contact API attempt to ${endpoint} failed:`, err);
+                    lastError = err.message;
                 }
-                lastError = result.error || `HTTP ${response.status}`;
-            } catch (err) {
-                console.warn(`Contact API attempt to ${endpoint} failed:`, err);
-                lastError = err.message;
             }
-
 
             return { success: false, error: lastError || 'Submission failed.' };
         }
@@ -5778,19 +5803,45 @@
             const contactForms = document.querySelectorAll('.wpcf7-form');
 
             contactForms.forEach(function (form) {
+                const showMsg = (text, type = 'info') => {
+                    let responseOutput = form.querySelector('.data-engine-msg');
+                    if (!responseOutput) {
+                        responseOutput = document.createElement('div');
+                        responseOutput.className = 'data-engine-msg';
+                        form.appendChild(responseOutput);
+                    }
+
+                    responseOutput.style.setProperty('display', 'block', 'important');
+                    responseOutput.style.setProperty('visibility', 'visible', 'important');
+                    responseOutput.style.setProperty('opacity', '1', 'important');
+                    responseOutput.style.setProperty('margin-top', '15px', 'important');
+                    responseOutput.style.setProperty('padding', '12px 20px', 'important');
+                    responseOutput.style.setProperty('border-radius', '8px', 'important');
+                    responseOutput.style.setProperty('font-size', '15px', 'important');
+                    responseOutput.style.setProperty('font-weight', '600', 'important');
+                    responseOutput.style.setProperty('text-align', 'center', 'important');
+
+                    if (type === 'success') {
+                        responseOutput.style.setProperty('color', '#155724', 'important');
+                        responseOutput.style.setProperty('background-color', '#d4edda', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #c3e6cb', 'important');
+                    } else if (type === 'error') {
+                        responseOutput.style.setProperty('color', '#721c24', 'important');
+                        responseOutput.style.setProperty('background-color', '#f8d7da', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #f5c6cb', 'important');
+                    } else {
+                        responseOutput.style.setProperty('color', '#004085', 'important');
+                        responseOutput.style.setProperty('background-color', '#cce5ff', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #b8daff', 'important');
+                    }
+                    responseOutput.innerHTML = text;
+                };
+
                 form.addEventListener('submit', async function (e) {
                     e.preventDefault();
                     e.stopImmediatePropagation();
 
                     const submitBtn = form.querySelector('.wpcf7-submit') || form.querySelector('button[type="submit"]');
-                    let responseOutput = form.querySelector('.wpcf7-response-output');
-
-                    if (!responseOutput) {
-                        responseOutput = document.createElement('div');
-                        responseOutput.className = 'wpcf7-response-output';
-                        form.appendChild(responseOutput);
-                    }
-
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
                     const phoneInput = form.querySelector('[name="your-phone"]');
@@ -5804,29 +5855,20 @@
                     const message = messageInput ? messageInput.value.trim() : '';
 
                     if (!name || !email) {
-                        responseOutput.style.display = 'block';
-                        responseOutput.style.color = '#721c24';
-                        responseOutput.style.padding = '10px 15px';
-                        responseOutput.style.marginTop = '15px';
-                        responseOutput.style.borderRadius = '8px';
-                        responseOutput.style.backgroundColor = '#f8d7da';
-                        responseOutput.innerText = 'Please fill out all required fields (*Name, *Email).';
+                        showMsg('Please fill out all required fields (*Name, *Email).', 'error');
                         return;
                     }
 
-                    const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+                    const isInput = submitBtn && submitBtn.tagName === 'INPUT';
+                    const originalBtnText = submitBtn ? (isInput ? submitBtn.value : submitBtn.innerHTML) : '';
+
                     if (submitBtn) {
                         submitBtn.disabled = true;
-                        submitBtn.innerText = 'Submitting...';
+                        if (isInput) submitBtn.value = 'Submitting...';
+                        else submitBtn.innerText = 'Submitting...';
                     }
 
-                    responseOutput.style.display = 'block';
-                    responseOutput.style.color = '#004085';
-                    responseOutput.style.padding = '10px 15px';
-                    responseOutput.style.marginTop = '15px';
-                    responseOutput.style.borderRadius = '8px';
-                    responseOutput.style.backgroundColor = '#cce5ff';
-                    responseOutput.innerText = 'Sending your request...';
+                    showMsg('Sending your request...', 'info');
 
                     const result = await submitContact({
                         apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
@@ -5840,18 +5882,15 @@
 
                     if (submitBtn) {
                         submitBtn.disabled = false;
-                        submitBtn.innerHTML = originalBtnText;
+                        if (isInput) submitBtn.value = originalBtnText;
+                        else submitBtn.innerHTML = originalBtnText;
                     }
 
-                    if (result.success) {
-                        responseOutput.style.color = '#155724';
-                        responseOutput.style.backgroundColor = '#d4edda';
-                        responseOutput.innerText = 'Thank you! Your quote request has been submitted successfully.';
+                    if (result && result.success !== false) {
+                        showMsg('Thank you! Your quote request has been submitted successfully.', 'success');
                         form.reset();
                     } else {
-                        responseOutput.style.color = '#721c24';
-                        responseOutput.style.backgroundColor = '#f8d7da';
-                        responseOutput.innerText = 'Submission failed: ' + (result.error || 'Please try again later.');
+                        showMsg('Submission failed: ' + (result?.error || 'Please try again later.'), 'error');
                     }
                 }, true);
             });
