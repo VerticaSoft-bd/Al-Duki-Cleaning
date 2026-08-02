@@ -6124,7 +6124,7 @@
         <a href="index-ar.html" class="active">العربية</a>
     </div>
 
-    <!-- Contact Form API Integration -->
+    <!-- Contact & Subscriber Form API Integration -->
     <script>
         async function submitContact(data = {}) {
             const urls = [
@@ -6172,30 +6172,72 @@
             return { success: false, error: lastError || 'Submission failed.' };
         }
 
+        async function submitSubscriber(data = {}) {
+            const urls = [
+                data.baseUrl,
+                'https://data-engine.verticasoft.com',
+                'http://localhost:3000'
+            ].filter(Boolean);
+
+            const { baseUrl: _, apiKey, email, source = 'website_footer' } = data;
+
+            let lastError = null;
+
+            for (const url of urls) {
+                const endpoint = url.replace(/\/$/, '') + '/api/subscribers';
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...(apiKey ? { 'X-API-Key': apiKey } : {}),
+                        },
+                        body: JSON.stringify({
+                            apiKey: apiKey || 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            email,
+                            source,
+                        }),
+                    });
+
+                    const result = await response.json();
+                    if (response.ok && result.success !== false) {
+                        return result;
+                    }
+                    lastError = result.error || `HTTP ${response.status}`;
+                } catch (err) {
+                    console.warn(`Subscriber API attempt to ${endpoint} failed:`, err);
+                    lastError = err.message;
+                }
+            }
+
+            return { success: false, error: lastError || 'Subscription failed.' };
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             const contactForms = document.querySelectorAll('.wpcf7-form');
 
             contactForms.forEach(function (form) {
-                const wrapForm = form.closest('.wrap-form') || form;
+                const wrapForm = form.closest('.wrap-form') || form.closest('.pxl-contact-form') || form;
+                wrapForm.style.position = 'relative';
 
                 const removeOverlay = () => {
                     const existing = wrapForm.querySelectorAll('.form-status-overlay');
                     existing.forEach(el => el.remove());
                 };
 
-                const showOverlayLoader = (loadingText = 'جاري إرسال طلبك...') => {
+                const showOverlayLoader = (loadingText = 'جاري معالجة الطلب...') => {
                     removeOverlay();
                     const overlay = document.createElement('div');
                     overlay.className = 'form-status-overlay';
                     overlay.innerHTML = `
                         <div class="form-spinner"></div>
                         <div class="form-overlay-title">${loadingText}</div>
-                        <div class="form-overlay-text">يرجى الانتظار لحظة أثناء معالجة طلب عرض السعر.</div>
+                        <div class="form-overlay-text">يرجى الانتظار لحظة أثناء معالجة طلبك.</div>
                     `;
                     wrapForm.appendChild(overlay);
                 };
 
-                const showOverlaySuccess = (titleText = 'تم إرسال طلبك بنجاح!', msgText = 'شكراً لك! تم استلام طلب عرض السعر الخاص بك. وسيتواصل معك فريقنا قريباً.') => {
+                const showOverlaySuccess = (titleText = 'تم النجاح!', msgText = 'شكراً لك! تم استلام طلبك بنجاح.') => {
                     removeOverlay();
                     const overlay = document.createElement('div');
                     overlay.className = 'form-status-overlay';
@@ -6203,7 +6245,7 @@
                         <div class="form-overlay-icon success">✓</div>
                         <div class="form-overlay-title">${titleText}</div>
                         <div class="form-overlay-text">${msgText}</div>
-                        <button type="button" class="form-overlay-btn reset-form-btn">إرسال طلب آخر</button>
+                        <button type="button" class="form-overlay-btn reset-form-btn">تم</button>
                     `;
                     wrapForm.appendChild(overlay);
 
@@ -6242,38 +6284,65 @@
 
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
-                    const phoneInput = form.querySelector('[name="your-phone"]');
-                    const serviceSelect = form.querySelector('[name="select-534"]');
-                    const messageInput = form.querySelector('[name="your-messeage"]');
 
-                    const name = nameInput ? nameInput.value.trim() : '';
-                    const email = emailInput ? emailInput.value.trim() : '';
-                    const phone = phoneInput ? phoneInput.value.trim() : '';
-                    const service = serviceSelect ? serviceSelect.value : '';
-                    const message = messageInput ? messageInput.value.trim() : '';
+                    if (nameInput) {
+                        // Contact / Quote Request Form
+                        const phoneInput = form.querySelector('[name="your-phone"]');
+                        const serviceSelect = form.querySelector('[name="select-534"]');
+                        const messageInput = form.querySelector('[name="your-messeage"]');
 
-                    if (!name || !email) {
-                        showOverlayError('الحقول المطلوبة مفقودة', 'يرجى ملء جميع الحقول المطلوبة (*الاسم و *البريد الإلكتروني).');
-                        return;
-                    }
+                        const name = nameInput ? nameInput.value.trim() : '';
+                        const email = emailInput ? emailInput.value.trim() : '';
+                        const phone = phoneInput ? phoneInput.value.trim() : '';
+                        const service = serviceSelect ? serviceSelect.value : '';
+                        const message = messageInput ? messageInput.value.trim() : '';
 
-                    showOverlayLoader('جاري إرسال طلبك...');
+                        if (!name || !email) {
+                            showOverlayError('الحقول المطلوبة مفقودة', 'يرجى ملء جميع الحقول المطلوبة (*الاسم و *البريد الإلكتروني).');
+                            return;
+                        }
 
-                    const result = await submitContact({
-                        apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
-                        name: name,
-                        email: email,
-                        phone: phone,
-                        subject: service ? `طلب عرض سعر تنظيف: ${service}` : 'طلب عرض سعر تنظيف',
-                        message: message || 'طلب عرض سعر تنظيف مجاني.',
-                        servicesNeeded: service ? [service] : []
-                    });
+                        showOverlayLoader('جاري إرسال طلبك...');
 
-                    if (result && result.success !== false) {
-                        showOverlaySuccess('تم إرسال طلبك بنجاح!', 'شكراً لك! تم استلام طلبك بنجاح. وسيتواصل معك فريق التنظيف قريباً.');
-                        form.reset();
+                        const result = await submitContact({
+                            apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            subject: service ? `طلب عرض سعر تنظيف: ${service}` : 'طلب عرض سعر تنظيف',
+                            message: message || 'طلب عرض سعر تنظيف مجاني.',
+                            servicesNeeded: service ? [service] : []
+                        });
+
+                        if (result && result.success !== false) {
+                            showOverlaySuccess('تم إرسال طلبك بنجاح!', 'شكراً لك! تم استلام طلبك بنجاح. وسيتواصل معك فريق التنظيف قريباً.');
+                            form.reset();
+                        } else {
+                            showOverlayError('فشل الإرسال', result?.error || 'تعذر إرسال طلبك الآن. يرجى المحاولة لاحقاً.');
+                        }
                     } else {
-                        showOverlayError('فشل الإرسال', result?.error || 'تعذر إرسال طلبك الآن. يرجى المحاولة لاحقاً.');
+                        // Newsletter Subscriber Form
+                        const email = emailInput ? emailInput.value.trim() : '';
+
+                        if (!email) {
+                            showOverlayError('البريد الإلكتروني مطلوب', 'يرجى إدخال عنوان بريد إلكتروني صحيح.');
+                            return;
+                        }
+
+                        showOverlayLoader('جاري الاشتراك...');
+
+                        const result = await submitSubscriber({
+                            apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            email: email,
+                            source: 'website_footer'
+                        });
+
+                        if (result && result.success !== false) {
+                            showOverlaySuccess('تم الاشتراك بنجاح!', 'شكراً لك على الاشتراك في نشرتنا الإخبارية!');
+                            form.reset();
+                        } else {
+                            showOverlayError('فشل الاشتراك', result?.error || 'تعذر الاشتراك حالياً. يرجى المحاولة لاحقاً.');
+                        }
                     }
                 }, true);
             });

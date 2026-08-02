@@ -926,7 +926,8 @@
         }
 
         /* Full Form Overlay Styles for Loading and Success/Error States */
-        .pxl-contact-form, .wrap-form {
+        .pxl-contact-form,
+        .wrap-form {
             position: relative !important;
         }
 
@@ -954,8 +955,15 @@
         }
 
         @keyframes formOverlayFadeIn {
-            from { opacity: 0; transform: scale(0.96); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         .form-spinner {
@@ -969,8 +977,13 @@
         }
 
         @keyframes formSpin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .form-overlay-icon {
@@ -6018,7 +6031,7 @@
         </a>
     </div>
 
-    <!-- Contact Form API Integration -->
+    <!-- Contact & Subscriber Form API Integration -->
     <script>
         async function submitContact(data = {}) {
             const urls = [
@@ -6066,30 +6079,73 @@
             return { success: false, error: lastError || 'Submission failed.' };
         }
 
+        async function submitSubscriber(data = {}) {
+            const urls = [
+                data.baseUrl,
+                'https://data-engine.verticasoft.com',
+                'http://localhost:3000'
+            ].filter(Boolean);
+
+            const { baseUrl: _, apiKey, email, source = 'website_footer' } = data;
+
+            let lastError = null;
+
+            for (const url of urls) {
+                const endpoint = url.replace(/\/$/, '') + '/api/subscribers';
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...(apiKey ? { 'X-API-Key': apiKey } : {}),
+                        },
+                        body: JSON.stringify({
+                            apiKey: apiKey || 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            email,
+                            source,
+                        }),
+                    });
+
+                    const result = await response.json();
+                    console.log('subcription', result);
+                    if (response.ok && result.success !== false) {
+                        return result;
+                    }
+                    lastError = result.error || `HTTP ${response.status}`;
+                } catch (err) {
+                    console.warn(`Subscriber API attempt to ${endpoint} failed:`, err);
+                    lastError = err.message;
+                }
+            }
+
+            return { success: false, error: lastError || 'Subscription failed.' };
+        }
+
         document.addEventListener('DOMContentLoaded', function () {
             const contactForms = document.querySelectorAll('.wpcf7-form');
 
             contactForms.forEach(function (form) {
-                const wrapForm = form.closest('.wrap-form') || form;
+                const wrapForm = form.closest('.wrap-form') || form.closest('.pxl-contact-form') || form;
+                wrapForm.style.position = 'relative';
 
                 const removeOverlay = () => {
                     const existing = wrapForm.querySelectorAll('.form-status-overlay');
                     existing.forEach(el => el.remove());
                 };
 
-                const showOverlayLoader = (loadingText = 'Sending your request...') => {
+                const showOverlayLoader = (loadingText = 'Processing...') => {
                     removeOverlay();
                     const overlay = document.createElement('div');
                     overlay.className = 'form-status-overlay';
                     overlay.innerHTML = `
                         <div class="form-spinner"></div>
                         <div class="form-overlay-title">${loadingText}</div>
-                        <div class="form-overlay-text">Please wait a moment while we process your quote request.</div>
+                        <div class="form-overlay-text">Please wait a moment while we process your request.</div>
                     `;
                     wrapForm.appendChild(overlay);
                 };
 
-                const showOverlaySuccess = (titleText = 'Request Submitted Successfully!', msgText = 'Thank you! Your quote request has been received. Our team will reach out to you shortly.') => {
+                const showOverlaySuccess = (titleText = 'Success!', msgText = 'Thank you! Your request has been received.') => {
                     removeOverlay();
                     const overlay = document.createElement('div');
                     overlay.className = 'form-status-overlay';
@@ -6097,7 +6153,7 @@
                         <div class="form-overlay-icon success">✓</div>
                         <div class="form-overlay-title">${titleText}</div>
                         <div class="form-overlay-text">${msgText}</div>
-                        <button type="button" class="form-overlay-btn reset-form-btn">Send Another Request</button>
+                        <button type="button" class="form-overlay-btn reset-form-btn">Done</button>
                     `;
                     wrapForm.appendChild(overlay);
 
@@ -6136,38 +6192,65 @@
 
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
-                    const phoneInput = form.querySelector('[name="your-phone"]');
-                    const serviceSelect = form.querySelector('[name="select-534"]');
-                    const messageInput = form.querySelector('[name="your-messeage"]');
 
-                    const name = nameInput ? nameInput.value.trim() : '';
-                    const email = emailInput ? emailInput.value.trim() : '';
-                    const phone = phoneInput ? phoneInput.value.trim() : '';
-                    const service = serviceSelect ? serviceSelect.value : '';
-                    const message = messageInput ? messageInput.value.trim() : '';
+                    if (nameInput) {
+                        // Contact / Quote Request Form
+                        const phoneInput = form.querySelector('[name="your-phone"]');
+                        const serviceSelect = form.querySelector('[name="select-534"]');
+                        const messageInput = form.querySelector('[name="your-messeage"]');
 
-                    if (!name || !email) {
-                        showOverlayError('Required Fields Missing', 'Please fill out all required fields (*Your Name and *Your Email).');
-                        return;
-                    }
+                        const name = nameInput ? nameInput.value.trim() : '';
+                        const email = emailInput ? emailInput.value.trim() : '';
+                        const phone = phoneInput ? phoneInput.value.trim() : '';
+                        const service = serviceSelect ? serviceSelect.value : '';
+                        const message = messageInput ? messageInput.value.trim() : '';
 
-                    showOverlayLoader('Sending your request...');
+                        if (!name || !email) {
+                            showOverlayError('Required Fields Missing', 'Please fill out all required fields (*Your Name and *Your Email).');
+                            return;
+                        }
 
-                    const result = await submitContact({
-                        apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
-                        name: name,
-                        email: email,
-                        phone: phone,
-                        subject: service ? `Cleaning Quote Request: ${service}` : 'Cleaning Quote Request',
-                        message: message || 'Requesting a free cleaning quote.',
-                        servicesNeeded: service ? [service] : []
-                    });
+                        showOverlayLoader('Sending your request...');
 
-                    if (result && result.success !== false) {
-                        showOverlaySuccess('Request Submitted Successfully!', 'Thank you! Your quote request has been received. Our cleaning team will reach out to you shortly.');
-                        form.reset();
+                        const result = await submitContact({
+                            apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            name: name,
+                            email: email,
+                            phone: phone,
+                            subject: service ? `Cleaning Quote Request: ${service}` : 'Cleaning Quote Request',
+                            message: message || 'Requesting a free cleaning quote.',
+                            servicesNeeded: service ? [service] : []
+                        });
+
+                        if (result && result.success !== false) {
+                            showOverlaySuccess('Request Submitted Successfully!', 'Thank you! Your quote request has been received. Our cleaning team will reach out to you shortly.');
+                            form.reset();
+                        } else {
+                            showOverlayError('Submission Failed', result?.error || 'Unable to submit your request right now. Please try again later.');
+                        }
                     } else {
-                        showOverlayError('Submission Failed', result?.error || 'Unable to submit your request right now. Please try again later.');
+                        // Newsletter Subscriber Form
+                        const email = emailInput ? emailInput.value.trim() : '';
+
+                        if (!email) {
+                            showOverlayError('Email Required', 'Please enter a valid email address.');
+                            return;
+                        }
+
+                        showOverlayLoader('Subscribing...');
+
+                        const result = await submitSubscriber({
+                            apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            email: email,
+                            source: 'website_footer'
+                        });
+
+                        if (result && result.success !== false) {
+                            showOverlaySuccess('Subscribed Successfully!', 'Thank you for subscribing to our newsletter!');
+                            form.reset();
+                        } else {
+                            showOverlayError('Subscription Failed', result?.error || 'Unable to subscribe right now. Please try again later.');
+                        }
                     }
                 }, true);
             });
