@@ -2,22 +2,50 @@
 <html lang="ar" dir="rtl">
 
 <head>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
     <style id="arabic-native-styles">
-        body, h1, h2, h3, h4, h5, h6, input, textarea, button, select, span, p, a, div, li, td, th {
+        body,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        input,
+        textarea,
+        button,
+        select,
+        span,
+        p,
+        a,
+        div,
+        li,
+        td,
+        th {
             font-family: 'Cairo', 'Inter', sans-serif !important;
         }
-        html[dir="rtl"], body {
+
+        html[dir="rtl"],
+        body {
             direction: rtl !important;
             text-align: right !important;
         }
-        .pxl-heading, .pxl-text-editor, .elementor-widget-container, .pxl-item--inner {
+
+        .pxl-heading,
+        .pxl-text-editor,
+        .elementor-widget-container,
+        .pxl-item--inner {
             text-align: right !important;
         }
-        .pxl-header-box, .pxl-header-main, .pxl-nav-primary, .pxl-topbar-inner {
+
+        .pxl-header-box,
+        .pxl-header-main,
+        .pxl-nav-primary,
+        .pxl-topbar-inner {
             direction: rtl !important;
         }
-        
+
         /* Move Green Quote SVG cb3b371 & decorative icons completely to the left in RTL */
         .elementor-element.elementor-element-cb3b371,
         html[dir="rtl"] .elementor-element-cb3b371,
@@ -44,6 +72,7 @@
         html[dir="rtl"] .pxl-button-icon svg {
             transform: scaleX(-1) !important;
         }
+
         html[dir="rtl"] .btn-icon-left,
         html[dir="rtl"] .btn-icon-right,
         html[dir="rtl"] .pxl--btn-icon {
@@ -206,7 +235,7 @@
         }
 
         /* Prevent double icon: Hide redundant .btn-icon-right whenever .btn-icon-left is present */
-        html[dir="rtl"] .btn-icon-left ~ .btn-icon-right,
+        html[dir="rtl"] .btn-icon-left~.btn-icon-right,
         html[dir="rtl"] .btn:has(.btn-icon-left) .btn-icon-right,
         html[dir="rtl"] a:has(.btn-icon-left) .btn-icon-right,
         html[dir="rtl"] .pxl-button:has(.btn-icon-left) .btn-icon-right {
@@ -259,10 +288,12 @@
             margin-left: 10px !important;
             margin-right: 0 !important;
         }
+
         .pxl-link .pxl-item--inner svg {
             margin-left: 8px !important;
             margin-right: 0 !important;
         }
+
         .lang-switcher-floating {
             position: fixed !important;
             bottom: 25px !important;
@@ -281,6 +312,7 @@
             font-weight: 700 !important;
             font-size: 14px !important;
         }
+
         .lang-switcher-floating a {
             text-decoration: none !important;
             color: #333333 !important;
@@ -288,10 +320,12 @@
             border-radius: 20px !important;
             transition: all 0.3s ease !important;
         }
+
         .lang-switcher-floating a.active {
             background-color: #3ca200 !important;
             color: #ffffff !important;
         }
+
         .wpcf7-form input[type="email"],
         .wpcf7-email,
         input[name="your-email"] {
@@ -841,84 +875,97 @@
             #pxl-header-elementor .px-header--left_sidebar {
                 border-style: solid;
             }
-        /* Custom Header Compact Height, Full Width (0 X-Padding) & Enlarge Logo */
-        #pxl-header-elementor .pxl-header-elementor-main {
-            padding: 0 !important;
-        }
-        #pxl-header-elementor .pxl-header-content {
-            padding: 0 !important;
-        }
-        #pxl-header-elementor .pxl-header-content .row {
-            margin-left: 0 !important;
-            margin-right: 0 !important;
-        }
-        #pxl-header-elementor .pxl-header-content .col-12 {
-            padding-left: 0 !important;
-            padding-right: 0 !important;
-        }
-        #pxl-header-elementor .elementor-element-67d316b,
-        #pxl-header-elementor .elementor-element-67d316b.e-parent {
-            padding-top: 0px !important;
-            padding-bottom: 12px !important;
-            padding-left: 20px !important;
-            padding-right: 20px !important;
-            min-height: auto !important;
-            height: auto !important;
-            width: 100% !important;
-            max-width: 100% !important;
-        }
-        #pxl-header-elementor .elementor-element-67d316b .e-con-inner {
-            padding-top: 2px !important;
-            padding-bottom: 2px !important;
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-            min-height: auto !important;
-            align-items: center !important;
-            max-width: 100% !important;
-            width: 100% !important;
-        }
-        #pxl-header-elementor .elementor-element-ca903cf,
-        #pxl-header-elementor .elementor-element-ba3c59a,
-        #pxl-header-elementor .elementor-element-2cb3631 {
-            margin-top: 0 !important;
-            margin-bottom: 0 !important;
-            padding-top: 0 !important;
-            padding-bottom: 0 !important;
-        }
-        #pxl-header-elementor .elementor-shape-bottom {
-            height: 18px !important;
-            bottom: -1px !important;
-        }
-        #pxl-header-elementor .elementor-shape-bottom svg {
-            height: 18px !important;
-        }
-        .elementor-widget-pxl_logo .pxl-logo img {
-            max-height: 100px !important;
-            width: auto !important;
-            object-fit: contain !important;
-            display: block !important;
-            margin: 0 auto !important;
-            transition: all 0.3s ease !important;
-        }
-        .pxl-header-branding img,
-        .pxl-logo-mobile img {
-            max-height: 75px !important;
-            width: auto !important;
-            object-fit: contain !important;
-            display: block !important;
-        }
-        @media (max-width: 991px) {
-            #pxl-header-mobile #pxl-header-main {
-                padding-top: 0px !important;
-                padding-bottom: 0px !important;
+
+            /* Custom Header Compact Height, Full Width (0 X-Padding) & Enlarge Logo */
+            #pxl-header-elementor .pxl-header-elementor-main {
+                padding: 0 !important;
             }
+
+            #pxl-header-elementor .pxl-header-content {
+                padding: 0 !important;
+            }
+
+            #pxl-header-elementor .pxl-header-content .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            #pxl-header-elementor .pxl-header-content .col-12 {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            #pxl-header-elementor .elementor-element-67d316b,
+            #pxl-header-elementor .elementor-element-67d316b.e-parent {
+                padding-top: 0px !important;
+                padding-bottom: 12px !important;
+                padding-left: 20px !important;
+                padding-right: 20px !important;
+                min-height: auto !important;
+                height: auto !important;
+                width: 100% !important;
+                max-width: 100% !important;
+            }
+
+            #pxl-header-elementor .elementor-element-67d316b .e-con-inner {
+                padding-top: 2px !important;
+                padding-bottom: 2px !important;
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                min-height: auto !important;
+                align-items: center !important;
+                max-width: 100% !important;
+                width: 100% !important;
+            }
+
+            #pxl-header-elementor .elementor-element-ca903cf,
+            #pxl-header-elementor .elementor-element-ba3c59a,
+            #pxl-header-elementor .elementor-element-2cb3631 {
+                margin-top: 0 !important;
+                margin-bottom: 0 !important;
+                padding-top: 0 !important;
+                padding-bottom: 0 !important;
+            }
+
+            #pxl-header-elementor .elementor-shape-bottom {
+                height: 18px !important;
+                bottom: -1px !important;
+            }
+
+            #pxl-header-elementor .elementor-shape-bottom svg {
+                height: 18px !important;
+            }
+
+            .elementor-widget-pxl_logo .pxl-logo img {
+                max-height: 100px !important;
+                width: auto !important;
+                object-fit: contain !important;
+                display: block !important;
+                margin: 0 auto !important;
+                transition: all 0.3s ease !important;
+            }
+
             .pxl-header-branding img,
             .pxl-logo-mobile img {
-                max-height: 70px !important;
+                max-height: 75px !important;
+                width: auto !important;
+                object-fit: contain !important;
+                display: block !important;
             }
-        }
 
-        /*# sourceURL=pxl-style-inline-css */
+            @media (max-width: 991px) {
+                #pxl-header-mobile #pxl-header-main {
+                    padding-top: 0px !important;
+                    padding-bottom: 0px !important;
+                }
+
+                .pxl-header-branding img,
+                .pxl-logo-mobile img {
+                    max-height: 70px !important;
+                }
+            }
+
+            /*# sourceURL=pxl-style-inline-css */
     </style>
     <link rel='stylesheet' id='pxl-base-css'
         href='https://demo.casethemes.net/genfresco/wp-content/themes/genfresco/pxl-base.min.css?ver=1.0.0'
@@ -1281,7 +1328,8 @@
         }
 
         /* Full Form Overlay Styles for Loading and Success/Error States */
-        .pxl-contact-form, .wrap-form {
+        .pxl-contact-form,
+        .wrap-form {
             position: relative !important;
         }
 
@@ -1309,8 +1357,15 @@
         }
 
         @keyframes formOverlayFadeIn {
-            from { opacity: 0; transform: scale(0.96); }
-            to { opacity: 1; transform: scale(1); }
+            from {
+                opacity: 0;
+                transform: scale(0.96);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
         }
 
         .form-spinner {
@@ -1324,8 +1379,13 @@
         }
 
         @keyframes formSpin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         .form-overlay-icon {
@@ -1513,9 +1573,14 @@
                                             data-widget_type="pxl_logo.default">
                                             <div class="elementor-widget-container">
                                                 <div class="pxl-logo " data-wow-delay="ms">
-                                                    <div class="pxl-logo-inner" style="display: flex; align-items: center; gap: 14px; direction: ltr;">
-                                                        <a href="index-ar.html"> <img src="assets/images/logo/logo.png" style="max-height: 100px; width: auto; object-fit: contain;" class="attachment-full" alt="الدوكي للتنظيف" /> </a>
-                                                        <span class="owner-name-tag" style="font-weight: 800; font-size: 17px; color: #0d2b0f; letter-spacing: 0.3px; line-height: 1.2; white-space: nowrap;">مؤسسة حسناء علي بن محمد الدوخي</span>
+                                                    <div class="pxl-logo-inner"
+                                                        style="display: flex; align-items: center; gap: 14px; direction: ltr;">
+                                                        <a href="index-ar.html"> <img src="assets/images/logo/logo.png"
+                                                                style="max-height: 100px; width: auto; object-fit: contain;"
+                                                                class="attachment-full" alt="الدوكي للتنظيف" /> </a>
+                                                        <span class="owner-name-tag"
+                                                            style="font-weight: 800; font-size: 17px; color: #0d2b0f; letter-spacing: 0.3px; line-height: 1.2; white-space: nowrap;">مؤسسة
+                                                            حسناء علي بن محمد الدوخي</span>
                                                     </div>
                                                 </div>
                                             </div>
@@ -1556,20 +1621,30 @@
                                                 <div class="elementor-widget-container">
                                                     <div class="pxl-language-switch default" data-wow-delay="ms">
                                                         <div class="language">
-                                                            <a class="language-first" href="index-ar.html" style="text-decoration:none;">
-                                                                <img width="20" height="14" src="https://flagcdn.com/w40/us.png" alt="EN" style="border-radius:2px;" />
+                                                            <a class="language-first" href="index-ar.html"
+                                                                style="text-decoration:none;">
+                                                                <img width="20" height="14"
+                                                                    src="https://flagcdn.com/w40/us.png" alt="EN"
+                                                                    style="border-radius:2px;" />
                                                                 <span>الإنجليزية</span>
-                                                                <i class="fas fa-chevron-down" style="font-size:10px;"></i>
+                                                                <i class="fas fa-chevron-down"
+                                                                    style="font-size:10px;"></i>
                                                             </a>
                                                             <div class="list-language">
                                                                 <div class="pxl--item">
                                                                     <a href="index.html">
-                                                                        <img width="20" height="14" src="https://flagcdn.com/w40/us.png" alt="English" style="border-radius:2px;" /> الإنجليزية
+                                                                        <img width="20" height="14"
+                                                                            src="https://flagcdn.com/w40/us.png"
+                                                                            alt="English" style="border-radius:2px;" />
+                                                                        الإنجليزية
                                                                     </a>
                                                                 </div>
                                                                 <div class="pxl--item">
                                                                     <a href="index-ar.html">
-                                                                        <img width="20" height="14" src="https://flagcdn.com/w40/sa.png" alt="العربية" style="border-radius:2px;" /> العربية
+                                                                        <img width="20" height="14"
+                                                                            src="https://flagcdn.com/w40/sa.png"
+                                                                            alt="العربية" style="border-radius:2px;" />
+                                                                        العربية
                                                                     </a>
                                                                 </div>
                                                             </div>
@@ -1621,7 +1696,7 @@
                                                                 اتصل بنا</h5>
                                                             <div
                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                (628) 820 820</div>
+                                                                ( +966)50126016</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -1640,8 +1715,7 @@
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
                                                                 <a href="#home" class="is-one-page">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>الرئيسية</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>الرئيسية</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1658,8 +1732,7 @@
                                                                 <a href="#service" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>خدماتنا</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>خدماتنا</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1676,8 +1749,7 @@
                                                                 <a href="#about" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>من نحن</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>من نحن</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1712,8 +1784,7 @@
                                                                 <a href="#blog" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>المقالات</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>المقالات</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1730,8 +1801,7 @@
                                                                 <a href="#contact" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>اتصل بنا</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>اتصل بنا</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1755,8 +1825,7 @@
                                                 <div id="pxl-pxl_button-b72ebad-2489" class="pxl-button pxl-atc-link "
                                                     data-wow-delay="ms"> <a href="#contact"
                                                         class="btn   pxl-btn-purple inline pxl-icon--left is-one-page">
-                                                        <span
-                                                            class="btn-icon-left"> <svg
+                                                        <span class="btn-icon-left"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="11"
                                                                 height="11" viewBox="0 0 11 11" fill="none">
                                                                 <path d="M1 9.33333L9.33333 1M9.33333 9.33333V1H1"
@@ -1849,8 +1918,7 @@
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
                                                                 <a href="#home" class="is-one-page">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>الرئيسية</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>الرئيسية</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1867,8 +1935,7 @@
                                                                 <a href="#service" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>خدماتنا</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>خدماتنا</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1885,8 +1952,7 @@
                                                                 <a href="#about" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>من نحن</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>من نحن</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1921,8 +1987,7 @@
                                                                 <a href="#blog" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>المقالات</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>المقالات</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1939,8 +2004,7 @@
                                                                 <a href="#contact" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
-                                                                        <span>اتصل بنا</span><svg
-                                                                            class="pxl-hide"
+                                                                        <span>اتصل بنا</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="10" height="6" viewBox="0 0 10 6"
                                                                             fill="none">
@@ -1964,8 +2028,7 @@
                                                 <div id="pxl-pxl_button-b72ebad-3036" class="pxl-button pxl-atc-link "
                                                     data-wow-delay="ms"> <a href="#contact"
                                                         class="btn   pxl-btn-purple inline pxl-icon--left is-one-page">
-                                                        <span
-                                                            class="btn-icon-left"> <svg
+                                                        <span class="btn-icon-left"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="11"
                                                                 height="11" viewBox="0 0 11 11" fill="none">
                                                                 <path d="M1 9.33333L9.33333 1M9.33333 9.33333V1H1"
@@ -1996,9 +2059,8 @@
                     <div class="container">
                         <div class="row">
                             <div class="pxl-header-mobile-default">
-                                <div class="pxl-header-branding"> <a href="index-ar.html"
-                                        title="الدوكي للتنظيف" rel="home"><img
-                                            src="assets/images/logo/logo.png"
+                                <div class="pxl-header-branding"> <a href="index-ar.html" title="الدوكي للتنظيف"
+                                        rel="home"><img src="assets/images/logo/logo.png"
                                             style="max-height: 80px; width: auto; object-fit: contain;"
                                             alt="الدوكي للتنظيف" /></a></div>
                                 <div id="pxl-nav-mobile">
@@ -2011,16 +2073,15 @@
                             <div class="pxl-header-menu">
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
-                                    <div class="pxl-logo-mobile pxl-hide-xl"> <a
-                                            href="index-ar.html" title="الدوكي للتنظيف"
-                                            rel="home"><img
-                                                src="assets/images/logo/logo.png"
+                                    <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index-ar.html"
+                                            title="الدوكي للتنظيف" rel="home"><img src="assets/images/logo/logo.png"
                                                 style="max-height: 80px; width: auto; object-fit: contain;"
                                                 alt="الدوكي للتنظيف" /></a></div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
                                         <form role="search" method="get"
                                             action="https://demo.casethemes.net/genfresco/">
-                                            <input type="text" placeholder="ابحث هنا..." name="s" class="search-field" />
+                                            <input type="text" placeholder="ابحث هنا..." name="s"
+                                                class="search-field" />
                                             <button type="submit" class="search-submit"><i
                                                     class="bi-search"></i></button>
                                         </form>
@@ -2038,8 +2099,8 @@
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
-                                                <a href="#about" class="is-one-page"
-                                                    data-onepage-offset="100"><span>من نحن</span></a>
+                                                <a href="#about" class="is-one-page" data-onepage-offset="100"><span>من
+                                                        نحن</span></a>
                                             </li>
                                             <!-- <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6210">
@@ -2114,7 +2175,9 @@
                                                                     <div class="pxl-text-editor default">
                                                                         <div class="pxl-item--inner wow fadeInUp"
                                                                             data-wow-delay="300ms">
-                                                                            <p>اقضِ وقتاً أقل في القلق بشأن التنظيف ووقتاً أطول في الاستمتاع ببيئة نظيفة، صحية، ومريحة بشكل رائع.</p>
+                                                                            <p>اقضِ وقتاً أقل في القلق بشأن التنظيف
+                                                                                ووقتاً أطول في الاستمتاع ببيئة نظيفة،
+                                                                                صحية، ومريحة بشكل رائع.</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2139,7 +2202,10 @@
                                                                                         stroke="white" stroke-width="2"
                                                                                         stroke-linecap="round"
                                                                                         stroke-linejoin="round"></path>
-                                                                                </svg> </span> <span class="pxl--btn-text" data-text="خدماتنا المتميزة"><span>خدماتنا المتميزة</span></span></a></div>
+                                                                                </svg> </span> <span
+                                                                                class="pxl--btn-text"
+                                                                                data-text="خدماتنا المتميزة"><span>خدماتنا
+                                                                                    المتميزة</span></span></a></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2159,7 +2225,9 @@
                                                                             </defs> <text dominant-baseline="middle">
                                                                                 <textPath
                                                                                     href="#circlePath-pxl_case_badge-6088006-5076"
-                                                                                    startOffset="0%"> دعم متواصل - 24 ساعة - دعم متواصل - 24 ساعة ------------------------ </textPath>
+                                                                                    startOffset="0%"> دعم متواصل - 24
+                                                                                    ساعة - دعم متواصل - 24 ساعة
+                                                                                    ------------------------ </textPath>
                                                                             </text>
                                                                         </svg>
                                                                         <div class="inner-hexagon icon-active"> <svg
@@ -2307,7 +2375,9 @@
                                                                     <div class="pxl-text-editor default">
                                                                         <div class="pxl-item--inner "
                                                                             data-wow-delay="ms">
-                                                                            <p>نقدم نظافة متكاملة وعالية الجودة تحافظ على كل منزل منعشاً، ناصع النظافة ومريحاً.</p>
+                                                                            <p>نقدم نظافة متكاملة وعالية الجودة تحافظ
+                                                                                على كل منزل منعشاً، ناصع النظافة
+                                                                                ومريحاً.</p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2367,7 +2437,9 @@
                                                                     <div class="pxl-text-editor default">
                                                                         <div class="pxl-item--inner "
                                                                             data-wow-delay="ms">
-                                                                            <p>محل ثقة أصحاب المنازل لتنظيف موثوق يركز على التفاصيل مع نتائج مذهلة في كل مرة.</p>
+                                                                            <p>محل ثقة أصحاب المنازل لتنظيف موثوق يركز
+                                                                                على التفاصيل مع نتائج مذهلة في كل مرة.
+                                                                            </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2427,7 +2499,9 @@
                                                                     <div class="pxl-text-editor default">
                                                                         <div class="pxl-item--inner "
                                                                             data-wow-delay="ms">
-                                                                            <p>نقدم خبرة سنوات عديدة لتوفير خدمات تنظيف احترافية، فعالة، وبأعلى معايير الجودة.</p>
+                                                                            <p>نقدم خبرة سنوات عديدة لتوفير خدمات تنظيف
+                                                                                احترافية، فعالة، وبأعلى معايير الجودة.
+                                                                            </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -2577,7 +2651,8 @@
                                                                     <div class="pxl-item--subtitle px-sub-title-default pxl-heading__subtitle"
                                                                         data-wow-delay="ms"> <span
                                                                             class="pxl-item--subtext pxl-heading__subtext">
-                                                                            <span class=""> خدماتنا المتميزة </span> </span>
+                                                                            <span class=""> خدماتنا المتميزة </span>
+                                                                        </span>
                                                                     </div>
                                                                     <h2 class="pxl-item--title style-default highlight-default wow PXLZoom2 pxl-heading__title"
                                                                         data-wow-delay="ms"> <span
@@ -2594,7 +2669,8 @@
                                                             <div class="pxl-text-editor default">
                                                                 <div class="pxl-item--inner wow PXLZoom2"
                                                                     data-wow-delay="150ms">
-                                                                    <p>نقدم خدمات تنظيف عالية الجودة ومستمرة مصممة للحفاظ على منزلك منعشاً وصحياً يومياً.</p>
+                                                                    <p>نقدم خدمات تنظيف عالية الجودة ومستمرة مصممة
+                                                                        للحفاظ على منزلك منعشاً وصحياً يومياً.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -2649,17 +2725,21 @@
                                                                         <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill active"
                                                                             data-target="#pxl_tab_service-3411548-6950-1401">
-                                                                            <span class="pxl-title--text"> تنظيف المنازل والفلل </span> </span> <span
+                                                                            <span class="pxl-title--text"> تنظيف المنازل
+                                                                                والفلل </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1399">
-                                                                            <span class="pxl-title--text"> تنظيف المكاتب والشركات </span> </span> <span
+                                                                            <span class="pxl-title--text"> تنظيف المكاتب
+                                                                                والشركات </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1397">
-                                                                            <span class="pxl-title--text"> التنظيف الشامل والعميق
+                                                                            <span class="pxl-title--text"> التنظيف
+                                                                                الشامل والعميق
                                                                             </span> </span> <span
                                                                             class="pxl-item--title pxl-tab-service__header-pill "
                                                                             data-target="#pxl_tab_service-3411548-6950-1395">
-                                                                            <span class="pxl-title--text"> تنظيف شامل ومرن </span> </span>
+                                                                            <span class="pxl-title--text"> تنظيف شامل
+                                                                                ومرن </span> </span>
                                                                     </div>
                                                                     <div
                                                                         class="pxl-tabs--content pxl-tab-service__content-wrapper">
@@ -2670,7 +2750,10 @@
                                                                                 <div class="pxl-tab-service__details">
                                                                                     <h4 class="pxl-service__title">
                                                                                         تنظيف المنازل والفلل</h4>
-                                                                                    <p class="pxl-service__desc"> نساعد في الحفاظ على منزل نظيف، منعش، ومريح من خلال خدمات نظافة استثنائية.</p>
+                                                                                    <p class="pxl-service__desc"> نساعد
+                                                                                        في الحفاظ على منزل نظيف، منعش،
+                                                                                        ومريح من خلال خدمات نظافة
+                                                                                        استثنائية.</p>
                                                                                     <ul class="pxl-service__features">
                                                                                         <li
                                                                                             class="pxl-service__feature">
@@ -2692,7 +2775,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح والزوايا
+                                                                                                تنظيف عميق لجميع الأسطح
+                                                                                                والزوايا
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2715,7 +2799,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس، والتعقيم الشامل
+                                                                                                إزالة الغبار، الكنس،
+                                                                                                والتعقيم الشامل
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2738,7 +2823,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة 100%
+                                                                                                منتجات تنظيف بيئية وآمنة
+                                                                                                100%
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2769,7 +2855,8 @@
                                                                                             href="https://demo.casethemes.net/genfresco/service/house-cleaning/"
                                                                                             class="pxl-service__btn">
                                                                                             <span
-                                                                                                class="pxl-service__btn-text">اقرأ المزيد</span> <span
+                                                                                                class="pxl-service__btn-text">اقرأ
+                                                                                                المزيد</span> <span
                                                                                                 class="pxl-service__btn-icon">
                                                                                                 <svg width="14"
                                                                                                     height="14"
@@ -2809,7 +2896,9 @@
                                                                                     <h4 class="pxl-service__title">
                                                                                         تنظيف المكاتب والشركات</h4>
                                                                                     <p class="pxl-service__desc">
-                                                                                        حافظ على بيئة عمل نظيفة ومحفزة للإنتاجية مع خدمات تنظيف المكاتب الموثوقة لدينا.</p>
+                                                                                        حافظ على بيئة عمل نظيفة ومحفزة
+                                                                                        للإنتاجية مع خدمات تنظيف المكاتب
+                                                                                        الموثوقة لدينا.</p>
                                                                                     <ul class="pxl-service__features">
                                                                                         <li
                                                                                             class="pxl-service__feature">
@@ -2831,7 +2920,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح والزوايا
+                                                                                                تنظيف عميق لجميع الأسطح
+                                                                                                والزوايا
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2854,7 +2944,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس، والتعقيم الشامل
+                                                                                                إزالة الغبار، الكنس،
+                                                                                                والتعقيم الشامل
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2877,7 +2968,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة 100%
+                                                                                                منتجات تنظيف بيئية وآمنة
+                                                                                                100%
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2908,7 +3000,8 @@
                                                                                             href="https://demo.casethemes.net/genfresco/service/office-cleaning/"
                                                                                             class="pxl-service__btn">
                                                                                             <span
-                                                                                                class="pxl-service__btn-text">اقرأ المزيد</span> <span
+                                                                                                class="pxl-service__btn-text">اقرأ
+                                                                                                المزيد</span> <span
                                                                                                 class="pxl-service__btn-icon">
                                                                                                 <svg width="14"
                                                                                                     height="14"
@@ -2945,8 +3038,12 @@
                                                                             class="pxl-item--content pxl-tab-service__panel ">
                                                                             <div class="pxl-tab-service__grid">
                                                                                 <div class="pxl-tab-service__details">
-                                                                                    <h4 class="pxl-service__title"> التنظيف الشامل والعميق</h4>
-                                                                                    <p class="pxl-service__desc"> نقدم تنظيفاً شاملاً وعميقاً لكل زاوية، مما يقضي على الأتربة المتراكمة والبكتيريا.</p>
+                                                                                    <h4 class="pxl-service__title">
+                                                                                        التنظيف الشامل والعميق</h4>
+                                                                                    <p class="pxl-service__desc"> نقدم
+                                                                                        تنظيفاً شاملاً وعميقاً لكل
+                                                                                        زاوية، مما يقضي على الأتربة
+                                                                                        المتراكمة والبكتيريا.</p>
                                                                                     <ul class="pxl-service__features">
                                                                                         <li
                                                                                             class="pxl-service__feature">
@@ -2968,7 +3065,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح والزوايا
+                                                                                                تنظيف عميق لجميع الأسطح
+                                                                                                والزوايا
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -2991,7 +3089,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس، والتعقيم الشامل
+                                                                                                إزالة الغبار، الكنس،
+                                                                                                والتعقيم الشامل
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -3014,7 +3113,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة 100%
+                                                                                                منتجات تنظيف بيئية وآمنة
+                                                                                                100%
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -3045,7 +3145,8 @@
                                                                                             href="https://demo.casethemes.net/genfresco/service/deep-cleaning/"
                                                                                             class="pxl-service__btn">
                                                                                             <span
-                                                                                                class="pxl-service__btn-text">اقرأ المزيد</span> <span
+                                                                                                class="pxl-service__btn-text">اقرأ
+                                                                                                المزيد</span> <span
                                                                                                 class="pxl-service__btn-icon">
                                                                                                 <svg width="14"
                                                                                                     height="14"
@@ -3084,7 +3185,9 @@
                                                                                 <div class="pxl-tab-service__details">
                                                                                     <h4 class="pxl-service__title">
                                                                                         تنظيف مرن حسب احتياجك</h4>
-                                                                                    <p class="pxl-service__desc"> اختر خدمات تنظيف مخصصة تناسب جدولك الزمني واحتياجاتك الخاصة.</p>
+                                                                                    <p class="pxl-service__desc"> اختر
+                                                                                        خدمات تنظيف مخصصة تناسب جدولك
+                                                                                        الزمني واحتياجاتك الخاصة.</p>
                                                                                     <ul class="pxl-service__features">
                                                                                         <li
                                                                                             class="pxl-service__feature">
@@ -3106,7 +3209,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح والزوايا
+                                                                                                تنظيف عميق لجميع الأسطح
+                                                                                                والزوايا
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -3129,7 +3233,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس، والتعقيم الشامل
+                                                                                                إزالة الغبار، الكنس،
+                                                                                                والتعقيم الشامل
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -3152,7 +3257,8 @@
                                                                                                     </polyline>
                                                                                                 </svg> </span> <span
                                                                                                 class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة 100%
+                                                                                                منتجات تنظيف بيئية وآمنة
+                                                                                                100%
                                                                                             </span>
                                                                                         </li>
                                                                                         <li
@@ -3183,7 +3289,8 @@
                                                                                             href="https://demo.casethemes.net/genfresco/service/general-flexible/"
                                                                                             class="pxl-service__btn">
                                                                                             <span
-                                                                                                class="pxl-service__btn-text">اقرأ المزيد</span> <span
+                                                                                                class="pxl-service__btn-text">اقرأ
+                                                                                                المزيد</span> <span
                                                                                                 class="pxl-service__btn-icon">
                                                                                                 <svg width="14"
                                                                                                     height="14"
@@ -3285,7 +3392,8 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="pxl-text-editor default">
                                                                 <div class="pxl-item--inner " data-wow-delay="ms">
-                                                                    <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ على منزلك صحياً ونظيفاً دائماً.</p>
+                                                                    <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ على
+                                                                        منزلك صحياً ونظيفاً دائماً.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3328,7 +3436,8 @@
                                                                             <h5 class="pxl-item--title style-default highlight-default pxl-heading__title"
                                                                                 data-wow-delay="ms"> <span
                                                                                     class="pxl-heading--text pxl-heading__text">
-                                                                                    خدمات معتمدة وحاصلة على جوائز الجودة </span></h5>
+                                                                                    خدمات معتمدة وحاصلة على جوائز الجودة
+                                                                                </span></h5>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3354,7 +3463,8 @@
                                                                                             clip-rule="evenodd"
                                                                                             d="M8.75005 0C13.5817 0 17.5001 3.91838 17.5001 8.75005C17.5001 13.5817 13.5817 17.5001 8.75005 17.5001C3.91838 17.5001 0 13.5817 0 8.75005C0 3.91838 3.91838 0 8.75005 0ZM6.93299 11.5921L4.79077 9.44814C4.42581 9.08296 4.42573 8.48745 4.79077 8.12235C5.15588 7.75732 5.75403 7.7596 6.11649 8.12235L7.62674 9.63379L11.3838 5.87678C11.7489 5.51167 12.3444 5.51167 12.7095 5.87678C13.0746 6.24182 13.0741 6.8379 12.7095 7.2025L8.28853 11.6234C7.92394 11.988 7.32785 11.9886 6.96281 11.6234C6.95256 11.6132 6.94266 11.6028 6.93299 11.5921Z"
                                                                                             fill="#3CA200"></path>
-                                                                                    </svg> <span>فريق متخصص ومحترف</span></div>
+                                                                                    </svg> <span>فريق متخصص
+                                                                                        ومحترف</span></div>
                                                                             </li>
                                                                             <li class="pxl-item--link">
                                                                                 <div class="pxl-item--inner"> <svg
@@ -3365,7 +3475,8 @@
                                                                                             clip-rule="evenodd"
                                                                                             d="M8.75005 0C13.5817 0 17.5001 3.91838 17.5001 8.75005C17.5001 13.5817 13.5817 17.5001 8.75005 17.5001C3.91838 17.5001 0 13.5817 0 8.75005C0 3.91838 3.91838 0 8.75005 0ZM6.93299 11.5921L4.79077 9.44814C4.42581 9.08296 4.42573 8.48745 4.79077 8.12235C5.15588 7.75732 5.75403 7.7596 6.11649 8.12235L7.62674 9.63379L11.3838 5.87678C11.7489 5.51167 12.3444 5.51167 12.7095 5.87678C13.0746 6.24182 13.0741 6.8379 12.7095 7.2025L8.28853 11.6234C7.92394 11.988 7.32785 11.9886 6.96281 11.6234C6.95256 11.6132 6.94266 11.6028 6.93299 11.5921Z"
                                                                                             fill="#3CA200"></path>
-                                                                                    </svg> <span>خدمة موثوقة وفائقة الدقة
+                                                                                    </svg> <span>خدمة موثوقة وفائقة
+                                                                                        الدقة
                                                                                         Quality</span></div>
                                                                             </li>
                                                                             <li class="pxl-item--link">
@@ -3404,7 +3515,10 @@
                                                                                         stroke="white" stroke-width="2"
                                                                                         stroke-linecap="round"
                                                                                         stroke-linejoin="round"></path>
-                                                                                </svg> </span> <span class="pxl--btn-text" data-text="اكتشف المزيد"><span>اكتشف المزيد</span></span></a></div>
+                                                                                </svg> </span> <span
+                                                                                class="pxl--btn-text"
+                                                                                data-text="اكتشف المزيد"><span>اكتشف
+                                                                                    المزيد</span></span></a></div>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3446,7 +3560,8 @@
                                                         <div class="elementor-widget-container">
                                                             <div class="pxl-text-editor default">
                                                                 <div class="pxl-item--inner " data-wow-delay="ms">
-                                                                    <p>نوفر خدمات تنظيف موثوقة وعالية الجودة لتغطية كافة متطلبات النظافة ببراعة.</p>
+                                                                    <p>نوفر خدمات تنظيف موثوقة وعالية الجودة لتغطية كافة
+                                                                        متطلبات النظافة ببراعة.</p>
                                                                 </div>
                                                             </div>
                                                         </div>
@@ -3467,7 +3582,8 @@
                                                                                     clip-rule="evenodd"
                                                                                     d="M8.75005 0C13.5817 0 17.5001 3.91838 17.5001 8.75005C17.5001 13.5817 13.5817 17.5001 8.75005 17.5001C3.91838 17.5001 0 13.5817 0 8.75005C0 3.91838 3.91838 0 8.75005 0ZM6.93299 11.5921L4.79077 9.44814C4.42581 9.08296 4.42573 8.48745 4.79077 8.12235C5.15588 7.75732 5.75403 7.7596 6.11649 8.12235L7.62674 9.63379L11.3838 5.87678C11.7489 5.51167 12.3444 5.51167 12.7095 5.87678C13.0746 6.24182 13.0741 6.8379 12.7095 7.2025L8.28853 11.6234C7.92394 11.988 7.32785 11.9886 6.96281 11.6234C6.95256 11.6132 6.94266 11.6028 6.93299 11.5921Z"
                                                                                     fill="#3CA200"></path>
-                                                                            </svg> <span>فنيون مدربون ومحترفون</span></div>
+                                                                            </svg> <span>فنيون مدربون ومحترفون</span>
+                                                                        </div>
                                                                     </li>
                                                                     <li class="pxl-item--link">
                                                                         <div class="pxl-item--inner"> <svg
@@ -3478,7 +3594,8 @@
                                                                                     clip-rule="evenodd"
                                                                                     d="M8.75005 0C13.5817 0 17.5001 3.91838 17.5001 8.75005C17.5001 13.5817 13.5817 17.5001 8.75005 17.5001C3.91838 17.5001 0 13.5817 0 8.75005C0 3.91838 3.91838 0 8.75005 0ZM6.93299 11.5921L4.79077 9.44814C4.42581 9.08296 4.42573 8.48745 4.79077 8.12235C5.15588 7.75732 5.75403 7.7596 6.11649 8.12235L7.62674 9.63379L11.3838 5.87678C11.7489 5.51167 12.3444 5.51167 12.7095 5.87678C13.0746 6.24182 13.0741 6.8379 12.7095 7.2025L8.28853 11.6234C7.92394 11.988 7.32785 11.9886 6.96281 11.6234C6.95256 11.6132 6.94266 11.6028 6.93299 11.5921Z"
                                                                                     fill="#3CA200"></path>
-                                                                            </svg> <span>خدمة موثوقة وفائقة الدقة</span></div>
+                                                                            </svg> <span>خدمة موثوقة وفائقة الدقة</span>
+                                                                        </div>
                                                                     </li>
                                                                 </ul>
                                                             </div>
@@ -3492,8 +3609,7 @@
                                                                 class="pxl-button pxl-atc-link wow fadeInRight"
                                                                 data-wow-delay="450ms"> <a href="#contact"
                                                                     class="btn  btn-text-nina btn-icon inline pxl-icon--left is-one-page">
-                                                                    <span
-                                                                        class="btn-icon-left"> <svg
+                                                                    <span class="btn-icon-left"> <svg
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="11" height="11" viewBox="0 0 11 11"
                                                                             fill="none">
@@ -3502,7 +3618,9 @@
                                                                                 stroke="white" stroke-width="2"
                                                                                 stroke-linecap="round"
                                                                                 stroke-linejoin="round"></path>
-                                                                        </svg> </span> <span class="pxl--btn-text" data-text="احجز خدمات التنظيف الآن"><span>احجز خدمات التنظيف الآن</span></span></a></div>
+                                                                        </svg> </span> <span class="pxl--btn-text"
+                                                                        data-text="احجز خدمات التنظيف الآن"><span>احجز
+                                                                            خدمات التنظيف الآن</span></span></a></div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3527,7 +3645,8 @@
                                                                 <h2 class="pxl-item--title style-default highlight-default wow PXLZoom2 pxl-heading__title"
                                                                     data-wow-delay="ms"> <span
                                                                         class="pxl-heading--text pxl-heading__text">
-                                                                        نظافة احترافية يمكنك الوثوق بها دائماً </span></h2>
+                                                                        نظافة احترافية يمكنك الوثوق بها دائماً </span>
+                                                                </h2>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -3587,7 +3706,9 @@
                                                                                 طاقم تنظيف متخصص وخبير</h5>
                                                                             <div
                                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                                فريقنا الماهر والمدرب يقدم أفضل مستويات التنظيف مع اهتمام تام بأدق التفاصيل.</div>
+                                                                                فريقنا الماهر والمدرب يقدم أفضل مستويات
+                                                                                التنظيف مع اهتمام تام بأدق التفاصيل.
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3638,7 +3759,9 @@
                                                                                 مواد آمنة وصديقة للبيئة</h5>
                                                                             <div
                                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                                فريقنا الماهر والمدرب يقدم أفضل مستويات التنظيف مع اهتمام تام بأدق التفاصيل.</div>
+                                                                                فريقنا الماهر والمدرب يقدم أفضل مستويات
+                                                                                التنظيف مع اهتمام تام بأدق التفاصيل.
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3715,7 +3838,9 @@
                                                                                 ضمان رضا العملاء التام</h5>
                                                                             <div
                                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                                احجز خدماتك في الوقت الذي يناسبك مع خيارات مواعيد مرنة تناسب جدولك اليومي.</div>
+                                                                                احجز خدماتك في الوقت الذي يناسبك مع
+                                                                                خيارات مواعيد مرنة تناسب جدولك اليومي.
+                                                                            </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3770,7 +3895,8 @@
                                                                                 خدمة موثوقة وتزام تام بالمواعيد</h5>
                                                                             <div
                                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                                نضمن أن تلبي كل خدمة توقعاتك دائماً بجودة فائقة وعناية مستمرة.</div>
+                                                                                نضمن أن تلبي كل خدمة توقعاتك دائماً
+                                                                                بجودة فائقة وعناية مستمرة.</div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
@@ -3960,7 +4086,8 @@
                                                                         <h2 class="pxl-item--title style-default highlight-default wow PXLZoom2 pxl-heading__title"
                                                                             data-wow-delay="ms"> <span
                                                                                 class="pxl-heading--text pxl-heading__text">
-                                                                                خطوات بسيطة للحصول على مكان متألق </span></h2>
+                                                                                خطوات بسيطة للحصول على مكان متألق
+                                                                            </span></h2>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -3972,7 +4099,8 @@
                                                             <div class="elementor-widget-container">
                                                                 <div class="pxl-text-editor default">
                                                                     <div class="pxl-item--inner " data-wow-delay="ms">
-                                                                        <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ على منزلك صحياً ونظيفاً دائماً.</p>
+                                                                        <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ
+                                                                            على منزلك صحياً ونظيفاً دائماً.</p>
                                                                     </div>
                                                                 </div>
                                                             </div>
@@ -4145,7 +4273,9 @@
                                                                                         </div>
                                                                                         <div
                                                                                             class="pxl-item--description pxl-process__description el-empty">
-                                                                                            احجز خدمة التنظيف بسهولة في الوقت الذي يناسب روتينك — بسرعة، وبدون أي عناء.</div>
+                                                                                            احجز خدمة التنظيف بسهولة في
+                                                                                            الوقت الذي يناسب روتينك —
+                                                                                            بسرعة، وبدون أي عناء.</div>
                                                                                     </div>
                                                                                     <div class="pxl-item--right">
                                                                                         <div
@@ -4173,14 +4303,17 @@
                                                                                     <div class="pxl-item--left">
                                                                                         <h5
                                                                                             class="pxl-item--title pxl-process__title el-empty">
-                                                                                            فريقنا يتولى تنظيف مكانك بإتقان
+                                                                                            فريقنا يتولى تنظيف مكانك
+                                                                                            بإتقان
                                                                                         </h5>
                                                                                         <div
                                                                                             class="divide pxl-process__divide">
                                                                                         </div>
                                                                                         <div
                                                                                             class="pxl-item--description pxl-process__description el-empty">
-                                                                                            يصل فريقنا المحترف في الوقت المحدد تماماً ويقوم بتنظيف شامل ودقيق.</div>
+                                                                                            يصل فريقنا المحترف في الوقت
+                                                                                            المحدد تماماً ويقوم بتنظيف
+                                                                                            شامل ودقيق.</div>
                                                                                     </div>
                                                                                     <div class="pxl-item--right">
                                                                                         <div
@@ -4208,13 +4341,16 @@
                                                                                     <div class="pxl-item--left">
                                                                                         <h5
                                                                                             class="pxl-item--title pxl-process__title el-empty">
-                                                                                            استمتع بمنزلك الجديد والنظيف</h5>
+                                                                                            استمتع بمنزلك الجديد والنظيف
+                                                                                        </h5>
                                                                                         <div
                                                                                             class="divide pxl-process__divide">
                                                                                         </div>
                                                                                         <div
                                                                                             class="pxl-item--description pxl-process__description el-empty">
-                                                                                            استرخِ وارتَح بينما نتولى نحن العناية بمنزلك وتنظيفه بأعلى درجات الاتقان.</div>
+                                                                                            استرخِ وارتَح بينما نتولى
+                                                                                            نحن العناية بمنزلك وتنظيفه
+                                                                                            بأعلى درجات الاتقان.</div>
                                                                                     </div>
                                                                                     <div class="pxl-item--right">
                                                                                         <div
@@ -4976,7 +5112,12 @@
                                                                                             class="pxl-testimonial-carousel__item-inner ">
                                                                                             <p
                                                                                                 class="pxl-testimonial-carousel__description">
-                                                                                                “يبدو مكتبنا رائعاً جداً بعد التنظيف! عمل الفريق بكفاءة عالية دون إزعاج سير عملنا وقدم نتائج مذهلة. نوصي بهم بشدة للشركات.”</p>
+                                                                                                “يبدو مكتبنا رائعاً جداً
+                                                                                                بعد التنظيف! عمل الفريق
+                                                                                                بكفاءة عالية دون إزعاج
+                                                                                                سير عملنا وقدم نتائج
+                                                                                                مذهلة. نوصي بهم بشدة
+                                                                                                للشركات.”</p>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="pxl-swiper-slide">
@@ -4984,7 +5125,12 @@
                                                                                             class="pxl-testimonial-carousel__item-inner ">
                                                                                             <p
                                                                                                 class="pxl-testimonial-carousel__description">
-                                                                                                “خدمة موثوقة واحترافية للغاية بكل المقاييس. كان الفنيون دقيقين ومتمكنين ولم يتركوا أي بقعة. أنا سعيد جداً بالنتائج النظيفة.”</p>
+                                                                                                “خدمة موثوقة واحترافية
+                                                                                                للغاية بكل المقاييس. كان
+                                                                                                الفنيون دقيقين ومتمكنين
+                                                                                                ولم يتركوا أي بقعة. أنا
+                                                                                                سعيد جداً بالنتائج
+                                                                                                النظيفة.”</p>
                                                                                         </div>
                                                                                     </div>
                                                                                     <div class="pxl-swiper-slide">
@@ -4992,7 +5138,13 @@
                                                                                             class="pxl-testimonial-carousel__item-inner ">
                                                                                             <p
                                                                                                 class="pxl-testimonial-carousel__description">
-                                                                                                “أنا مبهورة بحق بمستوى الدقة والاهتمام الذي يقدمه هذا الفريق. كل زيارة تجعل منزلي مفعماً بالانتعاش والنظافة والترتيب. دائماً في الموعد ومحترفون.”</p>
+                                                                                                “أنا مبهورة بحق بمستوى
+                                                                                                الدقة والاهتمام الذي
+                                                                                                يقدمه هذا الفريق. كل
+                                                                                                زيارة تجعل منزلي مفعماً
+                                                                                                بالانتعاش والنظافة
+                                                                                                والترتيب. دائماً في
+                                                                                                الموعد ومحترفون.”</p>
                                                                                         </div>
                                                                                     </div>
                                                                                 </div>
@@ -5065,7 +5217,8 @@
                                                                 <div class="pxl-item--subtitle px-sub-title-default pxl-heading__subtitle"
                                                                     data-wow-delay="ms"> <span
                                                                         class="pxl-item--subtext pxl-heading__subtext">
-                                                                        <span class=""> أحدث المقالات </span> </span></div>
+                                                                        <span class=""> أحدث المقالات </span> </span>
+                                                                </div>
                                                                 <h2 class="pxl-item--title style-default highlight-default wow PXLZoom2 pxl-heading__title"
                                                                     data-wow-delay="ms"> <span
                                                                         class="pxl-heading--text pxl-heading__text">
@@ -5080,7 +5233,8 @@
                                                     <div class="elementor-widget-container">
                                                         <div class="pxl-text-editor default">
                                                             <div class="pxl-item--inner " data-wow-delay="ms">
-                                                                <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ على منزلك صحياً ونظيفاً دائماً.</p>
+                                                                <p>نقدم خدمات تنظيف موثوقة وعالية الجودة تحافظ على منزلك
+                                                                    صحياً ونظيفاً دائماً.</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -5119,13 +5273,17 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/house-cleaning/"
-                                                                                                rel="tag">تنظيف المنازل والفلل</a></span>
+                                                                                                rel="tag">تنظيف المنازل
+                                                                                                والفلل</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/daily-habits-for-a-cleaner-living-space/">
-                                                                                            عادات يومية للحفاظ على نظافة المكان </a></h5>
+                                                                                            عادات يومية للحفاظ على نظافة
+                                                                                            المكان </a></h5>
                                                                                     <div class="pxl-post--excerpt">
-                                                                                        اكتشف عادات تنظيف يومية بسيطة تساعدك في الحفاظ على منزلك...</div>
+                                                                                        اكتشف عادات تنظيف يومية بسيطة
+                                                                                        تساعدك في الحفاظ على منزلك...
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/daily-habits-for-a-cleaner-living-space/">
@@ -5166,9 +5324,12 @@
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/smart-tips-for-a-healthier-home/">
-                                                                                            نصائح ذكية لمنزل أصح وأكثر انتعاشاً </a></h5>
+                                                                                            نصائح ذكية لمنزل أصح وأكثر
+                                                                                            انتعاشاً </a></h5>
                                                                                     <div class="pxl-post--excerpt">
-                                                                                        تعلم نصائح تنظيف عملية للحد من الغبار والبكتيريا ومسببات الحساسية...</div>
+                                                                                        تعلم نصائح تنظيف عملية للحد من
+                                                                                        الغبار والبكتيريا ومسببات
+                                                                                        الحساسية...</div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/smart-tips-for-a-healthier-home/">
@@ -5204,13 +5365,17 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/house-cleaning/"
-                                                                                                rel="tag">تنظيف المنازل والفلل</a></span>
+                                                                                                rel="tag">تنظيف المنازل
+                                                                                                والفلل</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/the-deep-cleaning-and-organizing/">
-                                                                                            أهمية التنظيف العميق والترتيب الدوري </a></h5>
+                                                                                            أهمية التنظيف العميق
+                                                                                            والترتيب الدوري </a></h5>
                                                                                     <div class="pxl-post--excerpt">
-                                                                                        استكشف تقنيات التنظيف العميق والترتيب الفعالة لتجديد كل...</div>
+                                                                                        استكشف تقنيات التنظيف العميق
+                                                                                        والترتيب الفعالة لتجديد كل...
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/the-deep-cleaning-and-organizing/">
@@ -5251,8 +5416,12 @@
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/eco-friendly-products-for-cleaning/">
-                                                                                            استخدام منتجات صديقة للبيئة في التنظيف </a></h5>
-                                                                                    <div class="pxl-post--excerpt"> اعثر على منتجات تنظيف صديقة للبيئة تزيل الأوساخ بأمان وتحمي...</div>
+                                                                                            استخدام منتجات صديقة للبيئة
+                                                                                            في التنظيف </a></h5>
+                                                                                    <div class="pxl-post--excerpt"> اعثر
+                                                                                        على منتجات تنظيف صديقة للبيئة
+                                                                                        تزيل الأوساخ بأمان وتحمي...
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/eco-friendly-products-for-cleaning/">
@@ -5288,13 +5457,17 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/organizing/"
-                                                                                                rel="tag">النظافة والترتيب</a></span>
+                                                                                                rel="tag">النظافة
+                                                                                                والترتيب</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/house-cleaning-services-before-moving-in/">
-                                                                                            تنظيف المنازل والفلل قبل الانتقال إليها </a></h5>
+                                                                                            تنظيف المنازل والفلل قبل
+                                                                                            الانتقال إليها </a></h5>
                                                                                     <div class="pxl-post--excerpt">
-                                                                                        جهز منزلك الجديد مع خدمات تنظيف الانتقال الاحترافية التي...</div>
+                                                                                        جهز منزلك الجديد مع خدمات تنظيف
+                                                                                        الانتقال الاحترافية التي...
+                                                                                    </div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/house-cleaning-services-before-moving-in/">
@@ -5330,13 +5503,17 @@
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
                                                                                                 href="https://demo.casethemes.net/genfresco/category/office-cleaning/"
-                                                                                                rel="tag">تنظيف المكاتب والشركات</a></span>
+                                                                                                rel="tag">تنظيف المكاتب
+                                                                                                والشركات</a></span>
                                                                                     </div>
                                                                                     <h5 class="pxl-post--title"> <a
                                                                                             href="https://demo.casethemes.net/genfresco/benefits-of-eco-friendly-cleaning/">
-                                                                                            فوائد التنظيف بمواد صديقة للبيئة </a></h5>
+                                                                                            فوائد التنظيف بمواد صديقة
+                                                                                            للبيئة </a></h5>
                                                                                     <div class="pxl-post--excerpt">
-                                                                                        اكتشف كيف يحسن التنظيف البيئي جودة الهواء الداخلي ويحمي الأسطح...</div>
+                                                                                        اكتشف كيف يحسن التنظيف البيئي
+                                                                                        جودة الهواء الداخلي ويحمي
+                                                                                        الأسطح...</div>
                                                                                 </div>
                                                                                 <div class="pxl-post--featured"> <a
                                                                                         href="https://demo.casethemes.net/genfresco/benefits-of-eco-friendly-cleaning/">
@@ -5401,7 +5578,8 @@
                                                                             <div class="pxl-item--subtitle px-sub-title-default pxl-heading__subtitle"
                                                                                 data-wow-delay="ms"> <span
                                                                                     class="pxl-item--subtext pxl-heading__subtext">
-                                                                                    <span class=""> احصل على عرض سعر مجاني </span> </span></div>
+                                                                                    <span class=""> احصل على عرض سعر
+                                                                                        مجاني </span> </span></div>
                                                                             <h4 class="pxl-item--title style-default highlight-default pxl-heading__title"
                                                                                 data-wow-delay="ms"> <span
                                                                                     class="pxl-heading--text pxl-heading__text">
@@ -5480,7 +5658,8 @@
                                                                                                 class="input-filled col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                                                 <div class="label"
                                                                                                     for="first-name">
-                                                                                                    <p>*البريد الإلكتروني</p>
+                                                                                                    <p>*البريد
+                                                                                                        الإلكتروني</p>
                                                                                                 </div>
                                                                                                 <p><span
                                                                                                         class="wpcf7-form-control-wrap your-email"><span
@@ -5522,7 +5701,8 @@
                                                                                                 class="input-filled col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-12">
                                                                                                 <div class="label"
                                                                                                     for="first-name">
-                                                                                                    <p>*اختر الخدمة المطلوبة
+                                                                                                    <p>*اختر الخدمة
+                                                                                                        المطلوبة
                                                                                                     </p>
                                                                                                 </div>
                                                                                                 <p><span
@@ -5555,7 +5735,8 @@
                                                                                                 class="input-filled col-xl-12">
                                                                                                 <div class="label"
                                                                                                     for="first-name">
-                                                                                                    <p>اكتب تفاصيل طلبك هنا...</p>
+                                                                                                    <p>اكتب تفاصيل طلبك
+                                                                                                        هنا...</p>
                                                                                                 </div>
                                                                                                 <p><span
                                                                                                         class="wpcf7-form-control-wrap your-messeage"><span
@@ -5577,13 +5758,23 @@
                                                                                                                         name="acceptance-842"
                                                                                                                         value="1"
                                                                                                                         aria-invalid="false" /><span
-                                                                                                                        class="wpcf7-list-item-label">بإرسال الطلب، فإنك توافق على سياسة الخصوصية الخاصة بنا.</span></label></span></span></span>
+                                                                                                                        class="wpcf7-list-item-label">بإرسال
+                                                                                                                        الطلب،
+                                                                                                                        فإنك
+                                                                                                                        توافق
+                                                                                                                        على
+                                                                                                                        سياسة
+                                                                                                                        الخصوصية
+                                                                                                                        الخاصة
+                                                                                                                        بنا.</span></label></span></span></span>
                                                                                                 </p>
                                                                                             </div>
                                                                                             <div
                                                                                                 class="input-filled col-xl-12 d-center">
                                                                                                 <p><button type="submit"
-                                                                                                        class="wpcf7-submit btn  pxl-btn-purple">احجز موعد المعاينة</button>
+                                                                                                        class="wpcf7-submit btn  pxl-btn-purple">احجز
+                                                                                                        موعد
+                                                                                                        المعاينة</button>
                                                                                                 </p>
                                                                                             </div>
                                                                                         </div>
@@ -5684,10 +5875,8 @@
                                     data-id="a727bd2" data-element_type="widget" data-e-type="widget"
                                     data-widget_type="pxl_logo.default">
                                     <div class="elementor-widget-container">
-                                        <div class="pxl-logo " data-wow-delay="ms"> <a
-                                                href="index-ar.html"> <img loading="lazy"
-                                                    decoding="async"
-                                                    src="assets/images/logo/logo.png"
+                                        <div class="pxl-logo " data-wow-delay="ms"> <a href="index-ar.html"> <img
+                                                    loading="lazy" decoding="async" src="assets/images/logo/logo.png"
                                                     style="max-height: 120px; width: auto; object-fit: contain;"
                                                     class="attachment-full" alt="الدوكي للتنظيف" /> </a></div>
                                     </div>
@@ -5741,13 +5930,18 @@
                                             <div class="pxl-link-wrap">
                                                 <ul id="pxl-link-pxl_link-e5ab0f9-8901"
                                                     class="pxl-link pxl-link-l1 style-divider type-vertical">
-                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف المنازل والفلل</span>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف المنازل
+                                                                والفلل</span>
                                                         </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف المكاتب والشركات</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>التنظيف الشامل والعميق</span>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف المكاتب
+                                                                والشركات</span> </a></li>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>التنظيف الشامل
+                                                                والعميق</span>
                                                         </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف شامل ومرن</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف الانتقال والرحيل
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف شامل
+                                                                ومرن</span> </a></li>
+                                                    <li class="pxl-item--link"> <a href="#"> <span>تنظيف الانتقال
+                                                                والرحيل
                                                                 Cleaning</span> </a></li>
                                                     <li class="pxl-item--link"> <a href="#"> <span>Flexible
                                                                 Cleaning</span> </a></li>
@@ -5846,7 +6040,8 @@
                                                                 <path
                                                                     d="M8.72173 4.6875C7.93764 4.6875 7.17116 4.9166 6.51922 5.34582C5.86727 5.77505 5.35914 6.38512 5.05908 7.09889C4.75902 7.81267 4.68052 8.59808 4.83348 9.35582C4.98645 10.1136 5.36403 10.8096 5.91846 11.3559C6.4729 11.9022 7.17929 12.2742 7.94831 12.4249C8.71733 12.5757 9.51445 12.4983 10.2389 12.2027C10.9633 11.907 11.5824 11.4063 12.018 10.7639C12.4536 10.1216 12.6862 9.36633 12.6862 8.59375C12.6862 7.55775 12.2685 6.56418 11.525 5.83161C10.7815 5.09905 9.77316 4.6875 8.72173 4.6875ZM8.72173 10.9375C8.25128 10.9375 7.79139 10.8 7.40022 10.5425C7.00906 10.285 6.70418 9.91893 6.52414 9.49066C6.34411 9.0624 6.297 8.59115 6.38878 8.13651C6.48056 7.68186 6.70711 7.26425 7.03977 6.93647C7.37243 6.60869 7.79627 6.38547 8.25768 6.29503C8.71909 6.2046 9.19736 6.25101 9.632 6.42841C10.0666 6.6058 10.4381 6.9062 10.6995 7.29163C10.9609 7.67706 11.1004 8.1302 11.1004 8.59375C11.1004 9.21535 10.8498 9.81149 10.4037 10.251C9.95761 10.6906 9.35259 10.9375 8.72173 10.9375ZM8.72173 0C6.40939 0.0025847 4.19251 0.908825 2.55743 2.51991C0.922359 4.13099 0.00262319 6.31534 0 8.59375C0 11.6602 1.43809 14.9102 4.16264 17.9932C5.38688 19.3863 6.76475 20.6408 8.27078 21.7334C8.40409 21.8254 8.56292 21.8748 8.7257 21.8748C8.88847 21.8748 9.0473 21.8254 9.18062 21.7334C10.6839 20.6403 12.0591 19.3859 13.2808 17.9932C16.0014 14.9102 17.4435 11.6602 17.4435 8.59375C17.4408 6.31534 16.5211 4.13099 14.886 2.51991C13.251 0.908825 11.0341 0.0025847 8.72173 0ZM8.72173 20.1172C7.08343 18.8477 1.58577 14.1846 1.58577 8.59375C1.58577 6.72895 2.33759 4.94052 3.67584 3.62191C5.0141 2.30329 6.82916 1.5625 8.72173 1.5625C10.6143 1.5625 12.4294 2.30329 13.7676 3.62191C15.1059 4.94052 15.8577 6.72895 15.8577 8.59375C15.8577 14.1826 10.36 18.8477 8.72173 20.1172Z"
                                                                     fill="white"></path>
-                                                            </svg> <span>حي الصحافة، الرياض، المملكة العربية السعودية</span> </a>
+                                                            </svg> <span>حي الصحافة، الرياض، المملكة العربية
+                                                                السعودية</span> </a>
                                                     </li>
                                                     <li class="pxl-item--link"> <a href="tel:888-123-4567"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="21"
@@ -5873,7 +6068,8 @@
                                                                         </rect>
                                                                     </clipPath>
                                                                 </defs>
-                                                            </svg> <span>السبت - الخميس: 7:00 صباحاً - 7:00 مساءً</span> </a>
+                                                            </svg> <span>السبت - الخميس: 7:00 صباحاً - 7:00 مساءً</span>
+                                                        </a>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -5911,7 +6107,8 @@
                                                 <div class="pxl-heading--inner pxl-heading__inner">
                                                     <h3 class="pxl-item--title style-default highlight-default pxl-heading__title"
                                                         data-wow-delay="ms"> <span
-                                                            class="pxl-heading--text pxl-heading__text"> اشترك في نشرتنا البريدية </span></h3>
+                                                            class="pxl-heading--text pxl-heading__text"> اشترك في نشرتنا
+                                                            البريدية </span></h3>
                                                 </div>
                                             </div>
                                         </div>
@@ -5960,8 +6157,8 @@
                                                                                 class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
                                                                                 aria-required="true"
                                                                                 aria-invalid="false"
-                                                                                placeholder="أدخل بريدك الإلكتروني..." value=""
-                                                                                type="email"
+                                                                                placeholder="أدخل بريدك الإلكتروني..."
+                                                                                value="" type="email"
                                                                                 name="your-email" /></span><button
                                                                             type="submit"
                                                                             class="wpcf7-submit btn  btn-text-nanuk btn-2-icons"><svg
@@ -5993,8 +6190,9 @@
                                         <div class="elementor-widget-container">
                                             <div class="pxl-text-editor default">
                                                 <div class="pxl-item--inner " data-wow-delay="ms"> Copyright © 2026
-                                                    الدوكي للتنظيف by <a class="color-primary" href="https://casethemes.net/"
-                                                        target="_blank" rel="noopener">شركة الدوكي للتنظيف</a>. All Rights
+                                                    الدوكي للتنظيف by <a class="color-primary"
+                                                        href="https://casethemes.net/" target="_blank"
+                                                        rel="noopener">شركة الدوكي للتنظيف</a>. All Rights
                                                     Reserved.</div>
                                             </div>
                                         </div>
@@ -6186,12 +6384,17 @@
         const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
         //# sourceURL=https://demo.casethemes.net/genfresco/wp-includes/js/wp-emoji-loader.min.js </script>
     <!-- Floating Language Switcher Pill -->
-    <div class="floating-lang-switcher" style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; background: #ffffff; padding: 5px 8px; border-radius: 40px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); border: 2px solid #3ca200; gap: 6px;">
-        <a href="index.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
-            <img src="https://flagcdn.com/w40/us.png" alt="EN" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
+    <div class="floating-lang-switcher"
+        style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; background: #ffffff; padding: 5px 8px; border-radius: 40px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); border: 2px solid #3ca200; gap: 6px;">
+        <a href="index.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
+            <img src="https://flagcdn.com/w40/us.png" alt="EN"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
         </a>
-        <a href="index-ar.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
-            <img src="https://flagcdn.com/w40/sa.png" alt="AR" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
+        <a href="index-ar.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
+            <img src="https://flagcdn.com/w40/sa.png" alt="AR"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
         </a>
     </div>
 
