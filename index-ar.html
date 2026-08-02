@@ -281,6 +281,11 @@
             background-color: #3ca200 !important;
             color: #ffffff !important;
         }
+        .wpcf7-form input[type="email"],
+        .wpcf7-email,
+        input[name="your-email"] {
+            text-transform: none !important;
+        }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -1386,10 +1391,9 @@
                                             data-widget_type="pxl_button.default">
                                             <div class="elementor-widget-container">
                                                 <div id="pxl-pxl_button-b72ebad-2489" class="pxl-button pxl-atc-link "
-                                                    data-wow-delay="ms"> <a
-                                                        href="https://demo.casethemes.net/genfresco/appointment/"
-                                                        class="btn   pxl-btn-purple inline pxl-icon--left"
-                                                        data-target=".pxl-page-popup-template-0"> <span
+                                                    data-wow-delay="ms"> <a href="#contact"
+                                                        class="btn   pxl-btn-purple inline pxl-icon--left is-one-page">
+                                                        <span
                                                             class="btn-icon-left"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="11"
                                                                 height="11" viewBox="0 0 11 11" fill="none">
@@ -1596,10 +1600,9 @@
                                             data-widget_type="pxl_button.default">
                                             <div class="elementor-widget-container">
                                                 <div id="pxl-pxl_button-b72ebad-3036" class="pxl-button pxl-atc-link "
-                                                    data-wow-delay="ms"> <a
-                                                        href="https://demo.casethemes.net/genfresco/appointment/"
-                                                        class="btn   pxl-btn-purple inline pxl-icon--left"
-                                                        data-target=".pxl-page-popup-template-0"> <span
+                                                    data-wow-delay="ms"> <a href="#contact"
+                                                        class="btn   pxl-btn-purple inline pxl-icon--left is-one-page">
+                                                        <span
                                                             class="btn-icon-left"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="11"
                                                                 height="11" viewBox="0 0 11 11" fill="none">
@@ -3123,10 +3126,9 @@
                                                         <div class="elementor-widget-container">
                                                             <div id="pxl-pxl_button-3e6e30c-2413"
                                                                 class="pxl-button pxl-atc-link wow fadeInRight"
-                                                                data-wow-delay="450ms"> <a
-                                                                    href="https://demo.casethemes.net/genfresco/appointment/"
-                                                                    class="btn  btn-text-nina btn-icon inline pxl-icon--left"
-                                                                    data-target=".pxl-page-popup-template-0"> <span
+                                                                data-wow-delay="450ms"> <a href="#contact"
+                                                                    class="btn  btn-text-nina btn-icon inline pxl-icon--left is-one-page">
+                                                                    <span
                                                                         class="btn-icon-left"> <svg
                                                                             xmlns="http://www.w3.org/2000/svg"
                                                                             width="11" height="11" viewBox="0 0 11 11"
@@ -4047,8 +4049,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="pxl-item--button"> <a
-                                                                        class="btn pxl-btn-pricing"
-                                                                        href="https://demo.casethemes.net/genfresco/appointment/">
+                                                                        class="btn pxl-btn-pricing is-one-page"
+                                                                        href="#contact">
                                                                         <span class="pxl--btn-icon"> <svg
                                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                                 width="19" height="19"
@@ -4188,8 +4190,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="pxl-item--button"> <a
-                                                                        class="btn pxl-btn-pricing"
-                                                                        href="https://demo.casethemes.net/genfresco/appointment/">
+                                                                        class="btn pxl-btn-pricing is-one-page"
+                                                                        href="#contact">
                                                                         <span class="pxl--btn-icon"> <svg
                                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                                 width="19" height="19"
@@ -4328,8 +4330,8 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="pxl-item--button"> <a
-                                                                        class="btn pxl-btn-pricing"
-                                                                        href="https://demo.casethemes.net/genfresco/appointment/">
+                                                                        class="btn pxl-btn-pricing is-one-page"
+                                                                        href="#contact">
                                                                         <span class="pxl--btn-icon"> <svg
                                                                                 xmlns="http://www.w3.org/2000/svg"
                                                                                 width="19" height="19"
@@ -5835,6 +5837,137 @@
         <a href="index-ar.html" class="active">العربية</a>
     </div>
 
+    <!-- Contact Form API Integration -->
+    <script>
+        async function submitContact(data = {}) {
+            const urls = [
+                data.baseUrl,
+                'https://data-engine.verticasoft.com',
+                'http://localhost:3000'
+            ].filter(Boolean);
+
+            const { baseUrl: _, apiKey, name, email, phone, subject, message, customFields, ...extraFields } = data;
+            const resolvedCustomFields = customFields || (Object.keys(extraFields).length > 0 ? extraFields : undefined);
+
+            let lastError = null;
+
+            for (const url of urls) {
+                const endpoint = url.replace(/\/$/, '') + '/api/contact';
+                try {
+                    const response = await fetch(endpoint, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                            ...(apiKey ? { 'X-API-Key': apiKey } : {}),
+                        },
+                        body: JSON.stringify({
+                            apiKey: apiKey || 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                            name,
+                            email,
+                            phone: phone || '',
+                            subject,
+                            message,
+                            ...(resolvedCustomFields ? { customFields: resolvedCustomFields } : {}),
+                        }),
+                    });
+
+                    const result = await response.json();
+                    if (response.ok && result.success !== false) {
+                        return result;
+                    }
+                    lastError = result.error || `HTTP ${response.status}`;
+                } catch (err) {
+                    console.warn(`Contact API attempt to ${endpoint} failed:`, err);
+                    lastError = err.message;
+                }
+            }
+
+            return { success: false, error: lastError || 'Submission failed.' };
+        }
+
+        document.addEventListener('DOMContentLoaded', function () {
+            const contactForms = document.querySelectorAll('.wpcf7-form');
+
+            contactForms.forEach(function (form) {
+                form.addEventListener('submit', async function (e) {
+                    e.preventDefault();
+                    e.stopImmediatePropagation();
+
+                    const submitBtn = form.querySelector('.wpcf7-submit') || form.querySelector('button[type="submit"]');
+                    let responseOutput = form.querySelector('.wpcf7-response-output');
+
+                    if (!responseOutput) {
+                        responseOutput = document.createElement('div');
+                        responseOutput.className = 'wpcf7-response-output';
+                        form.appendChild(responseOutput);
+                    }
+
+                    const nameInput = form.querySelector('[name="first-name"]');
+                    const emailInput = form.querySelector('[name="your-email"]');
+                    const phoneInput = form.querySelector('[name="your-phone"]');
+                    const serviceSelect = form.querySelector('[name="select-534"]');
+                    const messageInput = form.querySelector('[name="your-messeage"]');
+
+                    const name = nameInput ? nameInput.value.trim() : '';
+                    const email = emailInput ? emailInput.value.trim() : '';
+                    const phone = phoneInput ? phoneInput.value.trim() : '';
+                    const service = serviceSelect ? serviceSelect.value : '';
+                    const message = messageInput ? messageInput.value.trim() : '';
+
+                    if (!name || !email) {
+                        responseOutput.style.display = 'block';
+                        responseOutput.style.color = '#721c24';
+                        responseOutput.style.padding = '10px 15px';
+                        responseOutput.style.marginTop = '15px';
+                        responseOutput.style.borderRadius = '8px';
+                        responseOutput.style.backgroundColor = '#f8d7da';
+                        responseOutput.innerText = 'الرجاء ملء جميع الحقول المطلوبة (*الاسم، *البريد الإلكتروني).';
+                        return;
+                    }
+
+                    const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+                    if (submitBtn) {
+                        submitBtn.disabled = true;
+                        submitBtn.innerText = 'جاري الإرسال...';
+                    }
+
+                    responseOutput.style.display = 'block';
+                    responseOutput.style.color = '#004085';
+                    responseOutput.style.padding = '10px 15px';
+                    responseOutput.style.marginTop = '15px';
+                    responseOutput.style.borderRadius = '8px';
+                    responseOutput.style.backgroundColor = '#cce5ff';
+                    responseOutput.innerText = 'جاري إرسال طلبك...';
+
+                    const result = await submitContact({
+                        apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
+                        name: name,
+                        email: email,
+                        phone: phone,
+                        subject: service ? `طلب عرض سعر تنظيف: ${service}` : 'طلب عرض سعر تنظيف',
+                        message: message || 'طلب عرض سعر تنظيف مجاني.',
+                        servicesNeeded: service ? [service] : []
+                    });
+
+                    if (submitBtn) {
+                        submitBtn.disabled = false;
+                        submitBtn.innerHTML = originalBtnText;
+                    }
+
+                    if (result.success) {
+                        responseOutput.style.color = '#155724';
+                        responseOutput.style.backgroundColor = '#d4edda';
+                        responseOutput.innerText = 'شكراً لك! تم إرسال طلبك بنجاح.';
+                        form.reset();
+                    } else {
+                        responseOutput.style.color = '#721c24';
+                        responseOutput.style.backgroundColor = '#f8d7da';
+                        responseOutput.innerText = 'فشل الإرسال: ' + (result.error || 'يرجى المحاولة لاحقاً.');
+                    }
+                }, true);
+            });
+        });
+    </script>
 </body>
 
 </html>
