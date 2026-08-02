@@ -1203,6 +1203,132 @@
                 border-radius: 14px !important;
             }
         }
+
+        /* Full Form Overlay Styles for Loading and Success/Error States */
+        .pxl-contact-form, .wrap-form {
+            position: relative !important;
+        }
+
+        .form-status-overlay {
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            bottom: 0 !important;
+            width: 100% !important;
+            height: 100% !important;
+            min-height: 380px !important;
+            background: #ffffff !important;
+            border-radius: 24px !important;
+            z-index: 9999 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            align-items: center !important;
+            justify-content: center !important;
+            padding: 30px 20px !important;
+            box-sizing: border-box !important;
+            text-align: center !important;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+            animation: formOverlayFadeIn 0.3s ease-in-out !important;
+        }
+
+        @keyframes formOverlayFadeIn {
+            from { opacity: 0; transform: scale(0.96); }
+            to { opacity: 1; transform: scale(1); }
+        }
+
+        .form-spinner {
+            width: 54px !important;
+            height: 54px !important;
+            border: 5px solid #e8f5d3 !important;
+            border-top: 5px solid #3ca200 !important;
+            border-radius: 50% !important;
+            animation: formSpin 0.8s linear infinite !important;
+            margin-bottom: 20px !important;
+        }
+
+        @keyframes formSpin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .form-overlay-icon {
+            width: 72px !important;
+            height: 72px !important;
+            border-radius: 50% !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            margin-bottom: 20px !important;
+            font-size: 36px !important;
+            box-shadow: 0 8px 24px rgba(60, 162, 0, 0.25) !important;
+        }
+
+        .form-overlay-icon.success {
+            background-color: #3ca200 !important;
+            color: #ffffff !important;
+        }
+
+        .form-overlay-icon.error {
+            background-color: #dc3545 !important;
+            color: #ffffff !important;
+            box-shadow: 0 8px 24px rgba(220, 53, 69, 0.25) !important;
+        }
+
+        .form-overlay-title {
+            font-size: 24px !important;
+            font-weight: 700 !important;
+            color: #1a1a1a !important;
+            margin-bottom: 10px !important;
+            line-height: 1.3 !important;
+        }
+
+        .form-overlay-text {
+            font-size: 15px !important;
+            color: #555555 !important;
+            margin-bottom: 24px !important;
+            max-width: 380px !important;
+            line-height: 1.5 !important;
+        }
+
+        .form-overlay-btn {
+            background-color: #3ca200 !important;
+            color: #ffffff !important;
+            border: none !important;
+            padding: 12px 28px !important;
+            font-size: 15px !important;
+            font-weight: 700 !important;
+            border-radius: 30px !important;
+            cursor: pointer !important;
+            box-shadow: 0 6px 18px rgba(60, 162, 0, 0.3) !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .form-overlay-btn:hover {
+            background-color: #328800 !important;
+            transform: translateY(-2px) !important;
+        }
+
+        .form-overlay-btn.error-btn {
+            background-color: #dc3545 !important;
+            box-shadow: 0 6px 18px rgba(220, 53, 69, 0.3) !important;
+        }
+
+        @media (max-width: 767px) {
+            .form-status-overlay {
+                border-radius: 16px !important;
+                padding: 24px 16px !important;
+                min-height: 320px !important;
+            }
+
+            .form-overlay-title {
+                font-size: 20px !important;
+            }
+
+            .form-overlay-text {
+                font-size: 14px !important;
+            }
+        }
     </style>
 
 
@@ -6050,45 +6176,70 @@
             const contactForms = document.querySelectorAll('.wpcf7-form');
 
             contactForms.forEach(function (form) {
-                const showMsg = (text, type = 'info') => {
-                    let responseOutput = form.querySelector('.data-engine-msg');
-                    if (!responseOutput) {
-                        responseOutput = document.createElement('div');
-                        responseOutput.className = 'data-engine-msg';
-                        form.appendChild(responseOutput);
-                    }
+                const wrapForm = form.closest('.wrap-form') || form;
 
-                    responseOutput.style.setProperty('display', 'block', 'important');
-                    responseOutput.style.setProperty('visibility', 'visible', 'important');
-                    responseOutput.style.setProperty('opacity', '1', 'important');
-                    responseOutput.style.setProperty('margin-top', '15px', 'important');
-                    responseOutput.style.setProperty('padding', '12px 20px', 'important');
-                    responseOutput.style.setProperty('border-radius', '8px', 'important');
-                    responseOutput.style.setProperty('font-size', '15px', 'important');
-                    responseOutput.style.setProperty('font-weight', '600', 'important');
-                    responseOutput.style.setProperty('text-align', 'center', 'important');
+                const removeOverlay = () => {
+                    const existing = wrapForm.querySelectorAll('.form-status-overlay');
+                    existing.forEach(el => el.remove());
+                };
 
-                    if (type === 'success') {
-                        responseOutput.style.setProperty('color', '#155724', 'important');
-                        responseOutput.style.setProperty('background-color', '#d4edda', 'important');
-                        responseOutput.style.setProperty('border', '1px solid #c3e6cb', 'important');
-                    } else if (type === 'error') {
-                        responseOutput.style.setProperty('color', '#721c24', 'important');
-                        responseOutput.style.setProperty('background-color', '#f8d7da', 'important');
-                        responseOutput.style.setProperty('border', '1px solid #f5c6cb', 'important');
-                    } else {
-                        responseOutput.style.setProperty('color', '#004085', 'important');
-                        responseOutput.style.setProperty('background-color', '#cce5ff', 'important');
-                        responseOutput.style.setProperty('border', '1px solid #b8daff', 'important');
+                const showOverlayLoader = (loadingText = 'جاري إرسال طلبك...') => {
+                    removeOverlay();
+                    const overlay = document.createElement('div');
+                    overlay.className = 'form-status-overlay';
+                    overlay.innerHTML = `
+                        <div class="form-spinner"></div>
+                        <div class="form-overlay-title">${loadingText}</div>
+                        <div class="form-overlay-text">يرجى الانتظار لحظة أثناء معالجة طلب عرض السعر.</div>
+                    `;
+                    wrapForm.appendChild(overlay);
+                };
+
+                const showOverlaySuccess = (titleText = 'تم إرسال طلبك بنجاح!', msgText = 'شكراً لك! تم استلام طلب عرض السعر الخاص بك. وسيتواصل معك فريقنا قريباً.') => {
+                    removeOverlay();
+                    const overlay = document.createElement('div');
+                    overlay.className = 'form-status-overlay';
+                    overlay.innerHTML = `
+                        <div class="form-overlay-icon success">✓</div>
+                        <div class="form-overlay-title">${titleText}</div>
+                        <div class="form-overlay-text">${msgText}</div>
+                        <button type="button" class="form-overlay-btn reset-form-btn">إرسال طلب آخر</button>
+                    `;
+                    wrapForm.appendChild(overlay);
+
+                    const resetBtn = overlay.querySelector('.reset-form-btn');
+                    if (resetBtn) {
+                        resetBtn.addEventListener('click', function () {
+                            form.reset();
+                            removeOverlay();
+                        });
                     }
-                    responseOutput.innerHTML = text;
+                };
+
+                const showOverlayError = (titleText = 'فشل الإرسال', msgText = 'يرجى المحاولة مرة أخرى.') => {
+                    removeOverlay();
+                    const overlay = document.createElement('div');
+                    overlay.className = 'form-status-overlay';
+                    overlay.innerHTML = `
+                        <div class="form-overlay-icon error">✕</div>
+                        <div class="form-overlay-title">${titleText}</div>
+                        <div class="form-overlay-text">${msgText}</div>
+                        <button type="button" class="form-overlay-btn error-btn retry-form-btn">محاولة مرة أخرى</button>
+                    `;
+                    wrapForm.appendChild(overlay);
+
+                    const retryBtn = overlay.querySelector('.retry-form-btn');
+                    if (retryBtn) {
+                        retryBtn.addEventListener('click', function () {
+                            removeOverlay();
+                        });
+                    }
                 };
 
                 form.addEventListener('submit', async function (e) {
                     e.preventDefault();
                     e.stopImmediatePropagation();
 
-                    const submitBtn = form.querySelector('.wpcf7-submit') || form.querySelector('button[type="submit"]');
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
                     const phoneInput = form.querySelector('[name="your-phone"]');
@@ -6102,20 +6253,11 @@
                     const message = messageInput ? messageInput.value.trim() : '';
 
                     if (!name || !email) {
-                        showMsg('الرجاء ملء جميع الحقول المطلوبة (*الاسم، *البريد الإلكتروني).', 'error');
+                        showOverlayError('الحقول المطلوبة مفقودة', 'يرجى ملء جميع الحقول المطلوبة (*الاسم و *البريد الإلكتروني).');
                         return;
                     }
 
-                    const isInput = submitBtn && submitBtn.tagName === 'INPUT';
-                    const originalBtnText = submitBtn ? (isInput ? submitBtn.value : submitBtn.innerHTML) : '';
-
-                    if (submitBtn) {
-                        submitBtn.disabled = true;
-                        if (isInput) submitBtn.value = 'جاري الإرسال...';
-                        else submitBtn.innerText = 'جاري الإرسال...';
-                    }
-
-                    showMsg('جاري إرسال طلبك...', 'info');
+                    showOverlayLoader('جاري إرسال طلبك...');
 
                     const result = await submitContact({
                         apiKey: 'pk_live_data_engine_6a6f462bd25739ae5b50d4ab_pub98231',
@@ -6127,17 +6269,11 @@
                         servicesNeeded: service ? [service] : []
                     });
 
-                    if (submitBtn) {
-                        submitBtn.disabled = false;
-                        if (isInput) submitBtn.value = originalBtnText;
-                        else submitBtn.innerHTML = originalBtnText;
-                    }
-
                     if (result && result.success !== false) {
-                        showMsg('شكراً لك! تم إرسال طلبك بنجاح.', 'success');
+                        showOverlaySuccess('تم إرسال طلبك بنجاح!', 'شكراً لك! تم استلام طلبك بنجاح. وسيتواصل معك فريق التنظيف قريباً.');
                         form.reset();
                     } else {
-                        showMsg('فشل الإرسال: ' + (result?.error || 'يرجى المحاولة لاحقاً.'), 'error');
+                        showOverlayError('فشل الإرسال', result?.error || 'تعذر إرسال طلبك الآن. يرجى المحاولة لاحقاً.');
                     }
                 }, true);
             });
