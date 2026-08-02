@@ -53,6 +53,17 @@
             overflow: hidden !important;
         }
 
+        .wpcf7-response-output:empty,
+        div.wpcf7-response-output:empty,
+        .data-engine-msg:empty {
+            display: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            border: none !important;
+            height: 0 !important;
+            min-height: 0 !important;
+        }
+
         /* Modern Ultra-Professional Saffron Gold RTL CTA Button Design */
         html[dir="rtl"] .pxl-service__btn,
         html[dir="rtl"] .pxl-button a,
@@ -1026,6 +1037,7 @@
             z-index: 5 !important;
             max-width: 540px !important;
             margin: 0 auto !important;
+            box-sizing: border-box !important;
         }
 
         .elementor-element-cf2f2d5 .wrap-form {
@@ -1033,6 +1045,7 @@
             border-radius: 24px !important;
             padding: 25px 20px !important;
             margin-top: 20px !important;
+            box-sizing: border-box !important;
         }
 
         .elementor-element-cf2f2d5 .pxl-heading__subtext {
@@ -1051,6 +1064,144 @@
             font-weight: 700 !important;
             margin-top: 10px !important;
             margin-bottom: 15px !important;
+        }
+
+        /* Mobile Responsiveness specifically for Contact Form */
+        @media (max-width: 767px) {
+            .elementor-element-572cf73 {
+                padding: 25px 12px !important;
+                border-radius: 20px !important;
+                min-height: auto !important;
+            }
+
+            .elementor-element-cf2f2d5 {
+                padding: 24px 14px !important;
+                border-radius: 20px 60px 20px 20px !important;
+                max-width: 100% !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .elementor-element-cf2f2d5 #pxl-pxl_heading-c1bc62a-7538,
+            .elementor-element-cf2f2d5 .pxl-heading--inner {
+                text-align: center !important;
+            }
+
+            .elementor-element-cf2f2d5 .pxl-heading__title {
+                font-size: 20px !important;
+                line-height: 1.3 !important;
+                margin-top: 8px !important;
+                margin-bottom: 12px !important;
+                text-align: center !important;
+            }
+
+            .elementor-element-cf2f2d5 .pxl-heading__subtext {
+                font-size: 12px !important;
+                padding: 5px 14px !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form {
+                padding: 16px 12px !important;
+                border-radius: 16px !important;
+                margin-top: 14px !important;
+                box-sizing: border-box !important;
+                width: 100% !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .row {
+                margin-left: 0 !important;
+                margin-right: 0 !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .input-filled {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+                width: 100% !important;
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+                margin-bottom: 10px !important;
+                box-sizing: border-box !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .label {
+                margin-bottom: 4px !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .label p {
+                font-size: 13px !important;
+                font-weight: 600 !important;
+                margin-bottom: 2px !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form input[type="text"],
+            .elementor-element-cf2f2d5 .wrap-form input[type="email"],
+            .elementor-element-cf2f2d5 .wrap-form input[type="tel"],
+            .elementor-element-cf2f2d5 .wrap-form select {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 44px !important;
+                font-size: 14px !important;
+                padding: 0 14px !important;
+                border-radius: 30px !important;
+                box-sizing: border-box !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form textarea {
+                width: 100% !important;
+                max-width: 100% !important;
+                height: 90px !important;
+                font-size: 14px !important;
+                padding: 10px 14px !important;
+                border-radius: 14px !important;
+                box-sizing: border-box !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .wpcf7-submit,
+            .elementor-element-cf2f2d5 .wrap-form button[type="submit"] {
+                width: 100% !important;
+                max-width: 100% !important;
+                padding: 12px 16px !important;
+                font-size: 14px !important;
+                border-radius: 30px !important;
+                box-sizing: border-box !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form .wpcf7-acceptance {
+                font-size: 12px !important;
+                line-height: 1.4 !important;
+            }
+
+            .elementor-element-9476cda,
+            .pxl-image-leaves {
+                display: none !important;
+            }
+
+            .floating-lang-switcher {
+                bottom: 12px !important;
+                right: 12px !important;
+                transform: scale(0.85);
+                transform-origin: bottom right;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .elementor-element-572cf73 {
+                padding: 16px 8px !important;
+            }
+
+            .elementor-element-cf2f2d5 {
+                padding: 18px 10px !important;
+                border-radius: 16px 45px 16px 16px !important;
+            }
+
+            .elementor-element-cf2f2d5 .pxl-heading__title {
+                font-size: 18px !important;
+            }
+
+            .elementor-element-cf2f2d5 .wrap-form {
+                padding: 12px 8px !important;
+                border-radius: 14px !important;
+            }
         }
     </style>
 
@@ -5831,7 +5982,7 @@
         const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
         //# sourceURL=https://demo.casethemes.net/genfresco/wp-includes/js/wp-emoji-loader.min.js </script>
     <!-- Floating Language Switcher Pill -->
-    <div style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; background: #ffffff; padding: 5px 8px; border-radius: 40px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); border: 2px solid #3ca200; gap: 6px;">
+    <div class="floating-lang-switcher" style="position: fixed; bottom: 25px; right: 25px; z-index: 999999; display: flex; align-items: center; background: #ffffff; padding: 5px 8px; border-radius: 40px; box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25); border: 2px solid #3ca200; gap: 6px;">
         <a href="index.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
             <img src="https://flagcdn.com/w40/us.png" alt="EN" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
         </a>
@@ -5899,46 +6050,45 @@
             const contactForms = document.querySelectorAll('.wpcf7-form');
 
             contactForms.forEach(function (form) {
+                const showMsg = (text, type = 'info') => {
+                    let responseOutput = form.querySelector('.data-engine-msg');
+                    if (!responseOutput) {
+                        responseOutput = document.createElement('div');
+                        responseOutput.className = 'data-engine-msg';
+                        form.appendChild(responseOutput);
+                    }
+
+                    responseOutput.style.setProperty('display', 'block', 'important');
+                    responseOutput.style.setProperty('visibility', 'visible', 'important');
+                    responseOutput.style.setProperty('opacity', '1', 'important');
+                    responseOutput.style.setProperty('margin-top', '15px', 'important');
+                    responseOutput.style.setProperty('padding', '12px 20px', 'important');
+                    responseOutput.style.setProperty('border-radius', '8px', 'important');
+                    responseOutput.style.setProperty('font-size', '15px', 'important');
+                    responseOutput.style.setProperty('font-weight', '600', 'important');
+                    responseOutput.style.setProperty('text-align', 'center', 'important');
+
+                    if (type === 'success') {
+                        responseOutput.style.setProperty('color', '#155724', 'important');
+                        responseOutput.style.setProperty('background-color', '#d4edda', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #c3e6cb', 'important');
+                    } else if (type === 'error') {
+                        responseOutput.style.setProperty('color', '#721c24', 'important');
+                        responseOutput.style.setProperty('background-color', '#f8d7da', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #f5c6cb', 'important');
+                    } else {
+                        responseOutput.style.setProperty('color', '#004085', 'important');
+                        responseOutput.style.setProperty('background-color', '#cce5ff', 'important');
+                        responseOutput.style.setProperty('border', '1px solid #b8daff', 'important');
+                    }
+                    responseOutput.innerHTML = text;
+                };
+
                 form.addEventListener('submit', async function (e) {
                     e.preventDefault();
                     e.stopImmediatePropagation();
 
                     const submitBtn = form.querySelector('.wpcf7-submit') || form.querySelector('button[type="submit"]');
-                    let responseOutput = form.querySelector('.wpcf7-response-output');
-
-                    if (!responseOutput) {
-                        responseOutput = document.createElement('div');
-                        responseOutput.className = 'wpcf7-response-output';
-                        form.appendChild(responseOutput);
-                    }
-
-                    const showMsg = (text, type = 'info') => {
-                        responseOutput.style.setProperty('display', 'block', 'important');
-                        responseOutput.style.setProperty('visibility', 'visible', 'important');
-                        responseOutput.style.setProperty('opacity', '1', 'important');
-                        responseOutput.style.setProperty('margin-top', '15px', 'important');
-                        responseOutput.style.setProperty('padding', '12px 20px', 'important');
-                        responseOutput.style.setProperty('border-radius', '8px', 'important');
-                        responseOutput.style.setProperty('font-size', '15px', 'important');
-                        responseOutput.style.setProperty('font-weight', '600', 'important');
-                        responseOutput.style.setProperty('text-align', 'center', 'important');
-
-                        if (type === 'success') {
-                            responseOutput.style.setProperty('color', '#155724', 'important');
-                            responseOutput.style.setProperty('background-color', '#d4edda', 'important');
-                            responseOutput.style.setProperty('border', '1px solid #c3e6cb', 'important');
-                        } else if (type === 'error') {
-                            responseOutput.style.setProperty('color', '#721c24', 'important');
-                            responseOutput.style.setProperty('background-color', '#f8d7da', 'important');
-                            responseOutput.style.setProperty('border', '1px solid #f5c6cb', 'important');
-                        } else {
-                            responseOutput.style.setProperty('color', '#004085', 'important');
-                            responseOutput.style.setProperty('background-color', '#cce5ff', 'important');
-                            responseOutput.style.setProperty('border', '1px solid #b8daff', 'important');
-                        }
-                        responseOutput.innerText = text;
-                    };
-
                     const nameInput = form.querySelector('[name="first-name"]');
                     const emailInput = form.querySelector('[name="your-email"]');
                     const phoneInput = form.querySelector('[name="your-phone"]');
@@ -5956,10 +6106,13 @@
                         return;
                     }
 
-                    const originalBtnText = submitBtn ? submitBtn.innerHTML : '';
+                    const isInput = submitBtn && submitBtn.tagName === 'INPUT';
+                    const originalBtnText = submitBtn ? (isInput ? submitBtn.value : submitBtn.innerHTML) : '';
+
                     if (submitBtn) {
                         submitBtn.disabled = true;
-                        submitBtn.innerText = 'جاري الإرسال...';
+                        if (isInput) submitBtn.value = 'جاري الإرسال...';
+                        else submitBtn.innerText = 'جاري الإرسال...';
                     }
 
                     showMsg('جاري إرسال طلبك...', 'info');
@@ -5976,14 +6129,15 @@
 
                     if (submitBtn) {
                         submitBtn.disabled = false;
-                        submitBtn.innerHTML = originalBtnText;
+                        if (isInput) submitBtn.value = originalBtnText;
+                        else submitBtn.innerHTML = originalBtnText;
                     }
 
-                    if (result.success) {
+                    if (result && result.success !== false) {
                         showMsg('شكراً لك! تم إرسال طلبك بنجاح.', 'success');
                         form.reset();
                     } else {
-                        showMsg('فشل الإرسال: ' + (result.error || 'يرجى المحاولة لاحقاً.'), 'error');
+                        showMsg('فشل الإرسال: ' + (result?.error || 'يرجى المحاولة لاحقاً.'), 'error');
                     }
                 }, true);
             });
