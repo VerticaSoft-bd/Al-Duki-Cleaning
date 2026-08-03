@@ -575,3 +575,381 @@
     z-index: -1 !important;
     pointer-events: none !important;
 }
+
+/* =========================================================
+   PERFECT FOOTER DESIGN MATCHING REFERENCE IMAGE (WITH SITE GREEN THEME)
+   ========================================================= */
+
+#pxl-footer-elementor {
+    background: #08190c !important;
+    background: radial-gradient(circle at 50% 0%, #0d2813 0%, #051408 80%) !important;
+    position: relative !important;
+    color: #e2e8f0 !important;
+    overflow: hidden !important;
+    border-top: 3px solid #3ca200 !important;
+}
+
+#pxl-footer-elementor .e-con-inner {
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding-left: 24px !important;
+    padding-right: 24px !important;
+}
+
+/* 1. Top Row: Logo (Left) & Tagline (Right) */
+.elementor-element-099a01c {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding-top: 35px !important;
+    padding-bottom: 25px !important;
+    margin-bottom: 35px !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+    width: 100% !important;
+    flex-wrap: wrap !important;
+    gap: 20px !important;
+}
+
+.elementor-element-099a01c .pxl-border-animated,
+.elementor-element-099a01c .pxl-border-anm,
+.elementor-element-099a01c .pxl-border-glow {
+    display: none !important;
+}
+
+.elementor-element-a727bd2 img {
+    max-height: 85px !important;
+    width: auto !important;
+    filter: drop-shadow(0 4px 12px rgba(60, 162, 0, 0.3)) !important;
+}
+
+.elementor-element-e9c4659 .pxl-heading__title {
+    color: #20b26c !important;
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    letter-spacing: 0.2px !important;
+    margin: 0 !important;
+    text-align: right !important;
+}
+
+[dir="rtl"] .elementor-element-e9c4659 .pxl-heading__title {
+    text-align: left !important;
+}
+
+/* 2. Main 4-Column Flat Layout */
+.elementor-element-1ae8eb3 {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1.2fr 1.4fr !important;
+    gap: 36px !important;
+    align-items: start !important;
+    padding-bottom: 30px !important;
+}
+
+@media (max-width: 1024px) {
+    .elementor-element-1ae8eb3 {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 30px !important;
+    }
+}
+
+@media (max-width: 640px) {
+    .elementor-element-1ae8eb3 {
+        grid-template-columns: 1fr !important;
+        gap: 28px !important;
+    }
+}
+
+/* Section Headings with Gold Underline Divider */
+#pxl-footer-elementor .pxl-heading__title {
+    color: #179b57 !important;
+    font-size: 19px !important;
+    font-weight: 700 !important;
+    margin-bottom: 8px !important;
+    position: relative !important;
+    display: inline-block !important;
+}
+
+#pxl-footer-elementor .pxl-el-divider {
+    height: 2px !important;
+    width: 38px !important;
+    background: #f2d701 !important;
+    border-radius: 2px !important;
+    margin-bottom: 18px !important;
+}
+
+/* Navigation Links */
+#pxl-footer-elementor .pxl-link {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#pxl-footer-elementor .pxl-link li {
+    margin-bottom: 10px !important;
+}
+
+#pxl-footer-elementor .pxl-link a {
+    color: #b8ccb9 !important;
+    text-decoration: none !important;
+    font-size: 14.5px !important;
+    font-weight: 500 !important;
+    transition: all 0.25s ease !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+}
+
+#pxl-footer-elementor .pxl-link a:hover {
+    color: #ffffff !important;
+    transform: translateX(3px) !important;
+}
+
+[dir="rtl"] #pxl-footer-elementor .pxl-link a:hover {
+    transform: translateX(-3px) !important;
+}
+
+#pxl-footer-elementor .pxl-link.style-3 a {
+    color: #d0e1d2 !important;
+}
+
+#pxl-footer-elementor .pxl-link.style-3 svg {
+    width: 17px !important;
+    height: 17px !important;
+    flex-shrink: 0 !important;
+}
+
+#pxl-footer-elementor .pxl-link.style-3 svg path {
+    fill: #3ca200 !important;
+}
+
+/* 3. Social Media Icons Single Row */
+.elementor-element-a19ab31 {
+    margin-top: 18px !important;
+    width: 100% !important;
+}
+
+.elementor-element-a19ab31 .pxl-icon-list {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: nowrap !important;
+    gap: 10px !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-element-a19ab31 .pxl-icon__item {
+    width: 36px !important;
+    height: 36px !important;
+    min-width: 36px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.16) !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #20b26c !important;
+    text-decoration: none !important;
+    transition: all 0.25s ease !important;
+}
+
+.elementor-element-a19ab31 .pxl-icon__item:hover {
+    background: #3ca200 !important;
+    border-color: #3ca200 !important;
+    color: #ffffff !important;
+    transform: translateY(-2px) !important;
+}
+
+/* 4. Newsletter Subscription (Flat Layout matching image) */
+.elementor-element-3dde174 {
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    backdrop-filter: none !important;
+    box-shadow: none !important;
+    position: relative !important;
+    width: 100% !important;
+}
+
+.elementor-element-65bdfae p {
+    color: #b8ccb9 !important;
+    font-size: 13.5px !important;
+    line-height: 1.5 !important;
+    margin-bottom: 18px !important;
+}
+
+.elementor-element-05e0e45,
+.elementor-element-05e0e45 .pxl-contact-form,
+.elementor-element-05e0e45 .wpcf7,
+.elementor-element-05e0e45 .wpcf7-form,
+.elementor-element-05e0e45 .wrap-ctf1-2,
+.elementor-element-05e0e45 .input-filled,
+.elementor-element-05e0e45 .input-filled p {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: block !important;
+    box-sizing: border-box !important;
+}
+
+/* Reset inner nested WPCF7 span wrapper */
+.elementor-element-05e0e45 .wpcf7-form-control-wrap:not(.your-email),
+.elementor-element-05e0e45 span[data-name="your-email"] {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+/* Pure White Input Pill Box with Attached Button */
+.elementor-element-05e0e45 .wpcf7-form-control-wrap.your-email {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 50px !important;
+    padding: 4px 6px 4px 18px !important;
+    gap: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+[dir="rtl"] .elementor-element-05e0e45 .wpcf7-form-control-wrap.your-email {
+    padding: 4px 18px 4px 6px !important;
+    flex-direction: row !important;
+}
+
+.elementor-element-05e0e45 .wpcf7-form-control-wrap.your-email:focus-within {
+    border-color: #3ca200 !important;
+    box-shadow: 0 0 0 3px rgba(60, 162, 0, 0.3) !important;
+}
+
+/* Input Text Box */
+.elementor-element-05e0e45 input[type="email"].wpcf7-email {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: #1a202c !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    height: 42px !important;
+    padding: 0 !important;
+    box-shadow: none !important;
+}
+
+.elementor-element-05e0e45 input[type="email"].wpcf7-email::placeholder {
+    color: #718096 !important;
+    font-size: 13.5px !important;
+}
+
+/* Yellow / Green Circular Action Button */
+.elementor-element-05e0e45 button[type="submit"],
+.elementor-element-05e0e45 .wpcf7-submit {
+    flex-shrink: 0 !important;
+    background: #3ca200 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.elementor-element-05e0e45 button[type="submit"]:hover,
+.elementor-element-05e0e45 .wpcf7-submit:hover {
+    background: #2f8300 !important;
+    transform: scale(1.06) !important;
+}
+
+.elementor-element-05e0e45 button[type="submit"] svg {
+    width: 16px !important;
+    height: 16px !important;
+}
+
+.elementor-element-05e0e45 button[type="submit"] svg path {
+    fill: #ffffff !important;
+}
+
+[dir="rtl"] .elementor-element-05e0e45 button[type="submit"] svg {
+    transform: scaleX(-1) !important;
+}
+
+/* 5. Separate Bottom Bar (Copyright on Left, Back to Top on Right) */
+#pxl-footer-elementor .elementor-element-0363e0b,
+.elementor-element.elementor-element-0363e0b {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    clear: both !important;
+    display: block !important;
+    background: rgba(0, 0, 0, 0.28) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 16px 0 !important;
+    margin-top: 30px !important;
+    grid-column: 1 / -1 !important;
+    z-index: 10 !important;
+}
+
+#pxl-footer-elementor .elementor-element-0363e0b > .e-con-inner {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    width: 100% !important;
+    max-width: 1320px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+}
+
+#pxl-footer-elementor .elementor-element-29cf151,
+#pxl-footer-elementor .elementor-element-29cf151 .pxl-item--inner {
+    color: #8fa391 !important;
+    font-size: 13.5px !important;
+}
+
+.elementor-element-29cf151 a.color-primary,
+.elementor-element-29cf151 a {
+    color: #3ca200 !important;
+    font-weight: 700 !important;
+    text-decoration: none !important;
+}
+
+.elementor-element-8d7cb6d a {
+    color: #b8ccb9 !important;
+    font-size: 13.5px !important;
+    font-weight: 500 !important;
+    text-decoration: none !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    transition: color 0.2s ease !important;
+}
+
+.elementor-element-8d7cb6d a:hover {
+    color: #3ca200 !important;
+}

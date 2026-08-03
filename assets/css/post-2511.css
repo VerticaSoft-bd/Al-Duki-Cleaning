@@ -73,11 +73,12 @@
 
 #pxl-footer-elementor .pxl-el-divider,
 .elementor-2511 .pxl-el-divider {
-    border-bottom: 2px solid rgba(60, 162, 0, 0.4) !important;
-    margin-bottom: 15px !important;
+    border-bottom: 2px solid rgba(60, 162, 0, 0.5) !important;
+    margin-bottom: 18px !important;
     width: 40px !important;
 }
 
+/* ── Copyright / Bottom Bar ── */
 .pxl-footer-copyright,
 #pxl-footer-elementor .pxl-border-section-anm,
 .elementor-2511 .pxl-border-section-anm {
@@ -87,4 +88,289 @@
     text-align: center !important;
     font-size: 14px !important;
     color: #a0ba98 !important;
+}
+
+/* ── Logo column – first child ── */
+#pxl-footer-elementor .elementor-element-099a01c {
+    flex: 0 0 260px !important;
+    min-width: 220px !important;
+    max-width: 280px !important;
+}
+
+#pxl-footer-elementor .pxl-logo img {
+    max-height: 90px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    margin-bottom: 16px !important;
+}
+
+/* tagline under logo */
+#pxl-footer-elementor .elementor-element-099a01c .pxl-heading__title {
+    font-size: 16px !important;
+    font-weight: 500 !important;
+    color: #b8d4b0 !important;
+    line-height: 1.5 !important;
+    margin-top: 12px !important;
+}
+
+/* ── Services / Company columns ── */
+#pxl-footer-elementor .elementor-element-3066900,
+#pxl-footer-elementor .elementor-element-3d97b19 {
+    flex: 1 1 150px !important;
+    min-width: 140px !important;
+}
+
+/* ── Contact Info column ── */
+#pxl-footer-elementor .elementor-element-7ffc0ed {
+    flex: 1 1 210px !important;
+    min-width: 200px !important;
+}
+
+/* Contact list items – icon + text side-by-side */
+#pxl-footer-elementor .pxl-link.style-3 li a,
+#pxl-footer-elementor .elementor-element-7ffc0ed ul li a {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 10px !important;
+    line-height: 1.5 !important;
+}
+
+#pxl-footer-elementor .pxl-link.style-3 li a svg,
+#pxl-footer-elementor .elementor-element-7ffc0ed ul li a svg {
+    flex-shrink: 0 !important;
+    margin-top: 2px !important;
+    opacity: 0.85 !important;
+}
+
+/* ── Social Icons ── */
+#pxl-footer-elementor .pxl-icon-list {
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+    margin-top: 20px !important;
+}
+
+#pxl-footer-elementor .pxl-icon__item {
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50% !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    background: rgba(255, 255, 255, 0.06) !important;
+    transition: background 0.25s ease, border-color 0.25s ease, transform 0.2s ease !important;
+    text-decoration: none !important;
+}
+
+#pxl-footer-elementor .pxl-icon__item:hover {
+    background: #3ca200 !important;
+    border-color: #3ca200 !important;
+    transform: translateY(-2px) !important;
+}
+
+#pxl-footer-elementor .pxl-icon__item .icon-box {
+    font-size: 15px !important;
+    color: #ffffff !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}
+
+#pxl-footer-elementor .pxl-icon__item i {
+    font-size: 14px !important;
+    color: #ffffff !important;
+    line-height: 1 !important;
+}
+
+/* ── Newsletter column ── */
+#pxl-footer-elementor .elementor-element-3dde174 {
+    flex: 1 1 230px !important;
+    min-width: 210px !important;
+}
+
+#pxl-footer-elementor .pxl-text-editor p {
+    color: #b0c9a8 !important;
+    font-size: 14px !important;
+    line-height: 1.65 !important;
+    margin-bottom: 18px !important;
+}
+
+/* Newsletter form */
+#pxl-footer-elementor .wrap-ctf1-2 {
+    width: 100% !important;
+}
+
+#pxl-footer-elementor .input-filled {
+    position: relative !important;
+    width: 100% !important;
+}
+
+#pxl-footer-elementor .wpcf7-form-control-wrap:not(.your-email),
+#pxl-footer-elementor span[data-name="your-email"] {
+    display: flex !important;
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    box-shadow: none !important;
+    overflow: visible !important;
+}
+
+#pxl-footer-elementor .wpcf7-form-control-wrap.your-email {
+    display: flex !important;
+    align-items: center !important;
+    width: 100% !important;
+    box-sizing: border-box !important;
+    background: #ffffff !important;
+    border: 1px solid #e2e8f0 !important;
+    border-radius: 50px !important;
+    padding: 4px 6px 4px 18px !important;
+    gap: 8px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
+[dir="rtl"] #pxl-footer-elementor .wpcf7-form-control-wrap.your-email {
+    padding: 4px 18px 4px 6px !important;
+    flex-direction: row !important;
+}
+
+#pxl-footer-elementor input[type="email"].wpcf7-email {
+    flex: 1 1 auto !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    height: 42px !important;
+    color: #1a202c !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    box-shadow: none !important;
+}
+
+#pxl-footer-elementor input[type="email"].wpcf7-email::placeholder {
+    color: #718096 !important;
+    font-size: 13.5px !important;
+}
+
+#pxl-footer-elementor button[type="submit"],
+#pxl-footer-elementor .wpcf7-submit {
+    flex-shrink: 0 !important;
+    background: #3ca200 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 42px !important;
+    height: 42px !important;
+    min-width: 42px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    cursor: pointer !important;
+    transition: all 0.25s ease !important;
+    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+#pxl-footer-elementor button[type="submit"]:hover,
+#pxl-footer-elementor .wpcf7-submit:hover {
+    background: #2f8300 !important;
+    transform: scale(1.06) !important;
+}
+
+#pxl-footer-elementor .wpcf7-submit svg {
+    width: 16px !important;
+    height: 16px !important;
+    fill: #ffffff !important;
+}
+
+/* ── Copyright bottom bar ── */
+#pxl-footer-elementor .elementor-element-0363e0b {
+    position: relative !important;
+    top: auto !important;
+    bottom: auto !important;
+    left: auto !important;
+    right: auto !important;
+    transform: none !important;
+    width: 100% !important;
+    clear: both !important;
+    display: block !important;
+    background: rgba(0, 0, 0, 0.28) !important;
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    padding: 16px 0 !important;
+    margin-top: 30px !important;
+    grid-column: 1 / -1 !important;
+    z-index: 10 !important;
+}
+
+#pxl-footer-elementor .elementor-element-0363e0b > .e-con-inner {
+    flex-direction: row !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    padding: 0 24px !important;
+    border-top: none !important;
+    gap: 12px !important;
+}
+
+#pxl-footer-elementor .elementor-element-0363e0b .pxl-item--inner {
+    color: #8aaa82 !important;
+    font-size: 13.5px !important;
+    letter-spacing: 0.02em !important;
+}
+}
+
+/* ── Responsive: tablet ── */
+@media (max-width: 1024px) {
+    #pxl-footer-elementor .elementor-element-b1a2931 > .e-con-inner,
+    .elementor-2511 .e-parent > .e-con-inner {
+        gap: 32px !important;
+    }
+
+    #pxl-footer-elementor .elementor-element-099a01c {
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+    }
+}
+
+/* ── Responsive: mobile ── */
+@media (max-width: 767px) {
+    #pxl-footer-elementor,
+    .elementor-2511 {
+        padding-top: 50px !important;
+        padding-bottom: 30px !important;
+    }
+
+    #pxl-footer-elementor .elementor-element-b1a2931 > .e-con-inner,
+    .elementor-2511 .e-parent > .e-con-inner {
+        flex-direction: column !important;
+        gap: 28px !important;
+        padding: 0 20px !important;
+    }
+
+    #pxl-footer-elementor .e-child,
+    #pxl-footer-elementor .elementor-element-3066900,
+    #pxl-footer-elementor .elementor-element-3d97b19,
+    #pxl-footer-elementor .elementor-element-7ffc0ed,
+    #pxl-footer-elementor .elementor-element-3dde174 {
+        flex: 0 0 100% !important;
+        min-width: 100% !important;
+        max-width: 100% !important;
+    }
+
+    #pxl-footer-elementor .pxl-icon-list {
+        gap: 8px !important;
+    }
+
+    #pxl-footer-elementor .elementor-element-0363e0b > .e-con-inner {
+        padding: 16px 20px 0 !important;
+    }
 }
