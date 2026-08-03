@@ -393,3 +393,141 @@
     padding: 8px 22px !important;
     font-size: 13.5px !important;
 }
+
+
+/* =========================================================
+   EXTREMELY TIGHT SPACING FOR PHONE ICON & TEXT
+   ========================================================= */
+
+.elementor-element-332ae71 .pxl-icon-box {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 3px !important; /* EXTREMELY CLOSE SPACING */
+}
+
+.elementor-element-332ae71 .pxl-item--holder,
+.elementor-element-332ae71 .pxl-item--content,
+.elementor-element-332ae71 .pxl-item--title,
+.elementor-element-332ae71 .pxl-item--description {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* =========================================================
+   EXACT 5PX GAP FOR PHONE ICON AND TEXT
+   ========================================================= */
+
+.elementor-element-332ae71 .pxl-icon-box {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 5px !important; /* EXACTLY 5PX GAP AS REQUESTED */
+}
+
+.elementor-element-332ae71 .pxl-item--holder,
+.elementor-element-332ae71 .pxl-item--content,
+.elementor-element-332ae71 .pxl-item--title,
+.elementor-element-332ae71 .pxl-item--description {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+
+/* =========================================================
+   FULL WIDTH / WIDER CONTAINER FOR TOPBAR & MAIN HEADER
+   ========================================================= */
+
+/* Expand Header Containers to Full Width (Max 1650px / 96% width) */
+.elementor-element-67d316b > .e-con-inner,
+.elementor-14 .elementor-element-67d316b > .e-con-inner,
+.elementor-element-24e227e > .e-con-inner,
+.elementor-14 .elementor-element-24e227e > .e-con-inner {
+    max-width: 96% !important;
+    width: 96% !important;
+    margin: 0 auto !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+}
+
+/* Ensure Left Widget (Phone Number) sits on far left */
+.elementor-element-332ae71 {
+    margin-left: 0 !important;
+    padding-left: 0 !important;
+}
+
+/* Ensure Right Widget (Make Appointment Button) sits on far right */
+.elementor-element-b72ebad {
+    margin-right: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+/* =========================================================
+   CLEAN PHONE ICON SVG FIX (NO EXTRA SVG GAP, REAL ANIMATED SVG)
+   ========================================================= */
+
+/* Remove duplicate FontAwesome ::before icon */
+.elementor-element-332ae71 .pxl-icon-box::before,
+.elementor-element-332ae71 .pxl-item--inner::before {
+    display: none !important;
+    content: none !important;
+}
+
+/* Style the actual animated SVG container into the green circle */
+.elementor-element-332ae71 .pxl-item--icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 38px !important;
+    height: 38px !important;
+    min-width: 38px !important;
+    min-height: 38px !important;
+    border-radius: 50% !important;
+    border: 2px solid #3ca200 !important;
+    background: #ffffff !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-element-332ae71 .pxl-item--icon a {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.elementor-element-332ae71 .pxl-item--icon svg {
+    width: 18px !important;
+    height: 18px !important;
+    display: block !important;
+    margin: 0 auto !important;
+}
+
+.elementor-element-332ae71 .pxl-icon-box {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+
+/* =========================================================
+   FORCE GREEN COLOR ON PHONE SVG ICON (#3CA200)
+   ========================================================= */
+
+.elementor-element-332ae71 .pxl-item--icon svg,
+.elementor-element-332ae71 .pxl-item--icon svg * {
+    fill: #3ca200 !important;
+    color: #3ca200 !important;
+}
+
+.elementor-element-332ae71 .pxl-item--icon svg path {
+    fill: #3ca200 !important;
+}
+
+.elementor-element-332ae71 .pxl-item--icon {
+    border: 2px solid #3ca200 !important;
+    background-color: transparent !important;
+}
