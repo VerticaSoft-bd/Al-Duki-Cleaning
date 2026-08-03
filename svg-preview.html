@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SVG Preview & Testing</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f6f8;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .card {
+            background: #ffffff;
+            border-radius: 16px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+            text-align: center;
+            max-width: 500px;
+            width: 100%;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        /* Method 1: Direct Inline SVG */
+        .svg-container {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto 15px auto;
+        }
+        .svg-container svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        /* Method 2: CSS Background Image using Base64 Data URI */
+        .svg-bg-badge {
+            width: 120px;
+            height: 120px;
+            margin: 0 auto;
+            background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9Ii01IC01IDE4OCAxOTQiIGZpbGw9Im5vbmUiIHdpZHRoPSIxNzgiIGhlaWdodD0iMTg0Ij48cGF0aCBkPSJNNzEuNDIwNiA1LjU1NzI2QzgxLjgzMjkgLTEuODUyNDIgOTUuNzk2MyAtMS44NTI0MiAxMDYuMjA5IDUuNTU3MjZMMTA3LjE3NCA2LjI0NDIzQzExMi4xNzIgOS44MDA2OCAxMTguMTM5IDExLjczOTcgMTI0LjI3MyAxMS44TDEyNS40NTggMTEuODExN0MxMzguMjM3IDExLjk3MzQgMTQ5LjUzMyAyMC4xNDQ4IDE1My42MDIgMzIuMjU5NkwxNTMuOTc9IDMzLjM4MjhDMTU1LjkzMiAzOS4xOTc2IDE1OS42MiA0NC4yNzQwIDE2NC41NDcgNDcuOTI4MUwxNjUuNDk5IDQ4LjYzMzlDMTc1Ljc2MyA1Ni4yNDY5IDE4MC4wNzggNjkuNTI2OSAxNzYuMjQ5IDgxLjcxOTNMMTc1ODk0IDgyLjg0OTdDMTc4LjA1NiA4OC43MDE4IDE3NC4wNTYgOTQuOTc2NiAxNzUuODk0IDEwMC44MjlMMTc2LjI0OSAxMDEuOTU5QzE4MC4wNzggMTE0LjE1MiAxNzUuNzYzIDEyNy40MzEgMTY1LjQ5OSAxMzUuMDQ0TDE2NC41NDcgMTM1Ljc1QzE1OS42MiAxMzkuNDA0IDE1NS45MzIgMTQ0LjQ4MSAxNTMuOTc9IDE1MC4yOTZMMTUzLjYwMiAxNTEuNDE5QzE0OS41MzMgMTYzLjUzNCAxMzguMjM3IDE3MS43NDEgMTI1LjQ1OCAxNzEuODY3TDEyNC4yNzMgMTcxLjg3OEMxMTguMTM5IDE3MS45MzkgMTEyLjE3MiAxNzMuODc4IDEwNy4xNzQgMTc3LjQzNEwxMDYuMjA5IDE3OC4xMjFDOTUuNzk2MyAxODUuNTMxIDgxLjgzMjkgMTg1LjUzMSA3MS40MjA2IDE3OC4xMjFMNzAuNDU1MiAxNzcuNDM0QzY1LjQ1NzUgMTczLjg3OCA1OS40ODk4IDE3MS45MzkgNTMuMzU2MiAxNzEuODc4TDUyLjE3MTQgMTcxLjg2N0MzOS4zOTIzIDE3MS43NDEgMjguMDk1NyAxNjMuNTM0IDI0LjAyNzMgMTUxLjQxOUwyMy42NTAxIDE1MC4yOTZDMjEuNjk3MyAxNDQuNDgxIDE4LjAwOSAxMzkuNDA0IDEzLjA4MjMgMTM1Ljc1TDEyLjEzMDYgMTM1LjA0NEMxLjg2NjAyIDEyNy40MzEgLTIuNDQ4OSAxMTQuMTUyIDEuMzgwNTMgMTAxLjk1OUwxLjczNTU2IDEwMC44MjlDMy41NzM1OSA5NC45NzY2IDMuNTczNTkgODguNzAxOCAxLjczNTU2IDgyLjg0OTdDMS4zODA1MyA4MS43MTkzIC0yLjQ0ODkgNjkuNTI2OSAxMi4xMzA2IDQ4LjYzMzlDMTMuMDgy3ADNy45MjgxIDE4LjAwOSA0NC4yNzQwIDIzLjY1MDEgMzMuMzgyOEwyNC4wMjczIDMyLjI1OTZDMjguMDk1NyAyMC4xNDQ4IDM5LjM5MjMgMTEuOTM3NCA1Mi4xNzE0IDExLjgxMTdMNTMuMzU2MiAxMS44QzU5LjQ4OTggMTEuNzM5NyA2NS40NTc1IDkuODAwNjggNzAuNDU1MiA2LjI0NDIzTDcxLjQyMDYgNS41NTcyNloiIGZpbGw9IiMzQ0EyMDAiLz48L3N2Zz4=");
+            background-repeat: no-repeat;
+            background-size: contain;
+            background-position: center;
+        }
+
+        .label {
+            font-size: 14px;
+            color: #666;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="card">
+        <h2>1. HTML Inline SVG (সরাসরি HTML)</h2>
+        <div class="svg-container">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="-5 -5 188 194" fill="none">
+                <path d="M71.4206 5.55726C81.8329 -1.85242 95.7963 -1.85242 106.209 5.55726L107.174 6.24423C112.172 9.80068 118.139 11.7397 124.273 11.8L125.458 11.8117C138.237 11.9374 149.533 20.1448 153.602 32.2596L153.979 33.3828C155.932 39.1976 159.62 44.274 164.547 47.9281L165.499 48.6339C175.763 56.2469 180.078 69.5269 176.249 81.7193L175.894 82.8497C174.056 88.7018 174.056 94.9766 175.894 100.829L176.249 101.959C180.078 114.152 175.763 127.431 165.499 135.044L164.547 135.75C159.62 139.404 155.932 144.481 153.979 150.296L153.602 151.419C149.533 163.534 138.237 171.741 125.458 171.867L124.273 171.878C118.139 171.939 112.172 173.878 107.174 177.434L106.209 178.121C95.7963 185.531 81.8329 185.531 71.4206 178.121L70.4552 177.434C65.4575 173.878 59.4898 171.939 53.3562 171.878L52.1714 171.867C39.3923 171.741 28.0957 163.534 24.0273 151.419L23.6501 150.296C21.6973 144.481 18.009 139.404 13.0823 135.75L12.1306 135.044C1.86602 127.431 -2.4489 114.152 1.38053 101.959L1.73556 100.829C3.57359 94.9766 3.57359 88.7018 1.73556 82.8497L1.38053 81.7193C-2.4489 69.5269 1.86602 56.2469 12.1306 48.6339L13.0823 47.9281C18.009 44.274 21.6973 39.1976 23.6501 33.3828L24.0273 32.2596C28.0957 20.1448 39.3923 11.9374 52.1714 11.8117L53.3562 11.8C59.4898 11.7397 65.4575 9.80068 70.4552 6.24423L71.4206 5.55726Z" fill="#3CA200"/>
+            </svg>
+        </div>
+        <div class="label">Green Scalloped Badge Shape (Direct SVG)</div>
+    </div>
+
+    <div class="card">
+        <h2>2. CSS Background Image (Base64 URL)</h2>
+        <div class="svg-bg-badge"></div>
+        <div class="label">CSS background-image দিয়ে প্রদর্শিত</div>
+    </div>
+
+</body>
+</html>
