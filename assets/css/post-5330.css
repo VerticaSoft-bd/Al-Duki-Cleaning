@@ -20,11 +20,11 @@
     width: 100% !important;
 }
 
-/* TOPBAR: Light Sky Blue Background (#cbebfb) */
+/* TOPBAR: Light Soft Mint Green Background (#d4f4ca) */
 .elementor-element.elementor-element-67d316b,
 .elementor-14 .elementor-element-67d316b {
-    background-color: #cbebfb !important;
-    background: #cbebfb !important;
+    background-color: #d4f4ca !important;
+    background: #d4f4ca !important;
     position: relative !important;
     display: block !important;
     width: 100% !important;
@@ -33,7 +33,7 @@
     margin: 0 !important;
 }
 
-/* Clean Scalloped Bottom Wave Edge on Topbar */
+/* Ultra-Smooth Liquid Wave Bottom Edge on Topbar (Light Green) */
 .elementor-element-67d316b::after,
 .elementor-14 .elementor-element-67d316b::after {
     content: "" !important;
@@ -41,11 +41,12 @@
     bottom: -15px !important;
     left: 0 !important;
     width: 100% !important;
-    height: 18px !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C150,90 350,-40 500,45 C650,110 900,-20 1200,40 L1200,0 L0,0 Z' fill='%23ffffff'%3E%3C/path%3E%3C/svg%3E") !important;
-    background-size: 100% 18px !important;
-    background-repeat: no-repeat !important;
+    height: 16px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16' viewBox='0 0 60 16'%3E%3Cpath d='M0,0 L60,0 L60,5 Q45,16 30,5 Q15,-6 0,5 Z' fill='%23d4f4ca'%3E%3C/path%3E%3C/svg%3E") !important;
+    background-size: 60px 16px !important;
+    background-repeat: repeat-x !important;
     z-index: 10 !important;
+    pointer-events: none !important;
 }
 
 /* 3-Column Topbar Flex Row */
@@ -171,7 +172,7 @@
     width: 100% !important;
     max-width: 1350px !important;
     margin: 0 auto !important;
-    padding: 16px 30px !important;
+    padding: 8px 30px !important;
     background: #ffffff !important;
 }
 
@@ -241,14 +242,16 @@
 .elementor-element-b72ebad a {
     background-color: #ffdb00 !important;
     color: #000000 !important;
-    padding: 12px 28px !important;
+    padding: 8px 20px !important;
+    height: 38px !important;
     border-radius: 50px !important;
     font-weight: 800 !important;
-    font-size: 14.5px !important;
+    font-size: 13.5px !important;
     text-decoration: none !important;
     white-space: nowrap !important;
     display: inline-flex !important;
     align-items: center !important;
+    justify-content: center !important;
     gap: 8px !important;
     box-shadow: 0 4px 14px rgba(255, 219, 0, 0.4) !important;
 }
@@ -258,11 +261,11 @@
    GREEN THEME FIX & CLOSER PHONE ICON / TEXT SPACING
    ========================================================= */
 
-/* TOPBAR: Light Green Background (#eef6e4) */
+/* TOPBAR: Light Soft Mint Green Background (#d4f4ca) */
 .elementor-element.elementor-element-67d316b,
 .elementor-14 .elementor-element-67d316b {
-    background-color: #eef6e4 !important;
-    background: #eef6e4 !important;
+    background-color: #d4f4ca !important;
+    background: #d4f4ca !important;
     position: relative !important;
     display: block !important;
     width: 100% !important;
@@ -271,7 +274,7 @@
     margin: 0 !important;
 }
 
-/* Wavy Scalloped Edge fill with Light Green (#eef6e4) */
+/* Ultra-Smooth Liquid Wave Edge fill with Light Green (#d4f4ca) */
 .elementor-element-67d316b::after,
 .elementor-14 .elementor-element-67d316b::after {
     content: "" !important;
@@ -279,17 +282,18 @@
     bottom: -15px !important;
     left: 0 !important;
     width: 100% !important;
-    height: 18px !important;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 120' preserveAspectRatio='none'%3E%3Cpath d='M0,0 C150,90 350,-40 500,45 C650,110 900,-20 1200,40 L1200,0 L0,0 Z' fill='%23eef6e4'%3E%3C/path%3E%3C/svg%3E") !important;
-    background-size: 100% 18px !important;
-    background-repeat: no-repeat !important;
+    height: 16px !important;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='16' viewBox='0 0 60 16'%3E%3Cpath d='M0,0 L60,0 L60,5 Q45,16 30,5 Q15,-6 0,5 Z' fill='%23d4f4ca'%3E%3C/path%3E%3C/svg%3E") !important;
+    background-size: 60px 16px !important;
+    background-repeat: repeat-x !important;
     z-index: 10 !important;
+    pointer-events: none !important;
 }
 
 /* Topbar Left Address/Email Text Color */
 .elementor-element-ca903cf .pxl-list .pxl--item,
 .elementor-element-ca903cf .pxl-list a {
-    color: #2a401c !important;
+    color: #204510 !important;
 }
 
 /* Social Icons in Green Theme */
@@ -439,14 +443,19 @@
 
 /* Expand Header Containers to Full Width (Max 1650px / 96% width) */
 .elementor-element-67d316b > .e-con-inner,
-.elementor-14 .elementor-element-67d316b > .e-con-inner,
+.elementor-14 .elementor-element-67d316b > .e-con-inner {
+    max-width: 96% !important;
+    width: 96% !important;
+    margin: 0 auto !important;
+    padding: 2px 20px !important;
+}
+
 .elementor-element-24e227e > .e-con-inner,
 .elementor-14 .elementor-element-24e227e > .e-con-inner {
     max-width: 96% !important;
     width: 96% !important;
     margin: 0 auto !important;
-    padding-left: 20px !important;
-    padding-right: 20px !important;
+    padding: 8px 20px !important;
 }
 
 /* Ensure Left Widget (Phone Number) sits on far left */
