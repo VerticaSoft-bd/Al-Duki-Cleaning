@@ -342,41 +342,133 @@
             text-align: center !important;
         }
 
-        /* Service Tabs / Buttons Background & Hover Color #D4F4CA */
-        .pxl-tab-service .pxl-tab-service__headers .pxl-item--title,
-        .pxl-tab-service .pxl-tab-service__headers .pxl-tab-service__header-pill {
-            background-color: #D4F4CA !important;
-            color: #131d1a !important;
-            border: 1px solid rgba(0, 120, 135, 0.2) !important;
-            transition: all 0.3s ease !important;
+        /* Service Explorer Design System variables */
+        :root {
+            --brand-green: #3CA200;
+            --brand-green-hover: #2E7E00;
+            --brand-green-bg: #F0F9EB;
+            --dark-text: #121E18;
+            --muted-text: #5C6764;
+            --border-light: rgba(60, 162, 0, 0.12);
+            --card-shadow: 0 4px 20px rgba(0, 0, 0, 0.04);
+            --card-shadow-active: 0 10px 30px rgba(60, 162, 0, 0.08);
+            --transition-base: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
-        .pxl-tab-service .pxl-tab-service__headers .pxl-item--title:hover,
-        .pxl-tab-service .pxl-tab-service__headers .pxl-tab-service__header-pill:hover {
-            background-color: #D4F4CA !important;
-            border-color: #92d97e !important;
-            color: #0b3b24 !important;
-            box-shadow: 0 4px 12px rgba(43, 122, 75, 0.15) !important;
+        .service-explorer {
+            display: flex !important;
+            gap: 32px !important;
+            width: 100% !important;
+            max-width: 1200px !important;
+            margin: 0 auto !important;
+            direction: rtl !important; /* Natural RTL columns */
         }
 
-        .pxl-tab-service .pxl-tab-service__headers .pxl-item--title.active,
-        .pxl-tab-service .pxl-tab-service__headers .pxl-tab-service__header-pill.active {
-            background-color: #D4F4CA !important;
-            color: #0b3b24 !important;
+        .service-explorer-left {
+            flex: 1.5 !important;
+        }
+
+        .service-explorer-right {
+            flex: 1 !important;
+            position: relative !important;
+        }
+
+        .service-explorer-grid {
+            display: grid !important;
+            grid-template-columns: repeat(2, 1fr) !important;
+            gap: 16px !important;
+            width: 100% !important;
+        }
+
+        .service-explorer-card {
+            display: flex !important;
+            align-items: center !important;
+            background: #FFFFFF !important;
+            border: 1px solid rgba(0, 0, 0, 0.06) !important;
+            border-right: 3px solid transparent !important;
+            border-left: none !important;
+            border-radius: 12px !important;
+            padding: 16px 18px !important;
+            text-align: right !important;
+            cursor: pointer !important;
+            transition: var(--transition-base) !important;
+            box-shadow: var(--card-shadow) !important;
+            width: 100% !important;
+            position: relative !important;
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        .service-explorer-card:hover {
+            border-color: rgba(60, 162, 0, 0.25) !important;
+            transform: translateY(-2px) !important;
+            box-shadow: 0 6px 20px rgba(60, 162, 0, 0.06) !important;
+        }
+
+        .service-explorer-card.active {
+            border-right-color: var(--brand-green) !important;
+            background: var(--brand-green-bg) !important;
+            box-shadow: var(--card-shadow-active) !important;
+        }
+
+        .card-icon-wrapper {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 42px !important;
+            height: 42px !important;
+            border-radius: 10px !important;
+            background: #F4FBF1 !important;
+            color: var(--brand-green) !important;
+            margin-left: 14px !important;
+            margin-right: 0 !important;
+            flex-shrink: 0 !important;
+            transition: var(--transition-base) !important;
+        }
+
+        .service-explorer-card.active .card-icon-wrapper {
+            background: var(--brand-green) !important;
+            color: #FFFFFF !important;
+        }
+
+        .card-title {
+            font-size: 15px !important;
             font-weight: 700 !important;
-            border-color: #2b7a4b !important;
-            box-shadow: 0 4px 14px rgba(43, 122, 75, 0.2) !important;
+            color: var(--dark-text) !important;
+            line-height: 1.3 !important;
+            flex-grow: 1 !important;
+            transition: var(--transition-base) !important;
         }
 
-        .pxl-tab-service .pxl-service__btn {
-            background-color: #D4F4CA !important;
-            color: #131d1a !important;
-            transition: all 0.3s ease !important;
+        .service-explorer-card.active .card-title {
+            color: var(--brand-green) !important;
         }
 
-        .pxl-tab-service .pxl-service__btn:hover {
-            background-color: #D4F4CA !important;
-            color: #0b3b24 !important;
+        .card-arrow-circle {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 24px !important;
+            height: 24px !important;
+            border-radius: 50% !important;
+            background: #F4FBF1 !important;
+            color: var(--brand-green) !important;
+            opacity: 0 !important;
+            transform: translateX(-10px) !important; /* Slide in from left under RTL */
+            transition: var(--transition-base) !important;
+            flex-shrink: 0 !important;
+        }
+
+        .card-arrow-circle svg {
+            width: 14px !important;
+            height: 14px !important;
+            transform: scaleX(-1) !important; /* points left in RTL */
+        }
+
+        .service-explorer-card.active .card-arrow-circle {
+            opacity: 1 !important;
+            transform: translateX(0) !important;
+            background: var(--brand-green) !important;
+            color: #FFFFFF !important;
         }
 
         /* =========================================================
@@ -537,6 +629,218 @@
 
         html[dir="rtl"] #pxl-footer-elementor .pxl-icon__item {
             direction: ltr !important;
+        }
+        /* Service Preview Card Details */
+        .service-preview-card {
+            position: sticky !important;
+            top: 100px !important;
+            background: #FFFFFF !important;
+            border: 1px solid rgba(0, 0, 0, 0.05) !important;
+            border-radius: 20px !important;
+            overflow: hidden !important;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05) !important;
+            width: 100% !important;
+            transition: var(--transition-base) !important;
+        }
+
+        @keyframes explorerPanelFadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(12px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .service-preview-panel {
+            display: none !important;
+            flex-direction: column !important;
+            width: 100% !important;
+        }
+
+        .service-preview-panel.active {
+            display: flex !important;
+            animation: explorerPanelFadeIn 350ms cubic-bezier(0.16, 1, 0.3, 1) forwards !important;
+        }
+
+        .preview-image-container {
+            width: 100% !important;
+            height: 230px !important;
+            overflow: hidden !important;
+            position: relative !important;
+        }
+
+        .preview-image {
+            width: 100% !important;
+            height: 100% !important;
+            object-fit: cover !important;
+            transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
+
+        .service-preview-card:hover .preview-image {
+            transform: scale(1.04) !important;
+        }
+
+        .preview-details {
+            padding: 30px !important;
+            display: flex !important;
+            flex-direction: column !important;
+            text-align: right !important; /* RTL Align */
+        }
+
+        .preview-header {
+            display: flex !important;
+            align-items: center !important;
+            gap: 14px !important;
+            margin-bottom: 16px !important;
+        }
+
+        .preview-icon-wrapper {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 44px !important;
+            height: 44px !important;
+            border-radius: 12px !important;
+            background: var(--brand-green-bg) !important;
+            color: var(--brand-green) !important;
+        }
+
+        .preview-title {
+            font-size: 22px !important;
+            font-weight: 800 !important;
+            color: var(--dark-text) !important;
+            margin: 0 !important;
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        .preview-desc {
+            font-size: 15px !important;
+            color: var(--muted-text) !important;
+            line-height: 1.6 !important;
+            margin-bottom: 24px !important;
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        .preview-divider {
+            height: 1px !important;
+            background: rgba(0, 0, 0, 0.06) !important;
+            margin-bottom: 24px !important;
+        }
+
+        .preview-benefits {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 0 30px 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 14px !important;
+        }
+
+        .preview-benefits li {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 10px !important;
+            font-size: 14.5px !important;
+            font-weight: 600 !important;
+            color: var(--dark-text) !important;
+            line-height: 1.4 !important;
+            font-family: 'Cairo', sans-serif !important;
+        }
+
+        .benefit-check {
+            width: 18px !important;
+            height: 18px !important;
+            color: var(--brand-green) !important;
+            flex-shrink: 0 !important;
+            margin-top: 2px !important;
+        }
+
+        .benefit-check path, .benefit-check polyline {
+            stroke-width: 3 !important;
+        }
+
+        .preview-cta-btn {
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            padding: 14px 28px !important;
+            background: var(--brand-green) !important;
+            color: #FFFFFF !important;
+            font-weight: 700 !important;
+            border-radius: 50px !important;
+            text-decoration: none !important;
+            transition: var(--transition-base) !important;
+            box-shadow: 0 4px 15px rgba(60, 162, 0, 0.2) !important;
+            direction: rtl !important;
+            font-family: 'Cairo', sans-serif !important;
+            width: 100% !important;
+            box-sizing: border-box !important;
+            border: none !important;
+        }
+
+        .preview-cta-btn:hover {
+            background: var(--brand-green-hover) !important;
+            box-shadow: 0 6px 20px rgba(60, 162, 0, 0.3) !important;
+            transform: translateY(-2px) !important;
+            color: #FFFFFF !important;
+        }
+
+        .preview-cta-btn svg {
+            width: 16px !important;
+            height: 16px !important;
+            transform: scaleX(-1) !important; /* Point arrow left in RTL */
+        }
+
+        /* RESPONSIVE LAYOUT */
+        @media (max-width: 1200px) {
+            .service-explorer {
+                gap: 24px !important;
+            }
+            .service-explorer-left {
+                flex: 1.3 !important;
+            }
+            .service-explorer-grid {
+                grid-template-columns: repeat(2, 1fr) !important;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .service-explorer {
+                flex-direction: column !important;
+            }
+            .service-preview-card {
+                position: static !important;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .service-explorer-grid {
+                gap: 12px !important;
+            }
+            .service-explorer-card {
+                padding: 14px 16px !important;
+            }
+            .card-title {
+                font-size: 14px !important;
+            }
+            .card-arrow-circle {
+                display: none !important; /* hide to save space */
+            }
+            .preview-image-container {
+                height: 200px !important;
+            }
+            .preview-details {
+                padding: 20px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .service-explorer-grid {
+                grid-template-columns: 1fr !important;
+            }
         }
     </style>
     <meta charset="UTF-8">
@@ -2863,617 +3167,99 @@
                                                                             class="no-lazyload attachment-full" alt=""
                                                                             loading="eager" />
                                                                     </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="elementor-element elementor-element-3411548 elementor-widget elementor-widget-pxl_tab_service"
-                                                        data-id="3411548" data-element_type="widget"
-                                                        data-e-type="widget" data-widget_type="pxl_tab_service.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="pxl-tabs pxl-tab-service tab-effect-fade "
-                                                                data-wow-delay="ms">
-                                                                <div class="pxl-tab-service__inner">
-                                                                    <div
-                                                                        class="pxl-tabs--title pxl-tab-service__headers">
-                                                                        <span
-                                                                            class="pxl-item--title pxl-tab-service__header-pill active"
-                                                                            data-target="#pxl_tab_service-3411548-6950-1401">
-                                                                            <span class="pxl-title--text"> تنظيف المنازل
-                                                                                والفلل </span> </span> <span
-                                                                            class="pxl-item--title pxl-tab-service__header-pill "
-                                                                            data-target="#pxl_tab_service-3411548-6950-1399">
-                                                                            <span class="pxl-title--text"> تنظيف المكاتب
-                                                                                والشركات </span> </span> <span
-                                                                            class="pxl-item--title pxl-tab-service__header-pill "
-                                                                            data-target="#pxl_tab_service-3411548-6950-1397">
-                                                                            <span class="pxl-title--text"> التنظيف
-                                                                                الشامل والعميق
-                                                                            </span> </span> <span
-                                                                            class="pxl-item--title pxl-tab-service__header-pill "
-                                                                            data-target="#pxl_tab_service-3411548-6950-1395">
-                                                                            <span class="pxl-title--text"> تنظيف شامل
-                                                                                ومرن </span> </span>
-                                                                    </div>
-                                                                    <div
-                                                                        class="pxl-tabs--content pxl-tab-service__content-wrapper">
-                                                                        <div id="pxl_tab_service-3411548-6950-1401"
-                                                                            class="pxl-item--content pxl-tab-service__panel active"
-                                                                            style="display: block;">
-                                                                            <div class="pxl-tab-service__grid">
-                                                                                <div class="pxl-tab-service__details">
-                                                                                    <h4 class="pxl-service__title">
-                                                                                        تنظيف المنازل والفلل</h4>
-                                                                                    <p class="pxl-service__desc"> نساعد
-                                                                                        في الحفاظ على منزل نظيف، منعش،
-                                                                                        ومريح من خلال خدمات نظافة
-                                                                                        استثنائية.</p>
-                                                                                    <ul class="pxl-service__features">
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح
-                                                                                                والزوايا
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس،
-                                                                                                والتعقيم الشامل
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة
-                                                                                                100%
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                ضمان كامل للجودة والرضا
-                                                                                            </span>
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <div class="pxl-service__action"> <a
-                                                                                            href="https://demo.casethemes.net/genfresco/service/house-cleaning/"
-                                                                                            class="pxl-service__btn">
-                                                                                            <span
-                                                                                                class="pxl-service__btn-text">اقرأ
-                                                                                                المزيد</span> <span
-                                                                                                class="pxl-service__btn-icon">
-                                                                                                <svg width="14"
-                                                                                                    height="14"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <line x1="7" y1="17"
-                                                                                                        x2="17" y2="7">
-                                                                                                    </line>
-                                                                                                    <polyline
-                                                                                                        points="7 7 17 7 17 17">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> </a>
+                                                                                    <div class="pxl-service__action">
+                                                                                        <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف الشركات والمكاتب." target="_blank" rel="noopener noreferrer" class="pxl-service__btn">
+                                                                                            <span class="pxl-service__btn-text">تواصل معنا</span>
+                                                                                            <span class="pxl-service__btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+                                                                                        </a>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div
-                                                                                    class="pxl-tab-service__image-wrapper">
-                                                                                    <a
-                                                                                        href="https://demo.casethemes.net/genfresco/service/house-cleaning/">
-                                                                                        <img loading="lazy"
-                                                                                            decoding="async"
-                                                                                            class="pxl-service__image "
-                                                                                            src="assets/images/three.png"
-                                                                                            width="800" height="437"
-                                                                                            alt="service8"
-                                                                                            title="service8" /> </a>
+                                                                                <div class="pxl-tab-service__image-wrapper">
+                                                                                    <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف الشركات والمكاتب." target="_blank" rel="noopener noreferrer">
+                                                                                        <img loading="lazy" decoding="async" class="pxl-service__image" src="assets/images/service7-800x437.webp" width="800" height="437" alt="تنظيف الشركات والمكاتب" title="تنظيف الشركات والمكاتب" />
+                                                                                    </a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div id="pxl_tab_service-3411548-6950-1399"
-                                                                            class="pxl-item--content pxl-tab-service__panel ">
+
+                                                                        <!-- 11. تنظيف المراكز التجارية -->
+                                                                        <div id="service-shopping"
+                                                                            class="pxl-item--content pxl-tab-service__panel">
                                                                             <div class="pxl-tab-service__grid">
                                                                                 <div class="pxl-tab-service__details">
-                                                                                    <h4 class="pxl-service__title">
-                                                                                        تنظيف المكاتب والشركات</h4>
-                                                                                    <p class="pxl-service__desc">
-                                                                                        حافظ على بيئة عمل نظيفة ومحفزة
-                                                                                        للإنتاجية مع خدمات تنظيف المكاتب
-                                                                                        الموثوقة لدينا.</p>
+                                                                                    <h4 class="pxl-service__title">تنظيف المراكز التجارية</h4>
+                                                                                    <p class="pxl-service__desc">حافظ على بيئة تسوق نظيفة وجذابة في المولات والمراكز التجارية من خلال رعاية تنظيف مستمرة.</p>
                                                                                     <ul class="pxl-service__features">
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح
-                                                                                                والزوايا
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">تعقيم صالات الطعام ودورات المياه العامة</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس،
-                                                                                                والتعقيم الشامل
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">تنظيف الواجهات الزجاجية والمداخل الرئيسية</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة
-                                                                                                100%
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">تعقيم وتطهير السلالم والمصاعد الكهربائية</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                ضمان كامل للجودة والرضا
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">كنس وغسيل مستمر للأرضيات والممرات</span>
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <div class="pxl-service__action"> <a
-                                                                                            href="https://demo.casethemes.net/genfresco/service/office-cleaning/"
-                                                                                            class="pxl-service__btn">
-                                                                                            <span
-                                                                                                class="pxl-service__btn-text">اقرأ
-                                                                                                المزيد</span> <span
-                                                                                                class="pxl-service__btn-icon">
-                                                                                                <svg width="14"
-                                                                                                    height="14"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <line x1="7" y1="17"
-                                                                                                        x2="17" y2="7">
-                                                                                                    </line>
-                                                                                                    <polyline
-                                                                                                        points="7 7 17 7 17 17">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> </a>
+                                                                                    <div class="pxl-service__action">
+                                                                                        <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف المراكز التجارية." target="_blank" rel="noopener noreferrer" class="pxl-service__btn">
+                                                                                            <span class="pxl-service__btn-text">تواصل معنا</span>
+                                                                                            <span class="pxl-service__btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+                                                                                        </a>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div
-                                                                                    class="pxl-tab-service__image-wrapper">
-                                                                                    <a
-                                                                                        href="https://demo.casethemes.net/genfresco/service/office-cleaning/">
-                                                                                        <img loading="lazy"
-                                                                                            decoding="async"
-                                                                                            class="pxl-service__image "
-                                                                                            src="assets/images/four.png"
-                                                                                            width="800" height="437"
-                                                                                            alt="service7"
-                                                                                            title="service7" /> </a>
+                                                                                <div class="pxl-tab-service__image-wrapper">
+                                                                                    <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف المراكز التجارية." target="_blank" rel="noopener noreferrer">
+                                                                                        <img loading="lazy" decoding="async" class="pxl-service__image" src="assets/images/service6-800x437.webp" width="800" height="437" alt="تنظيف المراكز التجارية" title="تنظيف المراكز التجارية" />
+                                                                                    </a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
-                                                                        <div id="pxl_tab_service-3411548-6950-1397"
-                                                                            class="pxl-item--content pxl-tab-service__panel ">
+
+                                                                        <!-- 12. تنظيف المصانع -->
+                                                                        <div id="service-factories"
+                                                                            class="pxl-item--content pxl-tab-service__panel">
                                                                             <div class="pxl-tab-service__grid">
                                                                                 <div class="pxl-tab-service__details">
-                                                                                    <h4 class="pxl-service__title">
-                                                                                        التنظيف الشامل والعميق</h4>
-                                                                                    <p class="pxl-service__desc"> نقدم
-                                                                                        تنظيفاً شاملاً وعميقاً لكل
-                                                                                        زاوية، مما يقضي على الأتربة
-                                                                                        المتراكمة والبكتيريا.</p>
+                                                                                    <h4 class="pxl-service__title">تنظيف المصانع</h4>
+                                                                                    <p class="pxl-service__desc">خدمات تنظيف صناعية شاقة للمصانع، المستودعات، وخطوط الإنتاج مع اتباع معايير سلامة صارمة.</p>
                                                                                     <ul class="pxl-service__features">
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح
-                                                                                                والزوايا
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">إزالة الشحوم من الآلات وخطوط الإنتاج</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس،
-                                                                                                والتعقيم الشامل
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">جلي وتلميع أرضيات المستودعات الكبيرة</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة
-                                                                                                100%
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">التخلص الآمن من المخلفات والنفايات الصناعية</span>
                                                                                         </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                ضمان كامل للجودة والرضا
-                                                                                            </span>
+                                                                                        <li class="pxl-service__feature">
+                                                                                            <span class="pxl-service__feature-icon"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></span>
+                                                                                            <span class="pxl-service__feature-text">الالتزام بمعايير الأمن والسلامة المهنية</span>
                                                                                         </li>
                                                                                     </ul>
-                                                                                    <div class="pxl-service__action"> <a
-                                                                                            href="https://demo.casethemes.net/genfresco/service/deep-cleaning/"
-                                                                                            class="pxl-service__btn">
-                                                                                            <span
-                                                                                                class="pxl-service__btn-text">اقرأ
-                                                                                                المزيد</span> <span
-                                                                                                class="pxl-service__btn-icon">
-                                                                                                <svg width="14"
-                                                                                                    height="14"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <line x1="7" y1="17"
-                                                                                                        x2="17" y2="7">
-                                                                                                    </line>
-                                                                                                    <polyline
-                                                                                                        points="7 7 17 7 17 17">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> </a>
+                                                                                    <div class="pxl-service__action">
+                                                                                        <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف المصانع." target="_blank" rel="noopener noreferrer" class="pxl-service__btn">
+                                                                                            <span class="pxl-service__btn-text">تواصل معنا</span>
+                                                                                            <span class="pxl-service__btn-icon"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg></span>
+                                                                                        </a>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div
-                                                                                    class="pxl-tab-service__image-wrapper">
-                                                                                    <a
-                                                                                        href="https://demo.casethemes.net/genfresco/service/deep-cleaning/">
-                                                                                        <img loading="lazy"
-                                                                                            decoding="async"
-                                                                                            class="pxl-service__image "
-                                                                                            src="assets/images/two.png"
-                                                                                            width="800" height="437"
-                                                                                            alt="service6"
-                                                                                            title="service6" /> </a>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div id="pxl_tab_service-3411548-6950-1395"
-                                                                            class="pxl-item--content pxl-tab-service__panel ">
-                                                                            <div class="pxl-tab-service__grid">
-                                                                                <div class="pxl-tab-service__details">
-                                                                                    <h4 class="pxl-service__title">
-                                                                                        تنظيف مرن حسب احتياجك</h4>
-                                                                                    <p class="pxl-service__desc"> اختر
-                                                                                        خدمات تنظيف مخصصة تناسب جدولك
-                                                                                        الزمني واحتياجاتك الخاصة.</p>
-                                                                                    <ul class="pxl-service__features">
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                تنظيف عميق لجميع الأسطح
-                                                                                                والزوايا
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                إزالة الغبار، الكنس،
-                                                                                                والتعقيم الشامل
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                منتجات تنظيف بيئية وآمنة
-                                                                                                100%
-                                                                                            </span>
-                                                                                        </li>
-                                                                                        <li
-                                                                                            class="pxl-service__feature">
-                                                                                            <span
-                                                                                                class="pxl-service__feature-icon">
-                                                                                                <svg width="22"
-                                                                                                    height="22"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <path
-                                                                                                        d="M22 11.08V12a10 10 0 1 1-5.93-9.14">
-                                                                                                    </path>
-                                                                                                    <polyline
-                                                                                                        points="22 4 12 14.01 9 11.01">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> <span
-                                                                                                class="pxl-service__feature-text">
-                                                                                                ضمان كامل للجودة والرضا
-                                                                                            </span>
-                                                                                        </li>
-                                                                                    </ul>
-                                                                                    <div class="pxl-service__action"> <a
-                                                                                            href="https://demo.casethemes.net/genfresco/service/general-flexible/"
-                                                                                            class="pxl-service__btn">
-                                                                                            <span
-                                                                                                class="pxl-service__btn-text">اقرأ
-                                                                                                المزيد</span> <span
-                                                                                                class="pxl-service__btn-icon">
-                                                                                                <svg width="14"
-                                                                                                    height="14"
-                                                                                                    viewBox="0 0 24 24"
-                                                                                                    fill="none"
-                                                                                                    stroke="currentColor"
-                                                                                                    stroke-width="2.5"
-                                                                                                    stroke-linecap="round"
-                                                                                                    stroke-linejoin="round">
-                                                                                                    <line x1="7" y1="17"
-                                                                                                        x2="17" y2="7">
-                                                                                                    </line>
-                                                                                                    <polyline
-                                                                                                        points="7 7 17 7 17 17">
-                                                                                                    </polyline>
-                                                                                                </svg> </span> </a>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div
-                                                                                    class="pxl-tab-service__image-wrapper">
-                                                                                    <a
-                                                                                        href="https://demo.casethemes.net/genfresco/service/general-flexible/">
-                                                                                        <img loading="lazy"
-                                                                                            decoding="async"
-                                                                                            class="pxl-service__image "
-                                                                                            src="assets/images/one.png"
-                                                                                            width="800" height="437"
-                                                                                            alt="service5"
-                                                                                            title="service5" /> </a>
+                                                                                <div class="pxl-tab-service__image-wrapper">
+                                                                                    <a href="https://wa.me/966500126016?text=مرحباً، أنا مهتم بخدمة تنظيف المصانع." target="_blank" rel="noopener noreferrer">
+                                                                                        <img loading="lazy" decoding="async" class="pxl-service__image" src="assets/images/service5-800x437.webp" width="800" height="437" alt="تنظيف المصانع" title="تنظيف المصانع" />
+                                                                                    </a>
                                                                                 </div>
                                                                             </div>
                                                                         </div>
@@ -6729,6 +6515,66 @@
                     }
                 }, true);
             });
+
+            // Premium Service Explorer Interaction & Accessibility Script
+            (function() {
+                const cards = document.querySelectorAll('.service-explorer-card');
+                const panels = document.querySelectorAll('.service-preview-panel');
+                
+                if (cards.length === 0) return;
+
+                function selectService(targetId) {
+                    cards.forEach(card => {
+                        const isTarget = card.getAttribute('data-target') === targetId;
+                        card.classList.toggle('active', isTarget);
+                        card.setAttribute('aria-selected', isTarget ? 'true' : 'false');
+                    });
+
+                    panels.forEach(panel => {
+                        panel.classList.toggle('active', panel.id === targetId);
+                    });
+                }
+
+                cards.forEach((card, index) => {
+                    card.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = card.getAttribute('data-target');
+                        selectService(targetId);
+                    });
+
+                    // Keyboard navigation (Supports natural RTL Arrow Direction mapping)
+                    card.addEventListener('keydown', function(e) {
+                        let nextIndex = -1;
+                        const isTwoCol = cards.length > 1 && cards[0].offsetTop === cards[1].offsetTop;
+                        const step = isTwoCol ? 2 : 1;
+
+                        if (e.key === 'ArrowRight') {
+                            e.preventDefault();
+                            nextIndex = (index - 1 + cards.length) % cards.length;
+                        } else if (e.key === 'ArrowLeft') {
+                            e.preventDefault();
+                            nextIndex = (index + 1) % cards.length;
+                        } else if (e.key === 'ArrowDown') {
+                            e.preventDefault();
+                            nextIndex = (index + step) % cards.length;
+                        } else if (e.key === 'ArrowUp') {
+                            e.preventDefault();
+                            nextIndex = (index - step + cards.length) % cards.length;
+                        } else if (e.key === 'Home') {
+                            e.preventDefault();
+                            nextIndex = 0;
+                        } else if (e.key === 'End') {
+                            e.preventDefault();
+                            nextIndex = cards.length - 1;
+                        }
+
+                        if (nextIndex !== -1) {
+                            cards[nextIndex].focus();
+                            cards[nextIndex].click();
+                        }
+                    });
+                });
+            })();
         });
     </script>
 </body>
