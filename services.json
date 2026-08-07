@@ -1,0 +1,1144 @@
+{
+  "services": [
+    {
+      "slug": "building-cleaning",
+      "id": "service-building",
+      "image": "assets/images/service8-800x437.webp",
+      "ar": {
+        "title": "تنظيف المباني والعمائر",
+        "subtitle": "حلول تنظيف شاملة ومتكاملة للمباني السكنية والتجارية",
+        "meta_title": "خدمات تنظيف المباني والعمائر بالرياض والقصيم | شركة الدوكي",
+        "meta_description": "أفضل شركة تنظيف مباني وعمائر بالرياض والقصيم. خدمات غسيل الواجهات، مداخل العمائر، الدرج، والتنظيف الشامل للمجمعات السكنية بأعلى جودة وإشراف احترافي.",
+        "short_desc": "حلول تنظيف شاملة ومتكاملة للمباني السكنية والتجارية، تحافظ على النظافة العامة والمظهر الاحترافي للمبنى.",
+        "full_desc": [
+          "تعد خدمة تنظيف المباني والعمائر من أهم الخدمات الأساسية التي تقدمها شركة الدوكي للتنظيف والتشغيل. نحن نوفر فرق عمل مدربة ومجهزة بأحدث معدات ومواد التنظيف الحديثة لضمان العناية الشاملة بالمداخل، والممرات، والمصاعد، والنوافذ، والمواقف الخارجية.",
+          "سواء كنت تمتلك برجاً تجارياً أو مجمعاً سكنياً، فإن برامج التنظيف الدورية والشاملة التي نطبقها تضمن لك بيئة صحية، نظيفة، وجذابة تعكس انطباعاً راقياً لزوار وسكان المبنى على مدار الساعة."
+        ],
+        "benefits": [
+          "تنظيف وتلميع المداخل والسلالم والممرات بشكل دوري",
+          "إدارة ونقل النفايات والحاويات بطرق صحية وآمنة",
+          "إزالة الغبار والأتربة الشديدة وتقشير الرواسب المتراكمة",
+          "برامج صيانة ونظافة جدولية شريحة ومتنوعة (يومية / اسبوعية / شهرية)"
+        ],
+        "process": [
+          {
+            "step": "1. المعاينة والتقييم",
+            "desc": "زيارة المبنى وتحديد مساحات العمل والمتطلبات الخاصة وتجهيز فريق العمل والآلات المناسبة."
+          },
+          {
+            "step": "2. التنظيف الأساسي العميق",
+            "desc": "إزالة الأتربة، جلي الأرضيات، وتنظيف الواجهات الزجاجية والمداخل بعناية فائقة."
+          },
+          {
+            "step": "3. التعقيم والتلميع",
+            "desc": "استخدام مواد معقمة وملمعات فائقة الجودة لجميع الأسطح والمصاعد والسلالم."
+          },
+          {
+            "step": "4. التسليم والتفتيش",
+            "desc": "مراجعة جودة العمل مع المشرف والعميل لضمان تحقيق كامل معايير الجودة."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تقدمون عقود تنظيف دورية للمباني والعمائر؟",
+            "answer": "نعم، نقدم عقود تنظيف دورية (سنوية، شهرية، وأسبوعية) مصممة لتلبية احتياجات العمائر السكنية والمجمعات التجارية."
+          },
+          {
+            "question": "ما هي المعدات المستخدمة في تنظيف المباني؟",
+            "answer": "نستخدم آلات جلي الأرضيات، مكائن الغسيل بالضغط العالي، ومواد تنظيف وتعقيم حاصلة على ترخيص وتطابق أعلى المعايير."
+          }
+        ]
+      },
+      "en": {
+        "title": "Building Cleaning",
+        "subtitle": "Comprehensive cleaning solutions for residential and commercial buildings",
+        "meta_title": "Professional Building Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Top-rated building cleaning services in Riyadh & Qassim. Full building maintenance, hallway cleaning, entrance care, and deep sanitation by experts.",
+        "short_desc": "Comprehensive cleaning solutions for residential and commercial buildings, maintaining hygiene and a professional appearance.",
+        "full_desc": [
+          "Building cleaning is a essential core service provided by Al-Duki Cleaning. We deploy trained teams equipped with advanced machinery and eco-friendly cleaning agents to maintain entrances, hallways, elevators, windows, and common areas.",
+          "Whether you own a commercial tower or a residential complex, our customizable cleaning programs guarantee a clean, healthy, and pristine environment that leaves a lasting positive impression on residents and visitors."
+        ],
+        "benefits": [
+          "Professional lobby, hallway, and staircase cleaning",
+          "Hygienic waste management and disposal solutions",
+          "High-dusting, stain removal, and deep floor polishing",
+          "Tailored scheduled maintenance programs (daily, weekly, monthly)"
+        ],
+        "process": [
+          {
+            "step": "1. Site Assessment",
+            "desc": "Inspecting the building premises to define tailored scope, schedule, and equipment requirements."
+          },
+          {
+            "step": "2. Deep Core Cleaning",
+            "desc": "Removing heavy dust, pressure-washing outdoor areas, and scrubbing main lobby floors."
+          },
+          {
+            "step": "3. Sanitization & Polishing",
+            "desc": "Applying hospital-grade disinfectants and surface polishes to handles, elevators, and glass."
+          },
+          {
+            "step": "4. Final Quality Inspection",
+            "desc": "Conducting a comprehensive walk-through to ensure top quality standards are met."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do you provide long-term contract cleaning for commercial buildings?",
+            "answer": "Yes, we offer flexible long-term contracts for residential complexes, commercial towers, and multi-tenant facilities."
+          },
+          {
+            "question": "Are your cleaning agents safe for high-traffic areas?",
+            "answer": "Absolutely. All our cleaning chemical agents are eco-friendly, non-toxic, and safe for residents and visitors."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ceramics-cleaning",
+      "id": "service-ceramics",
+      "image": "assets/images/service7-800x437.webp",
+      "ar": {
+        "title": "تنظيف وتلميع السيراميك والرخام",
+        "subtitle": "إعادة اللمعان والتألق لجميع أنواع السيراميك والرخام والبلاط",
+        "meta_title": "شركة تنظيف وتلميع السيراميك والرخام | خدمات جلي الأرضيات",
+        "meta_description": "أفضل خدمات تنظيف، جلي، وتلميع السيراميك والرخام بالرياض. تلميع بالكริสตال، إزالة الفواصل والترسبات، وإعادة الأرضيات كأنها جديدة.",
+        "short_desc": "إعادة اللمعان والتألق لجميع أنواع السيراميك والرخام، وإزالة البقع الصعبة والفواصل والمتراكمات.",
+        "full_desc": [
+          "مع مرور الوقت والتردد المستمر، تفقد أرضيات السيراميك والرخام بريقها وتراكم البقع في الفواصل. تضمن لك شركة الدوكي إعادة الحيوية واللمعان الفائق لأرضياتك باستخدام أحدث ماكينات جلي الرخام الكريستالي ومعدات تنظيف الفواصل الدقيقة.",
+          "نحن نستخدم مواد تلميع وحماية خاصة تعمل على معالجة الخدوش السطحية وإعادة تنظيف الترويبة، مما يمنح أرضيات منزلك أو مكتبك مظهرًا ملكيًا بلمعان يدوم طويلاً."
+        ],
+        "benefits": [
+          "جلي وتلميع الرخام والسيراميك بأحدث أجهزة الكريستال والألماس",
+          "تنظيف وتجديد ترويبة الفواصل وإزالة الأوساخ المتراكمة",
+          "إزالة البقع المستعصية، الدهون، والطلاء بأمان تام",
+          "إضافة طبقة حماية عازلة لمنع امتصاص السوائل والغبار"
+        ],
+        "process": [
+          {
+            "step": "1. المعاينة واختبار الأرضية",
+            "desc": "تحديد نوع الرخام أو السيراميك واختيار أقراص الجلي والمواد المناسبة."
+          },
+          {
+            "step": "2. الغسيل والتنظيف الأولي",
+            "desc": "إزالة الأتربة والغبار وإجراء تنظيف عميق للفواصل والأطراف."
+          },
+          {
+            "step": "3. الجلي والتلميع",
+            "desc": "استخدام مكائن الدوران الألماسي والكريستال لإعطاء بريق وشفافية فائقة."
+          },
+          {
+            "step": "4. الحماية والشمع النهائي",
+            "desc": "تطبيق مواد الحماية ضد البقع والخدوش للحفاظ على نضارة الأرضيات."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تؤثر عملية جلي الرخام على سماكة البلاط؟",
+            "answer": "لا، نحن نستخدم أحدث أسطوانات الألماس الدقيقة التي تكتفي بإزالة الطبقة الميتة فقط دون إلحاق أي ضرر بسماكة الرخام."
+          },
+          {
+            "question": "كيف يمكننا الحفاظ على تلميع السيراميك والرخام بعد الخدمة؟",
+            "answer": "ننصح بالتنظيف بمواد متعادلة الحموضة وتجنب المنظفات القوية القاسية، مع الاستفادة من خدمة الصيانة الدورية لدينا."
+          }
+        ]
+      },
+      "en": {
+        "title": "Cleaning & Polishing Ceramics",
+        "subtitle": "Restoring shine and brilliance to all ceramic, marble, and tile surfaces",
+        "meta_title": "Ceramic & Marble Floor Polishing Services | Al-Duki Cleaning",
+        "meta_description": "Expert ceramic and marble cleaning, diamond grinding, and grout restoration in Riyadh & Qassim. High-gloss finish and scratch removal.",
+        "short_desc": "Restoring high gloss and elegance to ceramics and marble while deep cleaning grout lines and hard stains.",
+        "full_desc": [
+          "Over time, traffic and dirt dull the shine of ceramic and marble flooring. Al-Duki Cleaning utilizes advanced diamond grinding machinery and crystal polishing compounds to revive your floors to mirror-like brilliance.",
+          "Our specialized treatment removes embedded grout grime, repairs minor surface scratches, and applies a protective seal that shields against liquid spills and future staining."
+        ],
+        "benefits": [
+          "Diamond-grinding and crystal polishing for radiant floor finish",
+          "Deep cleaning and restoration of stained tile grout lines",
+          "Safe removal of tough stains, grease, and paint residue",
+          "Protective sealing against moisture and heavy footwear abrasion"
+        ],
+        "process": [
+          {
+            "step": "1. Surface & Stone Analysis",
+            "desc": "Determining stone hardness and tile type to select appropriate polishing pads."
+          },
+          {
+            "step": "2. Grout & Dirt Scrubbing",
+            "desc": "Extracting deep dirt trapped inside grout channels using specialized rotowash tools."
+          },
+          {
+            "step": "3. Diamond Honing & Polishing",
+            "desc": "Gradually polishing the stone surface from rough to mirror crystal shine."
+          },
+          {
+            "step": "4. Sealant & Protective Coating",
+            "desc": "Applying high-grade sealers to preserve brilliance and protect against spills."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you polish both ceramic tiles and natural marble?",
+            "answer": "Yes, we have specialized equipment and polishing compounds specifically tailored for ceramics, porcelain, marble, and granite."
+          },
+          {
+            "question": "How long does floor polishing take?",
+            "answer": "Execution time depends on floor size and condition, typically ranging from a few hours for residential areas to a full day for larger spaces."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "furniture-cleaning",
+      "id": "service-furniture",
+      "image": "assets/images/service6-800x437.webp",
+      "ar": {
+        "title": "تنظيف الأثاث والمفروشات",
+        "subtitle": "تنظيف وتعقيم عميق للكنب، السجاد، الستائر، والأسرة بالبخار",
+        "meta_title": "شركة تنظيف كنب ومفروشات بالبخار | خدمات غسيل السجاد والستائر",
+        "meta_description": "أفضل شركة غسيل كنب ومفروشات وسجاد بالبخار بالرياض. إزالة البقع المستعصية، الروائح، والتعقيم الشامل مع تجفيف سريع.",
+        "short_desc": "غسيل وتنظيف عميق للكنب، المجالس، السجاد، والستائر بالبخار والتعقيم لإزالة الأوساخ والروائح البكتيرية.",
+        "full_desc": [
+          "تختبئ في طيات المفروشات والكنب ألياف الدقيقة والأتربة والجراثيم التي قد تسبب الحساسية. تقدم لك شركة الدوكي أحدث تقنيات غسيل وتنظيف المفروشات بالبخار والشفط القوي.",
+          "نحافظ على ألوان وقماش الأثاث الخاص بك بإستخدام شامبوهات مستوردة آمنة، ونضمن لك إزالة البقع الصعبة كالقهوة والزيوت مع تعقيم حقيقي وتجفيف سريع يمكنك من استخدام الأثاث في وقت قياسي."
+        ],
+        "benefits": [
+          "تنظيف الكنب والمجالس والسجاد باستخدام غسيل الرغوة الجافة والبخار",
+          "إزالة البقع المستعصية وروائح الحيوانات الأليفة أو الدخان",
+          "تعقيم حراري بالبخار يقضي على حشرات الفراش والبكتيريا كلياً",
+          "تقنية شفط سريعة تسمح بتجفيف المفروشات خلال وقت قصير"
+        ],
+        "process": [
+          {
+            "step": "1. الشفط الجاف للأتربة",
+            "desc": "إزالة كافة الأتربة والغبار السطحي والداخل في ثنايا القماش باستخدام مكنسة شفط عميق."
+          },
+          {
+            "step": "2. المعالجة المباشرة للبقع",
+            "desc": "رش مواد تفكيك البقع الخاصة على أماكن البقع المستعصية والقهوة."
+          },
+          {
+            "step": "3. التنظيف بالبخار والرغوة",
+            "desc": "ضخ البخار الحار والمواد المنظفة وتدليك الألياف بلطف لحمايتها."
+          },
+          {
+            "step": "4. الشفط والتجفيف النهائي",
+            "desc": "سحب المياه والرغوة المعقمة بشكل كامل وتجفيف المكان ليصبح جاهزاً للاستخدام."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تتأثر ألوان الكنب أو القماش بالبخار؟",
+            "answer": "مطلقاً، نستخدم درجة حرارة ومواد مخصصة لكل نوع قماش (مخمل، جلد، ك linen، حرير) لحماية الألوان والأنسجة."
+          },
+          {
+            "question": "كم يستغرق تجفيف الكنب والمفروشات؟",
+            "answer": "بفضل أجهزة الشفط المتقدمة، تستغرق عملية التجفيف التام من ساعتين إلى 4 ساعات فقط."
+          }
+        ]
+      },
+      "en": {
+        "title": "Furniture & Upholstery Cleaning",
+        "subtitle": "Deep steam cleaning and sanitization for sofas, carpets, curtains, and mattresses",
+        "meta_title": "Steam Sofa & Upholstery Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Professional steam sofa, carpet, and mattress cleaning in Riyadh & Qassim. Tough stain removal, allergen elimination, and rapid drying.",
+        "short_desc": "Deep steam cleaning for sofas, carpets, and upholstery removing deep-seated grime, odors, and dust mites.",
+        "full_desc": [
+          "Sofas, carpets, and mattresses trap deep allergens, bacteria, and stubborn spills over time. Al-Duki Cleaning provides cutting-edge steam extraction methods to thoroughly refresh your furniture.",
+          "Our eco-certified cleaning detergents protect fabric textures and color vibrancy while removing tough oil, coffee, and pet stains, leaving your living space fresh and germ-free."
+        ],
+        "benefits": [
+          "High-temperature steam extraction for sofas, carpets, and drapes",
+          "Advanced stain treatment targeting coffee, ink, and grease",
+          "Thermal sanitization eradicating bacteria and dust mites",
+          "Powerful suction technology ensuring rapid dry times"
+        ],
+        "process": [
+          {
+            "step": "1. Dry Vacuuming",
+            "desc": "Removing loose surface dust and particles from deep inside upholstery seams."
+          },
+          {
+            "step": "2. Pre-Treatment",
+            "desc": "Applying specialized enzyme spot removers to stubborn stains."
+          },
+          {
+            "step": "3. Steam & Foam Scrubbing",
+            "desc": "Injecting hot steam and gentle shampoos into fabric fibers to break down grime."
+          },
+          {
+            "step": "4. Moisture Extraction",
+            "desc": "Extracting 95% of moisture and impurities for quick room reuse."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Will steam cleaning harm delicate fabrics like velvet or silk?",
+            "answer": "No. Our technicians inspect fabric tags and select low-moisture dry-foam or low-heat steam tailored specifically for delicate textiles."
+          },
+          {
+            "question": "How soon can I use my sofa after cleaning?",
+            "answer": "Thanks to powerful extraction equipment, sofas are typically dry and ready for use within 2 to 4 hours."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "tank-cleaning",
+      "id": "service-tanks",
+      "image": "assets/images/service5-800x437.webp",
+      "ar": {
+        "title": "غسيل وتعقيم الخزانات",
+        "subtitle": "نظافة وتعقيم الخزانات الارضية والعلوية لضمان مياه نقية وصحية",
+        "meta_title": "شركة غسيل وتعقيم خزانات المياه بالرياض | عزل وتنظيف الخزانات",
+        "meta_description": "أفضل شركة تنظيف وغسيل خزانات مياه أرضية وعلوية بالرياض والقصيم. تعقيم بمواد آمنة مصرحة من وزارة الصحة ومكافحة البكتيريا والرواسب.",
+        "short_desc": "غسيل وتعقيم شاميل للخزانات الأرضية والعلوية لإزالة الترسبات والطحالب وضمان مياه شرب نظيفة وخالية من الشوائب.",
+        "full_desc": [
+          "مياه الخزانات النظيفة هي أساس صحة العائلة والمبنى. تجمع الخزانات مع الوقت رواسب طينية، طحالب، ورواسب معدنية قد تعكر صفو المياه وتؤثر على سلامتك.",
+          "نحن في شركة الدوكي نوفر فريقاً متخصصاً ينزل إلى داخل الخزان لفرك الجدران والأرضيات بمواد مطهرة مصرح بها طبياً، ثم تعقيم المياه بتركيزات دقيقة تجعل الخزان ناصع النظافة ومجوفاً بأمان."
+        ],
+        "benefits": [
+          "تنظيف الخزانات الأرضية والعلوية بجميع أنواعها (خرسانية، ألياف زجاجية، صاج)",
+          "تفريغ الرواسب والرمال المستقرة في القاع بأجهزة سحب قوية",
+          "تعقيم بمادة الكلور المطهرة والمصرحة من الهيئات الصحية",
+          "الكشف عن التسريبات والشروخ وإجراء عمليات العزل والتصليح"
+        ],
+        "process": [
+          {
+            "step": "1. تفريغ الخزان وفحصه",
+            "desc": "سحب المياه المتبقية وفحص قاع وجدران الخزان للكشف عن التشققات أو الرواسب."
+          },
+          {
+            "step": "2. الغسيل اليدوي والآلي",
+            "desc": "نزول الفني لفرك الجدران وإزالة الطحالب والرواسب الملتصقة بالفرش ومكائن الضغط."
+          },
+          {
+            "step": "3. التعقيم بالكلور الطبي",
+            "desc": "رش الخزان بمواد تعقيم آمنة ومصرحة لقتل البكتيريا والميكروبات."
+          },
+          {
+            "step": "4. الشطف والتعبئة",
+            "desc": "شطف الخزان لعدة مرات والتأكد من خلوه تماماً من أي روائح أو شوائب قبل إعادة استخدامه."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "كم مرة يجب تنظيف خزان المياه في السنة؟",
+            "answer": "ينصح الأطباء والخبراء بتنظيف وتعقيم خزانات المياه مرة كل 6 أشهر على الأقل للوقاية من البكتيريا."
+          },
+          {
+            "question": "هل المواد المستخدمة في تعقيم الخزانات آمنة للشرب؟",
+            "answer": "نعم، المواد المستخدمة مصرحة من هيئة الدواء والغذاء ومطابقة لتعليمات وزارة الصحة وتتلاشى بعد الشطف التام."
+          }
+        ]
+      },
+      "en": {
+        "title": "Cleaning & Disinfecting Tanks",
+        "subtitle": "Thorough washing and sterilization for underground and overhead water tanks",
+        "meta_title": "Water Tank Cleaning & Disinfection Services | Al-Duki Cleaning",
+        "meta_description": "Professional water tank cleaning and sanitization in Riyadh & Qassim. Removal of sediment, algae, and bacterial buildup with safe disinfectants.",
+        "short_desc": "Thorough washing and sanitization for ground and roof water tanks, eliminating sludge, bacteria, and algae.",
+        "full_desc": [
+          "Clean water is vital for health and daily life. Over time, water tanks accumulate mud sediment, mineral scale, and algae growth that compromise water quality.",
+          "Al-Duki Cleaning provides trained technicians who enter underground and elevated tanks to manually scrub and pressure-wash interior walls using ministry-approved disinfectants for guaranteed pure water storage."
+        ],
+        "benefits": [
+          "Complete cleaning for underground concrete and roof polyethylene tanks",
+          "Heavy silt and sediment extraction using high-capacity water pumps",
+          "Sanitization using eco-friendly health-approved disinfectants",
+          "Leak detection and sealing inspection services available"
+        ],
+        "process": [
+          {
+            "step": "1. Drainage & Inspection",
+            "desc": "Pumping out remaining stagnant water and inspecting internal walls for cracks."
+          },
+          {
+            "step": "2. Manual & High-Pressure Scrubbing",
+            "desc": "Technicians scrub interior floors and walls to remove algae, fungi, and mud."
+          },
+          {
+            "step": "3. Chemical Disinfection",
+            "desc": "Spraying certified disinfectant solutions to eliminate pathogens and bacteria."
+          },
+          {
+            "step": "4. Multi-Rinse & Refill Safety",
+            "desc": "Thoroughly rinsing the tank multiple times to ensure 100% clean, odorless water."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "How often should water tanks be cleaned?",
+            "answer": "Health authorities recommend cleaning water storage tanks at least twice a year (every 6 months)."
+          },
+          {
+            "question": "Is the water immediately safe to drink after cleaning?",
+            "answer": "Yes, after our multi-stage rinsing process, the water stored in the tank is completely safe for domestic use."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "facade-cleaning",
+      "id": "service-facade",
+      "image": "assets/images/service4-800x437.webp",
+      "ar": {
+        "title": "تنظيف واجهات المباني",
+        "subtitle": "غسيل وتنظيف الواجهات الزجاجية والرخامية والكلادينج بأحدث الرافعات",
+        "meta_title": "شركة تنظيف واجهات زجاج ورخام بالرياض | غسيل كلادينج",
+        "meta_description": "أفضل شركة تنظيف واجهات مباني، زجاج، كلادينج ورخام بالرياض والقصيم. استخدام رافعات ومعدات ضغط عالي مع فنيين متخصصين للمرتفعات.",
+        "short_desc": "غسيل وتنظيف الواجهات الزجاجية والرخامية والكلادينج للمباني والأبراج بأحدث الرافعات وتقنيات الضغط العالي.",
+        "full_desc": [
+          "تعد واجهة المبنى العنوان الأول لجماله ورقيّه. تتأثر الواجهات بالعوامل الجوية والأتربة والعواصف الرملية مما يطفئ بريق الزجاج والكلادينج والرخام.",
+          "نحن في شركة الدوكي نمتلك رافعات هيدروليكية وحبال سبايدر مخصصة للمرتفعات، مع فريق عمل خبير ومواد جلي وتنظيف مخصصة تضمن استعادة البريق الأصلي للواجهة دون أي خدوش."
+        ],
+        "benefits": [
+          "تنظيف جميع أنواع الواجهات (زجاج، كلادينج، رخام، حجر، مسبق الصنع)",
+          "استخدام رافعات هيدروليكية ومعدات السلامة للمباني والأبراج العالية",
+          "معدات مضخات ضغط ماء عالية وزاوية رش فائقة الدقة",
+          "إزالة الغبار، مخلفات البناء، والبقع الشديدة من الطبقات الخارجية"
+        ],
+        "process": [
+          {
+            "step": "1. تجهيز خطة السلامة والرافعات",
+            "desc": "تثبيت معدات السلامة وتجهيز الرافعة أو الحبال المناسبة لارتفاع المبنى."
+          },
+          {
+            "step": "2. الغسيل الأول بضغط الماء",
+            "desc": "إزالة الأتربة والغبار الخارجي والعوالق بمكائن الضغط العالي."
+          },
+          {
+            "step": "3. التلميع وإزالة البقع",
+            "desc": "تطبيق مواد تلميع الزجاج والكلادينج مع مسح وتجفيف يدوي بالمطاط."
+          },
+          {
+            "step": "4. الفحص والاستلام النهائي",
+            "desc": "التأكد من خلو الزجاج من التلطخات واستعادة اللمعان الكامل للواجهة."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تمتلكون معدات لتنظيف الواجهات المرتفعة والأبراج؟",
+            "answer": "نعم، لدينا رافعات هيدروليكية وفرق سبايدر (Rope Access) مدربة ومؤهلة بالكامل للعمل في الارتفاعات العالية وفق إجراءات السلامة."
+          },
+          {
+            "question": "ما هي المواد المستخدمة في تنظيف واجهات الكلادينج؟",
+            "answer": "نستخدم منظفات خالية من الأسيد لضمان عدم تأكل طبقة الألومنيوم أو تغير لون الكلادينج."
+          }
+        ]
+      },
+      "en": {
+        "title": "Facade Cleaning",
+        "subtitle": "Washing and restoration for glass, marble, and cladding building exteriors",
+        "meta_title": "Building Facade & Exterior Glass Cleaning | Al-Duki Cleaning",
+        "meta_description": "Professional glass, cladding, and stone facade cleaning in Riyadh & Qassim. High-reach hydraulics, rope access spiders, and pressure washing.",
+        "short_desc": "Washing and polishing exterior glass, marble, and aluminum cladding using specialized sky-lifts and pressure systems.",
+        "full_desc": [
+          "A clean building exterior forms the first impression of your organization or residence. Sandstorms, rain, and pollution leave dust and streaks on glass and cladding.",
+          "Al-Duki Cleaning operates hydraulic boom lifts and certified rope access technicians equipped with high-pressure washers and non-abrasive cleaning formulations to make your facade shine."
+        ],
+        "benefits": [
+          "Cleaning for all facade types (Glass curtain walls, cladding, stone, marble)",
+          "Certified high-reach hydraulics and spider rope access safety gear",
+          "High-pressure water washing systems for stubborn rain and dust marks",
+          "Non-corrosive chemical solutions safe for aluminum composite panels"
+        ],
+        "process": [
+          {
+            "step": "1. Safety & Equipment Setup",
+            "desc": "Securing safety perimeters and positioning hydraulic lifts or rappelling anchors."
+          },
+          {
+            "step": "2. High-Pressure Rinse",
+            "desc": "Blasting off loose dust, sand, and atmospheric pollutants from surfaces."
+          },
+          {
+            "step": "3. Manual Detergent Squeegee",
+            "desc": "Scrubbing glass and cladding panels with specialized rubber squeegees for a streak-free finish."
+          },
+          {
+            "step": "4. Quality Inspection",
+            "desc": "Reviewing glass clarity and exterior shine from ground level to top stories."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you handle high-rise tower facade cleaning?",
+            "answer": "Yes, our certified rope access team and hydraulic boom operators are qualified for multi-story towers and commercial buildings."
+          },
+          {
+            "question": "Will pressure washing damage stone or cladding surfaces?",
+            "answer": "No, we adjust pressure levels and use wide-angle nozzle tips specifically calibrated for delicate cladding and natural stone."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "pest-control",
+      "id": "service-pest",
+      "image": "assets/images/service3-800x437.webp",
+      "ar": {
+        "title": "مكافحة الحشرات والآفات",
+        "subtitle": "قضاء تام على جميع أنواع الحشرات والقوارض بمبيدات آمنة وبدون رائحة",
+        "meta_title": "شركة مكافحة حشرات ورش مبيدات بالرياض | إبادة الصراصير والنمل",
+        "meta_description": "أفضل شركة مكافحة حشرات ورش مبيدات بالرياض والقصيم. قضاء تام على الصراصير، النمل الأبيض، بق الفراش، والقوارض بمبيدات آمنة وبضمان كتب.",
+        "short_desc": "إبادة شاملة وقضاء تام على الحشرات والقوارض والبق والصراصير باستخدام مبيدات آمنة على الصحة ومعتمدة.",
+        "full_desc": [
+          "تشكل الحشرات والقوارض خطراً كبيراً على الصحة العامة وسلامة الممتلكات. نوفر في شركة الدوكي حلول مكافحة آفات متكاملة تعتمد على الرش والدقائق الدقيقة، الجل المخصص، والمبيدات عديمة الرائحة.",
+          "فريقنا متخصص في تحديد أماكن بؤر وتكاثر الآفات وإبادتها من الجذور مع إعطاء ضمانات مكتوبة تضمن لك عدماً عودتها لفترات طويلة."
+        ],
+        "benefits": [
+          "مكافحة الصراصير، النمل الأبيض (الرمة)، بق الفراش، والبعوض",
+          "القضاء على القوارض والفئران باستخدام طعوم ومصائد حديثة",
+          "مبيدات حشرية مصرحة من وزارة الصحة آمنة للأطفال والألياف",
+          "تقديم ضمان مكتوب ومتابعة دورية مجانية خلال فترة الضمان"
+        ],
+        "process": [
+          {
+            "step": "1. المعاينة وتحديد الفصائل",
+            "desc": "فحص المبنى لمعرفة نوع الحشرات ومصدر انتشارها وأعشاشها."
+          },
+          {
+            "step": "2. اختيار مبيد الرش أو الجل",
+            "desc": "تجهيز المبيدات المعتمدة والمناسبة سواء للرش الحار أو الرغوي أو حقن الجل."
+          },
+          {
+            "step": "3. تطبيق الرش والمكافحة",
+            "desc": "رش الشقوق، المجاري، والأماكن المخفية لضمان إبادة جميع اليرقات والحشرات."
+          },
+          {
+            "step": "4. المتابعة وتسليم الضمان",
+            "desc": "إعطاء العميل شهادة الضمان والتعليمات الوقائية للحد من إعادة الظهور."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل يلزم مغادرة المنزل أثناء رش المبيدات؟",
+            "answer": "في أغلب الحالات لا يلزم المغادرة مطلقاً، حيث نستخدم مبيدات الجل والمبيدات الألمانية عديمة الرائحة والآمنة تماماً."
+          },
+          {
+            "question": "هل تقدمون ضماناً على خدمة مكافحة الحشرات؟",
+            "answer": "نعم، نقدم عقود ضمان تبدأ من 3 أشهر وتصل إلى سنة كاملة مع زيارات متابعة مجانية."
+          }
+        ]
+      },
+      "en": {
+        "title": "Pest Control",
+        "subtitle": "Complete eradication of insects, termites, and rodents with safe, odorless pesticides",
+        "meta_title": "Pest Control & Termite Extermination Services | Al-Duki Cleaning",
+        "meta_description": "Top pest control company in Riyadh & Qassim. Safe eradication of cockroaches, bed bugs, termites, and rodents with written warranty.",
+        "short_desc": "Comprehensive pest eradication for cockroaches, bed bugs, termites, and rodents using odorless, health-certified chemicals.",
+        "full_desc": [
+          "Pests pose severe health hazards and property damage. Al-Duki Cleaning delivers target-driven pest control treatments using micro-encapsulated spray systems, German gels, and odorless formulas.",
+          "Our technicians pinpoint nesting hubs and eliminate pests at their root cause, providing written guarantees and follow-up inspections for total peace of mind."
+        ],
+        "benefits": [
+          "Eradication of cockroaches, bed bugs, termites, and mosquitoes",
+          "Rodent control utilizing smart traps and bait stations",
+          "Health Ministry-certified eco-pesticides safe for kids and pets",
+          "Written warranty period with complimentary re-inspection visits"
+        ],
+        "process": [
+          {
+            "step": "1. Site Inspection",
+            "desc": "Identifying pest species, infestation level, and entry points."
+          },
+          {
+            "step": "2. Treatment Plan Selection",
+            "desc": "Selecting gel baiting, thermal fogging, or residual chemical spraying."
+          },
+          {
+            "step": "3. Precision Application",
+            "desc": "Treating cracks, plumbing outlets, and hidden voids to eliminate nests."
+          },
+          {
+            "step": "4. Warranty & Prevention Advice",
+            "desc": "Issuing written guarantees and educating clients on preventive tips."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do I need to evacuate my home during the pest spray?",
+            "answer": "Usually no evacuation is required. We use odorless gel treatments and non-toxic sprays safe for indoor environments."
+          },
+          {
+            "question": "What warranty period do you offer for pest control?",
+            "answer": "We provide written warranties ranging from 3 to 12 months depending on the treatment plan chosen."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "ac-cleaning",
+      "id": "service-ac",
+      "image": "assets/images/service2-800x437.webp",
+      "ar": {
+        "title": "تنظيف وصيانة المكيفات",
+        "subtitle": "تنظيف وتعقيم فلاتر ومراوح ودوارات المكيفات السبلت والمركزية",
+        "meta_title": "شركة غسيل وتنظيف مكيفات سبليت بالرياض | صيانة وتعبئة فريون",
+        "meta_description": "افضل شركة تنظيف مكيفات سبليت ومركزي وكاسيت بالرياض والقصيم. غسيل بالموقع بدون فك، تعقيم الفلاتر، كشف التسريب وتعبئة فريون.",
+        "short_desc": "غسيل وتنظيف شامل للمكيفات (سبليت، مركزي، كاسيت) بالموقع مع تركيب غلاف الصرف الصحي ومنع الفوضى.",
+        "full_desc": [
+          "انسداد فلاتر ومبخرات المكيفات بالأتربة يضعف التبريد ويزيد من استهلاك الكهرباء ويسبب انبعاث روائح كريهة. توفر شركة الدوكي خدمة غسيل مكيفات احترافية بمكانها دون الحاجة لفكها.",
+          "نحن نستخدم غطاء عازل مضاد للتسرب ومضخات غسيل بالضغط العالي لإزالة الأتربة والعفن من الزعانف والمراوح، مما يعيد كفاءة التبريد كالجديدة تماماً وتوفير كبير في الطاقة."
+        ],
+        "benefits": [
+          "غسيل المكيفات بمكانها باستخدام جراب الصرف الخاص لمنع اتساخ الجدران",
+          "تنظيف وتعقيم الفلاتر والمبخرات وحوض المياه ومروحة دفع الهواء",
+          "فحص مستوى غاز الفريون وضغط الكمبروسر والكشف عن التسربات",
+          "تحسين التبريد وتوفير استهلاك الطاقة الكهربائية بنسبة تصل إلى 30%"
+        ],
+        "process": [
+          {
+            "step": "1. فحص المكيف قبل الغسيل",
+            "desc": "تشغيل المكيف واختبار التبريد وقراءة درجة الحرارة وضغط الفريون."
+          },
+          {
+            "step": "2. تركيب غطاء الغسيل الواقي",
+            "desc": "تغليف الوحدات الإلكترونية واللوحة الكهربائية وتثبيت جراب صرف المياه."
+          },
+          {
+            "step": "3. الضغط العالي والتعقيم",
+            "desc": "ضخ المياه بضغط عالي لتنظيف المبخر والزعانف والمروحة الداخلية."
+          },
+          {
+            "step": "4. التجفيف والاختبار النهائي",
+            "desc": "تنظيف الفلاتر وتجفيف الوحدة ثم تشغيلها للتحقق من كفاءة برودة الهواء."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل يسبب غسيل المكيف في المنزل أي اتساخ للأثاث أو الجدران؟",
+            "answer": "لا إطلاقاً، نحن نستخدم جراب غسيل مخصص يغطي المكيف بالكامل ويصرف المياه في دلول خاصة مجهزة."
+          },
+          {
+            "question": "هل تشمل الخدمة فحص وتعبئة غاز الفريون؟",
+            "answer": "نعم، يفحص الفني الفريون مجاناً أثناء التنظيف، وفي حال وجود نقص يتم إبلاغك وإمكانية تعبئته بنوعية أمريكية أصلية."
+          }
+        ]
+      },
+      "en": {
+        "title": "Air Conditioner Cleaning",
+        "subtitle": "Deep chemical washing and sanitization for split, duct, and central AC systems",
+        "meta_title": "Split & Central AC Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Professional split & central air conditioner cleaning in Riyadh & Qassim. In-place washing with splash jackets, coil disinfections, and freon check.",
+        "short_desc": "In-place pressure washing for split, cassette, and central AC units using protective splash covers to improve cooling and air quality.",
+        "full_desc": [
+          "Dirty AC coils and clogged filters reduce cooling efficiency, spike electricity bills, and circulate dust pathogens. Al-Duki Cleaning provides hassle-free AC washing right on site.",
+          "Using leak-proof collection bags and pressure washers, we remove heavy dirt, mold, and trapped allergens from evaporator coils and blowers, lowering your energy bills and restoring icy-cold air flow."
+        ],
+        "benefits": [
+          "In-place AC washing using protective waterproof collection jackets",
+          "Deep coil, blower, and filter disinfections removing bacteria and mold",
+          "Freon gas pressure testing and compressor check included",
+          "Enhance cooling speed and cut electricity consumption by up to 30%"
+        ],
+        "process": [
+          {
+            "step": "1. Operational Diagnostic",
+            "desc": "Testing AC airflow velocity, cooling output, and electrical connections."
+          },
+          {
+            "step": "2. Waterproof Enclosure",
+            "desc": "Securing waterproof splash bags around the indoor unit to protect walls and furniture."
+          },
+          {
+            "step": "3. High-Pressure Washing",
+            "desc": "Flushing out dust, grime, and mold from internal fins and fan blades."
+          },
+          {
+            "step": "4. Sanitization & Re-testing",
+            "desc": "Disinfecting drain pans and running the system to confirm freezing clean air."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Does washing the AC inside the room create a mess?",
+            "answer": "Not at all. We utilize a specialized waterproof funnel bag that channels all wastewater directly into sealed buckets."
+          },
+          {
+            "question": "How often should indoor split ACs be cleaned?",
+            "answer": "In desert climates, cleaning your split AC units once before summer and once after summer is recommended for optimum efficiency."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "school-cleaning",
+      "id": "service-schools",
+      "image": "assets/images/service1-800x437.webp",
+      "ar": {
+        "title": "تنظيف المدارس والمؤسسات التعليمية",
+        "subtitle": "تعقيم وتنظيف الفصول الدراسية والمختبرات والمرافق الرياضية وفق أفضل المعايير",
+        "meta_title": "شركة تنظيف وتعقيم المدارس والجامعات بالرياض والقصيم",
+        "meta_description": "أفضل خدمات تنظيف وتعقيم المدارس، الروضات، والمؤسسات التعليمية. تنظيف الفصول، المقاعد، المعامل، والساحات لمحيط تعليمي صحي وآمن.",
+        "short_desc": "تنظيف وتعقيم متكامل للفصول الدراسية، المقاعد، الساحات، والمختبرات لضمان بيئة تعليمية آمنة وصحية للطلاب.",
+        "full_desc": [
+          "حماية أبنائنا الطلاب والمدرسين تتطلب بيئة تعليمية عالية النظافة والتعقيم. توفر شركة الدوكي خدمات تنظيف وتعقيم المدارس، الروضات، والجامعات وفق أعلى المعايير الصحية.",
+          "نحن نعمل خلال العطلات الأسبوعية والمواسم لغسيل المقاعد، تعقيم السبورات والأبواب، تنظيف المعامل والمقاصف، وتطهير دورات المياه بأجهزة بخار ومواد معتمدة تضمن القضاء على الفيروسات والجراثيم."
+        ],
+        "benefits": [
+          "تنظيف وتعقيم طاولات ومقاعد الفصول والسبورات التفاعلية",
+          "تطهير شامل لدورات المياه، الممرات، والمقاصف المدرسية",
+          "جلي أرضيات الساحات الرياضية والممرات بعناية شديدة",
+          "خطط تنظيف مرنة خارج أوقات الدراسة والدوام المدرسي"
+        ],
+        "process": [
+          {
+            "step": "1. التخطيط والجدولة",
+            "desc": "تحديد مساحات المبنى المدرسي وتوزيع فرق العمل في الأوقات الفاصلة والمناسبات."
+          },
+          {
+            "step": "2. التنظيف الشامل للفصول",
+            "desc": "شفط الغبار وغسيل النوافذ والأرضيات وتلميع المكاتب والمقاعد."
+          },
+          {
+            "step": "3. التعقيم بالضباب الحراري",
+            "desc": "رش وتطهير جميع الأسطح والمقابض والمعامل بمطهرات طبية آمنة."
+          },
+          {
+            "step": "4. الفحص وضبط الجودة",
+            "desc": "مراجعة مشرف السلامة والنظافة للتأكد من الجاهزية التامة لاستقبال الطلاب."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل يمكن تنفيذ عملية التنظيف دون التعارض مع دوام الطلاب؟",
+            "answer": "نعم، يتم تنفيذ أعمال التنظيف الشامل في الفترة المسائية أو خلال عطلة نهاية الأسبوع لعدم إعاقة سير العملية التعليمية."
+          },
+          {
+            "question": "هل المواد المستخدمة في تعقيم المدارس آمنة للأطفال؟",
+            "answer": "جميع موادنا مصرحة ومعتمدة خالية من أي انبعاثات ضارة وآمنة تماماً على صحة الأطفال والطلاب."
+          }
+        ]
+      },
+      "en": {
+        "title": "Schools Clean",
+        "subtitle": "Comprehensive sanitization and cleaning for classrooms, labs, and athletic facilities",
+        "meta_title": "School & Educational Facility Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Top-rated cleaning and sanitization for schools, universities, and nurseries in Riyadh & Qassim. Safe environment for students and staff.",
+        "short_desc": "Full-scale cleaning and sanitization for classrooms, playgrounds, canteens, and laboratories ensuring a germ-free learning environment.",
+        "full_desc": [
+          "Maintaining a spotless, disinfected environment in schools protects student health and prevents virus transmission. Al-Duki Cleaning delivers structured janitorial programs for educational facilities.",
+          "Our teams operate during off-hours to sanitize desks, chalkboards, lab surfaces, cafeterias, and rest areas using non-toxic medical-grade disinfectants."
+        ],
+        "benefits": [
+          "Sanitization of classroom desks, interactive boards, and chairs",
+          "Comprehensive scrubbing and disinfection of restrooms and canteens",
+          "High-capacity floor scrubbing for gymnasiums and outdoor courtyards",
+          "Flexible off-hour scheduling tailored to school vacation calendars"
+        ],
+        "process": [
+          {
+            "step": "1. Schedule & Scope Alignment",
+            "desc": "Mapping facility sectors and scheduling work during after-school hours."
+          },
+          {
+            "step": "2. Deep Classroom Sanitation",
+            "desc": "Washing windows, vacuuming floors, and polishing student furniture."
+          },
+          {
+            "step": "3. Thermal Fogging & Disinfection",
+            "desc": "Spraying child-safe disinfestations across hallways, handrails, and labs."
+          },
+          {
+            "step": "4. Final School Readiness Check",
+            "desc": "Conducting health supervisor inspection before school reopens."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you perform deep school cleaning during weekends or breaks?",
+            "answer": "Yes, we customize schedules around school weekends, winter breaks, and summer holidays."
+          },
+          {
+            "question": "Are the disinfectants safe for young children and toddlers?",
+            "answer": "All our cleaning chemicals are non-hazardous, eco-certified, and completely safe for children of all ages."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "government-cleaning",
+      "id": "service-gov",
+      "image": "assets/images/service8-800x437.webp",
+      "ar": {
+        "title": "تنظيف الهيئات والجهات الحكومية",
+        "subtitle": "خدمات نظافة وتشغيل احترافية للمقرات والوزارات والمؤسسات الحكومية",
+        "meta_title": "شركة تنظيف الهيئات والمؤسسات الحكومية بالرياض والقصيم",
+        "meta_description": "شركة متخصصة في تنظيف وتشغيل الجهات والمؤسسات الحكومية والوزارات بالرياض. فرق عمل مدربة بكفاءة عالية وفق أعلى الاشتراطات الرسمية.",
+        "short_desc": "خدمات نظافة وإدارة مرافق احترافية للمقرات الحكومية، الوزارات، والجمعيات وفق أعلى الضوابط المعيارية.",
+        "full_desc": [
+          "تتطلب المباني والمقرات الحكومية مستويات عالية جداً من الانضباط والنظافة التي تعكس هيبة المكان وتوفر بيئة عمل متميزة للموظفين والمراجعين. تعد شركة الدوكي شريكاً موثوقاً للعديد من الجهات الرسمية.",
+          "نحن نوفر فرق عمل ذات كفاءة عالية، يرتدون زياً موحداً ومزودين ببطاقات تعريفية، مع تطبيق برامج تنظيف وتشغيل دقيقة تشمل المكاتب، قاعات الاجتماعات، الأرشيف، والواجهات الخارجية."
+        ],
+        "benefits": [
+          "التزام تام بالاشتراطات الأمنية والضوابط الرسمية الخاصة بالجهات",
+          "عقود تشغيل ونظافة شاملة طويلة وقصيرة المدى",
+          "فرق عمل مدربة ترتدي زي موحد ومجهزة بأحدث المكائن",
+          "تنظيف وتلميع قاعات المؤتمرات والاجتماعات الكبرى بحرفية"
+        ],
+        "process": [
+          {
+            "step": "1. الدراسة وتوقيع عقود التشغيل",
+            "desc": "دراسة كراسة الشروط والمواصفات وتحديد الأعداد والمعدات اللازمة."
+          },
+          {
+            "step": "2. توزيع العمالة والمشرفين",
+            "desc": "توزيع الكوادر البشرية والمشرفين على القطاعات والمكاتب بدقة."
+          },
+          {
+            "step": "3. التنظيف والصيانة اليومية",
+            "desc": "تنفيذ أعمال النظافة الدورية والتعقيم للمكاتب والممرات بشكل مستمر."
+          },
+          {
+            "step": "4. التقارير وضمان الجودة",
+            "desc": "رفع تقارير الأداء الأسبوعية لإدارة المرافق والتأكد من مطابقة المعايير."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تنفذون عقود تشغيل ونظافة للهيئات الرسمية والوزارات؟",
+            "answer": "نعم، لدينا خبرات واسعة وإمكانيات لتشغيل وتأمين خدمات النظافة لكافة الهيئات والمؤسسات الحكومية."
+          },
+          {
+            "question": "هل العمالة مدربة ومستوفية للأنظمة الأمنية والصحية؟",
+            "answer": "نعم، كافة الكوادر مقيمة ومؤمنة وتخضع لفحوصات طبية وأمنية دقيقة وتلتزم بزي الشركة وتصاريح الدخول."
+          }
+        ]
+      },
+      "en": {
+        "title": "Government Agencies Clean",
+        "subtitle": "Professional cleaning and facility operations for ministries and public sector headquarters",
+        "meta_title": "Government Facility & Ministry Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Trusted provider for government agency and public sector building cleaning in Riyadh & Qassim. Highly compliant trained staff and official standards.",
+        "short_desc": "Professional janitorial and facility maintenance services for government headquarters, public departments, and ministries.",
+        "full_desc": [
+          "Public sector buildings require meticulous organization, security compliance, and high cleanliness standards to serve citizens efficiently. Al-Duki Cleaning is a trusted partner for public institutions.",
+          "We supply uniformed, security-cleared personnel managed by senior supervisors, delivering daily office cleaning, conference hall maintenance, archive dusting, and exterior care."
+        ],
+        "benefits": [
+          "Full compliance with security protocols and official standards",
+          "Comprehensive short & long term facility operation contracts",
+          "Uniformed, medically cleared, and highly trained janitorial staff",
+          "Expert cleaning for executive offices, boardrooms, and auditoriums"
+        ],
+        "process": [
+          {
+            "step": "1. Scope & SLA Agreement",
+            "desc": "Analyzing tender specifications and setting Service Level Agreements (SLAs)."
+          },
+          {
+            "step": "2. Staff & Supervisor Deployment",
+            "desc": "Stationing dedicated supervisors and crews to assigned sectors."
+          },
+          {
+            "step": "3. Continuous Daily Operations",
+            "desc": "Executing non-disruptive daily sanitation, trash removal, and polishing."
+          },
+          {
+            "step": "4. Quality Audits & Reporting",
+            "desc": "Submitting performance metrics to facility management routinely."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Are your employees vetted for government building access?",
+            "answer": "Yes, all our staff hold official residency permits, medical clearances, and security badges compliant with facility entry rules."
+          },
+          {
+            "question": "Can you handle high-capacity daily janitorial staffing?",
+            "answer": "Absolutely. We possess the manpower and machinery scale required for large ministry complexes and government headquarters."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "office-cleaning",
+      "id": "service-companies",
+      "image": "assets/images/service7-800x437.webp",
+      "ar": {
+        "title": "تنظيف الشركات والمكاتب",
+        "subtitle": "بيئة عمل بيئية ونظيفة تزيد من إنتاجية الموظفين وتترك انطباعاً مميزاً للمراجعين",
+        "meta_title": "شركة تنظيف مكاتب وشركات بالرياض | خدمات عقود نظافة دائم",
+        "meta_description": "افضل شركة تنظيف مكاتب وشركات بالرياض والقصيم. تنظيف أرضيات، مكاتب، شاشات، زجاج، وتعقيم شامل بعقود دورية مرنة.",
+        "short_desc": "تنظيف وتعقيم دوري ومستمر للمكاتب، المقرات الإدارية، الشركات، وصالات العرض بما يضمن بيئة عمل راقية.",
+        "full_desc": [
+          "المكتب النظيف يعكس احترافية الشركة ويحفز إبداع وإنتاجية طاقم العمل. توفر شركة الدوكي برامج تنظيف مكاتب متخصصة تناسب بيئات العمل الحديثة.",
+          "نحن نهتم بأدق التفاصيل من مسح الأجهزة الإلكترونية والشاشات بمواد مضادة للكهرباء الساكنة، تنظيف موكيت المكاتب، تعقيم مقابض الأبواب والمطابخ، إلى العناية باستقبال الزوار."
+        ],
+        "benefits": [
+          "تنظيف وتلميع مكاتب الموظفين والإدارة والأجهزة الكهرومغناطيسية",
+          "غسيل وتنظيف موكيت المكاتب والكراسي بالرغوة الجافة",
+          "تفريغ سلات المهملات وتوريد مستلزمات دورات المياه بأعلى جودة",
+          "مواعيد تنظيف صباحية أو مسائية مرنة لا تؤثر على سير العمل"
+        ],
+        "process": [
+          {
+            "step": "1. تحديد جدولة العمل",
+            "desc": "الاتفاق على ساعات التنظيف المفضلة (قبل بدء العمل أو بعد انتهاء الدوام)."
+          },
+          {
+            "step": "2. مسح الأسطح والأجهزة",
+            "desc": "مسح الطاولات، المكاتب، والأجهزة بمواد خاصة تحمي الإلكترونيات."
+          },
+          {
+            "step": "3. تنظيف الأرضيات والموكيت",
+            "desc": "شفط الموكيت وجلي وتلميع البلاط أو الرخام المكتبي."
+          },
+          {
+            "step": "4. التعقيم والتطييب النهائي",
+            "desc": "رش معطرات جو راقية وتعقيم دورات المياه والأبواب لتأمين بيئة صحية."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تقدمون عقود تنظيف يومية للمكاتب والشركات؟",
+            "answer": "نعم، نوفر عمالة تنظيف مقيمة أو زيارات دورية يومية وأسبوعية وفق جدول عمل شركتكم."
+          },
+          {
+            "question": "كيف يتم التعامل مع الأجهزة والمستندات الهامة بالمكاتب؟",
+            "answer": "عمالتنا مدربة على احترام خصوصية المكاتب وعدم تحريك الأوراق الهامة، واستخدام فوط خفيفة مخصصة للإلكترونيات."
+          }
+        ]
+      },
+      "en": {
+        "title": "Companies & Offices Clean",
+        "subtitle": "A pristine office environment boosting employee productivity and client confidence",
+        "meta_title": "Commercial Office Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Professional office and corporate building cleaning in Riyadh & Qassim. Carpet shampooing, desk dusting, electronics care, and recurring contracts.",
+        "short_desc": "Periodic and continuous cleaning for office spaces, corporate hubs, and showrooms delivering an inspiring work setting.",
+        "full_desc": [
+          "A clean office environment mirrors corporate professionalism and boosts workplace output. Al-Duki Cleaning provides reliable corporate housekeeping solutions.",
+          "We care for every minor detail—wiping IT screens with anti-static microfiber, cleaning carpeted workspaces, disinfecting pantries and restrooms, and organizing reception areas."
+        ],
+        "benefits": [
+          "Dusting and polishing executive desks, conference tables, and IT hardware",
+          "Dry-foam shampooing for office carpets and ergonomic chairs",
+          "Trash collection and restocking hygiene consumables in restrooms",
+          "Flexible morning or evening shifts preventing business workflow friction"
+        ],
+        "process": [
+          {
+            "step": "1. Schedule Customization",
+            "desc": "Arranging shift times (after-hours or pre-opening shifts)."
+          },
+          {
+            "step": "2. Desk & IT Sanitization",
+            "desc": "Wiping computer monitors, keyboards, and desks with static-safe cloths."
+          },
+          {
+            "step": "3. Floor & Carpet Care",
+            "desc": "Vacuuming carpet tiles and buffing commercial tile floors."
+          },
+          {
+            "step": "4. Restroom & Pantry Refill",
+            "desc": "Disinfecting kitchens, washrooms, and scenting executive suites."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do you offer daily office cleaning contracts?",
+            "answer": "Yes, we offer flexible daily, weekly, or dedicated full-time office housekeeping staff."
+          },
+          {
+            "question": "Are your cleaners trained regarding document privacy?",
+            "answer": "All staff sign strict non-disclosure policies and are trained never to move sensitive paper documents on desks."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "shopping-center-cleaning",
+      "id": "service-shopping",
+      "image": "assets/images/service6-800x437.webp",
+      "ar": {
+        "title": "تنظيف المراكز والمجمعات التجارية",
+        "subtitle": "نظافة فائقة على مدار الساعة للمولات والمجمعات صممت لتحمل الكثافة العالية",
+        "meta_title": "شركة تنظيف المولات والمجمعات التجارية بالرياض والقصيم",
+        "meta_description": "أفضل خدمات تنظيف وتشغيل المراكز التجارية والمولات. تلميع أرضيات الممرات، تنظيف المصاعد والسلالم المتحركة، وإدارة النظافة على مدار 24 ساعة.",
+        "short_desc": "إدارة تشغيل ونظافة شاملة للمولات والمجمعات التجارية تشمل الممرات، السلالم المتحركة، ودورات المياه العامة.",
+        "full_desc": [
+          "تتميز المولات والمجمعات التجارية بحركة زوار كثيفة تتطلب نظافة مستمرة بدون توقف. تقدم شركة الدوكي حلول نظافة وإدارة مرافق متطورة صممت خصيصاً للمراكز التجارية.",
+          "نستخدم مكائن غسيل وجلي الأرضيات الكبيرة (Ride-on Scrubber)، ونوفر عمالة مدربة تعمل بنظام الورديات لضمان بقاء أرضيات المول، المطاعم، دورات المياه، والواجهات بقمة النظافة على مدار اليوم."
+        ],
+        "benefits": [
+          "تلميع أرضيات الممرات الكبيرة بمكائن الركوب والتنظيف السريع",
+          "تنظيف وتعقيم السلالم المتحركة، المصاعد البانورامية، والدرابزين",
+          "إدارة ونظافة منطقة المطاعم والجلسات العامة (Food Court)",
+          "توفير عمالة نظافة متواجدة على مدار 24 ساعة مقسمة على ورديات"
+        ],
+        "process": [
+          {
+            "step": "1. التغطية بنظام الورديات",
+            "desc": "جدولة فرق النظافة وتغطية ساعات الذروة والافتتاح والغالق."
+          },
+          {
+            "step": "2. النظافة الميكانيكية المستمرة",
+            "desc": "تشغيل سيارات الجلي والتلميع الأوتوماتيكية في الممرات الرئيسية."
+          },
+          {
+            "step": "3. التطهير المستمر لنقاط التلامس",
+            "desc": "تعقيم مقابض السلالم، المصاعد، ودورات المياه بشكل متواصل."
+          },
+          {
+            "step": "4. إدارة الحاويات والنفايات",
+            "desc": "تفريغ حاويات القمامة بانتظام ونقلها لمنطقة التجميع دون مضايقة الزوار."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تقدمون خدمات تنظيف للمولات في الفترات الليلية بعد الإغلاق؟",
+            "answer": "نعم، نفذ التنظيف العميق والجلي الشامل في وردية الليل بعد إغلاق المحلات لضمان استقبال الزوار بنظافة فائقة صباحاً."
+          },
+          {
+            "question": "كيف يتم التعامل مع انسكاب السوائل المفاجئ بالمول؟",
+            "answer": "لدينا فرقة استجابة سريعة متواجدة بالمول مجهزة بأدوات التجفيف والسلامة لتنظيف أي انسكاب في الحال ومنع الانزلاق."
+          }
+        ]
+      },
+      "en": {
+        "title": "Shopping Centers Clean",
+        "subtitle": "24/7 high-capacity mall cleaning designed for heavy foot traffic",
+        "meta_title": "Shopping Mall & Commercial Center Cleaning | Al-Duki Cleaning",
+        "meta_description": "Comprehensive cleaning services for shopping malls and retail centers in Riyadh & Qassim. Ride-on floor scrubbers, food court care, and 24/7 shifts.",
+        "short_desc": "Complete janitorial management for shopping malls, retail plazas, and food courts accommodating continuous high foot traffic.",
+        "full_desc": [
+          "Commercial shopping centers experience non-stop visitor traffic requiring round-the-clock maintenance. Al-Duki Cleaning deploys automated floor care and shift-based housekeeping crews.",
+          "Utilizing industrial ride-on scrubbers, we keep atrium floors, escalators, food court dining zones, and public restrooms sanitized and spotless at all hours of the day."
+        ],
+        "benefits": [
+          "Ride-on auto-scrubber polishing for expansive mall concourses",
+          "Sanitization of escalators, panoramic elevator glass, and handrails",
+          "Dedicated food court table clearing and trash management",
+          "24/7 multi-shift personnel coverage ensuring continuous hygiene"
+        ],
+        "process": [
+          {
+            "step": "1. Multi-Shift Deployment",
+            "desc": "Assigning rotating crews across opening, peak, and night shutdown hours."
+          },
+          {
+            "step": "2. Concourse Auto-Scrubbing",
+            "desc": "Operating silent battery scrubbers across main retail walkways."
+          },
+          {
+            "step": "3. Touchpoint Disinfection",
+            "desc": "Sanitizing escalator handrails, ATM consoles, and restroom handles."
+          },
+          {
+            "step": "4. Rapid Spill Response",
+            "desc": "Deploying emergency mop teams for accidental drink or liquid spills."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Do you offer night shift deep cleaning for shopping malls?",
+            "answer": "Yes, our deep floor stripping and detailed mall washing take place during overnight shifts after retail doors close."
+          },
+          {
+            "question": "How do you prevent slip accidents during wet cleaning?",
+            "answer": "We deploy anti-slip warning signage and use fast-drying suction scrubbers that dry floors instantly."
+          }
+        ]
+      }
+    },
+    {
+      "slug": "factory-cleaning",
+      "id": "service-factories",
+      "image": "assets/images/service5-800x437.webp",
+      "ar": {
+        "title": "تنظيف المصانع والمنشآت الصناعية",
+        "subtitle": "إزالة الدهون، الزيوت، والرواسب الصناعية المعقدة وفق معايير السلامة المهنية",
+        "meta_title": "شركة تنظيف مصانع ومناطق صناعية بالرياض والقصيم",
+        "meta_description": "شركة متخصصة في تنظيف المصانع، المستودعات، والخطوط الإنتاجية بالرياض. إزالة الشحوم، زيوت المحركات، وتنظيف خطوط الإنتاج باحترافية.",
+        "short_desc": "تنظيف وتطهير البيئات الصناعية، المصانع، والمستودعات وإزالة الشحوم والزيوت من الأرضيات والمكائن.",
+        "full_desc": [
+          "تتراكم في المصانع والمنشآت الصناعية زيوت، شحوم، وأتربة كيميائية تتطلب طريقة تنظيف تخصصية لا تؤثر على خطوط الإنتاج وتضمن سلامة البيئة الصناعية.",
+          "نحن في شركة الدوكي نستخدم مزيلات دهون صناعية قوية، ومعدات نفاثة تعمل بالبخار والضغط العالي لتنظيف أرضيات الإيبوكسي، خطوط الإنتاج، ومستودعات التخزين وفق معايير السلامة والصحة المهنية (OSHA)."
+        ],
+        "benefits": [
+          "إزالة الشحوم والزيوت المستعصية من أرضيات الإيبوكسي والخراسانية",
+          "تنظيف وتعقيم خطوط الإنتاج والمكائن بمواد غير أكالة",
+          "تنظيف المستودعات والرفوف العالية بأجهزة شفط صناعية قوية",
+          "التزام كامل باشتراطات السلامة المهنية ومعدات الحماية الشخصية"
+        ],
+        "process": [
+          {
+            "step": "1. تقييم المخاطر الصناعية",
+            "desc": "دراسة خطوط الإنتاج وتحديد الشحوم وتحديد معدات السلامة المطلوبة."
+          },
+          {
+            "step": "2. رش مزيلات الشحوم الصناعية",
+            "desc": "تطبيق منظفات الكربنة والشحوم لإذابة الزيوت المتراكمة على الأرضيات."
+          },
+          {
+            "step": "3. الغسيل بالضغط العالي والتجفيف",
+            "desc": "سحب المياه والزيوت المذابة وتجفيف الأرضيات لمنع انزلاق العمال."
+          },
+          {
+            "step": "4. التسليم واعتماد التقرير",
+            "desc": "التأكد من نظافة خطوط الإنتاج والمستودع وتسليم التقرير لإدارة السلامة."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "هل تؤثر مواد التنظيف على كفاءة المكائن أو تسفر عن التآكل؟",
+            "answer": "لا، نستخدم من المنظفات الصناعية خالية من الأحماض ومخصصة للمكائن المعادن والمعايير الصناعية."
+          },
+          {
+            "question": "هل تمتلك كوادركم شهادات وتدريبات في السلامة المهنية (HSE)؟",
+            "answer": "نعم، كافة المشرفين والعمال مجهزون بأدوات الحماية ومدرّبون على التعامل مع بيئات العمل الصناعية القاسية."
+          }
+        ]
+      },
+      "en": {
+        "title": "Factories Clean",
+        "subtitle": "Industrial grease removal and plant sanitization complying with HSE safety standards",
+        "meta_title": "Industrial & Factory Cleaning Services | Al-Duki Cleaning",
+        "meta_description": "Specialized factory, warehouse, and production line cleaning in Riyadh & Qassim. Epoxy floor degreasing, heavy machinery cleaning, and HSE compliance.",
+        "short_desc": "Heavy-duty industrial cleaning for manufacturing plants, warehouses, and machinery removing stubborn grease and oil.",
+        "full_desc": [
+          "Industrial facilities accumulate oil, chemical grime, and carbon deposits that pose fire hazards and operational risks. Al-Duki Cleaning provides specialized industrial sanitation.",
+          "Using heavy-duty degreasers, high-pressure hot water washers, and industrial vacuums, we scrub epoxy factory floors, machinery frames, and high-bay storage racks in compliance with safety standards."
+        ],
+        "benefits": [
+          "Degreasing oil and chemical residue from epoxy and concrete floors",
+          "Safe washing for production line machinery using non-corrosive solvents",
+          "High-bay warehouse rack dusting and industrial floor scrubbing",
+          "Strict adherence to occupational health and safety (HSE) guidelines"
+        ],
+        "process": [
+          {
+            "step": "1. Industrial Risk Hazard Audit",
+            "desc": "Inspecting production machinery, oil spills, and electrical risks."
+          },
+          {
+            "step": "2. Chemical Degreasing",
+            "desc": "Applying industrial solvent foam to break down heavy machine oil buildup."
+          },
+          {
+            "step": "3. Hot-Water Pressure Scrubbing",
+            "desc": "Blasting surfaces with thermal pressure washers and extracting residue."
+          },
+          {
+            "step": "4. HSE Sign-Off & Inspection",
+            "desc": "Verifying slip-free floor conditions with facility safety officers."
+          }
+        ],
+        "faqs": [
+          {
+            "question": "Can you clean manufacturing plants without halting production?",
+            "answer": "Yes, we coordinate section-by-section cleaning during scheduled plant maintenance windows or night shifts."
+          },
+          {
+            "question": "What equipment do you use for high warehouse ceilings?",
+            "answer": "We use boom lifts, scaffolding, and long-reach industrial HEPA vacuums to clear high-bay dust safely."
+          }
+        ]
+      }
+    }
+  ]
+}
