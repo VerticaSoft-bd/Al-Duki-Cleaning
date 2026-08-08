@@ -1109,12 +1109,101 @@
                 transition: all 0.3s ease !important;
             }
 
-            .pxl-header-branding img,
-            .pxl-logo-mobile img {
+            .pxl-header-branding img {
                 max-height: 75px !important;
                 width: auto !important;
                 object-fit: contain !important;
                 display: block !important;
+            }
+
+            .pxl-header-menu {
+                background-color: #ffffff !important;
+            }
+
+            .pxl-header-menu-scroll {
+                padding: 24px 20px 40px 20px !important;
+            }
+
+            .pxl-logo-mobile {
+                display: flex !important;
+                align-items: center !important;
+                padding: 0 !important;
+                background: transparent !important;
+                border: none !important;
+                border-radius: 0 !important;
+                margin-bottom: 30px !important;
+                margin-right: 45px !important;
+                box-shadow: none !important;
+            }
+
+            body.rtl .pxl-logo-mobile {
+                margin-right: 0 !important;
+                margin-left: 45px !important;
+            }
+
+            .pxl-logo-mobile a {
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 12px !important;
+                text-decoration: none !important;
+            }
+
+            .pxl-logo-mobile img {
+                height: 55px !important;
+                max-height: 58px !important;
+                width: auto !important;
+                object-fit: contain !important;
+                display: block !important;
+            }
+
+            .pxl-logo-mobile .mobile-brand-title {
+                font-size: 21px !important;
+                font-weight: 900 !important;
+                color: #0B192C !important;
+                white-space: nowrap !important;
+                letter-spacing: -0.3px !important;
+                line-height: 1.1 !important;
+            }
+
+            .pxl-menu-close {
+                top: 24px !important;
+                right: 20px !important;
+                width: 36px !important;
+                height: 36px !important;
+                background-color: transparent !important;
+                border: none !important;
+                z-index: 10 !important;
+            }
+
+            body.rtl .pxl-menu-close {
+                right: auto !important;
+                left: 20px !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li {
+                border-bottom: 1px solid #F1F5F9 !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li:last-child {
+                border-bottom: none !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li > a {
+                padding: 14px 8px !important;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                color: #1E293B !important;
+                transition: all 0.2s ease !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li > a:hover {
+                color: var(--primary-color, #007887) !important;
+                padding-left: 14px !important;
+            }
+
+            body.rtl .pxl-header-menu .pxl-menu-primary > li > a:hover {
+                padding-left: 8px !important;
+                padding-right: 14px !important;
             }
 
             @media (max-width: 991px) {
@@ -1123,8 +1212,7 @@
                     padding-bottom: 0px !important;
                 }
 
-                .pxl-header-branding img,
-                .pxl-logo-mobile img {
+                .pxl-header-branding img {
                     max-height: 70px !important;
                 }
             }
@@ -2246,27 +2334,26 @@
                     <div class="container">
                         <div class="row">
                             <div class="pxl-header-mobile-default" style="display: flex; align-items: center; justify-content: space-between; padding: 6px 15px; min-height: 54px; background: #ffffff;">
-                                <div id="pxl-nav-mobile" style="margin: 0; flex-shrink: 0;">
+                                <div id="pxl-nav-mobile" style="margin: 0; flex-shrink: 0; min-width: 40px;">
                                     <div class="pxl-nav-mobile-button pxl-anchor-divider pxl-cursor--cta"> <span
                                             class="pxl-icon-line pxl-icon-line1"></span> <span
                                             class="pxl-icon-line pxl-icon-line2"></span> <span
                                             class="pxl-icon-line pxl-icon-line3"></span></div>
                                 </div>
-                                <div class="mobile-header-center-title" style="flex: 1; text-align: center; font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif;">
-                                    Al-Duki Cleaning
-                                </div>
-                                <div class="pxl-header-branding" style="margin: 0; flex-shrink: 0;"> <a href="index-en.html" title="Al-Duki Cleaning"
-                                        rel="home" style="display: flex; align-items: center;"><img src="assets/images/logo/logo.png"
-                                            style="height: 50px !important; max-height: 50px !important; width: auto; object-fit: contain;"
-                                            alt="Al-Duki Cleaning" /></a></div>
+                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a href="index-en.html" title="Al-Duki Cleaning"
+                                        rel="home" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img src="assets/images/logo/logo.png"
+                                            style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
+                                            alt="Al-Duki Cleaning" />
+                                        <span style="font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif; white-space: nowrap;">Al-Duki Cleaning</span></a></div>
+                                <div class="mobile-header-spacer" style="min-width: 40px; flex-shrink: 0;"></div>
                             </div>
                             <div class="pxl-header-menu">
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index-en.html"
                                             title="Al-Duki Cleaning" rel="home"><img src="assets/images/logo/logo.png"
-                                                style="max-height: 80px; width: auto; object-fit: contain;"
-                                                alt="Al-Duki Cleaning" /></a></div>
+                                                alt="Al-Duki Cleaning" /><span class="mobile-brand-title"
+                                                style="font-family: 'Inter', sans-serif;">Al-Duki Cleaning</span></a></div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
                                         <form role="search" method="get"
                                             action="https://demo.casethemes.net/genfresco/">

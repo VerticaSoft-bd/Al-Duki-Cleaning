@@ -1109,12 +1109,101 @@
                 transition: all 0.3s ease !important;
             }
 
-            .pxl-header-branding img,
-            .pxl-logo-mobile img {
+            .pxl-header-branding img {
                 max-height: 75px !important;
                 width: auto !important;
                 object-fit: contain !important;
                 display: block !important;
+            }
+
+            .pxl-header-menu {
+                background-color: #ffffff !important;
+            }
+
+            .pxl-header-menu-scroll {
+                padding: 24px 20px 40px 20px !important;
+            }
+
+            .pxl-logo-mobile {
+                display: flex !important;
+                align-items: center !important;
+                padding: 0 !important;
+                background: transparent !important;
+                border: none !important;
+                border-radius: 0 !important;
+                margin-bottom: 30px !important;
+                margin-right: 45px !important;
+                box-shadow: none !important;
+            }
+
+            body.rtl .pxl-logo-mobile {
+                margin-right: 0 !important;
+                margin-left: 45px !important;
+            }
+
+            .pxl-logo-mobile a {
+                display: inline-flex !important;
+                align-items: center !important;
+                gap: 12px !important;
+                text-decoration: none !important;
+            }
+
+            .pxl-logo-mobile img {
+                height: 55px !important;
+                max-height: 58px !important;
+                width: auto !important;
+                object-fit: contain !important;
+                display: block !important;
+            }
+
+            .pxl-logo-mobile .mobile-brand-title {
+                font-size: 21px !important;
+                font-weight: 900 !important;
+                color: #0B192C !important;
+                white-space: nowrap !important;
+                letter-spacing: -0.3px !important;
+                line-height: 1.1 !important;
+            }
+
+            .pxl-menu-close {
+                top: 24px !important;
+                right: 20px !important;
+                width: 36px !important;
+                height: 36px !important;
+                background-color: transparent !important;
+                border: none !important;
+                z-index: 10 !important;
+            }
+
+            body.rtl .pxl-menu-close {
+                right: auto !important;
+                left: 20px !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li {
+                border-bottom: 1px solid #F1F5F9 !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li:last-child {
+                border-bottom: none !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li > a {
+                padding: 14px 8px !important;
+                font-size: 16px !important;
+                font-weight: 700 !important;
+                color: #1E293B !important;
+                transition: all 0.2s ease !important;
+            }
+
+            .pxl-header-menu .pxl-menu-primary > li > a:hover {
+                color: var(--primary-color, #007887) !important;
+                padding-left: 14px !important;
+            }
+
+            body.rtl .pxl-header-menu .pxl-menu-primary > li > a:hover {
+                padding-left: 8px !important;
+                padding-right: 14px !important;
             }
 
             @media (max-width: 991px) {
@@ -1123,8 +1212,7 @@
                     padding-bottom: 0px !important;
                 }
 
-                .pxl-header-branding img,
-                .pxl-logo-mobile img {
+                .pxl-header-branding img {
                     max-height: 70px !important;
                 }
             }
@@ -1453,29 +1541,30 @@
             }
 
             .floating-lang-switcher {
-    position: fixed !important;
-    bottom: 25px !important;
-    left: 25px !important;
-    right: auto !important;
-    z-index: 999998 !important;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 5px 8px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    border: 2px solid #3ca200;
-    gap: 6px;
-}
-@media (max-width: 768px) {
-    .floating-lang-switcher {
-        bottom: 20px !important;
-        left: 15px !important;
-        right: auto !important;
-        transform: scale(0.88);
-        transform-origin: bottom left;
-    }
-}
+                position: fixed !important;
+                bottom: 25px !important;
+                left: 25px !important;
+                right: auto !important;
+                z-index: 999998 !important;
+                display: flex;
+                align-items: center;
+                background: #ffffff;
+                padding: 5px 8px;
+                border-radius: 40px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+                border: 2px solid #3ca200;
+                gap: 6px;
+            }
+
+            @media (max-width: 768px) {
+                .floating-lang-switcher {
+                    bottom: 20px !important;
+                    left: 15px !important;
+                    right: auto !important;
+                    transform: scale(0.88);
+                    transform-origin: bottom left;
+                }
+            }
         }
 
         @media (max-width: 480px) {
@@ -2245,35 +2334,32 @@
                 <div id="pxl-header-main" class="pxl-header-main">
                     <div class="container">
                         <div class="row">
-                            <div class="pxl-header-mobile-default" style="display: flex; align-items: center; justify-content: space-between; padding: 6px 15px; min-height: 54px; background: #ffffff;">
-                                <div id="pxl-nav-mobile" style="margin: 0; flex-shrink: 0;">
+                            <div class="pxl-header-mobile-default"
+                                style="display: flex; align-items: center; justify-content: space-between; padding: 6px 15px; min-height: 54px; background: #ffffff;">
+                                <div id="pxl-nav-mobile" style="margin: 0; flex-shrink: 0; min-width: 40px;">
                                     <div class="pxl-nav-mobile-button pxl-anchor-divider pxl-cursor--cta"> <span
                                             class="pxl-icon-line pxl-icon-line1"></span> <span
                                             class="pxl-icon-line pxl-icon-line2"></span> <span
                                             class="pxl-icon-line pxl-icon-line3"></span></div>
                                 </div>
-                                <div class="mobile-header-center-title" style="flex: 1; text-align: center; font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif;">
-                                    Al-Duki Cleaning
-                                </div>
-                                <div class="pxl-header-branding" style="margin: 0; flex-shrink: 0;"> <a href="index-en.html" title="Al-Duki Cleaning"
-                                        rel="home" style="display: flex; align-items: center;"><img src="assets/images/logo/logo.png"
-                                            style="height: 50px !important; max-height: 50px !important; width: auto; object-fit: contain;"
-                                            alt="Al-Duki Cleaning" /></a></div>
+                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a
+                                        href="index-en.html" title="Al-Duki Cleaning" rel="home"
+                                        style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img
+                                            src="assets/images/logo/logo.png"
+                                            style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
+                                            alt="Al-Duki Cleaning" />
+                                        <span style="font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif; white-space: nowrap;">Al-Duki Cleaning</span></a></div>
+                                <div class="mobile-header-spacer" style="min-width: 40px; flex-shrink: 0;"></div>
                             </div>
                             <div class="pxl-header-menu">
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index-en.html"
                                             title="Al-Duki Cleaning" rel="home"><img src="assets/images/logo/logo.png"
-                                                style="max-height: 80px; width: auto; object-fit: contain;"
-                                                alt="Al-Duki Cleaning" /></a></div>
+                                                alt="Al-Duki Cleaning" /><span class="mobile-brand-title"
+                                                style="font-family: 'Inter', sans-serif;">Al-Duki Cleaning</span></a></div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
-                                        <form role="search" method="get"
-                                            action="https://demo.casethemes.net/genfresco/">
-                                            <input type="text" placeholder="Search..." name="s" class="search-field" />
-                                            <button type="submit" class="search-submit"><i
-                                                    class="bi-search"></i></button>
-                                        </form>
+
                                     </div>
                                     <nav class="pxl-header-nav">
                                         <ul id="menu-menu-onepage-home-3" class="pxl-menu-primary clearfix">
@@ -7678,7 +7764,7 @@
         const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
         //# sourceURL=https://demo.casethemes.net/genfresco/wp-includes/js/wp-emoji-loader.min.js </script>
     <!-- Floating Language Switcher Pill -->
-    
+
 
     <!-- Contact & Subscriber Form API Integration -->
     <script>
@@ -7966,7 +8052,7 @@
         });
     </script>
 
-<!-- Floating WhatsApp Button (English - Right Side) -->
+    <!-- Floating WhatsApp Button (English - Right Side) -->
 
 
 
@@ -7975,132 +8061,150 @@
 
 
 
-<!-- Floating Language Switcher Pill (English: Bottom Left) -->
-<div class="floating-lang-switcher">
-    <a href="index-en.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
-        <img src="https://flagcdn.com/w40/us.png" alt="EN" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
+    <!-- Floating Language Switcher Pill (English: Bottom Left) -->
+    <div class="floating-lang-switcher">
+        <a href="index-en.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
+            <img src="https://flagcdn.com/w40/us.png" alt="EN"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
+        </a>
+        <a href="index.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
+            <img src="https://flagcdn.com/w40/sa.png" alt="AR"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button (English: Bottom Right) -->
+    <a href="https://wa.me/966500126016?text=Hi%2C%20I'm%20interested%20in%20your%20cleaning%20services."
+        target="_blank" rel="noopener noreferrer" class="floating-whatsapp-btn-en" aria-label="Chat on WhatsApp">
+        <div class="whatsapp-btn-pulse"></div>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.198 8.198 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.24-8.22 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.66.81-.81.98-.15.17-.3.19-.55.07-.25-.12-1.05-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.15-.25-.02-.38.1-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.3z" />
+        </svg>
+        <span class="whatsapp-btn-tooltip-en">Chat with us</span>
     </a>
-    <a href="index.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
-        <img src="https://flagcdn.com/w40/sa.png" alt="AR" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
-    </a>
-</div>
 
-<!-- Floating WhatsApp Button (English: Bottom Right) -->
-<a href="https://wa.me/966500126016?text=Hi%2C%20I'm%20interested%20in%20your%20cleaning%20services." 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="floating-whatsapp-btn-en" 
-   aria-label="Chat on WhatsApp">
-    <div class="whatsapp-btn-pulse"></div>
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.198 8.198 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.24-8.22 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.66.81-.81.98-.15.17-.3.19-.55.07-.25-.12-1.05-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.15-.25-.02-.38.1-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.3z"/>
-    </svg>
-    <span class="whatsapp-btn-tooltip-en">Chat with us</span>
-</a>
+    <style>
+        .floating-lang-switcher {
+            position: fixed !important;
+            bottom: 25px !important;
+            left: 25px !important;
+            right: auto !important;
+            z-index: 999998 !important;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            padding: 5px 8px;
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            border: 2px solid #3ca200;
+            gap: 6px;
+        }
 
-<style>
-.floating-lang-switcher {
-    position: fixed !important;
-    bottom: 25px !important;
-    left: 25px !important;
-    right: auto !important;
-    z-index: 999998 !important;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 5px 8px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    border: 2px solid #3ca200;
-    gap: 6px;
-}
-.floating-whatsapp-btn-en {
-    position: fixed !important;
-    bottom: 25px !important;
-    right: 25px !important;
-    left: auto !important;
-    z-index: 999999 !important;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    color: #FFFFFF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-    text-decoration: none;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-}
-.floating-whatsapp-btn-en:hover {
-    transform: scale(1.12);
-    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.65);
-    color: #FFFFFF;
-}
-.whatsapp-btn-pulse {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #25D366;
-    opacity: 0.6;
-    animation: waPulse 2s infinite ease-in-out;
-    z-index: -1;
-}
-@keyframes waPulse {
-    0% { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(1.5); opacity: 0; }
-}
-.whatsapp-btn-tooltip-en {
-    position: absolute;
-    right: 70px;
-    background: #0F172A;
-    color: #FFFFFF;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 700;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateX(10px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    pointer-events: none;
-    font-family: 'Inter', sans-serif;
-}
-.whatsapp-btn-tooltip-en::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: -6px;
-    transform: translateY(-50%);
-    border-width: 6px 0 6px 6px;
-    border-style: solid;
-    border-color: transparent transparent transparent #0F172A;
-}
-.floating-whatsapp-btn-en:hover .whatsapp-btn-tooltip-en {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-}
-@media (max-width: 768px) {
-    .floating-lang-switcher {
-        bottom: 20px !important;
-        left: 15px !important;
-        right: auto !important;
-        transform: scale(0.88);
-        transform-origin: bottom left;
-    }
-    .floating-whatsapp-btn-en {
-        bottom: 20px !important;
-        right: 15px !important;
-        left: auto !important;
-        width: 54px !important;
-        height: 54px !important;
-    }
-}
-</style>
+        .floating-whatsapp-btn-en {
+            position: fixed !important;
+            bottom: 25px !important;
+            right: 25px !important;
+            left: auto !important;
+            z-index: 999999 !important;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+            text-decoration: none;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
+
+        .floating-whatsapp-btn-en:hover {
+            transform: scale(1.12);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.65);
+            color: #FFFFFF;
+        }
+
+        .whatsapp-btn-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #25D366;
+            opacity: 0.6;
+            animation: waPulse 2s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes waPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
+            }
+        }
+
+        .whatsapp-btn-tooltip-en {
+            position: absolute;
+            right: 70px;
+            background: #0F172A;
+            color: #FFFFFF;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateX(10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+            font-family: 'Inter', sans-serif;
+        }
+
+        .whatsapp-btn-tooltip-en::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            right: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 0 6px 6px;
+            border-style: solid;
+            border-color: transparent transparent transparent #0F172A;
+        }
+
+        .floating-whatsapp-btn-en:hover .whatsapp-btn-tooltip-en {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .floating-lang-switcher {
+                bottom: 20px !important;
+                left: 15px !important;
+                right: auto !important;
+                transform: scale(0.88);
+                transform-origin: bottom left;
+            }
+
+            .floating-whatsapp-btn-en {
+                bottom: 20px !important;
+                right: 15px !important;
+                left: auto !important;
+                width: 54px !important;
+                height: 54px !important;
+            }
+        }
+    </style>
 
 </body>
 
