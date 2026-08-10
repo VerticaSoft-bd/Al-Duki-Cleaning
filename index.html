@@ -342,6 +342,91 @@
             text-align: center !important;
         }
 
+        /* =========================================================
+           HERO CASE BADGE ROTATING CIRCULAR TEXT & ANIMATION
+           ========================================================= */
+        @keyframes pxl-case-badge-rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        .elementor-element-6088006 .pxl-case-badge,
+        .pxl-case-badge {
+            --badge-size: 180px;
+            --inner-size: 51px;
+            --bg-color: #3ca200;
+            --text-color: #ffffff;
+            --animate-duration: 20s;
+            position: relative !important;
+            display: block !important;
+            width: 180px !important;
+            height: 180px !important;
+            margin: 0 auto !important;
+        }
+
+        .elementor-element-6088006 .badge-inner,
+        .pxl-case-badge .badge-inner {
+            position: relative !important;
+            width: 100% !important;
+            height: 100% !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            transition: transform 0.3s ease !important;
+        }
+
+        .pxl-case-badge:hover .badge-inner {
+            transform: scale(1.05) !important;
+        }
+
+        .elementor-element-6088006 .text-circle,
+        .pxl-case-badge .text-circle {
+            position: absolute !important;
+            width: 100% !important;
+            height: 100% !important;
+            top: 0 !important;
+            left: 0 !important;
+            animation: pxl-case-badge-rotate 20s linear infinite !important;
+            z-index: 2 !important;
+            pointer-events: none !important;
+            transform-origin: center center !important;
+            direction: ltr !important;
+        }
+
+        .elementor-element-6088006 .text-circle text,
+        .pxl-case-badge .text-circle text {
+            fill: #ffffff !important;
+            font-family: 'Outfit', 'Inter', sans-serif !important;
+            font-size: 14.5px !important;
+            font-weight: 700 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 3.12px !important;
+            direction: ltr !important;
+            unicode-bidi: normal !important;
+        }
+
+        .elementor-element-6088006 .inner-hexagon,
+        .pxl-case-badge .inner-hexagon {
+            position: relative !important;
+            width: 51px !important;
+            height: 56px !important;
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            z-index: 3 !important;
+            color: #ffffff !important;
+        }
+
+        .elementor-element-6088006 .inner-hexagon svg,
+        .pxl-case-badge .inner-hexagon svg {
+            width: 38px !important;
+            height: 38px !important;
+        }
+
         /* Service Explorer Design System variables */
         :root {
             --brand-green: #3CA200;
@@ -3015,8 +3100,9 @@
                                                                             </defs> <text dominant-baseline="middle">
                                                                                 <textPath
                                                                                     href="#circlePath-pxl_case_badge-6088006-5076"
-                                                                                    startOffset="0%"> دعم متواصل - 24
-                                                                                    ساعة - دعم متواصل - 24 ساعة
+                                                                                    xlink:href="#circlePath-pxl_case_badge-6088006-5076"
+                                                                                    startOffset="0%"> Support - 24h -
+                                                                                    Support - 24h
                                                                                     ------------------------ </textPath>
                                                                             </text>
                                                                         </svg>
