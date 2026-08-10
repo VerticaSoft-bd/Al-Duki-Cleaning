@@ -755,6 +755,425 @@
             }
         }
     </style>
+
+<style id="footer-fix-styles">
+
+/* =========================================================
+   ULTRA-PREMIUM REDESIGNED FOOTER (ARABIC & ENGLISH)
+   ========================================================= */
+
+.custom-premium-footer {
+    background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
+    color: #ffffff !important;
+    border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    z-index: 20 !important;
+}
+
+.custom-premium-footer::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
+    opacity: 0.8 !important;
+}
+
+.footer-main-wrap {
+    padding: 70px 0 0 0 !important;
+}
+
+.footer-container {
+    max-width: 1360px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    box-sizing: border-box !important;
+}
+
+.footer-grid {
+    display: grid !important;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
+    gap: 36px !important;
+    align-items: flex-start !important;
+}
+
+/* Col 1: Brand */
+.footer-brand-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+}
+
+.footer-logo-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-decoration: none !important;
+}
+
+.footer-brand-logo {
+    height: 64px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)) !important;
+}
+
+.footer-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.footer-company-name {
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.2px !important;
+}
+
+.footer-sub-name {
+    font-size: 13px !important;
+    color: #A3E635 !important;
+    font-weight: 600 !important;
+    margin-top: 3px !important;
+}
+
+.footer-brand-desc {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #CBD5E1 !important;
+    margin: 0 !important;
+}
+
+.footer-social-icons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 4px !important;
+}
+
+.footer-social-btn {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.footer-social-btn:hover {
+    background: #3CA200 !important;
+    border-color: #3CA200 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
+}
+
+/* Col Titles & Dividers */
+.footer-col-title {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 10px 0 !important;
+    letter-spacing: -0.2px !important;
+}
+
+.footer-title-divider {
+    width: 36px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #3CA200, #A3E635) !important;
+    border-radius: 2px !important;
+    margin-bottom: 20px !important;
+}
+
+html[dir="rtl"] .footer-title-divider {
+    background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
+}
+
+/* Links List */
+.footer-links-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 11px !important;
+}
+
+.footer-links-list li {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-links-list li a {
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: all 0.25s ease !important;
+}
+
+.footer-links-list li a i {
+    font-size: 11px !important;
+    color: #3CA200 !important;
+    transition: transform 0.25s ease !important;
+}
+
+.footer-links-list li a:hover {
+    color: #FFFFFF !important;
+    transform: translateX(4px) !important;
+}
+
+html[dir="rtl"] .footer-links-list li a:hover {
+    transform: translateX(-4px) !important;
+}
+
+/* Contact Items */
+.footer-contact-items {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+}
+
+.footer-contact-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: transform 0.25s ease !important;
+}
+
+.footer-contact-item:hover {
+    transform: translateX(3px) !important;
+}
+
+html[dir="rtl"] .footer-contact-item:hover {
+    transform: translateX(-3px) !important;
+}
+
+.footer-contact-icon {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 10px !important;
+    background: rgba(60, 162, 0, 0.15) !important;
+    border: 1px solid rgba(60, 162, 0, 0.3) !important;
+    color: #A3E635 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    font-size: 15px !important;
+}
+
+.footer-contact-icon.phone-icon {
+    background: rgba(255, 212, 0, 0.15) !important;
+    border-color: rgba(255, 212, 0, 0.4) !important;
+    color: #FFD400 !important;
+}
+
+.footer-contact-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.footer-contact-label {
+    font-size: 11.5px !important;
+    color: #94A3B8 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.footer-contact-val {
+    font-size: 13.5px !important;
+    color: #E2E8F0 !important;
+    font-weight: 600 !important;
+}
+
+.footer-contact-val.contact-highlight {
+    color: #FFD400 !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    direction: ltr !important;
+    display: inline-block !important;
+}
+
+/* Newsletter Column */
+.footer-newsletter-desc {
+    font-size: 13.5px !important;
+    color: #94A3B8 !important;
+    line-height: 1.6 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.footer-newsletter-form {
+    display: flex !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 9999px !important;
+    padding: 4px 5px 4px 16px !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+
+html[dir="rtl"] .footer-newsletter-form {
+    padding: 4px 16px 4px 5px !important;
+}
+
+.footer-newsletter-form:focus-within {
+    border-color: #3CA200 !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
+}
+
+.footer-newsletter-input {
+    flex: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: #ffffff !important;
+    font-size: 13.5px !important;
+    padding: 8px 4px !important;
+    min-width: 0 !important;
+    font-family: inherit !important;
+}
+
+.footer-newsletter-input::placeholder {
+    color: #94A3B8 !important;
+    opacity: 0.8 !important;
+}
+
+.footer-newsletter-submit {
+    background: linear-gradient(135deg, #3CA200, #2E8000) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+}
+
+.footer-newsletter-submit:hover {
+    background: linear-gradient(135deg, #FFD400, #E5A100) !important;
+    color: #0F172A !important;
+    transform: scale(1.05) !important;
+}
+
+.footer-trust-badge {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+    font-size: 12.5px !important;
+    color: #A3E635 !important;
+    font-weight: 600 !important;
+}
+
+.footer-trust-badge i {
+    font-size: 16px !important;
+    color: #3CA200 !important;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-top: 60px !important;
+    padding: 24px 0 !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.footer-bottom-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+}
+
+.footer-copyright-text {
+    font-size: 13.5px !important;
+    color: #94A3B8 !important;
+}
+
+.footer-copyright-text strong {
+    color: #E2E8F0 !important;
+}
+
+.footer-legal-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-size: 13.5px !important;
+    color: #64748B !important;
+}
+
+.footer-legal-links a {
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.footer-legal-links a:hover {
+    color: #3CA200 !important;
+}
+
+/* Responsive Grid Breakpoints */
+@media (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 36px !important;
+    }
+    .footer-brand-col {
+        grid-column: span 3 !important;
+        max-width: 600px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main-wrap {
+        padding: 50px 0 0 0 !important;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+    .footer-brand-col {
+        grid-column: span 1 !important;
+    }
+    .footer-bottom-container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 10px !important;
+    }
+    .footer-legal-links {
+        justify-content: center !important;
+    }
+}
+
+</style>
 </head>
 
 <body class="rtl wp-singular page-template-default page wp-theme-genfresco pxl-redux-page body-default-font heading-default-font bd-px-header--default woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page">
@@ -1611,51 +2030,137 @@
 
         </main>
 
-        <footer id="pxl-footer-elementor" class="pxl-footer-show" style="background: #08190c; background: radial-gradient(circle at 50% 0%, #0d2813 0%, #051408 80%); color: #FFFFFF; padding: 60px 20px 30px 20px;">
-            <div style="max-width: 1200px; margin: 0 auto; display: grid; grid-template-columns: 1.4fr 1fr 1fr 1.2fr; gap: 40px; margin-bottom: 50px;">
-                
-                <div>
-                    <img src="assets/images/logo.webp" alt="شركة الدوكي للتنظيف" style="max-height: 52px; width: auto; margin-bottom: 20px;" />
-                    <p style="font-size: 14.5px; color: #94A3B8; line-height: 1.7; margin: 0 0 20px 0;">
-                        شركة الدوكي للتنظيف والتشغيل والصيانة - الشريك الأمثل لخدمات النظافة والتعقيم الشامل ومكافحة الحشرات وصيانة المرافق في المملكة.
+        <footer id="pxl-footer-elementor" class="pxl-footer-show custom-premium-footer">
+    <div class="footer-main-wrap">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/images/logo/logo.png" alt="الدوكي للتنظيف" class="footer-brand-logo" />
+                        <div class="footer-brand-text">
+                            <span class="footer-company-name">شركة الدوكي للتنظيف</span>
+                            <span class="footer-sub-name">مؤسسة حسناء علي بن محمد الدوخي</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        شريككم الموثوق في تقديم أعلى معايير النظافة الشاملة، جلي الرخام، تعقيم الخزانات، ومكافحة الحشرات في المملكة العربية السعودية بأحدث التقنيات وأفضل الكوادر.
                     </p>
+                    <div class="footer-social-icons">
+                        <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp" class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
 
-                <div>
-                    <h4 style="font-size: 18px; font-weight: 800; color: #FFFFFF; margin: 0 0 20px 0; border-bottom: 2px solid #3CA200; padding-bottom: 8px; display: inline-block;">روابط سريعة</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14.5px;">
-                        <li><a href="index.html" style="color: #CBD5E1; text-decoration: none;">الرئيسية</a></li>
-                        <li><a href="about.html" style="color: #3CA200; font-weight: 700; text-decoration: none;">من نحن</a></li>
-                        <li><a href="index.html#services" style="color: #CBD5E1; text-decoration: none;">خدماتنا المتنوعة</a></li>
-                        <li><a href="index.html#pricing" style="color: #CBD5E1; text-decoration: none;">أسعارنا وباقاتنا</a></li>
-                        <li><a href="index.html#contact" style="color: #CBD5E1; text-decoration: none;">تواصل معنا</a></li>
+                <!-- Col 2: Main Services -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">الخدمات الرئيسية</h3>
+                    <div class="footer-title-divider"></div>
+                    <ul class="footer-links-list">
+                        <li><a href="service-detail.html?slug=building-cleaning"><i class="bi bi-chevron-left"></i> تنظيف المباني والفلل</a></li>
+                        <li><a href="service-detail.html?slug=ceramics-cleaning"><i class="bi bi-chevron-left"></i> جلي وتلميع السيراميك والرخام</a></li>
+                        <li><a href="service-detail.html?slug=furniture-cleaning"><i class="bi bi-chevron-left"></i> غسيل الكنب والمفروشات</a></li>
+                        <li><a href="service-detail.html?slug=water-tanks"><i class="bi bi-chevron-left"></i> تنظيف وتعقيم الخزانات</a></li>
+                        <li><a href="service-detail.html?slug=facade-cleaning"><i class="bi bi-chevron-left"></i> تنظيف الواجهات الزجاجية</a></li>
+                        <li><a href="service-detail.html?slug=pest-control"><i class="bi bi-chevron-left"></i> مكافحة الحشرات والرش</a></li>
+                        <li><a href="service-detail.html?slug=ac-maintenance"><i class="bi bi-chevron-left"></i> صيانة وتنظيف المكيفات</a></li>
                     </ul>
                 </div>
 
-                <div>
-                    <h4 style="font-size: 18px; font-weight: 800; color: #FFFFFF; margin: 0 0 20px 0; border-bottom: 2px solid #3CA200; padding-bottom: 8px; display: inline-block;">أبرز الخدمات</h4>
-                    <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 10px; font-size: 14.5px;">
-                        <li><a href="service-detail.html?slug=building-cleaning" style="color: #CBD5E1; text-decoration: none;">تنظيف المباني والفلل</a></li>
-                        <li><a href="service-detail.html?slug=furniture-cleaning" style="color: #CBD5E1; text-decoration: none;">تنظيف المفروشات والأثاث</a></li>
-                        <li><a href="service-detail.html?slug=ceramics-cleaning" style="color: #CBD5E1; text-decoration: none;">جلي وتلميع السيراميك والرخام</a></li>
-                        <li><a href="service-detail.html?slug=water-tanks" style="color: #CBD5E1; text-decoration: none;">غسيل وتعقيم الخزانات</a></li>
-                        <li><a href="service-detail.html?slug=pest-control" style="color: #CBD5E1; text-decoration: none;">مكافحة الحشرات والرش</a></li>
+                <!-- Col 3: Facility Services -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">خدمات المنشآت</h3>
+                    <div class="footer-title-divider"></div>
+                    <ul class="footer-links-list">
+                        <li><a href="service-detail.html?slug=schools-cleaning"><i class="bi bi-chevron-left"></i> نظافة المدارس والجامعات</a></li>
+                        <li><a href="service-detail.html?slug=government-cleaning"><i class="bi bi-chevron-left"></i> نظافة المنشآت الحكومية</a></li>
+                        <li><a href="service-detail.html?slug=offices-cleaning"><i class="bi bi-chevron-left"></i> نظافة الشركات والمكاتب</a></li>
+                        <li><a href="service-detail.html?slug=malls-cleaning"><i class="bi bi-chevron-left"></i> نظافة المراكز التجارية</a></li>
+                        <li><a href="service-detail.html?slug=factories-cleaning"><i class="bi bi-chevron-left"></i> نظافة المصانع والمستودعات</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-left"></i> من نحن (نبذة عن الشركة)</a></li>
+                        <li><a href="index.html#contact"><i class="bi bi-chevron-left"></i> احجز موعدك الآن</a></li>
                     </ul>
                 </div>
 
-                <div>
-                    <h4 style="font-size: 18px; font-weight: 800; color: #FFFFFF; margin: 0 0 20px 0; border-bottom: 2px solid #3CA200; padding-bottom: 8px; display: inline-block;">معلومات التواصل</h4>
-                    <p style="font-size: 14px; color: #94A3B8; line-height: 1.7; margin-bottom: 12px;">المملكة العربية السعودية</p>
-                    <p style="font-size: 15px; font-weight: 700; color: #FFD400; margin-bottom: 12px;">الهاتف: 0500126016</p>
-                    <p style="font-size: 14px; color: #94A3B8;">البريد: support@al-duki.com</p>
+                <!-- Col 4: Contact Details -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">معلومات الاتصال</h3>
+                    <div class="footer-title-divider"></div>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">الموقع</span>
+                                <span class="footer-contact-val">المملكة العربية السعودية</span>
+                            </div>
+                        </div>
+                        <a href="tel:+966500126016" class="footer-contact-item">
+                            <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">الهاتف والحجز المباشر</span>
+                                <span class="footer-contact-val contact-highlight">+966 50 012 6016</span>
+                            </div>
+                        </a>
+                        <a href="mailto:info@al-duki.com" class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">البريد الإلكتروني</span>
+                                <span class="footer-contact-val">info@al-duki.com</span>
+                            </div>
+                        </a>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">أوقات العمل</span>
+                                <span class="footer-contact-val">السبت - الخميس: 7:00 ص - 7:00 م</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
+                <!-- Col 5: Newsletter & CTA -->
+                <div class="footer-col footer-newsletter-col">
+                    <h3 class="footer-col-title">النشرة البريدية</h3>
+                    <div class="footer-title-divider"></div>
+                    <p class="footer-newsletter-desc">
+                        اشترك معنا للحصول على أحدث العروض الحصرية ونصائح النظافة الاحترافية.
+                    </p>
+                    <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('شكراً لاشتراككم في النشرة البريدية!');">
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني..." required class="footer-newsletter-input" />
+                        <button type="submit" class="footer-newsletter-submit" aria-label="اشترك">
+                            <i class="bi bi-send-fill" style="transform: scaleX(-1);"></i>
+                        </button>
+                    </form>
+                    <div class="footer-trust-badge">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <span>ضمان أعلى جودة وخدمة عملاء على مدار الساعة</span>
+                    </div>
+                </div>
             </div>
+        </div>
 
-            <div style="border-top: 1px solid rgba(255, 255, 255, 0.08); padding-top: 25px; text-align: center; font-size: 13.5px; color: #64748B;">
-                جميع الحقوق محفوظة © 2026 شركة الدوكي للتنظيف والتشغيل والصيانة.
+        <!-- Bottom Copyright Row -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container footer-bottom-container">
+                <div class="footer-copyright-text">
+                    جميع الحقوق محفوظة © 2026 <strong>مؤسسة حسناء علي بن محمد الدوخي للتنظيف والتشغيل</strong>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="index.html">الرئيسية</a>
+                    <span>•</span>
+                    <a href="about.html">من نحن</a>
+                    <span>•</span>
+                    <a href="index.html#service">خدماتنا</a>
+                    <span>•</span>
+                    <a href="index.html#contact">اتصل بنا</a>
+                </div>
             </div>
-        </footer>
+        </div>
+    </div>
+</footer>
 
     </div>
 

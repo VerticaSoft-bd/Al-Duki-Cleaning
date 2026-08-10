@@ -2357,6 +2357,425 @@
     <link rel='stylesheet' href='assets/css/post-2511.css' media='all' />
     <link rel='stylesheet' href='assets/css/post-176.css' media='all' />
     <link rel='stylesheet' href='assets/css/post-6202.css' media='all' />
+
+<style id="footer-fix-styles">
+
+/* =========================================================
+   ULTRA-PREMIUM REDESIGNED FOOTER (ARABIC & ENGLISH)
+   ========================================================= */
+
+.custom-premium-footer {
+    background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
+    color: #ffffff !important;
+    border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
+    position: relative !important;
+    overflow: hidden !important;
+    font-family: inherit !important;
+    z-index: 20 !important;
+}
+
+.custom-premium-footer::before {
+    content: '' !important;
+    position: absolute !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
+    opacity: 0.8 !important;
+}
+
+.footer-main-wrap {
+    padding: 70px 0 0 0 !important;
+}
+
+.footer-container {
+    max-width: 1360px !important;
+    margin: 0 auto !important;
+    padding: 0 24px !important;
+    box-sizing: border-box !important;
+}
+
+.footer-grid {
+    display: grid !important;
+    grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
+    gap: 36px !important;
+    align-items: flex-start !important;
+}
+
+/* Col 1: Brand */
+.footer-brand-col {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 16px !important;
+}
+
+.footer-logo-link {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 14px !important;
+    text-decoration: none !important;
+}
+
+.footer-brand-logo {
+    height: 64px !important;
+    width: auto !important;
+    object-fit: contain !important;
+    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)) !important;
+}
+
+.footer-brand-text {
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.footer-company-name {
+    font-size: 19px !important;
+    font-weight: 900 !important;
+    color: #ffffff !important;
+    line-height: 1.2 !important;
+    letter-spacing: -0.2px !important;
+}
+
+.footer-sub-name {
+    font-size: 13px !important;
+    color: #A3E635 !important;
+    font-weight: 600 !important;
+    margin-top: 3px !important;
+}
+
+.footer-brand-desc {
+    font-size: 14px !important;
+    line-height: 1.7 !important;
+    color: #CBD5E1 !important;
+    margin: 0 !important;
+}
+
+.footer-social-icons {
+    display: flex !important;
+    align-items: center !important;
+    gap: 10px !important;
+    margin-top: 4px !important;
+}
+
+.footer-social-btn {
+    width: 38px !important;
+    height: 38px !important;
+    border-radius: 50% !important;
+    background: rgba(255, 255, 255, 0.08) !important;
+    border: 1px solid rgba(255, 255, 255, 0.15) !important;
+    color: #ffffff !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    font-size: 14px !important;
+    text-decoration: none !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.footer-social-btn:hover {
+    background: #3CA200 !important;
+    border-color: #3CA200 !important;
+    color: #ffffff !important;
+    transform: translateY(-3px) !important;
+    box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
+}
+
+/* Col Titles & Dividers */
+.footer-col-title {
+    font-size: 18px !important;
+    font-weight: 800 !important;
+    color: #ffffff !important;
+    margin: 0 0 10px 0 !important;
+    letter-spacing: -0.2px !important;
+}
+
+.footer-title-divider {
+    width: 36px !important;
+    height: 3px !important;
+    background: linear-gradient(90deg, #3CA200, #A3E635) !important;
+    border-radius: 2px !important;
+    margin-bottom: 20px !important;
+}
+
+html[dir="rtl"] .footer-title-divider {
+    background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
+}
+
+/* Links List */
+.footer-links-list {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 11px !important;
+}
+
+.footer-links-list li {
+    list-style: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+}
+
+.footer-links-list li a {
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    transition: all 0.25s ease !important;
+}
+
+.footer-links-list li a i {
+    font-size: 11px !important;
+    color: #3CA200 !important;
+    transition: transform 0.25s ease !important;
+}
+
+.footer-links-list li a:hover {
+    color: #FFFFFF !important;
+    transform: translateX(4px) !important;
+}
+
+html[dir="rtl"] .footer-links-list li a:hover {
+    transform: translateX(-4px) !important;
+}
+
+/* Contact Items */
+.footer-contact-items {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 15px !important;
+}
+
+.footer-contact-item {
+    display: flex !important;
+    align-items: flex-start !important;
+    gap: 12px !important;
+    text-decoration: none !important;
+    color: inherit !important;
+    transition: transform 0.25s ease !important;
+}
+
+.footer-contact-item:hover {
+    transform: translateX(3px) !important;
+}
+
+html[dir="rtl"] .footer-contact-item:hover {
+    transform: translateX(-3px) !important;
+}
+
+.footer-contact-icon {
+    width: 34px !important;
+    height: 34px !important;
+    border-radius: 10px !important;
+    background: rgba(60, 162, 0, 0.15) !important;
+    border: 1px solid rgba(60, 162, 0, 0.3) !important;
+    color: #A3E635 !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-shrink: 0 !important;
+    font-size: 15px !important;
+}
+
+.footer-contact-icon.phone-icon {
+    background: rgba(255, 212, 0, 0.15) !important;
+    border-color: rgba(255, 212, 0, 0.4) !important;
+    color: #FFD400 !important;
+}
+
+.footer-contact-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 2px !important;
+}
+
+.footer-contact-label {
+    font-size: 11.5px !important;
+    color: #94A3B8 !important;
+    text-transform: uppercase !important;
+    letter-spacing: 0.5px !important;
+}
+
+.footer-contact-val {
+    font-size: 13.5px !important;
+    color: #E2E8F0 !important;
+    font-weight: 600 !important;
+}
+
+.footer-contact-val.contact-highlight {
+    color: #FFD400 !important;
+    font-size: 15px !important;
+    font-weight: 800 !important;
+    direction: ltr !important;
+    display: inline-block !important;
+}
+
+/* Newsletter Column */
+.footer-newsletter-desc {
+    font-size: 13.5px !important;
+    color: #94A3B8 !important;
+    line-height: 1.6 !important;
+    margin: 0 0 16px 0 !important;
+}
+
+.footer-newsletter-form {
+    display: flex !important;
+    align-items: center !important;
+    background: rgba(255, 255, 255, 0.07) !important;
+    border: 1px solid rgba(255, 255, 255, 0.2) !important;
+    border-radius: 9999px !important;
+    padding: 4px 5px 4px 16px !important;
+    box-sizing: border-box !important;
+    transition: all 0.3s ease !important;
+}
+
+html[dir="rtl"] .footer-newsletter-form {
+    padding: 4px 16px 4px 5px !important;
+}
+
+.footer-newsletter-form:focus-within {
+    border-color: #3CA200 !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
+}
+
+.footer-newsletter-input {
+    flex: 1 !important;
+    background: transparent !important;
+    border: none !important;
+    outline: none !important;
+    color: #ffffff !important;
+    font-size: 13.5px !important;
+    padding: 8px 4px !important;
+    min-width: 0 !important;
+    font-family: inherit !important;
+}
+
+.footer-newsletter-input::placeholder {
+    color: #94A3B8 !important;
+    opacity: 0.8 !important;
+}
+
+.footer-newsletter-submit {
+    background: linear-gradient(135deg, #3CA200, #2E8000) !important;
+    border: none !important;
+    border-radius: 50% !important;
+    width: 38px !important;
+    height: 38px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    color: #ffffff !important;
+    cursor: pointer !important;
+    flex-shrink: 0 !important;
+    font-size: 14px !important;
+    transition: all 0.3s ease !important;
+    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+}
+
+.footer-newsletter-submit:hover {
+    background: linear-gradient(135deg, #FFD400, #E5A100) !important;
+    color: #0F172A !important;
+    transform: scale(1.05) !important;
+}
+
+.footer-trust-badge {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    margin-top: 16px !important;
+    font-size: 12.5px !important;
+    color: #A3E635 !important;
+    font-weight: 600 !important;
+}
+
+.footer-trust-badge i {
+    font-size: 16px !important;
+    color: #3CA200 !important;
+}
+
+/* Bottom Bar */
+.footer-bottom-bar {
+    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+    margin-top: 60px !important;
+    padding: 24px 0 !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+}
+
+.footer-bottom-container {
+    display: flex !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+    flex-wrap: wrap !important;
+    gap: 16px !important;
+}
+
+.footer-copyright-text {
+    font-size: 13.5px !important;
+    color: #94A3B8 !important;
+}
+
+.footer-copyright-text strong {
+    color: #E2E8F0 !important;
+}
+
+.footer-legal-links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 12px !important;
+    font-size: 13.5px !important;
+    color: #64748B !important;
+}
+
+.footer-legal-links a {
+    color: #94A3B8 !important;
+    text-decoration: none !important;
+    transition: color 0.2s ease !important;
+}
+
+.footer-legal-links a:hover {
+    color: #3CA200 !important;
+}
+
+/* Responsive Grid Breakpoints */
+@media (max-width: 1200px) {
+    .footer-grid {
+        grid-template-columns: repeat(3, 1fr) !important;
+        gap: 36px !important;
+    }
+    .footer-brand-col {
+        grid-column: span 3 !important;
+        max-width: 600px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-main-wrap {
+        padding: 50px 0 0 0 !important;
+    }
+    .footer-grid {
+        grid-template-columns: 1fr !important;
+        gap: 32px !important;
+    }
+    .footer-brand-col {
+        grid-column: span 1 !important;
+    }
+    .footer-bottom-container {
+        flex-direction: column !important;
+        text-align: center !important;
+        gap: 10px !important;
+    }
+    .footer-legal-links {
+        justify-content: center !important;
+    }
+}
+
+</style>
 </head>
 
 <body
@@ -7511,352 +7930,137 @@
                 </div>
             </div>
         </div><!-- #main -->
-        <footer id="pxl-footer-elementor" class="pxl-footer-show">
-            <div class="footer-elementor-inner">
-                <div data-elementor-type="wp-post" data-elementor-id="2511" class="elementor elementor-2511">
-                    <div class="elementor-element elementor-element-b1a2931 e-flex e-con-boxed pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-parent "
-                        data-id="b1a2931" data-element_type="container" data-e-type="container"
-                        data-settings="{&quot;background_background&quot;:&quot;gradient&quot;}">
-                        <div class="e-con-inner">
-                            <div class="pxl-border-section-anm elementor-element elementor-element-099a01c e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none pxl-border-section-anm e-con e-child "
-                                data-id="099a01c" data-element_type="container" data-e-type="container">
-                                <div class="pxl-border-animated num-1">
-                                    <div class="pxl-border-anm bt w-100  bw-no"
-                                        style="--bd-width: 0px 0 0 0; border-style: solid; border-color: #3CA20040;">
-                                    </div>
-                                    <div class="pxl-border-anm br h-100  bw-no"
-                                        style="--bd-width: 0 0px 0 0; border-style: solid; border-color: #3CA20040;">
-                                    </div>
-                                    <div class="pxl-border-anm bb w-100  bw-yes"
-                                        style="--bd-width: 0 0 1px 0; border-style: solid; border-color: #3CA20040;">
-                                    </div>
-                                    <div class="pxl-border-anm bl h-100  bw-no"
-                                        style="--bd-width: 0 0 0 0px; border-style: solid; border-color: #3CA20040;">
-                                    </div>
-                                    <div class="pxl-border-glow">
-                                        <div class="pxl-bd-glow top  bw-no"></div>
-                                        <div class="pxl-bd-glow right  bw-no"></div>
-                                        <div class="pxl-bd-glow bottom  bw-yes"></div>
-                                        <div class="pxl-bd-glow left  bw-no"></div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-a727bd2 elementor-widget elementor-widget-pxl_logo"
-                                    data-id="a727bd2" data-element_type="widget" data-e-type="widget"
-                                    data-widget_type="pxl_logo.default">
-                                    <div class="elementor-widget-container">
-                                        <div class="pxl-logo " data-wow-delay="ms"> <a href="index.html"> <img
-                                                    loading="lazy" decoding="async" src="assets/images/logo/logo.png"
-                                                    style="max-height: 120px; width: auto; object-fit: contain;"
-                                                    class="attachment-full" alt="الدوكي للتنظيف" /> </a></div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-e9c4659 elementor-widget elementor-widget-pxl_heading"
-                                    data-id="e9c4659" data-element_type="widget" data-e-type="widget"
-                                    data-widget_type="pxl_heading.default">
-                                    <div class="elementor-widget-container">
-                                        <div id="pxl-pxl_heading-e9c4659-6725"
-                                            class="pxl-heading px-sub-title-default-style pxl-heading--layout-1">
-                                            <div class="pxl-heading--inner pxl-heading__inner">
-                                                <h4 class="pxl-item--title style-default highlight-default pxl-heading__title"
-                                                    data-wow-delay="ms"> <span
-                                                        class="pxl-heading--text pxl-heading__text">
-                                                        نعيد اللمعان والنظافة إلى مكانك </span></h4>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="elementor-element elementor-element-1ae8eb3 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
-                                data-id="1ae8eb3" data-element_type="container" data-e-type="container">
-                                <div class="elementor-element elementor-element-3066900 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
-                                    data-id="3066900" data-element_type="container" data-e-type="container">
-                                    <div class="elementor-element elementor-element-33b2c41 elementor-widget elementor-widget-pxl_heading"
-                                        data-id="33b2c41" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div id="pxl-pxl_heading-33b2c41-6317"
-                                                class="pxl-heading px-sub-title-default-style pxl-heading--layout-1">
-                                                <div class="pxl-heading--inner pxl-heading__inner">
-                                                    <h3 class="pxl-item--title style-default highlight-default pxl-heading__title"
-                                                        data-wow-delay="ms"> <span
-                                                            class="pxl-heading--text pxl-heading__text"> الخدمات
-                                                            الرئيسية
-                                                        </span></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-f79b11f elementor-widget elementor-widget-pxl_divider"
-                                        data-id="f79b11f" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_divider.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-el-divider  default" data-wow-delay="ms"></div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-e5ab0f9 elementor-widget elementor-widget-pxl_link"
-                                        data-id="e5ab0f9" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_link.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-link-wrap">
-                                                <ul id="pxl-link-pxl_link-e5ab0f9-8901"
-                                                    class="pxl-link pxl-link-l1 style-divider type-vertical">
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف
-                                                                المباني</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف وتلميع
-                                                                السيراميك</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف
-                                                                المفروشات والأثاث</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف
-                                                                الخزانات</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف
-                                                                الواجهات</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>مكافحة
-                                                                الحشرات</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>صيانة وتنظيف
-                                                                المكيفات</span> </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-3d97b19 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
-                                    data-id="3d97b19" data-element_type="container" data-e-type="container">
-                                    <div class="elementor-element elementor-element-2e42090 elementor-widget elementor-widget-pxl_heading"
-                                        data-id="2e42090" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div id="pxl-pxl_heading-2e42090-6406"
-                                                class="pxl-heading px-sub-title-default-style pxl-heading--layout-1">
-                                                <div class="pxl-heading--inner pxl-heading__inner">
-                                                    <h3 class="pxl-item--title style-default highlight-default pxl-heading__title"
-                                                        data-wow-delay="ms"> <span
-                                                            class="pxl-heading--text pxl-heading__text"> الخدمات الأخرى
-                                                        </span>
-                                                    </h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-f2a291f elementor-widget elementor-widget-pxl_divider"
-                                        data-id="f2a291f" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_divider.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-el-divider  default" data-wow-delay="ms"></div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-c17b503 elementor-widget elementor-widget-pxl_link"
-                                        data-id="c17b503" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_link.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-link-wrap">
-                                                <ul id="pxl-link-pxl_link-c17b503-8639"
-                                                    class="pxl-link pxl-link-l1 style-divider type-vertical">
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف المدارس
-                                                                والجامعات</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف المنشآت
-                                                                الحكومية</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف الشركات
-                                                                والمكاتب</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف المراكز
-                                                                التجارية</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#services"> <span>تنظيف
-                                                                المصانع</span> </a></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-7ffc0ed e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
-                                    data-id="7ffc0ed" data-element_type="container" data-e-type="container">
-                                    <div class="elementor-element elementor-element-fb16975 elementor-widget elementor-widget-pxl_heading"
-                                        data-id="fb16975" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div id="pxl-pxl_heading-fb16975-8463"
-                                                class="pxl-heading px-sub-title-default-style pxl-heading--layout-1">
-                                                <div class="pxl-heading--inner pxl-heading__inner">
-                                                    <h3 class="pxl-item--title style-default highlight-default pxl-heading__title"
-                                                        data-wow-delay="ms"> <span
-                                                            class="pxl-heading--text pxl-heading__text"> معلومات الاتصال
-                                                        </span></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-09671cf elementor-widget elementor-widget-pxl_divider"
-                                        data-id="09671cf" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_divider.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-el-divider  default" data-wow-delay="ms"></div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-315ee9d elementor-widget elementor-widget-pxl_link"
-                                        data-id="315ee9d" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_link.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-link-wrap">
-                                                <ul id="pxl-link-pxl_link-315ee9d-9502"
-                                                    class="pxl-link pxl-link-l1 style-3 type-vertical">
-                                                    <li class="pxl-item--link"> <a href="#"> <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="18"
-                                                                height="22" viewBox="0 0 18 22" fill="none">
-                                                                <path
-                                                                    d="M8.72173 4.6875C7.93764 4.6875 7.17116 4.9166 6.51922 5.34582C5.86727 5.77505 5.35914 6.38512 5.05908 7.09889C4.75902 7.81267 4.68052 8.59808 4.83348 9.35582C4.98645 10.1136 5.36403 10.8096 5.91846 11.3559C6.4729 11.9022 7.17929 12.2742 7.94831 12.4249C8.71733 12.5757 9.51445 12.4983 10.2389 12.2027C10.9633 11.907 11.5824 11.4063 12.018 10.7639C12.4536 10.1216 12.6862 9.36633 12.6862 8.59375C12.6862 7.55775 12.2685 6.56418 11.525 5.83161C10.7815 5.09905 9.77316 4.6875 8.72173 4.6875ZM8.72173 10.9375C8.25128 10.9375 7.79139 10.8 7.40022 10.5425C7.00906 10.285 6.70418 9.91893 6.52414 9.49066C6.34411 9.0624 6.297 8.59115 6.38878 8.13651C6.48056 7.68186 6.70711 7.26425 7.03977 6.93647C7.37243 6.60869 7.79627 6.38547 8.25768 6.29503C8.71909 6.2046 9.19736 6.25101 9.632 6.42841C10.0666 6.6058 10.4381 6.9062 10.6995 7.29163C10.9609 7.67706 11.1004 8.1302 11.1004 8.59375C11.1004 9.21535 10.8498 9.81149 10.4037 10.251C9.95761 10.6906 9.35259 10.9375 8.72173 10.9375ZM8.72173 0C6.40939 0.0025847 4.19251 0.908825 2.55743 2.51991C0.922359 4.13099 0.00262319 6.31534 0 8.59375C0 11.6602 1.43809 14.9102 4.16264 17.9932C5.38688 19.3863 6.76475 20.6408 8.27078 21.7334C8.40409 21.8254 8.56292 21.8748 8.7257 21.8748C8.88847 21.8748 9.0473 21.8254 9.18062 21.7334C10.6839 20.6403 12.0591 19.3859 13.2808 17.9932C16.0014 14.9102 17.4435 11.6602 17.4435 8.59375C17.4408 6.31534 16.5211 4.13099 14.886 2.51991C13.251 0.908825 11.0341 0.0025847 8.72173 0ZM8.72173 20.1172C7.08343 18.8477 1.58577 14.1846 1.58577 8.59375C1.58577 6.72895 2.33759 4.94052 3.67584 3.62191C5.0141 2.30329 6.82916 1.5625 8.72173 1.5625C10.6143 1.5625 12.4294 2.30329 13.7676 3.62191C15.1059 4.94052 15.8577 6.72895 15.8577 8.59375C15.8577 14.1826 10.36 18.8477 8.72173 20.1172Z"
-                                                                    fill="white"></path>
-                                                            </svg> <span></span> </a>
-                                                    </li>
-                                                    <li class="pxl-item--link"> <a href="tel:+966500126016"> <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="21"
-                                                                height="23" viewBox="0 0 21 23" fill="none">
-                                                                <path
-                                                                    d="M18.0254 9.50742H17.971V8.11262C17.971 3.63215 14.4968 0 10.2111 0C5.92536 0 2.45118 3.63215 2.45118 8.11262V9.50742H2.12447C0.926436 9.50742 0.000707874 10.6175 0.000707874 11.8985V15.4567C-0.029467 16.6982 0.908821 17.7303 2.09638 17.7618C2.10576 17.7621 2.11509 17.7622 2.12447 17.7624H4.13931C4.42469 17.7484 4.64519 17.4951 4.63175 17.1967C4.63128 17.186 4.6305 17.1752 4.6294 17.1646V10.1905C4.6294 9.84898 4.43882 9.50737 4.13931 9.50737H3.54029V8.11257C3.54029 4.26095 6.52693 1.13856 10.2111 1.13856C13.8952 1.13856 16.8819 4.26095 16.8819 8.11257V9.50737H16.2829C15.9833 9.50737 15.7928 9.84893 15.7928 10.1905V17.1646C15.7624 17.4615 15.968 17.7281 16.2521 17.7599C16.2623 17.761 16.2726 17.7618 16.2829 17.7623H16.9091L16.8546 17.8477C16.0376 18.9829 14.7556 19.6477 13.3967 19.641C13.0992 18.116 11.6755 17.1319 10.2169 17.4429C8.96948 17.7089 8.07012 18.851 8.06006 20.1818C8.07497 21.7428 9.28968 23 10.7828 22.9999C11.522 22.9874 12.2265 22.6703 12.7432 22.1175C13.0918 21.7442 13.3202 21.2666 13.3967 20.7511C15.0984 20.7579 16.7032 19.9242 17.7259 18.5024L18.2432 17.7053C19.414 17.6199 20.1491 16.8514 20.1491 15.7412V12.183C20.1492 10.9592 19.2779 9.50742 18.0254 9.50742ZM3.54029 16.6237H2.12447C1.53817 16.6088 1.07444 16.0999 1.08872 15.4869C1.08898 15.4768 1.08935 15.4668 1.08982 15.4566V11.8985C1.08982 11.2438 1.52545 10.646 2.12447 10.646H3.54029V16.6237ZM11.9537 21.3205C11.6519 21.6626 11.228 21.8584 10.7829 21.8614C9.89703 21.8467 9.17815 21.1076 9.14923 20.1819C9.14886 19.2544 9.86779 18.5021 10.755 18.5018C11.6422 18.5014 12.3617 19.253 12.3621 20.1805C12.3621 20.181 12.3621 20.1815 12.3621 20.1819C12.3848 20.6045 12.2365 21.0177 11.9537 21.3205ZM19.0601 15.7413C19.0601 16.5099 18.3522 16.6237 18.0254 16.6237H16.8819V10.646H18.0254C18.6245 10.646 19.0601 11.5285 19.0601 12.1832V15.7413Z"
-                                                                    fill="white"></path>
-                                                            </svg> <span>+966500126016</span> </a></li>
-                                                    <li class="pxl-item--link"> <a href="#"> <svg
-                                                                xmlns="http://www.w3.org/2000/svg" width="19"
-                                                                height="19" viewBox="0 0 19 19" fill="none">
-                                                                <g clip-path="url(#clip0_1_12110)">
-                                                                    <path
-                                                                        d="M12.4454 10.7972L9.88648 8.87802V4.96863C9.88648 4.57555 9.56874 4.25781 9.17566 4.25781C8.78258 4.25781 8.46484 4.57555 8.46484 4.96863V9.23347C8.46484 9.45736 8.57005 9.66849 8.74917 9.80212L11.5924 11.9345C11.7203 12.0305 11.8696 12.0767 12.0181 12.0767C12.2349 12.0767 12.4482 11.9793 12.5875 11.7917C12.8236 11.4782 12.7596 11.0325 12.4454 10.7972Z"
-                                                                        fill="white"></path>
-                                                                    <path
-                                                                        d="M9.17647 0C4.11626 0 0 4.11626 0 9.17647C0 14.2367 4.11626 18.3529 9.17647 18.3529C14.2367 18.3529 18.3529 14.2367 18.3529 9.17647C18.3529 4.11626 14.2367 0 9.17647 0ZM9.17647 16.9313C4.90099 16.9313 1.4216 13.452 1.4216 9.17647C1.4216 4.90099 4.90099 1.4216 9.17647 1.4216C13.4527 1.4216 16.9313 4.90099 16.9313 9.17647C16.9313 13.452 13.452 16.9313 9.17647 16.9313Z"
-                                                                        fill="white"></path>
-                                                                </g>
-                                                                <defs>
-                                                                    <clipPath id="clip0_1_12110">
-                                                                        <rect width="18.3529" height="18.3529"
-                                                                            fill="white">
-                                                                        </rect>
-                                                                    </clipPath>
-                                                                </defs>
-                                                            </svg> <span>السبت - الخميس: 7:00 صباحاً - 7:00 مساءً</span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-a19ab31 elementor-widget elementor-widget-pxl_icon"
-                                        data-id="a19ab31" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_icon.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-icon-list pxl-icon1 pxl-icon--layout-1  style-7  "
-                                                data-wow-delay="ms"> <a
-                                                    class="elementor-repeater-item-a2dc53d pxl-icon__item " href="#">
-                                                    <span class="icon-box pxl-icon__box"> <i aria-hidden="true"
-                                                            class="bootstrap-icons bi-youtube"></i> </span> </a> <a
-                                                    class="elementor-repeater-item-eafdb8e pxl-icon__item " href="#">
-                                                    <span class="icon-box pxl-icon__box"> <i aria-hidden="true"
-                                                            class="fab fa-linkedin-in"></i> </span> </a> <a
-                                                    class="elementor-repeater-item-b80ff50 pxl-icon__item " href="#">
-                                                    <span class="icon-box pxl-icon__box"> <i aria-hidden="true"
-                                                            class="fab fa-facebook-f"></i> </span> </a> <a
-                                                    class="elementor-repeater-item-e68379a pxl-icon__item " href="#">
-                                                    <span class="icon-box pxl-icon__box"> <i aria-hidden="true"
-                                                            class="fab fa-x-twitter"></i> </span> </a></div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="elementor-element elementor-element-3dde174 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none e-con e-child "
-                                    data-id="3dde174" data-element_type="container" data-e-type="container">
-                                    <div class="elementor-element elementor-element-9a0b8b8 elementor-widget elementor-widget-pxl_heading"
-                                        data-id="9a0b8b8" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_heading.default">
-                                        <div class="elementor-widget-container">
-                                            <div id="pxl-pxl_heading-9a0b8b8-6073"
-                                                class="pxl-heading px-sub-title-default-style pxl-heading--layout-1">
-                                                <div class="pxl-heading--inner pxl-heading__inner">
-                                                    <h3 class="pxl-item--title style-default highlight-default pxl-heading__title"
-                                                        data-wow-delay="ms"> <span
-                                                            class="pxl-heading--text pxl-heading__text"> اشترك في نشرتنا
-                                                            البريدية </span></h3>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-65bdfae elementor-widget elementor-widget-pxl_text_editor"
-                                        data-id="65bdfae" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_text_editor.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-text-editor default">
-                                                <div class="pxl-item--inner " data-wow-delay="ms">
-                                                    <p>اشترك ليصلك أحدث نصائح النظافة والعروض الخاصة.</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="elementor-element elementor-element-05e0e45 elementor-widget elementor-widget-pxl_contact_form"
-                                        data-id="05e0e45" data-element_type="widget" data-e-type="widget"
-                                        data-widget_type="pxl_contact_form.default">
-                                        <div class="elementor-widget-container">
-                                            <div class="pxl-contact-form pxl-contact-form1 pxl-contact-form--layout-1 btn-w-auto "
-                                                data-wow-delay="ms">
-                                                <div class="wpcf7 no-js" id="wpcf7-f2544-o3" lang="en-US" dir="ltr"
-                                                    data-wpcf7-id="2544">
-                                                    <div class="screen-reader-response">
-                                                        <p role="status" aria-live="polite" aria-atomic="true"></p>
-                                                        <ul></ul>
-                                                    </div>
-                                                    <form action="" method="post" class="wpcf7-form init"
-                                                        aria-label="اتصل بنا form" novalidate="novalidate"
-                                                        data-status="init">
-                                                        <fieldset class="hidden-fields-container"><input type="hidden"
-                                                                name="_wpcf7" value="2544" /><input type="hidden"
-                                                                name="_wpcf7_version" value="6.1.6" /><input
-                                                                type="hidden" name="_wpcf7_locale"
-                                                                value="en_US" /><input type="hidden"
-                                                                name="_wpcf7_unit_tag" value="wpcf7-f2544-o3" /><input
-                                                                type="hidden" name="_wpcf7_container_post"
-                                                                value="0" /><input type="hidden"
-                                                                name="_wpcf7_posted_data_hash" value="" /></fieldset>
-                                                        <div class="wrap-ctf1-2">
-                                                            <div class="input-filled">
-                                                                <p><span class="wpcf7-form-control-wrap your-email"><span
-                                                                            class="wpcf7-form-control-wrap"
-                                                                            data-name="your-email"><input size="40"
-                                                                                maxlength="400"
-                                                                                class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
-                                                                                aria-required="true"
-                                                                                aria-invalid="false"
-                                                                                placeholder="أدخل بريدك الإلكتروني..."
-                                                                                value="" type="email"
-                                                                                name="your-email" /></span><button
-                                                                            type="submit"
-                                                                            class="wpcf7-submit btn  btn-text-nanuk btn-2-icons"><svg
-                                                                                xmlns="http://www.w3.org/2000/svg"
-                                                                                width="18" height="17"
-                                                                                viewBox="0 0 18 17" fill="none">
-                                                                                <path
-                                                                                    d="M16.7051 7.1712L1.3877 0.09252C1.25597 0.0316425 1.11132 0 0.964741 0C0.431933 0 0 0.4092 0 0.913965V0.940342C0 1.06298 0.0158729 1.18516 0.0472704 1.30414L1.51658 6.87202C1.55671 7.02412 1.69244 7.13647 1.85689 7.1538L8.31496 7.8336C8.53892 7.85715 8.70833 8.03648 8.70833 8.25C8.70833 8.46352 8.53892 8.64285 8.31496 8.6664L1.85689 9.3462C1.69244 9.36353 1.55671 9.47587 1.51658 9.62798L0.0472704 15.1958C0.0158729 15.3149 0 15.437 0 15.5597V15.5861C0 16.0908 0.431933 16.5 0.964741 16.5C1.11132 16.5 1.25597 16.4683 1.3877 16.4074L16.7051 9.3288C17.1405 9.12765 17.4167 8.70893 17.4167 8.25C17.4167 7.79108 17.1405 7.37235 16.7051 7.1712Z"
-                                                                                    fill="white" />
-                                                                            </svg></button></span></p>
-                                                            </div>
-                                                        </div>
-                                                        <div class="wpcf7-response-output" aria-hidden="true"></div>
-                                                    </form>
-                                                </div>
-                                                <div id="qrcode" class="hide-qr"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <footer id="pxl-footer-elementor" class="pxl-footer-show custom-premium-footer">
+    <div class="footer-main-wrap">
+        <div class="footer-container">
+            <div class="footer-grid">
+                <!-- Col 1: Brand & Bio -->
+                <div class="footer-col footer-brand-col">
+                    <a href="index.html" class="footer-logo-link">
+                        <img src="assets/images/logo/logo.png" alt="الدوكي للتنظيف" class="footer-brand-logo" />
+                        <div class="footer-brand-text">
+                            <span class="footer-company-name">شركة الدوكي للتنظيف</span>
+                            <span class="footer-sub-name">مؤسسة حسناء علي بن محمد الدوخي</span>
+                        </div>
+                    </a>
+                    <p class="footer-brand-desc">
+                        شريككم الموثوق في تقديم أعلى معايير النظافة الشاملة، جلي الرخام، تعقيم الخزانات، ومكافحة الحشرات في المملكة العربية السعودية بأحدث التقنيات وأفضل الكوادر.
+                    </p>
+                    <div class="footer-social-icons">
+                        <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp" class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
+                        <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i class="fab fa-x-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
 
+                <!-- Col 2: Main Services -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">الخدمات الرئيسية</h3>
+                    <div class="footer-title-divider"></div>
+                    <ul class="footer-links-list">
+                        <li><a href="service-detail.html?slug=building-cleaning"><i class="bi bi-chevron-left"></i> تنظيف المباني والفلل</a></li>
+                        <li><a href="service-detail.html?slug=ceramics-cleaning"><i class="bi bi-chevron-left"></i> جلي وتلميع السيراميك والرخام</a></li>
+                        <li><a href="service-detail.html?slug=furniture-cleaning"><i class="bi bi-chevron-left"></i> غسيل الكنب والمفروشات</a></li>
+                        <li><a href="service-detail.html?slug=water-tanks"><i class="bi bi-chevron-left"></i> تنظيف وتعقيم الخزانات</a></li>
+                        <li><a href="service-detail.html?slug=facade-cleaning"><i class="bi bi-chevron-left"></i> تنظيف الواجهات الزجاجية</a></li>
+                        <li><a href="service-detail.html?slug=pest-control"><i class="bi bi-chevron-left"></i> مكافحة الحشرات والرش</a></li>
+                        <li><a href="service-detail.html?slug=ac-maintenance"><i class="bi bi-chevron-left"></i> صيانة وتنظيف المكيفات</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Facility Services -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">خدمات المنشآت</h3>
+                    <div class="footer-title-divider"></div>
+                    <ul class="footer-links-list">
+                        <li><a href="service-detail.html?slug=schools-cleaning"><i class="bi bi-chevron-left"></i> نظافة المدارس والجامعات</a></li>
+                        <li><a href="service-detail.html?slug=government-cleaning"><i class="bi bi-chevron-left"></i> نظافة المنشآت الحكومية</a></li>
+                        <li><a href="service-detail.html?slug=offices-cleaning"><i class="bi bi-chevron-left"></i> نظافة الشركات والمكاتب</a></li>
+                        <li><a href="service-detail.html?slug=malls-cleaning"><i class="bi bi-chevron-left"></i> نظافة المراكز التجارية</a></li>
+                        <li><a href="service-detail.html?slug=factories-cleaning"><i class="bi bi-chevron-left"></i> نظافة المصانع والمستودعات</a></li>
+                        <li><a href="about.html"><i class="bi bi-chevron-left"></i> من نحن (نبذة عن الشركة)</a></li>
+                        <li><a href="index.html#contact"><i class="bi bi-chevron-left"></i> احجز موعدك الآن</a></li>
+                    </ul>
+                </div>
+
+                <!-- Col 4: Contact Details -->
+                <div class="footer-col">
+                    <h3 class="footer-col-title">معلومات الاتصال</h3>
+                    <div class="footer-title-divider"></div>
+                    <div class="footer-contact-items">
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">الموقع</span>
+                                <span class="footer-contact-val">المملكة العربية السعودية</span>
+                            </div>
+                        </div>
+                        <a href="tel:+966500126016" class="footer-contact-item">
+                            <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">الهاتف والحجز المباشر</span>
+                                <span class="footer-contact-val contact-highlight">+966 50 012 6016</span>
+                            </div>
+                        </a>
+                        <a href="mailto:info@al-duki.com" class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">البريد الإلكتروني</span>
+                                <span class="footer-contact-val">info@al-duki.com</span>
+                            </div>
+                        </a>
+                        <div class="footer-contact-item">
+                            <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
+                            <div class="footer-contact-content">
+                                <span class="footer-contact-label">أوقات العمل</span>
+                                <span class="footer-contact-val">السبت - الخميس: 7:00 ص - 7:00 م</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div>Copyright@ all right Reserved by aldukhicleaner.com</div>
-                        </div>
-                        <div class="col-md-6">
-                            <div>desing and devlop by crebyte</div>
-                        </div>
+
+                <!-- Col 5: Newsletter & CTA -->
+                <div class="footer-col footer-newsletter-col">
+                    <h3 class="footer-col-title">النشرة البريدية</h3>
+                    <div class="footer-title-divider"></div>
+                    <p class="footer-newsletter-desc">
+                        اشترك معنا للحصول على أحدث العروض الحصرية ونصائح النظافة الاحترافية.
+                    </p>
+                    <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('شكراً لاشتراككم في النشرة البريدية!');">
+                        <input type="email" placeholder="أدخل بريدك الإلكتروني..." required class="footer-newsletter-input" />
+                        <button type="submit" class="footer-newsletter-submit" aria-label="اشترك">
+                            <i class="bi bi-send-fill" style="transform: scaleX(-1);"></i>
+                        </button>
+                    </form>
+                    <div class="footer-trust-badge">
+                        <i class="bi bi-shield-fill-check"></i>
+                        <span>ضمان أعلى جودة وخدمة عملاء على مدار الساعة</span>
                     </div>
                 </div>
-        </footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
+            </div>
+        </div>
+
+        <!-- Bottom Copyright Row -->
+        <div class="footer-bottom-bar">
+            <div class="footer-container footer-bottom-container">
+                <div class="footer-copyright-text">
+                    جميع الحقوق محفوظة © 2026 <strong>مؤسسة حسناء علي بن محمد الدوخي للتنظيف والتشغيل</strong>
+                </div>
+                <div class="footer-legal-links">
+                    <a href="index.html">الرئيسية</a>
+                    <span>•</span>
+                    <a href="about.html">من نحن</a>
+                    <span>•</span>
+                    <a href="index.html#service">خدماتنا</a>
+                    <span>•</span>
+                    <a href="index.html#contact">اتصل بنا</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
                 class="pxl-scroll-progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg> </a>
