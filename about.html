@@ -1174,6 +1174,152 @@ html[dir="rtl"] .footer-newsletter-form {
 }
 
 </style>
+<style id="sticky-header-styles">
+
+/* =========================================================
+   SYNCHRONIZED STICKY HEADER STYLING (EXACT SAME AS HOMEPAGE)
+   ========================================================= */
+
+.pxl-header-elementor-sticky {
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    right: 0 !important;
+    width: 100% !important;
+    z-index: 999999 !important;
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
+    transform: translateY(-100%) !important;
+    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
+    visibility: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pxl-header-elementor-sticky.pxl-header-fixed {
+    transform: translateY(0%) !important;
+    visibility: visible !important;
+}
+
+.pxl-header-elementor-sticky .elementor-5330,
+.pxl-header-elementor-sticky .elementor-element-24e227e {
+    background-color: #ffffff !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-24e227e > .e-con-inner {
+    display: flex !important;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    width: 96% !important;
+    max-width: 1650px !important;
+    margin: 0 auto !important;
+    padding: 6px 20px !important;
+    background-color: #ffffff !important;
+}
+
+/* Call Box in Sticky Nav */
+.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-icon-box {
+    display: inline-flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    width: 36px !important;
+    height: 36px !important;
+    border-radius: 50% !important;
+    border: 2px solid #3ca200 !important;
+    background-color: #ffffff !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon svg {
+    width: 16px !important;
+    height: 16px !important;
+    fill: #3ca200 !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--title {
+    font-size: 11px !important;
+    color: #666666 !important;
+    margin: 0 !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--description {
+    font-size: 16px !important;
+    font-weight: 800 !important;
+    color: #3ca200 !important;
+}
+
+/* Navigation Links in Sticky Nav */
+.pxl-header-elementor-sticky .pxl-nav-menu ul.pxl-menu-primary,
+.pxl-header-elementor-sticky .pxl-nav-menu ul {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 32px !important;
+    align-items: center !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none !important;
+}
+
+.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a {
+    font-weight: 700 !important;
+    font-size: 15px !important;
+    color: #2c3e50 !important;
+    text-decoration: none !important;
+    padding: 6px 0 !important;
+    transition: color 0.2s ease !important;
+}
+
+.pxl-header-elementor-sticky .pxl-nav-menu ul > li.current-menu-item > a,
+.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a:hover {
+    color: #3ca200 !important;
+}
+
+/* CTA Button in Sticky Nav */
+.pxl-header-elementor-sticky .elementor-element-b72ebad a,
+.pxl-header-elementor-sticky .elementor-element-b72ebad .btn {
+    background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
+    color: #0F172A !important;
+    padding: 6px 20px !important;
+    border-radius: 9999px !important;
+    font-weight: 700 !important;
+    font-size: 13.5px !important;
+    text-decoration: none !important;
+    box-shadow: 0 4px 14px rgba(229, 161, 0, 0.4) !important;
+    transition: all 0.3s ease !important;
+}
+
+.pxl-header-elementor-sticky .elementor-element-b72ebad a:hover {
+    background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
+    transform: translateY(-2px) !important;
+}
+
+/* Mobile Sticky Header */
+@media (max-width: 1199px) {
+    .pxl-header-elementor-sticky {
+        display: none !important;
+    }
+    #pxl-header-mobile.pxl-header-mobile-fixed {
+        position: fixed !important;
+        top: 0 !important;
+        left: 0 !important;
+        right: 0 !important;
+        width: 100% !important;
+        z-index: 999999 !important;
+        background-color: #ffffff !important;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+}
+
+</style>
 </head>
 
 <body class="rtl wp-singular page-template-default page wp-theme-genfresco pxl-redux-page body-default-font heading-default-font bd-px-header--default woocommerce-layout-grid elementor-default elementor-kit-7 elementor-page">
@@ -1270,7 +1416,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                 <div class="elementor-widget-container">
                                                     <div class="pxl-language-switch default" data-wow-delay="ms">
                                                         <div class="language">
-                                                            <a id="lang-switch-link" class="language-first" href="about-en.html"
+                                                            <a class="language-first" href="about-en.html"
                                                                 style="text-decoration:none;">
                                                                 <img width="20" height="14"
                                                                     src="https://flagcdn.com/w40/sa.png" alt="AR"
@@ -1362,7 +1508,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             class="pxl-menu-primary clearfix">
                                                             <li id="menu-item-6205"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
-                                                                <a href="index.html#home" class="is-one-page">
+                                                                <a href="index.html" class="is-one-page">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>الرئيسية</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1395,8 +1541,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             </li>
                                                             <li id="menu-item-6209"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
-                                                                <a href="about.html" class="is-one-page"
-                                                                    data-onepage-offset="100">
+                                                                <a href="about.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>من نحن</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1412,7 +1557,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             </li>
                                                             <!-- <li id="menu-item-6210"
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6210">
-                                                                <a href="index.html#pricing" class="is-one-page"
+                                                                <a href="#pricing" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>أسعارنا</span><svg
@@ -1565,7 +1710,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             class="pxl-menu-primary clearfix">
                                                             <li
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
-                                                                <a href="index.html#home" class="is-one-page">
+                                                                <a href="index.html" class="is-one-page">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>الرئيسية</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1598,8 +1743,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             </li>
                                                             <li
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
-                                                                <a href="about.html" class="is-one-page"
-                                                                    data-onepage-offset="100">
+                                                                <a href="about.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>من نحن</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -1615,7 +1759,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                             </li>
                                                             <!-- <li
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6210">
-                                                                <a href="index.html#pricing" class="is-one-page"
+                                                                <a href="#pricing" class="is-one-page"
                                                                     data-onepage-offset="100">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>أسعارنا</span><svg
@@ -1707,15 +1851,18 @@ html[dir="rtl"] .footer-newsletter-form {
                 <div id="pxl-header-main" class="pxl-header-main">
                     <div class="container">
                         <div class="row">
-                            <div class="pxl-header-mobile-default" style="display: flex; align-items: center; justify-content: space-between; padding: 6px 15px; min-height: 54px; background: #ffffff;">
+                            <div class="pxl-header-mobile-default"
+                                style="display: flex; align-items: center; justify-content: space-between; padding: 6px 15px; min-height: 54px; background: #ffffff;">
                                 <div id="pxl-nav-mobile" style="margin: 0; flex-shrink: 0; min-width: 40px;">
                                     <div class="pxl-nav-mobile-button pxl-anchor-divider pxl-cursor--cta"> <span
                                             class="pxl-icon-line pxl-icon-line1"></span> <span
                                             class="pxl-icon-line pxl-icon-line2"></span> <span
                                             class="pxl-icon-line pxl-icon-line3"></span></div>
                                 </div>
-                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a href="index.html" title="الدوكي للتنظيف"
-                                        rel="home" style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img src="assets/images/logo/logo.png"
+                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a
+                                        href="index.html" title="الدوكي للتنظيف" rel="home"
+                                        style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img
+                                            src="assets/images/logo/logo.png"
                                             style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
                                             alt="الدوكي للتنظيف" />
                                         <span style="font-size: 18px; font-weight: 800; color: #0F172A; font-family: 'Cairo', sans-serif; white-space: nowrap;">الدوكي للتنظيف</span></a></div>
@@ -1741,7 +1888,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                         <ul id="menu-menu-onepage-home-3" class="pxl-menu-primary clearfix">
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
-                                                <a href="index.html#home" class="is-one-page"><span>الرئيسية</span></a>
+                                                <a href="index.html" class="is-one-page"><span>الرئيسية</span></a>
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6206">
@@ -1750,12 +1897,12 @@ html[dir="rtl"] .footer-newsletter-form {
                                             </li>
                                             <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
-                                                <a href="about.html" class="is-one-page" data-onepage-offset="100"><span>من
+                                                <a href="#about" class="is-one-page" data-onepage-offset="100"><span>من
                                                         نحن</span></a>
                                             </li>
                                             <!-- <li
                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6210">
-                                                <a href="index.html#pricing" class="is-one-page"
+                                                <a href="#pricing" class="is-one-page"
                                                     data-onepage-offset="100"><span>أسعارنا</span></a>
                                             </li> -->
                                             <li
@@ -2182,5 +2329,37 @@ html[dir="rtl"] .footer-newsletter-form {
     <script src="assets/images/jquery.min.js"></script>
     <script id="pxl-core-main-js" src="assets/images/pxl-core-main.min.js"></script>
     <script id="pxl-main-js" src="assets/images/pxl-main.min.js"></script>
+<!-- Sticky Header Controller Script -->
+
+<script>
+// Synchronized Sticky Header Controller
+(function() {
+    function initStickyHeader() {
+        const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
+        const mobileHeader = document.querySelector('#pxl-header-mobile');
+        
+        function onScroll() {
+            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+            if (scrollPos > 120) {
+                if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
+                if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
+            } else {
+                if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
+                if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
+            }
+        }
+        
+        window.addEventListener('scroll', onScroll, { passive: true });
+        onScroll();
+    }
+    
+    if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initStickyHeader);
+    } else {
+        initStickyHeader();
+    }
+})();
+</script>
+
 </body>
 </html>
