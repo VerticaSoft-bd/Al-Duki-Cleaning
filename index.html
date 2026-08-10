@@ -802,6 +802,11 @@
             /* Point arrow left in RTL */
         }
 
+        /* Mobile Drawer Defaults (Hidden on Desktop) */
+        .service-mobile-drawer {
+            display: none !important;
+        }
+
         /* RESPONSIVE LAYOUT */
         @media (max-width: 1200px) {
             .service-explorer {
@@ -828,31 +833,177 @@
         }
 
         @media (max-width: 768px) {
+            .service-explorer-right {
+                display: none !important;
+                /* On mobile, details drop down directly under clicked service */
+            }
+
+            .service-explorer-left {
+                width: 100% !important;
+                flex: 1 1 100% !important;
+            }
+
             .service-explorer-grid {
-                gap: 12px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+                width: 100% !important;
             }
 
             .service-explorer-card {
                 padding: 14px 16px !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                border-radius: 14px !important;
             }
 
             .card-title {
-                font-size: 14px !important;
+                font-size: 15px !important;
             }
 
             .card-arrow-circle {
-                display: none !important;
-                /* hide to save space */
+                display: inline-flex !important;
+                opacity: 0.65 !important;
+                transform: rotate(0deg) !important;
+                background: #F4FBF1 !important;
+                color: var(--brand-green) !important;
+                transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), background 0.3s ease, color 0.3s ease, opacity 0.3s ease !important;
             }
 
-            .preview-image-container {
-                height: 200px !important;
+            .service-explorer-card.active .card-arrow-circle {
+                opacity: 1 !important;
+                transform: rotate(90deg) !important;
+                background: var(--brand-green) !important;
+                color: #FFFFFF !important;
             }
-        }
 
-        @media (max-width: 480px) {
-            .service-explorer-grid {
-                grid-template-columns: 1fr !important;
+            /* Smart Dropdown Animation for Mobile */
+            .service-mobile-drawer {
+                display: grid !important;
+                grid-template-rows: 0fr;
+                transition: grid-template-rows 380ms cubic-bezier(0.16, 1, 0.3, 1), margin 320ms ease;
+                margin: 0 !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+            }
+
+            .service-mobile-drawer.open {
+                grid-template-rows: 1fr;
+                margin-top: 4px !important;
+                margin-bottom: 12px !important;
+            }
+
+            .service-mobile-drawer-inner {
+                min-height: 0;
+                overflow: hidden;
+                opacity: 0;
+                transform: translateY(-8px) scale(0.99);
+                transition: opacity 320ms cubic-bezier(0.16, 1, 0.3, 1), transform 350ms cubic-bezier(0.16, 1, 0.3, 1);
+            }
+
+            .service-mobile-drawer.open .service-mobile-drawer-inner {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+
+            .service-mobile-card {
+                background: #FFFFFF !important;
+                border: 1.5px solid rgba(60, 162, 0, 0.22) !important;
+                border-radius: 18px !important;
+                overflow: hidden !important;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06), 0 4px 14px rgba(60, 162, 0, 0.08) !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
+                display: flex !important;
+                flex-direction: column !important;
+            }
+
+            .service-mobile-card .preview-image-container {
+                width: 100% !important;
+                height: 190px !important;
+                overflow: hidden !important;
+                position: relative !important;
+            }
+
+            .service-mobile-card .preview-image {
+                width: 100% !important;
+                height: 100% !important;
+                object-fit: cover !important;
+            }
+
+            .service-mobile-card .preview-details {
+                padding: 18px 16px 20px 16px !important;
+                display: flex !important;
+                flex-direction: column !important;
+                text-align: right !important;
+            }
+
+            .service-mobile-card .preview-header {
+                display: flex !important;
+                align-items: center !important;
+                gap: 12px !important;
+                margin-bottom: 12px !important;
+            }
+
+            .service-mobile-card .preview-icon-wrapper {
+                width: 38px !important;
+                height: 38px !important;
+                border-radius: 10px !important;
+                flex-shrink: 0 !important;
+            }
+
+            .service-mobile-card .preview-title {
+                font-size: 18px !important;
+                font-weight: 800 !important;
+                color: var(--dark-text) !important;
+                margin: 0 !important;
+            }
+
+            .service-mobile-card .preview-desc {
+                font-size: 13.5px !important;
+                color: var(--muted-text) !important;
+                line-height: 1.6 !important;
+                margin-bottom: 16px !important;
+            }
+
+            .service-mobile-card .preview-divider {
+                height: 1px !important;
+                background: rgba(0, 0, 0, 0.06) !important;
+                margin-bottom: 16px !important;
+            }
+
+            .service-mobile-card .preview-benefits {
+                list-style: none !important;
+                padding: 0 !important;
+                margin: 0 0 20px 0 !important;
+                display: flex !important;
+                flex-direction: column !important;
+                gap: 10px !important;
+            }
+
+            .service-mobile-card .preview-benefits li {
+                display: flex !important;
+                align-items: flex-start !important;
+                gap: 10px !important;
+                font-size: 13.5px !important;
+                font-weight: 600 !important;
+                line-height: 1.4 !important;
+            }
+
+            .service-mobile-card .preview-cta-btn {
+                display: inline-flex !important;
+                align-items: center !important;
+                justify-content: space-between !important;
+                padding: 13px 22px !important;
+                background: var(--brand-green) !important;
+                color: #FFFFFF !important;
+                font-size: 14px !important;
+                font-weight: 700 !important;
+                border-radius: 50px !important;
+                text-decoration: none !important;
+                box-shadow: 0 4px 15px rgba(60, 162, 0, 0.22) !important;
+                width: 100% !important;
+                box-sizing: border-box !important;
             }
         }
 
@@ -7994,34 +8145,105 @@
 
             // Premium Service Explorer Interaction & Accessibility Script
             (function () {
-                const cards = document.querySelectorAll('.service-explorer-card');
-                const panels = document.querySelectorAll('.service-preview-panel');
+                const explorer = document.querySelector('.service-explorer');
+                if (!explorer) return;
+
+                const cards = explorer.querySelectorAll('.service-explorer-card');
+                const desktopPanels = explorer.querySelectorAll('.service-explorer-right .service-preview-panel');
 
                 if (cards.length === 0) return;
 
-                function selectService(targetId) {
+                // Initialize mobile dropdown drawers right under each card
+                cards.forEach(card => {
+                    const targetId = card.getAttribute('data-target');
+                    const desktopPanel = document.getElementById(targetId);
+                    if (!desktopPanel) return;
+
+                    let drawer = card.nextElementSibling;
+                    if (!drawer || !drawer.classList.contains('service-mobile-drawer')) {
+                        drawer = document.createElement('div');
+                        drawer.className = 'service-mobile-drawer';
+                        drawer.setAttribute('data-drawer-for', targetId);
+                        
+                        const inner = document.createElement('div');
+                        inner.className = 'service-mobile-drawer-inner';
+                        
+                        const mobileCard = document.createElement('div');
+                        mobileCard.className = 'service-mobile-card';
+                        mobileCard.innerHTML = desktopPanel.innerHTML;
+                        
+                        inner.appendChild(mobileCard);
+                        drawer.appendChild(inner);
+                        
+                        card.insertAdjacentElement('afterend', drawer);
+                    }
+
+                    if (card.classList.contains('active')) {
+                        drawer.classList.add('open');
+                    }
+                });
+
+                const mobileDrawers = explorer.querySelectorAll('.service-mobile-drawer');
+
+                function selectService(targetId, isCardClick = false) {
+                    const isMobile = window.innerWidth <= 768;
+                    const currentActiveCard = explorer.querySelector('.service-explorer-card.active');
+                    const isSameCardActive = currentActiveCard && currentActiveCard.getAttribute('data-target') === targetId;
+
+                    // On mobile, clicking active card toggles accordion
+                    if (isMobile && isCardClick && isSameCardActive) {
+                        const activeDrawer = explorer.querySelector(`.service-mobile-drawer[data-drawer-for="${targetId}"]`);
+                        if (activeDrawer && activeDrawer.classList.contains('open')) {
+                            activeDrawer.classList.remove('open');
+                            currentActiveCard.classList.remove('active');
+                            currentActiveCard.setAttribute('aria-selected', 'false');
+                            return;
+                        }
+                    }
+
                     cards.forEach(card => {
                         const isTarget = card.getAttribute('data-target') === targetId;
                         card.classList.toggle('active', isTarget);
                         card.setAttribute('aria-selected', isTarget ? 'true' : 'false');
                     });
 
-                    panels.forEach(panel => {
+                    // Desktop panels
+                    desktopPanels.forEach(panel => {
                         panel.classList.toggle('active', panel.id === targetId);
                     });
+
+                    // Mobile drawers
+                    mobileDrawers.forEach(drawer => {
+                        const isTarget = drawer.getAttribute('data-drawer-for') === targetId;
+                        drawer.classList.toggle('open', isTarget);
+                    });
+
+                    // Smooth scroll into comfortable viewport on mobile
+                    if (isMobile && isCardClick) {
+                        const clickedCard = explorer.querySelector(`.service-explorer-card[data-target="${targetId}"]`);
+                        if (clickedCard) {
+                            setTimeout(() => {
+                                const rect = clickedCard.getBoundingClientRect();
+                                if (rect.top < 70 || rect.top > window.innerHeight - 180) {
+                                    clickedCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                                }
+                            }, 180);
+                        }
+                    }
                 }
 
                 cards.forEach((card, index) => {
                     card.addEventListener('click', function (e) {
                         e.preventDefault();
                         const targetId = card.getAttribute('data-target');
-                        selectService(targetId);
+                        selectService(targetId, true);
                     });
 
                     // Keyboard navigation (Supports natural RTL Arrow Direction mapping)
                     card.addEventListener('keydown', function (e) {
                         let nextIndex = -1;
-                        const isTwoCol = cards.length > 1 && cards[0].offsetTop === cards[1].offsetTop;
+                        const isMobile = window.innerWidth <= 768;
+                        const isTwoCol = !isMobile && cards.length > 1 && cards[0].offsetTop === cards[1].offsetTop;
                         const step = isTwoCol ? 2 : 1;
 
                         if (e.key === 'ArrowRight') {
