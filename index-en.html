@@ -75,6 +75,180 @@
             text-align: center !important;
         }
 
+        /* =========================================================
+           MODERN ULTRA-PREMIUM SAFFRON GOLD CTA BUTTON DESIGN
+           ========================================================= */
+        .pxl-service__btn,
+        .pxl-button a,
+        .btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top),
+        a.btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top),
+        .btn-text-nina,
+        .cta-gold-btn {
+            display: inline-flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            gap: 14px !important;
+            padding: 6px 8px 6px 22px !important;
+            border-radius: 9999px !important;
+            background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
+            color: #0F172A !important;
+            text-decoration: none !important;
+            box-sizing: border-box !important;
+            position: relative !important;
+            width: auto !important;
+            border: 1px solid rgba(255, 255, 255, 0.4) !important;
+            box-shadow: 0 8px 24px -4px rgba(229, 161, 0, 0.4), 0 3px 8px rgba(15, 23, 42, 0.06), inset 0 1px 1px rgba(255, 255, 255, 0.5) !important;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            cursor: pointer !important;
+            outline: none !important;
+            overflow: visible !important;
+        }
+
+        .pxl-service__btn:hover,
+        .pxl-button a:hover,
+        .btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top):hover,
+        a.btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top):hover,
+        .btn-text-nina:hover,
+        .cta-gold-btn:hover {
+            background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
+            box-shadow: 0 12px 30px -4px rgba(229, 161, 0, 0.55), 0 6px 14px rgba(15, 23, 42, 0.1), inset 0 1px 1px rgba(255, 255, 255, 0.7) !important;
+            transform: translateY(-2px) !important;
+            color: #0F172A !important;
+        }
+
+        .pxl-service__btn:active,
+        .pxl-button a:active,
+        .btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top):active,
+        a.btn:not(.btn-pricing):not(.preview-cta-btn):not(.btn-circle):not(.pxl-scroll-top):active {
+            transform: translateY(0) !important;
+            box-shadow: 0 4px 14px -2px rgba(229, 161, 0, 0.4) !important;
+        }
+
+        /* Order 1: Typography on the Left in LTR */
+        .pxl-service__btn .pxl-service__btn-text,
+        .pxl-button .pxl--btn-text,
+        .btn .pxl--btn-text,
+        a.btn .pxl--btn-text {
+            order: 1 !important;
+            margin: 0 !important;
+            padding: 0 0 0 4px !important;
+            white-space: nowrap !important;
+            font-weight: 700 !important;
+            font-size: 15px !important;
+            color: #0F172A !important;
+            position: relative !important;
+            left: auto !important;
+            right: auto !important;
+            line-height: 1 !important;
+            letter-spacing: -0.2px !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            display: inline-block !important;
+            overflow: hidden !important;
+        }
+
+        /* Suppress Theme Pseudo-Element Duplicate Text (data-text) */
+        .pxl--btn-text::before,
+        .pxl--btn-text::after,
+        .btn-text-nina .pxl--btn-text::before,
+        .btn-text-nina .pxl--btn-text::after,
+        .btn .pxl--btn-text::before,
+        .btn .pxl--btn-text::after {
+            display: none !important;
+            content: none !important;
+            opacity: 0 !important;
+            visibility: hidden !important;
+            height: 0 !important;
+            width: 0 !important;
+        }
+
+        .pxl-button .pxl--btn-text span,
+        .btn .pxl--btn-text span {
+            color: #0F172A !important;
+            font-weight: 700 !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            display: inline-block !important;
+            position: relative !important;
+            transform: none !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
+
+        /* Order 2: Circular Pure White Badge Container on the Right side in LTR */
+        .pxl-service__btn .pxl-service__btn-icon,
+        .btn-icon-left,
+        .btn-icon-right,
+        .pxl--btn-icon {
+            order: 2 !important;
+            margin: 0 !important;
+            flex-shrink: 0 !important;
+            display: inline-flex !important;
+            visibility: visible !important;
+            opacity: 1 !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            min-width: 36px !important;
+            min-height: 36px !important;
+            border-radius: 50% !important;
+            background: #FFFFFF !important;
+            color: #0F172A !important;
+            position: relative !important;
+            top: auto !important;
+            left: auto !important;
+            right: auto !important;
+            bottom: auto !important;
+            transform: none !important;
+            box-shadow: 0 2px 8px rgba(15, 23, 42, 0.12), inset 0 0 0 1px rgba(0, 0, 0, 0.04) !important;
+            transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+            z-index: 2 !important;
+        }
+
+        .pxl-service__btn .pxl-service__btn-icon svg,
+        .btn-icon-left svg,
+        .btn-icon-right svg,
+        .pxl--btn-icon svg {
+            width: 12px !important;
+            height: 12px !important;
+            display: block !important;
+        }
+
+        .pxl-service__btn .pxl-service__btn-icon svg path,
+        .btn-icon-left svg path,
+        .btn-icon-right svg path,
+        .pxl--btn-icon svg path {
+            stroke: #0F172A !important;
+        }
+
+        /* Prevent double icon: Hide redundant .btn-icon-right whenever .btn-icon-left is present */
+        .btn-icon-left~.btn-icon-right,
+        .btn:has(.btn-icon-left) .btn-icon-right,
+        a:has(.btn-icon-left) .btn-icon-right,
+        .pxl-button:has(.btn-icon-left) .btn-icon-right {
+            display: none !important;
+            visibility: hidden !important;
+            opacity: 0 !important;
+            width: 0 !important;
+            height: 0 !important;
+            min-width: 0 !important;
+            min-height: 0 !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            border: none !important;
+        }
+
+        .pxl-service__btn:hover .pxl-service__btn-icon,
+        .btn:hover .btn-icon-left,
+        .btn:hover .btn-icon-right {
+            transform: scale(1.08) !important;
+        }
+
         /* ==========================================
            PREMIUM SERVICE EXPLORER DESIGN SYSTEM
            ========================================== */
@@ -3159,7 +3333,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                     <div id="pxl-pxl_button-a4d26fb-3794"
                                                                         class="pxl-button pxl-atc-link wow fadeInRight"
                                                                         data-wow-delay="450ms"> <a
-                                                                            href="/index-en.html#service"
+                                                                            href="#service"
                                                                             class="btn  btn-text-nina btn-icon inline pxl-icon--left"
                                                                             data-target=".pxl-page-popup-template-0">
                                                                             <span class="btn-icon-left"> <svg
@@ -5608,27 +5782,6 @@ html[dir="rtl"] .footer-newsletter-form {
                                                     data-id="bb9800c" data-element_type="container"
                                                     data-e-type="container"
                                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                                                    <div class="elementor-element elementor-element-e7522be elementor-absolute elementor-widget elementor-widget-pxl_video_player"
-                                                        data-id="e7522be" data-element_type="widget"
-                                                        data-e-type="widget"
-                                                        data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
-                                                        data-widget_type="pxl_video_player.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="pxl-video-player pxl-video-player1 pxl-video-player--layout-1 pxl-video-style-button-border "
-                                                                data-wow-delay="ms">
-                                                                <div class="pxl-video--inner pxl-video-player__inner">
-                                                                    <div
-                                                                        class="btn-video-wrap pxl-video-player__btn-wrap p-cursor ">
-                                                                        <a class="pxl-btn-video pxl-action-popup style-button-border"
-                                                                            href="https://www.youtube.com/watch?v=SF4aHwxHtZ0">
-                                                                            <i aria-hidden="true"
-                                                                                class="bootstrap-icons bi-play-fill"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-dbefed6 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none elementor-invisible e-con e-child "
                                                     data-id="dbefed6" data-element_type="container"
@@ -5772,7 +5925,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                     <div id="pxl-pxl_button-185a413-8108"
                                                                         class="pxl-button pxl-atc-link wow fadeInRight"
                                                                         data-wow-delay="450ms"> <a
-                                                                            href="https://demo.casethemes.net/genfresco/about-us/"
+                                                                            href="about-en.html"
                                                                             class="btn  btn-text-nina btn-icon inline pxl-icon--left"
                                                                             data-target=".pxl-page-popup-template-0">
                                                                             <span class="btn-icon-left"> <svg

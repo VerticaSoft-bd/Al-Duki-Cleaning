@@ -349,6 +349,7 @@
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
@@ -1785,15 +1786,15 @@
                 left: 20px !important;
             }
 
-            .pxl-header-menu .pxl-menu-primary > li {
+            .pxl-header-menu .pxl-menu-primary>li {
                 border-bottom: 1px solid #F1F5F9 !important;
             }
 
-            .pxl-header-menu .pxl-menu-primary > li:last-child {
+            .pxl-header-menu .pxl-menu-primary>li:last-child {
                 border-bottom: none !important;
             }
 
-            .pxl-header-menu .pxl-menu-primary > li > a {
+            .pxl-header-menu .pxl-menu-primary>li>a {
                 padding: 14px 8px !important;
                 font-size: 16px !important;
                 font-weight: 700 !important;
@@ -1801,12 +1802,12 @@
                 transition: all 0.2s ease !important;
             }
 
-            .pxl-header-menu .pxl-menu-primary > li > a:hover {
+            .pxl-header-menu .pxl-menu-primary>li>a:hover {
                 color: var(--primary-color, #007887) !important;
                 padding-left: 14px !important;
             }
 
-            body.rtl .pxl-header-menu .pxl-menu-primary > li > a:hover {
+            body.rtl .pxl-header-menu .pxl-menu-primary>li>a:hover {
                 padding-left: 8px !important;
                 padding-right: 14px !important;
             }
@@ -2146,29 +2147,30 @@
             }
 
             .floating-lang-switcher {
-    position: fixed !important;
-    bottom: 25px !important;
-    right: 25px !important;
-    left: auto !important;
-    z-index: 999998 !important;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 5px 8px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    border: 2px solid #3ca200;
-    gap: 6px;
-}
-@media (max-width: 768px) {
-    .floating-lang-switcher {
-        bottom: 20px !important;
-        right: 15px !important;
-        left: auto !important;
-        transform: scale(0.88);
-        transform-origin: bottom right;
-    }
-}
+                position: fixed !important;
+                bottom: 25px !important;
+                right: 25px !important;
+                left: auto !important;
+                z-index: 999998 !important;
+                display: flex;
+                align-items: center;
+                background: #ffffff;
+                padding: 5px 8px;
+                border-radius: 40px;
+                box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+                border: 2px solid #3ca200;
+                gap: 6px;
+            }
+
+            @media (max-width: 768px) {
+                .floating-lang-switcher {
+                    bottom: 20px !important;
+                    right: 15px !important;
+                    left: auto !important;
+                    transform: scale(0.88);
+                    transform-origin: bottom right;
+                }
+            }
         }
 
         @media (max-width: 480px) {
@@ -2358,570 +2360,572 @@
     <link rel='stylesheet' href='assets/css/post-176.css' media='all' />
     <link rel='stylesheet' href='assets/css/post-6202.css' media='all' />
 
-<style id="footer-fix-styles">
-
-/* =========================================================
+    <style id="footer-fix-styles">
+        /* =========================================================
    ULTRA-PREMIUM REDESIGNED FOOTER (ARABIC & ENGLISH)
    ========================================================= */
 
-.custom-premium-footer {
-    background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
-    color: #ffffff !important;
-    border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
-    position: relative !important;
-    overflow: hidden !important;
-    font-family: inherit !important;
-    z-index: 20 !important;
-}
+        .custom-premium-footer {
+            background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
+            color: #ffffff !important;
+            border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
+            position: relative !important;
+            overflow: hidden !important;
+            font-family: inherit !important;
+            z-index: 20 !important;
+        }
 
-.custom-premium-footer::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 1px !important;
-    background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
-    opacity: 0.8 !important;
-}
+        .custom-premium-footer::before {
+            content: '' !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            height: 1px !important;
+            background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
+            opacity: 0.8 !important;
+        }
 
-.footer-main-wrap {
-    padding: 70px 0 0 0 !important;
-}
+        .footer-main-wrap {
+            padding: 70px 0 0 0 !important;
+        }
 
-.footer-container {
-    max-width: 1360px !important;
-    margin: 0 auto !important;
-    padding: 0 24px !important;
-    box-sizing: border-box !important;
-}
+        .footer-container {
+            max-width: 1360px !important;
+            margin: 0 auto !important;
+            padding: 0 24px !important;
+            box-sizing: border-box !important;
+        }
 
-.footer-grid {
-    display: grid !important;
-    grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
-    gap: 36px !important;
-    align-items: flex-start !important;
-}
+        .footer-grid {
+            display: grid !important;
+            grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
+            gap: 36px !important;
+            align-items: flex-start !important;
+        }
 
-/* Col 1: Brand */
-.footer-brand-col {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 16px !important;
-}
+        /* Col 1: Brand */
+        .footer-brand-col {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 16px !important;
+        }
 
-.footer-logo-link {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 14px !important;
-    text-decoration: none !important;
-}
+        .footer-logo-link {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 14px !important;
+            text-decoration: none !important;
+        }
 
-.footer-brand-logo {
-    height: 64px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)) !important;
-}
+        .footer-brand-logo {
+            height: 64px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3)) !important;
+        }
 
-.footer-brand-text {
-    display: flex !important;
-    flex-direction: column !important;
-}
+        .footer-brand-text {
+            display: flex !important;
+            flex-direction: column !important;
+        }
 
-.footer-company-name {
-    font-size: 19px !important;
-    font-weight: 900 !important;
-    color: #ffffff !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.2px !important;
-}
+        .footer-company-name {
+            font-size: 19px !important;
+            font-weight: 900 !important;
+            color: #ffffff !important;
+            line-height: 1.2 !important;
+            letter-spacing: -0.2px !important;
+        }
 
-.footer-sub-name {
-    font-size: 13px !important;
-    color: #A3E635 !important;
-    font-weight: 600 !important;
-    margin-top: 3px !important;
-}
+        .footer-sub-name {
+            font-size: 13px !important;
+            color: #A3E635 !important;
+            font-weight: 600 !important;
+            margin-top: 3px !important;
+        }
 
-.footer-brand-desc {
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    color: #CBD5E1 !important;
-    margin: 0 !important;
-}
+        .footer-brand-desc {
+            font-size: 14px !important;
+            line-height: 1.7 !important;
+            color: #CBD5E1 !important;
+            margin: 0 !important;
+        }
 
-.footer-social-icons {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-    margin-top: 4px !important;
-}
+        .footer-social-icons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            margin-top: 4px !important;
+        }
 
-.footer-social-btn {
-    width: 38px !important;
-    height: 38px !important;
-    border-radius: 50% !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    color: #ffffff !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 14px !important;
-    text-decoration: none !important;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
+        .footer-social-btn {
+            width: 38px !important;
+            height: 38px !important;
+            border-radius: 50% !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 14px !important;
+            text-decoration: none !important;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
 
-.footer-social-btn:hover {
-    background: #3CA200 !important;
-    border-color: #3CA200 !important;
-    color: #ffffff !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
-}
+        .footer-social-btn:hover {
+            background: #3CA200 !important;
+            border-color: #3CA200 !important;
+            color: #ffffff !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
+        }
 
-/* Col Titles & Dividers */
-.footer-col-title {
-    font-size: 18px !important;
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    margin: 0 0 10px 0 !important;
-    letter-spacing: -0.2px !important;
-}
+        /* Col Titles & Dividers */
+        .footer-col-title {
+            font-size: 18px !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin: 0 0 10px 0 !important;
+            letter-spacing: -0.2px !important;
+        }
 
-.footer-title-divider {
-    width: 36px !important;
-    height: 3px !important;
-    background: linear-gradient(90deg, #3CA200, #A3E635) !important;
-    border-radius: 2px !important;
-    margin-bottom: 20px !important;
-}
+        .footer-title-divider {
+            width: 36px !important;
+            height: 3px !important;
+            background: linear-gradient(90deg, #3CA200, #A3E635) !important;
+            border-radius: 2px !important;
+            margin-bottom: 20px !important;
+        }
 
-html[dir="rtl"] .footer-title-divider {
-    background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
-}
+        html[dir="rtl"] .footer-title-divider {
+            background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
+        }
 
-/* Links List */
-.footer-links-list {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 11px !important;
-}
+        /* Links List */
+        .footer-links-list {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 11px !important;
+        }
 
-.footer-links-list li {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+        .footer-links-list li {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
 
-.footer-links-list li a {
-    color: #94A3B8 !important;
-    text-decoration: none !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    transition: all 0.25s ease !important;
-}
+        .footer-links-list li a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            transition: all 0.25s ease !important;
+        }
 
-.footer-links-list li a i {
-    font-size: 11px !important;
-    color: #3CA200 !important;
-    transition: transform 0.25s ease !important;
-}
+        .footer-links-list li a i {
+            font-size: 11px !important;
+            color: #3CA200 !important;
+            transition: transform 0.25s ease !important;
+        }
 
-.footer-links-list li a:hover {
-    color: #FFFFFF !important;
-    transform: translateX(4px) !important;
-}
+        .footer-links-list li a:hover {
+            color: #FFFFFF !important;
+            transform: translateX(4px) !important;
+        }
 
-html[dir="rtl"] .footer-links-list li a:hover {
-    transform: translateX(-4px) !important;
-}
+        html[dir="rtl"] .footer-links-list li a:hover {
+            transform: translateX(-4px) !important;
+        }
 
-/* Contact Items */
-.footer-contact-items {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 15px !important;
-}
+        /* Contact Items */
+        .footer-contact-items {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 15px !important;
+        }
 
-.footer-contact-item {
-    display: flex !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
-    text-decoration: none !important;
-    color: inherit !important;
-    transition: transform 0.25s ease !important;
-}
+        .footer-contact-item {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 12px !important;
+            text-decoration: none !important;
+            color: inherit !important;
+            transition: transform 0.25s ease !important;
+        }
 
-.footer-contact-item:hover {
-    transform: translateX(3px) !important;
-}
+        .footer-contact-item:hover {
+            transform: translateX(3px) !important;
+        }
 
-html[dir="rtl"] .footer-contact-item:hover {
-    transform: translateX(-3px) !important;
-}
+        html[dir="rtl"] .footer-contact-item:hover {
+            transform: translateX(-3px) !important;
+        }
 
-.footer-contact-icon {
-    width: 34px !important;
-    height: 34px !important;
-    border-radius: 10px !important;
-    background: rgba(60, 162, 0, 0.15) !important;
-    border: 1px solid rgba(60, 162, 0, 0.3) !important;
-    color: #A3E635 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-shrink: 0 !important;
-    font-size: 15px !important;
-}
+        .footer-contact-icon {
+            width: 34px !important;
+            height: 34px !important;
+            border-radius: 10px !important;
+            background: rgba(60, 162, 0, 0.15) !important;
+            border: 1px solid rgba(60, 162, 0, 0.3) !important;
+            color: #A3E635 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important;
+            font-size: 15px !important;
+        }
 
-.footer-contact-icon.phone-icon {
-    background: rgba(255, 212, 0, 0.15) !important;
-    border-color: rgba(255, 212, 0, 0.4) !important;
-    color: #FFD400 !important;
-}
+        .footer-contact-icon.phone-icon {
+            background: rgba(255, 212, 0, 0.15) !important;
+            border-color: rgba(255, 212, 0, 0.4) !important;
+            color: #FFD400 !important;
+        }
 
-.footer-contact-content {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2px !important;
-}
+        .footer-contact-content {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 2px !important;
+        }
 
-.footer-contact-label {
-    font-size: 11.5px !important;
-    color: #94A3B8 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-}
+        .footer-contact-label {
+            font-size: 11.5px !important;
+            color: #94A3B8 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
 
-.footer-contact-val {
-    font-size: 13.5px !important;
-    color: #E2E8F0 !important;
-    font-weight: 600 !important;
-}
+        .footer-contact-val {
+            font-size: 13.5px !important;
+            color: #E2E8F0 !important;
+            font-weight: 600 !important;
+        }
 
-.footer-contact-val.contact-highlight {
-    color: #FFD400 !important;
-    font-size: 15px !important;
-    font-weight: 800 !important;
-    direction: ltr !important;
-    display: inline-block !important;
-}
+        .footer-contact-val.contact-highlight {
+            color: #FFD400 !important;
+            font-size: 15px !important;
+            font-weight: 800 !important;
+            direction: ltr !important;
+            display: inline-block !important;
+        }
 
-/* Newsletter Column */
-.footer-newsletter-desc {
-    font-size: 13.5px !important;
-    color: #94A3B8 !important;
-    line-height: 1.6 !important;
-    margin: 0 0 16px 0 !important;
-}
+        /* Newsletter Column */
+        .footer-newsletter-desc {
+            font-size: 13.5px !important;
+            color: #94A3B8 !important;
+            line-height: 1.6 !important;
+            margin: 0 0 16px 0 !important;
+        }
 
-.footer-newsletter-form {
-    display: flex !important;
-    align-items: center !important;
-    background: rgba(255, 255, 255, 0.07) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 9999px !important;
-    padding: 4px 5px 4px 16px !important;
-    box-sizing: border-box !important;
-    transition: all 0.3s ease !important;
-}
+        .footer-newsletter-form {
+            display: flex !important;
+            align-items: center !important;
+            background: rgba(255, 255, 255, 0.07) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            border-radius: 9999px !important;
+            padding: 4px 5px 4px 16px !important;
+            box-sizing: border-box !important;
+            transition: all 0.3s ease !important;
+        }
 
-html[dir="rtl"] .footer-newsletter-form {
-    padding: 4px 16px 4px 5px !important;
-}
+        html[dir="rtl"] .footer-newsletter-form {
+            padding: 4px 16px 4px 5px !important;
+        }
 
-.footer-newsletter-form:focus-within {
-    border-color: #3CA200 !important;
-    background: rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
-}
+        .footer-newsletter-form:focus-within {
+            border-color: #3CA200 !important;
+            background: rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
+        }
 
-.footer-newsletter-input {
-    flex: 1 !important;
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-    color: #ffffff !important;
-    font-size: 13.5px !important;
-    padding: 8px 4px !important;
-    min-width: 0 !important;
-    font-family: inherit !important;
-}
+        .footer-newsletter-input {
+            flex: 1 !important;
+            background: transparent !important;
+            border: none !important;
+            outline: none !important;
+            color: #ffffff !important;
+            font-size: 13.5px !important;
+            padding: 8px 4px !important;
+            min-width: 0 !important;
+            font-family: inherit !important;
+        }
 
-.footer-newsletter-input::placeholder {
-    color: #94A3B8 !important;
-    opacity: 0.8 !important;
-}
+        .footer-newsletter-input::placeholder {
+            color: #94A3B8 !important;
+            opacity: 0.8 !important;
+        }
 
-.footer-newsletter-submit {
-    background: linear-gradient(135deg, #3CA200, #2E8000) !important;
-    border: none !important;
-    border-radius: 50% !important;
-    width: 38px !important;
-    height: 38px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #ffffff !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-    font-size: 14px !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
-}
+        .footer-newsletter-submit {
+            background: linear-gradient(135deg, #3CA200, #2E8000) !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 38px !important;
+            height: 38px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: #ffffff !important;
+            cursor: pointer !important;
+            flex-shrink: 0 !important;
+            font-size: 14px !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+        }
 
-.footer-newsletter-submit:hover {
-    background: linear-gradient(135deg, #FFD400, #E5A100) !important;
-    color: #0F172A !important;
-    transform: scale(1.05) !important;
-}
+        .footer-newsletter-submit:hover {
+            background: linear-gradient(135deg, #FFD400, #E5A100) !important;
+            color: #0F172A !important;
+            transform: scale(1.05) !important;
+        }
 
-.footer-trust-badge {
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-top: 16px !important;
-    font-size: 12.5px !important;
-    color: #A3E635 !important;
-    font-weight: 600 !important;
-}
+        .footer-trust-badge {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            margin-top: 16px !important;
+            font-size: 12.5px !important;
+            color: #A3E635 !important;
+            font-weight: 600 !important;
+        }
 
-.footer-trust-badge i {
-    font-size: 16px !important;
-    color: #3CA200 !important;
-}
+        .footer-trust-badge i {
+            font-size: 16px !important;
+            color: #3CA200 !important;
+        }
 
-/* Bottom Bar */
-.footer-bottom-bar {
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-    margin-top: 60px !important;
-    padding: 24px 0 !important;
-    background: rgba(0, 0, 0, 0.25) !important;
-}
+        /* Bottom Bar */
+        .footer-bottom-bar {
+            border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+            margin-top: 60px !important;
+            padding: 24px 0 !important;
+            background: rgba(0, 0, 0, 0.25) !important;
+        }
 
-.footer-bottom-container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 16px !important;
-}
+        .footer-bottom-container {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+            gap: 16px !important;
+        }
 
-.footer-copyright-text {
-    font-size: 13.5px !important;
-    color: #94A3B8 !important;
-}
+        .footer-copyright-text {
+            font-size: 13.5px !important;
+            color: #94A3B8 !important;
+        }
 
-.footer-copyright-text strong {
-    color: #E2E8F0 !important;
-}
+        .footer-copyright-text strong {
+            color: #E2E8F0 !important;
+        }
 
-.footer-legal-links {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    font-size: 13.5px !important;
-    color: #64748B !important;
-}
+        .footer-legal-links {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            font-size: 13.5px !important;
+            color: #64748B !important;
+        }
 
-.footer-legal-links a {
-    color: #94A3B8 !important;
-    text-decoration: none !important;
-    transition: color 0.2s ease !important;
-}
+        .footer-legal-links a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: color 0.2s ease !important;
+        }
 
-.footer-legal-links a:hover {
-    color: #3CA200 !important;
-}
+        .footer-legal-links a:hover {
+            color: #3CA200 !important;
+        }
 
-/* Responsive Grid Breakpoints */
-@media (max-width: 1200px) {
-    .footer-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 36px !important;
-    }
-    .footer-brand-col {
-        grid-column: span 3 !important;
-        max-width: 600px !important;
-    }
-}
+        /* Responsive Grid Breakpoints */
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 36px !important;
+            }
 
-@media (max-width: 768px) {
-    .footer-main-wrap {
-        padding: 50px 0 0 0 !important;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr !important;
-        gap: 32px !important;
-    }
-    .footer-brand-col {
-        grid-column: span 1 !important;
-    }
-    .footer-bottom-container {
-        flex-direction: column !important;
-        text-align: center !important;
-        gap: 10px !important;
-    }
-    .footer-legal-links {
-        justify-content: center !important;
-    }
-}
+            .footer-brand-col {
+                grid-column: span 3 !important;
+                max-width: 600px !important;
+            }
+        }
 
-</style>
-<style id="sticky-header-styles">
+        @media (max-width: 768px) {
+            .footer-main-wrap {
+                padding: 50px 0 0 0 !important;
+            }
 
-/* =========================================================
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 32px !important;
+            }
+
+            .footer-brand-col {
+                grid-column: span 1 !important;
+            }
+
+            .footer-bottom-container {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 10px !important;
+            }
+
+            .footer-legal-links {
+                justify-content: center !important;
+            }
+        }
+    </style>
+    <style id="sticky-header-styles">
+        /* =========================================================
    SYNCHRONIZED STICKY HEADER STYLING (EXACT SAME AS HOMEPAGE)
    ========================================================= */
 
-.pxl-header-elementor-sticky {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    z-index: 999999 !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
-    transform: translateY(-100%) !important;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
-    visibility: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        .pxl-header-elementor-sticky {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            z-index: 999999 !important;
+            background-color: #ffffff !important;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
+            transform: translateY(-100%) !important;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
+            visibility: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
 
-.pxl-header-elementor-sticky.pxl-header-fixed {
-    transform: translateY(0%) !important;
-    visibility: visible !important;
-}
+        .pxl-header-elementor-sticky.pxl-header-fixed {
+            transform: translateY(0%) !important;
+            visibility: visible !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-5330,
-.pxl-header-elementor-sticky .elementor-element-24e227e {
-    background-color: #ffffff !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        .pxl-header-elementor-sticky .elementor-5330,
+        .pxl-header-elementor-sticky .elementor-element-24e227e {
+            background-color: #ffffff !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-24e227e > .e-con-inner {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 96% !important;
-    max-width: 1650px !important;
-    margin: 0 auto !important;
-    padding: 6px 20px !important;
-    background-color: #ffffff !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-24e227e>.e-con-inner {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            width: 96% !important;
+            max-width: 1650px !important;
+            margin: 0 auto !important;
+            padding: 6px 20px !important;
+            background-color: #ffffff !important;
+        }
 
-/* Call Box in Sticky Nav */
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-icon-box {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-}
+        /* Call Box in Sticky Nav */
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-icon-box {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 36px !important;
-    height: 36px !important;
-    border-radius: 50% !important;
-    border: 2px solid #3ca200 !important;
-    background-color: #ffffff !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 50% !important;
+            border: 2px solid #3ca200 !important;
+            background-color: #ffffff !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon svg {
-    width: 16px !important;
-    height: 16px !important;
-    fill: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon svg {
+            width: 16px !important;
+            height: 16px !important;
+            fill: #3ca200 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--title {
-    font-size: 11px !important;
-    color: #666666 !important;
-    margin: 0 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--title {
+            font-size: 11px !important;
+            color: #666666 !important;
+            margin: 0 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--description {
-    font-size: 16px !important;
-    font-weight: 800 !important;
-    color: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--description {
+            font-size: 16px !important;
+            font-weight: 800 !important;
+            color: #3ca200 !important;
+        }
 
-/* Navigation Links in Sticky Nav */
-.pxl-header-elementor-sticky .pxl-nav-menu ul.pxl-menu-primary,
-.pxl-header-elementor-sticky .pxl-nav-menu ul {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 32px !important;
-    align-items: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-}
+        /* Navigation Links in Sticky Nav */
+        .pxl-header-elementor-sticky .pxl-nav-menu ul.pxl-menu-primary,
+        .pxl-header-elementor-sticky .pxl-nav-menu ul {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 32px !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none !important;
+        }
 
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a {
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    color: #2c3e50 !important;
-    text-decoration: none !important;
-    padding: 6px 0 !important;
-    transition: color 0.2s ease !important;
-}
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li>a {
+            font-weight: 700 !important;
+            font-size: 15px !important;
+            color: #2c3e50 !important;
+            text-decoration: none !important;
+            padding: 6px 0 !important;
+            transition: color 0.2s ease !important;
+        }
 
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li.current-menu-item > a,
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a:hover {
-    color: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li.current-menu-item>a,
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li>a:hover {
+            color: #3ca200 !important;
+        }
 
-/* CTA Button in Sticky Nav */
-.pxl-header-elementor-sticky .elementor-element-b72ebad a,
-.pxl-header-elementor-sticky .elementor-element-b72ebad .btn {
-    background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
-    color: #0F172A !important;
-    padding: 6px 20px !important;
-    border-radius: 9999px !important;
-    font-weight: 700 !important;
-    font-size: 13.5px !important;
-    text-decoration: none !important;
-    box-shadow: 0 4px 14px rgba(229, 161, 0, 0.4) !important;
-    transition: all 0.3s ease !important;
-}
+        /* CTA Button in Sticky Nav */
+        .pxl-header-elementor-sticky .elementor-element-b72ebad a,
+        .pxl-header-elementor-sticky .elementor-element-b72ebad .btn {
+            background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
+            color: #0F172A !important;
+            padding: 6px 20px !important;
+            border-radius: 9999px !important;
+            font-weight: 700 !important;
+            font-size: 13.5px !important;
+            text-decoration: none !important;
+            box-shadow: 0 4px 14px rgba(229, 161, 0, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-b72ebad a:hover {
-    background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
-    transform: translateY(-2px) !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-b72ebad a:hover {
+            background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
+            transform: translateY(-2px) !important;
+        }
 
-/* Mobile Sticky Header */
-@media (max-width: 1199px) {
-    .pxl-header-elementor-sticky {
-        display: none !important;
-    }
-    #pxl-header-mobile.pxl-header-mobile-fixed {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        z-index: 999999 !important;
-        background-color: #ffffff !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-    }
-}
+        /* Mobile Sticky Header */
+        @media (max-width: 1199px) {
+            .pxl-header-elementor-sticky {
+                display: none !important;
+            }
 
-</style>
+            #pxl-header-mobile.pxl-header-mobile-fixed {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                width: 100% !important;
+                z-index: 999999 !important;
+                background-color: #ffffff !important;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+            }
+        }
+    </style>
 </head>
 
 <body
@@ -3499,13 +3503,17 @@ html[dir="rtl"] .footer-newsletter-form {
                                             class="pxl-icon-line pxl-icon-line2"></span> <span
                                             class="pxl-icon-line pxl-icon-line3"></span></div>
                                 </div>
-                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a
-                                        href="index.html" title="الدوكي للتنظيف" rel="home"
+                                <div class="pxl-header-branding"
+                                    style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;">
+                                    <a href="index.html" title="الدوكي للتنظيف" rel="home"
                                         style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img
                                             src="assets/images/logo/logo.png"
                                             style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
                                             alt="الدوكي للتنظيف" />
-                                        <span style="font-size: 18px; font-weight: 800; color: #0F172A; font-family: 'Cairo', sans-serif; white-space: nowrap;">الدوكي للتنظيف</span></a></div>
+                                        <span
+                                            style="font-size: 18px; font-weight: 800; color: #0F172A; font-family: 'Cairo', sans-serif; white-space: nowrap;">الدوكي
+                                            للتنظيف</span></a>
+                                </div>
                                 <div class="mobile-header-spacer" style="min-width: 40px; flex-shrink: 0;"></div>
                             </div>
                             <div class="pxl-header-menu">
@@ -3514,7 +3522,8 @@ html[dir="rtl"] .footer-newsletter-form {
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index.html"
                                             title="الدوكي للتنظيف" rel="home"><img src="assets/images/logo/logo.png"
                                                 alt="الدوكي للتنظيف" /><span class="mobile-brand-title"
-                                                style="font-family: 'Cairo', sans-serif;">الدوكي للتنظيف</span></a></div>
+                                                style="font-family: 'Cairo', sans-serif;">الدوكي للتنظيف</span></a>
+                                    </div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
                                         <form role="search" method="get"
                                             action="https://demo.casethemes.net/genfresco/">
@@ -4654,7 +4663,8 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                             مجدولة</span></li>
                                                                                 </ul>
                                                                                 <a href="service-detail.html?slug=building-cleaning"
-                                                                                    class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -4753,7 +4763,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>مواد تلميع صديقة
                                                                                             للبيئة</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=ceramics-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=ceramics-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -4852,7 +4864,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>حماية بطبقة واقية
                                                                                             بعد التنظيف</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=furniture-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=furniture-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -4949,7 +4963,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>صيانة دورية وتقارير
                                                                                             فنية</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=tank-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=tank-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5048,7 +5064,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>فريق متخصص بمعدات
                                                                                             السلامة</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=facade-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=facade-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5145,7 +5163,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>ضمان وكفالة على
                                                                                             الخدمة</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=pest-control" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=pest-control"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5239,7 +5259,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>عقود صيانة دورية
                                                                                             بأسعار مميزة</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=ac-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=ac-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5337,7 +5359,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>تنظيف دورات المياه
                                                                                             والكافتيريات</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=school-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=school-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5432,7 +5456,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>خدمة على مدار
                                                                                             الساعة</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=government-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=government-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5530,7 +5556,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>جدول مرن حسب ساعات
                                                                                             العمل</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=office-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=office-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5630,7 +5658,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>كنس وغسيل مستمر
                                                                                             للأرضيات</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=shopping-center-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=shopping-center-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5725,7 +5755,9 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                         </svg><span>الالتزام بمعايير
                                                                                             السلامة المهنية</span></li>
                                                                                 </ul>
-                                                                                <a href="service-detail.html?slug=factory-cleaning" class="preview-cta-btn"><span>تفاصيل الخدمة</span><svg
+                                                                                <a href="service-detail.html?slug=factory-cleaning"
+                                                                                    class="preview-cta-btn"><span>تفاصيل
+                                                                                        الخدمة</span><svg
                                                                                         viewBox="0 0 24 24" fill="none"
                                                                                         stroke="currentColor"
                                                                                         stroke-width="2.5"
@@ -5757,27 +5789,6 @@ html[dir="rtl"] .footer-newsletter-form {
                                                     data-id="bb9800c" data-element_type="container"
                                                     data-e-type="container"
                                                     data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInRight&quot;}">
-                                                    <div class="elementor-element elementor-element-e7522be elementor-absolute elementor-widget elementor-widget-pxl_video_player"
-                                                        data-id="e7522be" data-element_type="widget"
-                                                        data-e-type="widget"
-                                                        data-settings="{&quot;_position&quot;:&quot;absolute&quot;}"
-                                                        data-widget_type="pxl_video_player.default">
-                                                        <div class="elementor-widget-container">
-                                                            <div class="pxl-video-player pxl-video-player1 pxl-video-player--layout-1 pxl-video-style-button-border "
-                                                                data-wow-delay="ms">
-                                                                <div class="pxl-video--inner pxl-video-player__inner">
-                                                                    <div
-                                                                        class="btn-video-wrap pxl-video-player__btn-wrap p-cursor ">
-                                                                        <a class="pxl-btn-video pxl-action-popup style-button-border"
-                                                                            href="https://www.youtube.com/watch?v=SF4aHwxHtZ0">
-                                                                            <i aria-hidden="true"
-                                                                                class="bootstrap-icons bi-play-fill"></i>
-                                                                        </a>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
                                                 </div>
                                                 <div class="elementor-element elementor-element-dbefed6 e-con-full e-flex pxl-row-scroll-none pxl-column-none pxl-full-content-with-space-none elementor-invisible e-con e-child "
                                                     data-id="dbefed6" data-element_type="container"
@@ -5920,8 +5931,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                 <div class="elementor-widget-container">
                                                                     <div id="pxl-pxl_button-185a413-8108"
                                                                         class="pxl-button pxl-atc-link wow fadeInRight"
-                                                                        data-wow-delay="450ms"> <a
-                                                                            href="https://demo.casethemes.net/genfresco/about-us/"
+                                                                        data-wow-delay="450ms"> <a href="/about.html"
                                                                             class="btn  btn-text-nina btn-icon inline pxl-icon--left"
                                                                             data-target=".pxl-page-popup-template-0">
                                                                             <span class="btn-icon-left"> <svg
@@ -7920,7 +7930,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                                 fill="var(--primary-color)" />
                                                                                         </svg> <span
                                                                                             class="category-terms"><a
-                                                                                                 href="service-detail.html?slug=office-cleaning"
+                                                                                                href="service-detail.html?slug=office-cleaning"
                                                                                                 rel="tag">تنظيف المكاتب
                                                                                                 والشركات</a></span>
                                                                                     </div>
@@ -8077,136 +8087,159 @@ html[dir="rtl"] .footer-newsletter-form {
             </div>
         </div><!-- #main -->
         <footer id="pxl-footer-elementor" class="pxl-footer-show custom-premium-footer">
-    <div class="footer-main-wrap">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Col 1: Brand & Bio -->
-                <div class="footer-col footer-brand-col">
-                    <a href="index.html" class="footer-logo-link">
-                        <img src="assets/images/logo/logo.png" alt="الدوكي للتنظيف" class="footer-brand-logo" />
-                        <div class="footer-brand-text">
-                            <span class="footer-company-name">شركة الدوكي للتنظيف</span>
-                            <span class="footer-sub-name">مؤسسة حسناء علي بن محمد الدوخي</span>
+            <div class="footer-main-wrap">
+                <div class="footer-container">
+                    <div class="footer-grid">
+                        <!-- Col 1: Brand & Bio -->
+                        <div class="footer-col footer-brand-col">
+                            <a href="index.html" class="footer-logo-link">
+                                <img src="assets/images/logo/logo.png" alt="الدوكي للتنظيف" class="footer-brand-logo" />
+                                <div class="footer-brand-text">
+                                    <span class="footer-company-name">شركة الدوكي للتنظيف</span>
+                                    <span class="footer-sub-name">مؤسسة حسناء علي بن محمد الدوخي</span>
+                                </div>
+                            </a>
+                            <p class="footer-brand-desc">
+                                شريككم الموثوق في تقديم أعلى معايير النظافة الشاملة، جلي الرخام، تعقيم الخزانات، ومكافحة
+                                الحشرات في المملكة العربية السعودية بأحدث التقنيات وأفضل الكوادر.
+                            </p>
+                            <div class="footer-social-icons">
+                                <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp"
+                                    class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i
+                                        class="fab fa-x-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook" class="footer-social-btn"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="YouTube" class="footer-social-btn"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
                         </div>
-                    </a>
-                    <p class="footer-brand-desc">
-                        شريككم الموثوق في تقديم أعلى معايير النظافة الشاملة، جلي الرخام، تعقيم الخزانات، ومكافحة الحشرات في المملكة العربية السعودية بأحدث التقنيات وأفضل الكوادر.
-                    </p>
-                    <div class="footer-social-icons">
-                        <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp" class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+
+                        <!-- Col 2: Main Services -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">الخدمات الرئيسية</h3>
+                            <div class="footer-title-divider"></div>
+                            <ul class="footer-links-list">
+                                <li><a href="service-detail.html?slug=building-cleaning"><i
+                                            class="bi bi-chevron-left"></i> تنظيف المباني والفلل</a></li>
+                                <li><a href="service-detail.html?slug=ceramics-cleaning"><i
+                                            class="bi bi-chevron-left"></i> جلي وتلميع السيراميك والرخام</a></li>
+                                <li><a href="service-detail.html?slug=furniture-cleaning"><i
+                                            class="bi bi-chevron-left"></i> غسيل الكنب والمفروشات</a></li>
+                                <li><a href="service-detail.html?slug=water-tanks"><i class="bi bi-chevron-left"></i>
+                                        تنظيف وتعقيم الخزانات</a></li>
+                                <li><a href="service-detail.html?slug=facade-cleaning"><i
+                                            class="bi bi-chevron-left"></i> تنظيف الواجهات الزجاجية</a></li>
+                                <li><a href="service-detail.html?slug=pest-control"><i class="bi bi-chevron-left"></i>
+                                        مكافحة الحشرات والرش</a></li>
+                                <li><a href="service-detail.html?slug=ac-maintenance"><i class="bi bi-chevron-left"></i>
+                                        صيانة وتنظيف المكيفات</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 3: Facility Services -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">خدمات المنشآت</h3>
+                            <div class="footer-title-divider"></div>
+                            <ul class="footer-links-list">
+                                <li><a href="service-detail.html?slug=schools-cleaning"><i
+                                            class="bi bi-chevron-left"></i> نظافة المدارس والجامعات</a></li>
+                                <li><a href="service-detail.html?slug=government-cleaning"><i
+                                            class="bi bi-chevron-left"></i> نظافة المنشآت الحكومية</a></li>
+                                <li><a href="service-detail.html?slug=offices-cleaning"><i
+                                            class="bi bi-chevron-left"></i> نظافة الشركات والمكاتب</a></li>
+                                <li><a href="service-detail.html?slug=malls-cleaning"><i class="bi bi-chevron-left"></i>
+                                        نظافة المراكز التجارية</a></li>
+                                <li><a href="service-detail.html?slug=factories-cleaning"><i
+                                            class="bi bi-chevron-left"></i> نظافة المصانع والمستودعات</a></li>
+                                <li><a href="about.html"><i class="bi bi-chevron-left"></i> من نحن (نبذة عن الشركة)</a>
+                                </li>
+                                <li><a href="index.html#contact"><i class="bi bi-chevron-left"></i> احجز موعدك الآن</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 4: Contact Details -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">معلومات الاتصال</h3>
+                            <div class="footer-title-divider"></div>
+                            <div class="footer-contact-items">
+                                <div class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">الموقع</span>
+                                        <span class="footer-contact-val">المملكة العربية السعودية</span>
+                                    </div>
+                                </div>
+                                <a href="tel:+966500126016" class="footer-contact-item">
+                                    <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">الهاتف والحجز المباشر</span>
+                                        <span class="footer-contact-val contact-highlight">+966 50 012 6016</span>
+                                    </div>
+                                </a>
+                                <a href="mailto:info@al-duki.com" class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">البريد الإلكتروني</span>
+                                        <span class="footer-contact-val">info@al-duki.com</span>
+                                    </div>
+                                </a>
+                                <div class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">أوقات العمل</span>
+                                        <span class="footer-contact-val">السبت - الخميس: 7:00 ص - 7:00 م</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 5: Newsletter & CTA -->
+                        <div class="footer-col footer-newsletter-col">
+                            <h3 class="footer-col-title">النشرة البريدية</h3>
+                            <div class="footer-title-divider"></div>
+                            <p class="footer-newsletter-desc">
+                                اشترك معنا للحصول على أحدث العروض الحصرية ونصائح النظافة الاحترافية.
+                            </p>
+                            <form class="footer-newsletter-form"
+                                onsubmit="event.preventDefault(); alert('شكراً لاشتراككم في النشرة البريدية!');">
+                                <input type="email" placeholder="أدخل بريدك الإلكتروني..." required
+                                    class="footer-newsletter-input" />
+                                <button type="submit" class="footer-newsletter-submit" aria-label="اشترك">
+                                    <i class="bi bi-send-fill" style="transform: scaleX(-1);"></i>
+                                </button>
+                            </form>
+                            <div class="footer-trust-badge">
+                                <i class="bi bi-shield-fill-check"></i>
+                                <span>ضمان أعلى جودة وخدمة عملاء على مدار الساعة</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Col 2: Main Services -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">الخدمات الرئيسية</h3>
-                    <div class="footer-title-divider"></div>
-                    <ul class="footer-links-list">
-                        <li><a href="service-detail.html?slug=building-cleaning"><i class="bi bi-chevron-left"></i> تنظيف المباني والفلل</a></li>
-                        <li><a href="service-detail.html?slug=ceramics-cleaning"><i class="bi bi-chevron-left"></i> جلي وتلميع السيراميك والرخام</a></li>
-                        <li><a href="service-detail.html?slug=furniture-cleaning"><i class="bi bi-chevron-left"></i> غسيل الكنب والمفروشات</a></li>
-                        <li><a href="service-detail.html?slug=water-tanks"><i class="bi bi-chevron-left"></i> تنظيف وتعقيم الخزانات</a></li>
-                        <li><a href="service-detail.html?slug=facade-cleaning"><i class="bi bi-chevron-left"></i> تنظيف الواجهات الزجاجية</a></li>
-                        <li><a href="service-detail.html?slug=pest-control"><i class="bi bi-chevron-left"></i> مكافحة الحشرات والرش</a></li>
-                        <li><a href="service-detail.html?slug=ac-maintenance"><i class="bi bi-chevron-left"></i> صيانة وتنظيف المكيفات</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Facility Services -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">خدمات المنشآت</h3>
-                    <div class="footer-title-divider"></div>
-                    <ul class="footer-links-list">
-                        <li><a href="service-detail.html?slug=schools-cleaning"><i class="bi bi-chevron-left"></i> نظافة المدارس والجامعات</a></li>
-                        <li><a href="service-detail.html?slug=government-cleaning"><i class="bi bi-chevron-left"></i> نظافة المنشآت الحكومية</a></li>
-                        <li><a href="service-detail.html?slug=offices-cleaning"><i class="bi bi-chevron-left"></i> نظافة الشركات والمكاتب</a></li>
-                        <li><a href="service-detail.html?slug=malls-cleaning"><i class="bi bi-chevron-left"></i> نظافة المراكز التجارية</a></li>
-                        <li><a href="service-detail.html?slug=factories-cleaning"><i class="bi bi-chevron-left"></i> نظافة المصانع والمستودعات</a></li>
-                        <li><a href="about.html"><i class="bi bi-chevron-left"></i> من نحن (نبذة عن الشركة)</a></li>
-                        <li><a href="index.html#contact"><i class="bi bi-chevron-left"></i> احجز موعدك الآن</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Contact Details -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">معلومات الاتصال</h3>
-                    <div class="footer-title-divider"></div>
-                    <div class="footer-contact-items">
-                        <div class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">الموقع</span>
-                                <span class="footer-contact-val">المملكة العربية السعودية</span>
-                            </div>
+                <!-- Bottom Copyright Row -->
+                <div class="footer-bottom-bar">
+                    <div class="footer-container footer-bottom-container">
+                        <div class="footer-copyright-text">
+                            جميع الحقوق محفوظة © 2026 <strong>مؤسسة حسناء علي بن محمد الدوخي للتنظيف والتشغيل</strong>
                         </div>
-                        <a href="tel:+966500126016" class="footer-contact-item">
-                            <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">الهاتف والحجز المباشر</span>
-                                <span class="footer-contact-val contact-highlight">+966 50 012 6016</span>
-                            </div>
-                        </a>
-                        <a href="mailto:info@al-duki.com" class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">البريد الإلكتروني</span>
-                                <span class="footer-contact-val">info@al-duki.com</span>
-                            </div>
-                        </a>
-                        <div class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">أوقات العمل</span>
-                                <span class="footer-contact-val">السبت - الخميس: 7:00 ص - 7:00 م</span>
-                            </div>
+                        <div class="footer-legal-links">
+                            <a href="index.html">الرئيسية</a>
+                            <span>•</span>
+                            <a href="about.html">من نحن</a>
+                            <span>•</span>
+                            <a href="index.html#service">خدماتنا</a>
+                            <span>•</span>
+                            <a href="index.html#contact">اتصل بنا</a>
                         </div>
-                    </div>
-                </div>
-
-                <!-- Col 5: Newsletter & CTA -->
-                <div class="footer-col footer-newsletter-col">
-                    <h3 class="footer-col-title">النشرة البريدية</h3>
-                    <div class="footer-title-divider"></div>
-                    <p class="footer-newsletter-desc">
-                        اشترك معنا للحصول على أحدث العروض الحصرية ونصائح النظافة الاحترافية.
-                    </p>
-                    <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('شكراً لاشتراككم في النشرة البريدية!');">
-                        <input type="email" placeholder="أدخل بريدك الإلكتروني..." required class="footer-newsletter-input" />
-                        <button type="submit" class="footer-newsletter-submit" aria-label="اشترك">
-                            <i class="bi bi-send-fill" style="transform: scaleX(-1);"></i>
-                        </button>
-                    </form>
-                    <div class="footer-trust-badge">
-                        <i class="bi bi-shield-fill-check"></i>
-                        <span>ضمان أعلى جودة وخدمة عملاء على مدار الساعة</span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Bottom Copyright Row -->
-        <div class="footer-bottom-bar">
-            <div class="footer-container footer-bottom-container">
-                <div class="footer-copyright-text">
-                    جميع الحقوق محفوظة © 2026 <strong>مؤسسة حسناء علي بن محمد الدوخي للتنظيف والتشغيل</strong>
-                </div>
-                <div class="footer-legal-links">
-                    <a href="index.html">الرئيسية</a>
-                    <span>•</span>
-                    <a href="about.html">من نحن</a>
-                    <span>•</span>
-                    <a href="index.html#service">خدماتنا</a>
-                    <span>•</span>
-                    <a href="index.html#contact">اتصل بنا</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
+        </footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
                 class="pxl-scroll-progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg> </a>
@@ -8352,7 +8385,7 @@ html[dir="rtl"] .footer-newsletter-form {
         const a = JSON.parse(document.getElementById("wp-emoji-settings").textContent), o = (window._wpemojiSettings = a, "wpEmojiSettingsSupports"), s = ["flag", "emoji"]; function i(e) { try { var t = { supportTests: e, timestamp: (new Date).valueOf() }; sessionStorage.setItem(o, JSON.stringify(t)) } catch (e) { } } function c(e, t, n) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); t = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(n, 0, 0); const a = new Uint32Array(e.getImageData(0, 0, e.canvas.width, e.canvas.height).data); return t.every((e, t) => e === a[t]) } function p(e, t) { e.clearRect(0, 0, e.canvas.width, e.canvas.height), e.fillText(t, 0, 0); var n = e.getImageData(16, 16, 1, 1); for (let e = 0; e < n.data.length; e++)if (0 !== n.data[e]) return !1; return !0 } function u(e, t, n, a) { switch (t) { case "flag": return n(e, "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f", "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f") ? !1 : !n(e, "\ud83c\udde8\ud83c\uddf6", "\ud83c\udde8\u200b\ud83c\uddf6") && !n(e, "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f", "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"); case "emoji": return !a(e, "\ud83e\u1fac8") }return !1 } function f(e, t, n, a) { let r; const o = (r = "undefined" != typeof WorkerGlobalScope && self instanceof WorkerGlobalScope ? new OffscreenCanvas(300, 150) : document.createElement("canvas")).getContext("2d", { willReadFrequently: !0 }), s = (o.textBaseline = "top", o.font = "600 32px Arial", {}); return e.forEach(e => { s[e] = t(o, e, n, a) }), s } function r(e) { var t = document.createElement("script"); t.src = e, t.defer = !0, document.head.appendChild(t) } a.supports = { everything: !0, everythingExceptFlag: !0 }, new Promise(t => { let n = function () { try { var e = JSON.parse(sessionStorage.getItem(o)); if ("object" == typeof e && "number" == typeof e.timestamp && (new Date).valueOf() < e.timestamp + 604800 && "object" == typeof e.supportTests) return e.supportTests } catch (e) { } return null }(); if (!n) { if ("undefined" != typeof Worker && "undefined" != typeof OffscreenCanvas && "undefined" != typeof URL && URL.createObjectURL && "undefined" != typeof Blob) try { var e = "postMessage(" + f.toString() + "(" + [JSON.stringify(s), u.toString(), c.toString(), p.toString()].join(",") + "));", a = new Blob([e], { type: "text/javascript" }); const r = new Worker(URL.createObjectURL(a), { name: "wpTestEmojiSupports" }); return void (r.onmessage = e => { i(n = e.data), r.terminate(), t(n) }) } catch (e) { } i(n = f(s, u, c, p)) } t(n) }).then(e => { for (const n in e) a.supports[n] = e[n], a.supports.everything = a.supports.everything && a.supports[n], "flag" !== n && (a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && a.supports[n]); var t; a.supports.everythingExceptFlag = a.supports.everythingExceptFlag && !a.supports.flag, a.supports.everything || ((t = a.source || {}).concatemoji ? r(t.concatemoji) : t.wpemoji && t.twemoji && (r(t.twemoji), r(t.wpemoji))) });
         //# sourceURL=https://demo.casethemes.net/genfresco/wp-includes/js/wp-emoji-loader.min.js </script>
     <!-- Floating Language Switcher Pill -->
-    
+
 
     <!-- Contact & Subscriber Form API Integration -->
     <script>
@@ -8598,17 +8631,17 @@ html[dir="rtl"] .footer-newsletter-form {
                         drawer = document.createElement('div');
                         drawer.className = 'service-mobile-drawer';
                         drawer.setAttribute('data-drawer-for', targetId);
-                        
+
                         const inner = document.createElement('div');
                         inner.className = 'service-mobile-drawer-inner';
-                        
+
                         const mobileCard = document.createElement('div');
                         mobileCard.className = 'service-mobile-card';
                         mobileCard.innerHTML = desktopPanel.innerHTML;
-                        
+
                         inner.appendChild(mobileCard);
                         drawer.appendChild(inner);
-                        
+
                         card.insertAdjacentElement('afterend', drawer);
                     }
 
@@ -8710,170 +8743,188 @@ html[dir="rtl"] .footer-newsletter-form {
         });
     </script>
 
-<!-- Floating WhatsApp Button (Arabic - Left Side) -->
+    <!-- Floating WhatsApp Button (Arabic - Left Side) -->
 
 
 
 
 
-<!-- Floating Language Switcher Pill (Arabic: Bottom Right) -->
-<div class="floating-lang-switcher">
-    <a href="index-en.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
-        <img src="https://flagcdn.com/w40/us.png" alt="EN" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
+    <!-- Floating Language Switcher Pill (Arabic: Bottom Right) -->
+    <div class="floating-lang-switcher">
+        <a href="index-en.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: transparent; color: #222222; font-size: 14px; font-weight: 700; text-decoration: none;">
+            <img src="https://flagcdn.com/w40/us.png" alt="EN"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> EN
+        </a>
+        <a href="index.html"
+            style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
+            <img src="https://flagcdn.com/w40/sa.png" alt="AR"
+                style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
+        </a>
+    </div>
+
+    <!-- Floating WhatsApp Button (Arabic: Bottom Left) -->
+    <a href="https://wa.me/966500126016?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20التنظيف." target="_blank"
+        rel="noopener noreferrer" class="floating-whatsapp-btn-ar" aria-label="تواصل عبر الواتساب">
+        <div class="whatsapp-btn-pulse"></div>
+        <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
+            <path
+                d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.198 8.198 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.24-8.22 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.66.81-.81.98-.15.17-.3.19-.55.07-.25-.12-1.05-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.15-.25-.02-.38.1-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.3z" />
+        </svg>
+        <span class="whatsapp-btn-tooltip-ar">تواصل معنا واتساب</span>
     </a>
-    <a href="index.html" style="display: flex; align-items: center; gap: 6px; padding: 8px 16px; border-radius: 30px; background: #3ca200; color: #ffffff; font-size: 14px; font-weight: 700; text-decoration: none; box-shadow: 0 4px 14px rgba(60, 162, 0, 0.4);">
-        <img src="https://flagcdn.com/w40/sa.png" alt="AR" style="width:20px; height:14px; border-radius:3px; object-fit:cover;" /> العربية
-    </a>
-</div>
 
-<!-- Floating WhatsApp Button (Arabic: Bottom Left) -->
-<a href="https://wa.me/966500126016?text=مرحباً،%20أود%20الاستفسار%20عن%20خدمات%20التنظيف." 
-   target="_blank" 
-   rel="noopener noreferrer" 
-   class="floating-whatsapp-btn-ar" 
-   aria-label="تواصل عبر الواتساب">
-    <div class="whatsapp-btn-pulse"></div>
-    <svg width="34" height="34" viewBox="0 0 24 24" fill="currentColor">
-        <path d="M19.05 4.91A9.816 9.816 0 0 0 12.04 2c-5.46 0-9.91 4.45-9.91 9.91 0 1.75.46 3.45 1.32 4.95L2.05 22l5.25-1.38c1.45.79 3.08 1.21 4.74 1.21 5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01zm-7.01 15.24c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.32a8.198 8.198 0 0 1-1.26-4.38c0-4.54 3.7-8.24 8.24-8.24 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 0 1 2.41 5.83c.02 4.54-3.68 8.24-8.22 8.24zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.09-.39-.12-.56.12-.17.25-.66.81-.81.98-.15.17-.3.19-.55.07-.25-.12-1.05-.39-2.01-1.24-.74-.66-1.25-1.48-1.39-1.73-.15-.25-.02-.38.1-.5.11-.11.25-.29.37-.43.12-.15.17-.25.25-.42.08-.17.04-.31-.02-.43s-.56-1.35-.77-1.85c-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.23.25-.87.85-.87 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.24 3.74.59.26 1.05.41 1.41.53.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.67-1.18.21-.58.21-1.07.15-1.18-.07-.1-.23-.17-.48-.3z"/>
-    </svg>
-    <span class="whatsapp-btn-tooltip-ar">تواصل معنا واتساب</span>
-</a>
+    <style>
+        .floating-lang-switcher {
+            position: fixed !important;
+            bottom: 25px !important;
+            right: 25px !important;
+            left: auto !important;
+            z-index: 999998 !important;
+            display: flex;
+            align-items: center;
+            background: #ffffff;
+            padding: 5px 8px;
+            border-radius: 40px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+            border: 2px solid #3ca200;
+            gap: 6px;
+        }
 
-<style>
-.floating-lang-switcher {
-    position: fixed !important;
-    bottom: 25px !important;
-    right: 25px !important;
-    left: auto !important;
-    z-index: 999998 !important;
-    display: flex;
-    align-items: center;
-    background: #ffffff;
-    padding: 5px 8px;
-    border-radius: 40px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
-    border: 2px solid #3ca200;
-    gap: 6px;
-}
-.floating-whatsapp-btn-ar {
-    position: fixed !important;
-    bottom: 25px !important;
-    left: 25px !important;
-    right: auto !important;
-    z-index: 999999 !important;
-    width: 60px;
-    height: 60px;
-    background-color: #25D366;
-    color: #FFFFFF;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
-    text-decoration: none;
-    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
-}
-.floating-whatsapp-btn-ar:hover {
-    transform: scale(1.12);
-    box-shadow: 0 10px 28px rgba(37, 211, 102, 0.65);
-    color: #FFFFFF;
-}
-.whatsapp-btn-pulse {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    background-color: #25D366;
-    opacity: 0.6;
-    animation: waPulse 2s infinite ease-in-out;
-    z-index: -1;
-}
-@keyframes waPulse {
-    0% { transform: scale(1); opacity: 0.6; }
-    100% { transform: scale(1.5); opacity: 0; }
-}
-.whatsapp-btn-tooltip-ar {
-    position: absolute;
-    left: 70px;
-    background: #0F172A;
-    color: #FFFFFF;
-    padding: 6px 14px;
-    border-radius: 8px;
-    font-size: 13px;
-    font-weight: 700;
-    white-space: nowrap;
-    opacity: 0;
-    visibility: hidden;
-    transition: opacity 0.3s ease, transform 0.3s ease;
-    transform: translateX(-10px);
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    pointer-events: none;
-    font-family: 'Cairo', sans-serif;
-}
-.whatsapp-btn-tooltip-ar::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: -6px;
-    transform: translateY(-50%);
-    border-width: 6px 6px 6px 0;
-    border-style: solid;
-    border-color: transparent #0F172A transparent transparent;
-}
-.floating-whatsapp-btn-ar:hover .whatsapp-btn-tooltip-ar {
-    opacity: 1;
-    visibility: visible;
-    transform: translateX(0);
-}
-@media (max-width: 768px) {
-    .floating-lang-switcher {
-        bottom: 20px !important;
-        right: 15px !important;
-        left: auto !important;
-        transform: scale(0.88);
-        transform-origin: bottom right;
-    }
-    .floating-whatsapp-btn-ar {
-        bottom: 20px !important;
-        left: 15px !important;
-        right: auto !important;
-        width: 54px !important;
-        height: 54px !important;
-    }
-}
-</style>
+        .floating-whatsapp-btn-ar {
+            position: fixed !important;
+            bottom: 25px !important;
+            left: 25px !important;
+            right: auto !important;
+            z-index: 999999 !important;
+            width: 60px;
+            height: 60px;
+            background-color: #25D366;
+            color: #FFFFFF;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 6px 20px rgba(37, 211, 102, 0.45);
+            text-decoration: none;
+            transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.3s ease;
+        }
 
-<!-- Sticky Header Controller Script -->
+        .floating-whatsapp-btn-ar:hover {
+            transform: scale(1.12);
+            box-shadow: 0 10px 28px rgba(37, 211, 102, 0.65);
+            color: #FFFFFF;
+        }
 
-<script>
-// Synchronized Sticky Header Controller
-(function() {
-    function initStickyHeader() {
-        const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
-        const mobileHeader = document.querySelector('#pxl-header-mobile');
-        
-        function onScroll() {
-            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollPos > 120) {
-                if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
-            } else {
-                if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
+        .whatsapp-btn-pulse {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            background-color: #25D366;
+            opacity: 0.6;
+            animation: waPulse 2s infinite ease-in-out;
+            z-index: -1;
+        }
+
+        @keyframes waPulse {
+            0% {
+                transform: scale(1);
+                opacity: 0.6;
+            }
+
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
             }
         }
-        
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
-    }
-    
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initStickyHeader);
-    } else {
-        initStickyHeader();
-    }
-})();
-</script>
+
+        .whatsapp-btn-tooltip-ar {
+            position: absolute;
+            left: 70px;
+            background: #0F172A;
+            color: #FFFFFF;
+            padding: 6px 14px;
+            border-radius: 8px;
+            font-size: 13px;
+            font-weight: 700;
+            white-space: nowrap;
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease, transform 0.3s ease;
+            transform: translateX(-10px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+            pointer-events: none;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        .whatsapp-btn-tooltip-ar::after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: -6px;
+            transform: translateY(-50%);
+            border-width: 6px 6px 6px 0;
+            border-style: solid;
+            border-color: transparent #0F172A transparent transparent;
+        }
+
+        .floating-whatsapp-btn-ar:hover .whatsapp-btn-tooltip-ar {
+            opacity: 1;
+            visibility: visible;
+            transform: translateX(0);
+        }
+
+        @media (max-width: 768px) {
+            .floating-lang-switcher {
+                bottom: 20px !important;
+                right: 15px !important;
+                left: auto !important;
+                transform: scale(0.88);
+                transform-origin: bottom right;
+            }
+
+            .floating-whatsapp-btn-ar {
+                bottom: 20px !important;
+                left: 15px !important;
+                right: auto !important;
+                width: 54px !important;
+                height: 54px !important;
+            }
+        }
+    </style>
+
+    <!-- Sticky Header Controller Script -->
+
+    <script>
+        // Synchronized Sticky Header Controller
+        (function () {
+            function initStickyHeader() {
+                const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
+                const mobileHeader = document.querySelector('#pxl-header-mobile');
+
+                function onScroll() {
+                    const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollPos > 120) {
+                        if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
+                    } else {
+                        if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
+                    }
+                }
+
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+            }
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initStickyHeader);
+            } else {
+                initStickyHeader();
+            }
+        })();
+    </script>
 
 </body>
 
