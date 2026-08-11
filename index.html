@@ -1812,7 +1812,7 @@
                 padding-right: 14px !important;
             }
 
-            @media (max-width: 991px) {
+            @media (max-width: 1199px) {
                 #pxl-header-mobile #pxl-header-main {
                     padding-top: 0px !important;
                     padding-bottom: 0px !important;
@@ -1820,6 +1820,28 @@
 
                 .pxl-header-branding img {
                     max-height: 70px !important;
+                }
+
+                .pxl-header-menu {
+                    transition: all 0.3s ease !important;
+                }
+
+                .pxl-header-menu:not(.active) {
+                    opacity: 0 !important;
+                    visibility: hidden !important;
+                    pointer-events: none !important;
+                    transform: translateX(100%) !important;
+                }
+
+                body.rtl .pxl-header-menu:not(.active) {
+                    transform: translateX(-100%) !important;
+                }
+
+                .pxl-header-menu.active {
+                    opacity: 1 !important;
+                    visibility: visible !important;
+                    pointer-events: auto !important;
+                    transform: translateX(0) !important;
                 }
             }
 
@@ -8907,18 +8929,24 @@
                 window.addEventListener('scroll', onScroll, { passive: true });
                 onScroll();
 
-                // Mobile Menu Auto-Close on Link Click inside Drawer
+                // Mobile Menu Auto-Close on Link / Close Button Click
                 document.addEventListener('click', function (e) {
-                    const link = e.target.closest('#pxl-header-mobile .pxl-header-menu a');
-                    if (link && !e.target.classList.contains('pxl-menu-toggle')) {
-                        setTimeout(function () {
+                    const isCloseBtn = e.target.closest('.pxl-menu-close, .pxl-header-menu-backdrop');
+                    const isMenuLink = e.target.closest('#pxl-header-mobile .pxl-header-menu a');
+                    const isToggleArrow = e.target.classList.contains('pxl-menu-toggle');
+
+                    if (isCloseBtn || (isMenuLink && !isToggleArrow)) {
+                        function forceCloseDrawer() {
                             document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
                                 el.classList.remove('active');
                             });
                             document.body.classList.remove('body-overflow');
-                        }, 10);
+                        }
+                        forceCloseDrawer();
+                        setTimeout(forceCloseDrawer, 50);
+                        setTimeout(forceCloseDrawer, 150);
                     }
-                });
+                }, true);
             }
 
             if (document.readyState === 'loading') {
