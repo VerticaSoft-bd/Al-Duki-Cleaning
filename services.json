@@ -3,7 +3,7 @@
     {
       "slug": "building-cleaning",
       "id": "service-building",
-      "image": "assets/images/service8-800x437.webp",
+      "image": "assets/images/Building Cleaning.webp",
       "ar": {
         "title": "تنظيف المباني والعمائر",
         "subtitle": "حلول تنظيف شاملة ومتكاملة للمباني السكنية والتجارية",
@@ -98,7 +98,7 @@
     {
       "slug": "ceramics-cleaning",
       "id": "service-ceramics",
-      "image": "assets/images/service7-800x437.webp",
+      "image": "assets/images/Cleaning & Polishing Ceramics.webp",
       "ar": {
         "title": "تنظيف وتلميع السيراميك والرخام",
         "subtitle": "إعادة اللمعان والتألق لجميع أنواع السيراميك والرخام والبلاط",
@@ -193,7 +193,7 @@
     {
       "slug": "furniture-cleaning",
       "id": "service-furniture",
-      "image": "assets/images/service6-800x437.webp",
+      "image": "assets/images/Furniture & Upholstery Cleaning.webp",
       "ar": {
         "title": "تنظيف الأثاث والمفروشات",
         "subtitle": "تنظيف وتعقيم عميق للكنب، السجاد، الستائر، والأسرة بالبخار",
@@ -288,7 +288,7 @@
     {
       "slug": "tank-cleaning",
       "id": "service-tanks",
-      "image": "assets/images/service5-800x437.webp",
+      "image": "assets/images/Cleaning & Disinfecting Tanks.webp",
       "ar": {
         "title": "غسيل وتعقيم الخزانات",
         "subtitle": "نظافة وتعقيم الخزانات الارضية والعلوية لضمان مياه نقية وصحية",
@@ -383,7 +383,7 @@
     {
       "slug": "facade-cleaning",
       "id": "service-facade",
-      "image": "assets/images/service4-800x437.webp",
+      "image": "assets/images/Facade Cleaning.webp",
       "ar": {
         "title": "تنظيف واجهات المباني",
         "subtitle": "غسيل وتنظيف الواجهات الزجاجية والرخامية والكلادينج بأحدث الرافعات",
@@ -478,7 +478,7 @@
     {
       "slug": "pest-control",
       "id": "service-pest",
-      "image": "assets/images/service3-800x437.webp",
+      "image": "assets/images/Pest Control.webp",
       "ar": {
         "title": "مكافحة الحشرات والآفات",
         "subtitle": "قضاء تام على جميع أنواع الحشرات والقوارض بمبيدات آمنة وبدون رائحة",
@@ -573,7 +573,7 @@
     {
       "slug": "ac-cleaning",
       "id": "service-ac",
-      "image": "assets/images/service2-800x437.webp",
+      "image": "assets/images/Air Conditioner Cleaning.webp",
       "ar": {
         "title": "تنظيف وصيانة المكيفات",
         "subtitle": "تنظيف وتعقيم فلاتر ومراوح ودوارات المكيفات السبلت والمركزية",
@@ -668,7 +668,7 @@
     {
       "slug": "school-cleaning",
       "id": "service-schools",
-      "image": "assets/images/service1-800x437.webp",
+      "image": "assets/images/Schools Clean.webp",
       "ar": {
         "title": "تنظيف المدارس والمؤسسات التعليمية",
         "subtitle": "تعقيم وتنظيف الفصول الدراسية والمختبرات والمرافق الرياضية وفق أفضل المعايير",
@@ -763,7 +763,7 @@
     {
       "slug": "government-cleaning",
       "id": "service-gov",
-      "image": "assets/images/service8-800x437.webp",
+      "image": "assets/images/Government Agencies Clean.webp",
       "ar": {
         "title": "تنظيف الهيئات والجهات الحكومية",
         "subtitle": "خدمات نظافة وتشغيل احترافية للمقرات والوزارات والمؤسسات الحكومية",
@@ -858,7 +858,7 @@
     {
       "slug": "office-cleaning",
       "id": "service-companies",
-      "image": "assets/images/service7-800x437.webp",
+      "image": "assets/images/Companies & Offices Clean.webp",
       "ar": {
         "title": "تنظيف الشركات والمكاتب",
         "subtitle": "بيئة عمل بيئية ونظيفة تزيد من إنتاجية الموظفين وتترك انطباعاً مميزاً للمراجعين",
@@ -953,7 +953,7 @@
     {
       "slug": "shopping-center-cleaning",
       "id": "service-shopping",
-      "image": "assets/images/service6-800x437.webp",
+      "image": "assets/images/Shopping Centers Clean.webp",
       "ar": {
         "title": "تنظيف المراكز والمجمعات التجارية",
         "subtitle": "نظافة فائقة على مدار الساعة للمولات والمجمعات صممت لتحمل الكثافة العالية",
@@ -1048,7 +1048,7 @@
     {
       "slug": "factory-cleaning",
       "id": "service-factories",
-      "image": "assets/images/service5-800x437.webp",
+      "image": "assets/images/Factories Clean.webp",
       "ar": {
         "title": "تنظيف المصانع والمنشآت الصناعية",
         "subtitle": "إزالة الدهون، الزيوت، والرواسب الصناعية المعقدة وفق معايير السلامة المهنية",
