@@ -2477,9 +2477,9 @@
     <!-- Sticky Header Controller Script -->
 
     <script>
-        // Synchronized Sticky Header Controller
+        // Synchronized Sticky Header & Mobile Menu Controller
         (function () {
-            function initStickyHeader() {
+            function initHeaderAndMobileMenu() {
                 const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
                 const mobileHeader = document.querySelector('#pxl-header-mobile');
 
@@ -2496,12 +2496,28 @@
 
                 window.addEventListener('scroll', onScroll, { passive: true });
                 onScroll();
+
+                // Mobile Menu Auto-Close on Link Click (Capture Phase + Retries)
+                document.addEventListener('click', function (e) {
+                    const link = e.target.closest('#pxl-header-mobile .pxl-header-menu a, #pxl-header-mobile nav a');
+                    if (link && !e.target.classList.contains('pxl-menu-toggle')) {
+                        function closeMobileMenu() {
+                            document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
+                                el.classList.remove('active');
+                            });
+                            document.body.classList.remove('body-overflow');
+                        }
+                        closeMobileMenu();
+                        setTimeout(closeMobileMenu, 50);
+                        setTimeout(closeMobileMenu, 150);
+                    }
+                }, true);
             }
 
             if (document.readyState === 'loading') {
-                document.addEventListener('DOMContentLoaded', initStickyHeader);
+                document.addEventListener('DOMContentLoaded', initHeaderAndMobileMenu);
             } else {
-                initStickyHeader();
+                initHeaderAndMobileMenu();
             }
         })();
     </script>
