@@ -2320,56 +2320,53 @@ html[dir="rtl"] .footer-newsletter-form {
     </div>
 
     <!-- Core Scripts for Header & Interactions -->
-    <script src="assets/images/jquery.min.js"></script>
+    <script id="jquery-core-js" src="https://demo.casethemes.net/genfresco/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
     <script id="pxl-core-main-js" src="assets/images/pxl-core-main.min.js"></script>
     <script id="pxl-main-js" src="assets/images/pxl-main.min.js"></script>
-<!-- Sticky Header Controller Script -->
 
-<script>
-// Synchronized Sticky Header & Mobile Menu Controller
-(function() {
-    function initHeaderAndMobileMenu() {
-        const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
-        const mobileHeader = document.querySelector('#pxl-header-mobile');
-        
-        function onScroll() {
-            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollPos > 120) {
-                if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
-            } else {
-                if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
-            }
-        }
-        
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
+    <!-- Sticky Header & Mobile Menu Controller Script -->
+    <script>
+        // Synchronized Sticky Header & Mobile Menu Controller
+        (function () {
+            function initHeaderAndMobileMenu() {
+                const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
+                const mobileHeader = document.querySelector('#pxl-header-mobile');
 
-        // Mobile Menu Auto-Close on Link Click (Capture Phase + Retries)
-        document.addEventListener('click', function (e) {
-            const link = e.target.closest('#pxl-header-mobile .pxl-header-menu a, #pxl-header-mobile nav a');
-            if (link && !e.target.classList.contains('pxl-menu-toggle')) {
-                function closeMobileMenu() {
-                    document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
-                        el.classList.remove('active');
-                    });
-                    document.body.classList.remove('body-overflow');
+                function onScroll() {
+                    const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollPos > 120) {
+                        if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
+                    } else {
+                        if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
+                    }
                 }
-                closeMobileMenu();
-                setTimeout(closeMobileMenu, 50);
-                setTimeout(closeMobileMenu, 150);
+
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+
+                // Mobile Menu Auto-Close on Link Click inside Drawer
+                document.addEventListener('click', function (e) {
+                    const link = e.target.closest('#pxl-header-mobile .pxl-header-menu a');
+                    if (link && !e.target.classList.contains('pxl-menu-toggle')) {
+                        setTimeout(function () {
+                            document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
+                                el.classList.remove('active');
+                            });
+                            document.body.classList.remove('body-overflow');
+                        }, 10);
+                    }
+                });
             }
-        }, true);
-    }
-    
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initHeaderAndMobileMenu);
-    } else {
-        initHeaderAndMobileMenu();
-    }
-})();
-</script>
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initHeaderAndMobileMenu);
+            } else {
+                initHeaderAndMobileMenu();
+            }
+        })();
+    </script>
 
 </body>
 </html>
