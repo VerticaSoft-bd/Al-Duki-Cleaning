@@ -840,7 +840,7 @@
                 padding-bottom: 15px !important;
             }
 
-            .elementor-element.elementor-element-3411548 > .elementor-widget-container {
+            .elementor-element.elementor-element-3411548>.elementor-widget-container {
                 margin-top: 30px !important;
                 margin-bottom: 0 !important;
             }
@@ -893,7 +893,7 @@
                 margin-bottom: 10px !important;
             }
 
-            .elementor-element.elementor-element-008584c > .elementor-widget-container {
+            .elementor-element.elementor-element-008584c>.elementor-widget-container {
                 margin: 0 0 14px 0 !important;
             }
 
@@ -931,11 +931,11 @@
                 font-size: 14.5px !important;
             }
 
-            .elementor-element.elementor-element-c4fd33c .pxl-link.type-vertical li + li {
+            .elementor-element.elementor-element-c4fd33c .pxl-link.type-vertical li+li {
                 margin-top: 8px !important;
             }
 
-            .elementor-element.elementor-element-185a413 > .elementor-widget-container {
+            .elementor-element.elementor-element-185a413>.elementor-widget-container {
                 margin: 14px 0 0 0 !important;
             }
         }
@@ -1551,128 +1551,128 @@
 
         .pxl-header-menu {
             background-color: #ffffff !important;
+        }
+
+        .pxl-header-menu-scroll {
+            padding: 24px 20px 40px 20px !important;
+        }
+
+        .pxl-logo-mobile {
+            display: flex !important;
+            align-items: center !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            margin-bottom: 30px !important;
+            margin-right: 45px !important;
+            box-shadow: none !important;
+        }
+
+        body.rtl .pxl-logo-mobile {
+            margin-right: 0 !important;
+            margin-left: 45px !important;
+        }
+
+        .pxl-logo-mobile a {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            text-decoration: none !important;
+        }
+
+        .pxl-logo-mobile img {
+            height: 55px !important;
+            max-height: 58px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+
+        .pxl-logo-mobile .mobile-brand-title {
+            font-size: 21px !important;
+            font-weight: 900 !important;
+            color: #0B192C !important;
+            white-space: nowrap !important;
+            letter-spacing: -0.3px !important;
+            line-height: 1.1 !important;
+        }
+
+        .pxl-menu-close {
+            top: 24px !important;
+            right: 20px !important;
+            width: 36px !important;
+            height: 36px !important;
+            background-color: transparent !important;
+            border: none !important;
+            z-index: 10 !important;
+        }
+
+        body.rtl .pxl-menu-close {
+            right: auto !important;
+            left: 20px !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li {
+            border-bottom: 1px solid #F1F5F9 !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li:last-child {
+            border-bottom: none !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li>a {
+            padding: 14px 8px !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #1E293B !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            color: var(--primary-color, #007887) !important;
+            padding-left: 14px !important;
+        }
+
+        body.rtl .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            padding-left: 8px !important;
+            padding-right: 14px !important;
+        }
+
+        @media (max-width: 1199px) {
+            #pxl-header-mobile #pxl-header-main {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
             }
 
-            .pxl-header-menu-scroll {
-                padding: 24px 20px 40px 20px !important;
+            .pxl-header-branding img {
+                max-height: 70px !important;
             }
 
-            .pxl-logo-mobile {
-                display: flex !important;
-                align-items: center !important;
-                padding: 0 !important;
-                background: transparent !important;
-                border: none !important;
-                border-radius: 0 !important;
-                margin-bottom: 30px !important;
-                margin-right: 45px !important;
-                box-shadow: none !important;
+            .pxl-header-menu {
+                transition: all 0.3s ease !important;
             }
 
-            body.rtl .pxl-logo-mobile {
-                margin-right: 0 !important;
-                margin-left: 45px !important;
+            .pxl-header-menu:not(.active) {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+                transform: translateX(-100%) !important;
             }
 
-            .pxl-logo-mobile a {
-                display: inline-flex !important;
-                align-items: center !important;
-                gap: 12px !important;
-                text-decoration: none !important;
+            body.rtl .pxl-header-menu:not(.active) {
+                transform: translateX(100%) !important;
             }
 
-            .pxl-logo-mobile img {
-                height: 55px !important;
-                max-height: 58px !important;
-                width: auto !important;
-                object-fit: contain !important;
-                display: block !important;
+            .pxl-header-menu.active {
+                opacity: 1 !important;
+                visibility: visible !important;
+                pointer-events: auto !important;
+                transform: translateX(0) !important;
             }
+        }
 
-            .pxl-logo-mobile .mobile-brand-title {
-                font-size: 21px !important;
-                font-weight: 900 !important;
-                color: #0B192C !important;
-                white-space: nowrap !important;
-                letter-spacing: -0.3px !important;
-                line-height: 1.1 !important;
-            }
-
-            .pxl-menu-close {
-                top: 24px !important;
-                right: 20px !important;
-                width: 36px !important;
-                height: 36px !important;
-                background-color: transparent !important;
-                border: none !important;
-                z-index: 10 !important;
-            }
-
-            body.rtl .pxl-menu-close {
-                right: auto !important;
-                left: 20px !important;
-            }
-
-            .pxl-header-menu .pxl-menu-primary > li {
-                border-bottom: 1px solid #F1F5F9 !important;
-            }
-
-            .pxl-header-menu .pxl-menu-primary > li:last-child {
-                border-bottom: none !important;
-            }
-
-            .pxl-header-menu .pxl-menu-primary > li > a {
-                padding: 14px 8px !important;
-                font-size: 16px !important;
-                font-weight: 700 !important;
-                color: #1E293B !important;
-                transition: all 0.2s ease !important;
-            }
-
-            .pxl-header-menu .pxl-menu-primary > li > a:hover {
-                color: var(--primary-color, #007887) !important;
-                padding-left: 14px !important;
-            }
-
-            body.rtl .pxl-header-menu .pxl-menu-primary > li > a:hover {
-                padding-left: 8px !important;
-                padding-right: 14px !important;
-            }
-
-            @media (max-width: 1199px) {
-                #pxl-header-mobile #pxl-header-main {
-                    padding-top: 0px !important;
-                    padding-bottom: 0px !important;
-                }
-
-                .pxl-header-branding img {
-                    max-height: 70px !important;
-                }
-
-                .pxl-header-menu {
-                    transition: all 0.3s ease !important;
-                }
-
-                .pxl-header-menu:not(.active) {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                    pointer-events: none !important;
-                    transform: translateX(-100%) !important;
-                }
-
-                body.rtl .pxl-header-menu:not(.active) {
-                    transform: translateX(100%) !important;
-                }
-
-                .pxl-header-menu.active {
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                    pointer-events: auto !important;
-                    transform: translateX(0) !important;
-                }
-            }
-
-            /*# sourceURL=pxl-style-inline-css */
+        /*# sourceURL=pxl-style-inline-css */
     </style>
     <link rel='stylesheet' id='pxl-base-css' href='assets/css/pxl-base.min.css' media='all' />
     <link rel='stylesheet' id='pxl-google-fonts-css'
@@ -2209,570 +2209,572 @@
     <link rel='stylesheet' href='assets/css/post-176.css' media='all' />
     <link rel='stylesheet' href='assets/css/post-6202.css' media='all' />
 
-<style id="footer-fix-styles">
-
-/* =========================================================
+    <style id="footer-fix-styles">
+        /* =========================================================
    ULTRA-PREMIUM REDESIGNED FOOTER (ARABIC & ENGLISH)
    ========================================================= */
 
-.custom-premium-footer {
-    background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
-    color: #ffffff !important;
-    border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
-    position: relative !important;
-    overflow: hidden !important;
-    font-family: inherit !important;
-    z-index: 20 !important;
-}
+        .custom-premium-footer {
+            background: radial-gradient(circle at 50% 0%, #0d280d 0%, #061406 100%) !important;
+            color: #ffffff !important;
+            border-top: 1px solid rgba(60, 162, 0, 0.3) !important;
+            position: relative !important;
+            overflow: hidden !important;
+            font-family: inherit !important;
+            z-index: 20 !important;
+        }
 
-.custom-premium-footer::before {
-    content: '' !important;
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    height: 1px !important;
-    background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
-    opacity: 0.8 !important;
-}
+        .custom-premium-footer::before {
+            content: '' !important;
+            position: absolute !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            height: 1px !important;
+            background: linear-gradient(90deg, transparent, #3CA200, #FFD400, #3CA200, transparent) !important;
+            opacity: 0.8 !important;
+        }
 
-.footer-main-wrap {
-    padding: 70px 0 0 0 !important;
-}
+        .footer-main-wrap {
+            padding: 70px 0 0 0 !important;
+        }
 
-.footer-container {
-    max-width: 1360px !important;
-    margin: 0 auto !important;
-    padding: 0 24px !important;
-    box-sizing: border-box !important;
-}
+        .footer-container {
+            max-width: 1360px !important;
+            margin: 0 auto !important;
+            padding: 0 24px !important;
+            box-sizing: border-box !important;
+        }
 
-.footer-grid {
-    display: grid !important;
-    grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
-    gap: 36px !important;
-    align-items: flex-start !important;
-}
+        .footer-grid {
+            display: grid !important;
+            grid-template-columns: 1.3fr 1fr 1fr 1.2fr 1.25fr !important;
+            gap: 36px !important;
+            align-items: flex-start !important;
+        }
 
-/* Col 1: Brand */
-.footer-brand-col {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 16px !important;
-}
+        /* Col 1: Brand */
+        .footer-brand-col {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 16px !important;
+        }
 
-.footer-logo-link {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 14px !important;
-    text-decoration: none !important;
-}
+        .footer-logo-link {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 14px !important;
+            text-decoration: none !important;
+        }
 
-.footer-brand-logo {
-    height: 64px !important;
-    width: auto !important;
-    object-fit: contain !important;
-    filter: drop-shadow(0 4px 12px rgba(0,0,0,0.3)) !important;
-}
+        .footer-brand-logo {
+            height: 64px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.3)) !important;
+        }
 
-.footer-brand-text {
-    display: flex !important;
-    flex-direction: column !important;
-}
+        .footer-brand-text {
+            display: flex !important;
+            flex-direction: column !important;
+        }
 
-.footer-company-name {
-    font-size: 19px !important;
-    font-weight: 900 !important;
-    color: #ffffff !important;
-    line-height: 1.2 !important;
-    letter-spacing: -0.2px !important;
-}
+        .footer-company-name {
+            font-size: 19px !important;
+            font-weight: 900 !important;
+            color: #ffffff !important;
+            line-height: 1.2 !important;
+            letter-spacing: -0.2px !important;
+        }
 
-.footer-sub-name {
-    font-size: 13px !important;
-    color: #A3E635 !important;
-    font-weight: 600 !important;
-    margin-top: 3px !important;
-}
+        .footer-sub-name {
+            font-size: 13px !important;
+            color: #A3E635 !important;
+            font-weight: 600 !important;
+            margin-top: 3px !important;
+        }
 
-.footer-brand-desc {
-    font-size: 14px !important;
-    line-height: 1.7 !important;
-    color: #CBD5E1 !important;
-    margin: 0 !important;
-}
+        .footer-brand-desc {
+            font-size: 14px !important;
+            line-height: 1.7 !important;
+            color: #CBD5E1 !important;
+            margin: 0 !important;
+        }
 
-.footer-social-icons {
-    display: flex !important;
-    align-items: center !important;
-    gap: 10px !important;
-    margin-top: 4px !important;
-}
+        .footer-social-icons {
+            display: flex !important;
+            align-items: center !important;
+            gap: 10px !important;
+            margin-top: 4px !important;
+        }
 
-.footer-social-btn {
-    width: 38px !important;
-    height: 38px !important;
-    border-radius: 50% !important;
-    background: rgba(255, 255, 255, 0.08) !important;
-    border: 1px solid rgba(255, 255, 255, 0.15) !important;
-    color: #ffffff !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    font-size: 14px !important;
-    text-decoration: none !important;
-    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
-}
+        .footer-social-btn {
+            width: 38px !important;
+            height: 38px !important;
+            border-radius: 50% !important;
+            background: rgba(255, 255, 255, 0.08) !important;
+            border: 1px solid rgba(255, 255, 255, 0.15) !important;
+            color: #ffffff !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            font-size: 14px !important;
+            text-decoration: none !important;
+            transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+        }
 
-.footer-social-btn:hover {
-    background: #3CA200 !important;
-    border-color: #3CA200 !important;
-    color: #ffffff !important;
-    transform: translateY(-3px) !important;
-    box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
-}
+        .footer-social-btn:hover {
+            background: #3CA200 !important;
+            border-color: #3CA200 !important;
+            color: #ffffff !important;
+            transform: translateY(-3px) !important;
+            box-shadow: 0 8px 20px rgba(60, 162, 0, 0.4) !important;
+        }
 
-/* Col Titles & Dividers */
-.footer-col-title {
-    font-size: 18px !important;
-    font-weight: 800 !important;
-    color: #ffffff !important;
-    margin: 0 0 10px 0 !important;
-    letter-spacing: -0.2px !important;
-}
+        /* Col Titles & Dividers */
+        .footer-col-title {
+            font-size: 18px !important;
+            font-weight: 800 !important;
+            color: #ffffff !important;
+            margin: 0 0 10px 0 !important;
+            letter-spacing: -0.2px !important;
+        }
 
-.footer-title-divider {
-    width: 36px !important;
-    height: 3px !important;
-    background: linear-gradient(90deg, #3CA200, #A3E635) !important;
-    border-radius: 2px !important;
-    margin-bottom: 20px !important;
-}
+        .footer-title-divider {
+            width: 36px !important;
+            height: 3px !important;
+            background: linear-gradient(90deg, #3CA200, #A3E635) !important;
+            border-radius: 2px !important;
+            margin-bottom: 20px !important;
+        }
 
-html[dir="rtl"] .footer-title-divider {
-    background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
-}
+        html[dir="rtl"] .footer-title-divider {
+            background: linear-gradient(-90deg, #3CA200, #A3E635) !important;
+        }
 
-/* Links List */
-.footer-links-list {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 11px !important;
-}
+        /* Links List */
+        .footer-links-list {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 11px !important;
+        }
 
-.footer-links-list li {
-    list-style: none !important;
-    padding: 0 !important;
-    margin: 0 !important;
-}
+        .footer-links-list li {
+            list-style: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
 
-.footer-links-list li a {
-    color: #94A3B8 !important;
-    text-decoration: none !important;
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    transition: all 0.25s ease !important;
-}
+        .footer-links-list li a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            font-size: 14px !important;
+            font-weight: 600 !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            transition: all 0.25s ease !important;
+        }
 
-.footer-links-list li a i {
-    font-size: 11px !important;
-    color: #3CA200 !important;
-    transition: transform 0.25s ease !important;
-}
+        .footer-links-list li a i {
+            font-size: 11px !important;
+            color: #3CA200 !important;
+            transition: transform 0.25s ease !important;
+        }
 
-.footer-links-list li a:hover {
-    color: #FFFFFF !important;
-    transform: translateX(4px) !important;
-}
+        .footer-links-list li a:hover {
+            color: #FFFFFF !important;
+            transform: translateX(4px) !important;
+        }
 
-html[dir="rtl"] .footer-links-list li a:hover {
-    transform: translateX(-4px) !important;
-}
+        html[dir="rtl"] .footer-links-list li a:hover {
+            transform: translateX(-4px) !important;
+        }
 
-/* Contact Items */
-.footer-contact-items {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 15px !important;
-}
+        /* Contact Items */
+        .footer-contact-items {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 15px !important;
+        }
 
-.footer-contact-item {
-    display: flex !important;
-    align-items: flex-start !important;
-    gap: 12px !important;
-    text-decoration: none !important;
-    color: inherit !important;
-    transition: transform 0.25s ease !important;
-}
+        .footer-contact-item {
+            display: flex !important;
+            align-items: flex-start !important;
+            gap: 12px !important;
+            text-decoration: none !important;
+            color: inherit !important;
+            transition: transform 0.25s ease !important;
+        }
 
-.footer-contact-item:hover {
-    transform: translateX(3px) !important;
-}
+        .footer-contact-item:hover {
+            transform: translateX(3px) !important;
+        }
 
-html[dir="rtl"] .footer-contact-item:hover {
-    transform: translateX(-3px) !important;
-}
+        html[dir="rtl"] .footer-contact-item:hover {
+            transform: translateX(-3px) !important;
+        }
 
-.footer-contact-icon {
-    width: 34px !important;
-    height: 34px !important;
-    border-radius: 10px !important;
-    background: rgba(60, 162, 0, 0.15) !important;
-    border: 1px solid rgba(60, 162, 0, 0.3) !important;
-    color: #A3E635 !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    flex-shrink: 0 !important;
-    font-size: 15px !important;
-}
+        .footer-contact-icon {
+            width: 34px !important;
+            height: 34px !important;
+            border-radius: 10px !important;
+            background: rgba(60, 162, 0, 0.15) !important;
+            border: 1px solid rgba(60, 162, 0, 0.3) !important;
+            color: #A3E635 !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            flex-shrink: 0 !important;
+            font-size: 15px !important;
+        }
 
-.footer-contact-icon.phone-icon {
-    background: rgba(255, 212, 0, 0.15) !important;
-    border-color: rgba(255, 212, 0, 0.4) !important;
-    color: #FFD400 !important;
-}
+        .footer-contact-icon.phone-icon {
+            background: rgba(255, 212, 0, 0.15) !important;
+            border-color: rgba(255, 212, 0, 0.4) !important;
+            color: #FFD400 !important;
+        }
 
-.footer-contact-content {
-    display: flex !important;
-    flex-direction: column !important;
-    gap: 2px !important;
-}
+        .footer-contact-content {
+            display: flex !important;
+            flex-direction: column !important;
+            gap: 2px !important;
+        }
 
-.footer-contact-label {
-    font-size: 11.5px !important;
-    color: #94A3B8 !important;
-    text-transform: uppercase !important;
-    letter-spacing: 0.5px !important;
-}
+        .footer-contact-label {
+            font-size: 11.5px !important;
+            color: #94A3B8 !important;
+            text-transform: uppercase !important;
+            letter-spacing: 0.5px !important;
+        }
 
-.footer-contact-val {
-    font-size: 13.5px !important;
-    color: #E2E8F0 !important;
-    font-weight: 600 !important;
-}
+        .footer-contact-val {
+            font-size: 13.5px !important;
+            color: #E2E8F0 !important;
+            font-weight: 600 !important;
+        }
 
-.footer-contact-val.contact-highlight {
-    color: #FFD400 !important;
-    font-size: 15px !important;
-    font-weight: 800 !important;
-    direction: ltr !important;
-    display: inline-block !important;
-}
+        .footer-contact-val.contact-highlight {
+            color: #FFD400 !important;
+            font-size: 15px !important;
+            font-weight: 800 !important;
+            direction: ltr !important;
+            display: inline-block !important;
+        }
 
-/* Newsletter Column */
-.footer-newsletter-desc {
-    font-size: 13.5px !important;
-    color: #94A3B8 !important;
-    line-height: 1.6 !important;
-    margin: 0 0 16px 0 !important;
-}
+        /* Newsletter Column */
+        .footer-newsletter-desc {
+            font-size: 13.5px !important;
+            color: #94A3B8 !important;
+            line-height: 1.6 !important;
+            margin: 0 0 16px 0 !important;
+        }
 
-.footer-newsletter-form {
-    display: flex !important;
-    align-items: center !important;
-    background: rgba(255, 255, 255, 0.07) !important;
-    border: 1px solid rgba(255, 255, 255, 0.2) !important;
-    border-radius: 9999px !important;
-    padding: 4px 5px 4px 16px !important;
-    box-sizing: border-box !important;
-    transition: all 0.3s ease !important;
-}
+        .footer-newsletter-form {
+            display: flex !important;
+            align-items: center !important;
+            background: rgba(255, 255, 255, 0.07) !important;
+            border: 1px solid rgba(255, 255, 255, 0.2) !important;
+            border-radius: 9999px !important;
+            padding: 4px 5px 4px 16px !important;
+            box-sizing: border-box !important;
+            transition: all 0.3s ease !important;
+        }
 
-html[dir="rtl"] .footer-newsletter-form {
-    padding: 4px 16px 4px 5px !important;
-}
+        html[dir="rtl"] .footer-newsletter-form {
+            padding: 4px 16px 4px 5px !important;
+        }
 
-.footer-newsletter-form:focus-within {
-    border-color: #3CA200 !important;
-    background: rgba(255, 255, 255, 0.12) !important;
-    box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
-}
+        .footer-newsletter-form:focus-within {
+            border-color: #3CA200 !important;
+            background: rgba(255, 255, 255, 0.12) !important;
+            box-shadow: 0 0 20px rgba(60, 162, 0, 0.25) !important;
+        }
 
-.footer-newsletter-input {
-    flex: 1 !important;
-    background: transparent !important;
-    border: none !important;
-    outline: none !important;
-    color: #ffffff !important;
-    font-size: 13.5px !important;
-    padding: 8px 4px !important;
-    min-width: 0 !important;
-    font-family: inherit !important;
-}
+        .footer-newsletter-input {
+            flex: 1 !important;
+            background: transparent !important;
+            border: none !important;
+            outline: none !important;
+            color: #ffffff !important;
+            font-size: 13.5px !important;
+            padding: 8px 4px !important;
+            min-width: 0 !important;
+            font-family: inherit !important;
+        }
 
-.footer-newsletter-input::placeholder {
-    color: #94A3B8 !important;
-    opacity: 0.8 !important;
-}
+        .footer-newsletter-input::placeholder {
+            color: #94A3B8 !important;
+            opacity: 0.8 !important;
+        }
 
-.footer-newsletter-submit {
-    background: linear-gradient(135deg, #3CA200, #2E8000) !important;
-    border: none !important;
-    border-radius: 50% !important;
-    width: 38px !important;
-    height: 38px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    color: #ffffff !important;
-    cursor: pointer !important;
-    flex-shrink: 0 !important;
-    font-size: 14px !important;
-    transition: all 0.3s ease !important;
-    box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
-}
+        .footer-newsletter-submit {
+            background: linear-gradient(135deg, #3CA200, #2E8000) !important;
+            border: none !important;
+            border-radius: 50% !important;
+            width: 38px !important;
+            height: 38px !important;
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            color: #ffffff !important;
+            cursor: pointer !important;
+            flex-shrink: 0 !important;
+            font-size: 14px !important;
+            transition: all 0.3s ease !important;
+            box-shadow: 0 4px 12px rgba(60, 162, 0, 0.4) !important;
+        }
 
-.footer-newsletter-submit:hover {
-    background: linear-gradient(135deg, #FFD400, #E5A100) !important;
-    color: #0F172A !important;
-    transform: scale(1.05) !important;
-}
+        .footer-newsletter-submit:hover {
+            background: linear-gradient(135deg, #FFD400, #E5A100) !important;
+            color: #0F172A !important;
+            transform: scale(1.05) !important;
+        }
 
-.footer-trust-badge {
-    display: flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-    margin-top: 16px !important;
-    font-size: 12.5px !important;
-    color: #A3E635 !important;
-    font-weight: 600 !important;
-}
+        .footer-trust-badge {
+            display: flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+            margin-top: 16px !important;
+            font-size: 12.5px !important;
+            color: #A3E635 !important;
+            font-weight: 600 !important;
+        }
 
-.footer-trust-badge i {
-    font-size: 16px !important;
-    color: #3CA200 !important;
-}
+        .footer-trust-badge i {
+            font-size: 16px !important;
+            color: #3CA200 !important;
+        }
 
-/* Bottom Bar */
-.footer-bottom-bar {
-    border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
-    margin-top: 60px !important;
-    padding: 24px 0 !important;
-    background: rgba(0, 0, 0, 0.25) !important;
-}
+        /* Bottom Bar */
+        .footer-bottom-bar {
+            border-top: 1px solid rgba(255, 255, 255, 0.08) !important;
+            margin-top: 60px !important;
+            padding: 24px 0 !important;
+            background: rgba(0, 0, 0, 0.25) !important;
+        }
 
-.footer-bottom-container {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    flex-wrap: wrap !important;
-    gap: 16px !important;
-}
+        .footer-bottom-container {
+            display: flex !important;
+            justify-content: space-between !important;
+            align-items: center !important;
+            flex-wrap: wrap !important;
+            gap: 16px !important;
+        }
 
-.footer-copyright-text {
-    font-size: 13.5px !important;
-    color: #94A3B8 !important;
-}
+        .footer-copyright-text {
+            font-size: 13.5px !important;
+            color: #94A3B8 !important;
+        }
 
-.footer-copyright-text strong {
-    color: #E2E8F0 !important;
-}
+        .footer-copyright-text strong {
+            color: #E2E8F0 !important;
+        }
 
-.footer-legal-links {
-    display: flex !important;
-    align-items: center !important;
-    gap: 12px !important;
-    font-size: 13.5px !important;
-    color: #64748B !important;
-}
+        .footer-legal-links {
+            display: flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            font-size: 13.5px !important;
+            color: #64748B !important;
+        }
 
-.footer-legal-links a {
-    color: #94A3B8 !important;
-    text-decoration: none !important;
-    transition: color 0.2s ease !important;
-}
+        .footer-legal-links a {
+            color: #94A3B8 !important;
+            text-decoration: none !important;
+            transition: color 0.2s ease !important;
+        }
 
-.footer-legal-links a:hover {
-    color: #3CA200 !important;
-}
+        .footer-legal-links a:hover {
+            color: #3CA200 !important;
+        }
 
-/* Responsive Grid Breakpoints */
-@media (max-width: 1200px) {
-    .footer-grid {
-        grid-template-columns: repeat(3, 1fr) !important;
-        gap: 36px !important;
-    }
-    .footer-brand-col {
-        grid-column: span 3 !important;
-        max-width: 600px !important;
-    }
-}
+        /* Responsive Grid Breakpoints */
+        @media (max-width: 1200px) {
+            .footer-grid {
+                grid-template-columns: repeat(3, 1fr) !important;
+                gap: 36px !important;
+            }
 
-@media (max-width: 768px) {
-    .footer-main-wrap {
-        padding: 50px 0 0 0 !important;
-    }
-    .footer-grid {
-        grid-template-columns: 1fr !important;
-        gap: 32px !important;
-    }
-    .footer-brand-col {
-        grid-column: span 1 !important;
-    }
-    .footer-bottom-container {
-        flex-direction: column !important;
-        text-align: center !important;
-        gap: 10px !important;
-    }
-    .footer-legal-links {
-        justify-content: center !important;
-    }
-}
+            .footer-brand-col {
+                grid-column: span 3 !important;
+                max-width: 600px !important;
+            }
+        }
 
-</style>
-<style id="sticky-header-styles">
+        @media (max-width: 768px) {
+            .footer-main-wrap {
+                padding: 50px 0 0 0 !important;
+            }
 
-/* =========================================================
+            .footer-grid {
+                grid-template-columns: 1fr !important;
+                gap: 32px !important;
+            }
+
+            .footer-brand-col {
+                grid-column: span 1 !important;
+            }
+
+            .footer-bottom-container {
+                flex-direction: column !important;
+                text-align: center !important;
+                gap: 10px !important;
+            }
+
+            .footer-legal-links {
+                justify-content: center !important;
+            }
+        }
+    </style>
+    <style id="sticky-header-styles">
+        /* =========================================================
    SYNCHRONIZED STICKY HEADER STYLING (EXACT SAME AS HOMEPAGE)
    ========================================================= */
 
-.pxl-header-elementor-sticky {
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    right: 0 !important;
-    width: 100% !important;
-    z-index: 999999 !important;
-    background-color: #ffffff !important;
-    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
-    transform: translateY(-100%) !important;
-    transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
-    visibility: hidden !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        .pxl-header-elementor-sticky {
+            position: fixed !important;
+            top: 0 !important;
+            left: 0 !important;
+            right: 0 !important;
+            width: 100% !important;
+            z-index: 999999 !important;
+            background-color: #ffffff !important;
+            box-shadow: 0 4px 25px rgba(0, 0, 0, 0.08) !important;
+            transform: translateY(-100%) !important;
+            transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s ease !important;
+            visibility: hidden !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
 
-.pxl-header-elementor-sticky.pxl-header-fixed {
-    transform: translateY(0%) !important;
-    visibility: visible !important;
-}
+        .pxl-header-elementor-sticky.pxl-header-fixed {
+            transform: translateY(0%) !important;
+            visibility: visible !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-5330,
-.pxl-header-elementor-sticky .elementor-element-24e227e {
-    background-color: #ffffff !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
+        .pxl-header-elementor-sticky .elementor-5330,
+        .pxl-header-elementor-sticky .elementor-element-24e227e {
+            background-color: #ffffff !important;
+            width: 100% !important;
+            margin: 0 !important;
+            padding: 0 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-24e227e > .e-con-inner {
-    display: flex !important;
-    flex-direction: row !important;
-    align-items: center !important;
-    justify-content: space-between !important;
-    width: 96% !important;
-    max-width: 1650px !important;
-    margin: 0 auto !important;
-    padding: 6px 20px !important;
-    background-color: #ffffff !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-24e227e>.e-con-inner {
+            display: flex !important;
+            flex-direction: row !important;
+            align-items: center !important;
+            justify-content: space-between !important;
+            width: 96% !important;
+            max-width: 1650px !important;
+            margin: 0 auto !important;
+            padding: 6px 20px !important;
+            background-color: #ffffff !important;
+        }
 
-/* Call Box in Sticky Nav */
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-icon-box {
-    display: inline-flex !important;
-    align-items: center !important;
-    gap: 8px !important;
-}
+        /* Call Box in Sticky Nav */
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-icon-box {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 8px !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon {
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    width: 36px !important;
-    height: 36px !important;
-    border-radius: 50% !important;
-    border: 2px solid #3ca200 !important;
-    background-color: #ffffff !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            width: 36px !important;
+            height: 36px !important;
+            border-radius: 50% !important;
+            border: 2px solid #3ca200 !important;
+            background-color: #ffffff !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon svg {
-    width: 16px !important;
-    height: 16px !important;
-    fill: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--icon svg {
+            width: 16px !important;
+            height: 16px !important;
+            fill: #3ca200 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--title {
-    font-size: 11px !important;
-    color: #666666 !important;
-    margin: 0 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--title {
+            font-size: 11px !important;
+            color: #666666 !important;
+            margin: 0 !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--description {
-    font-size: 16px !important;
-    font-weight: 800 !important;
-    color: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-332ae71 .pxl-item--description {
+            font-size: 16px !important;
+            font-weight: 800 !important;
+            color: #3ca200 !important;
+        }
 
-/* Navigation Links in Sticky Nav */
-.pxl-header-elementor-sticky .pxl-nav-menu ul.pxl-menu-primary,
-.pxl-header-elementor-sticky .pxl-nav-menu ul {
-    display: flex !important;
-    flex-direction: row !important;
-    gap: 32px !important;
-    align-items: center !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    list-style: none !important;
-}
+        /* Navigation Links in Sticky Nav */
+        .pxl-header-elementor-sticky .pxl-nav-menu ul.pxl-menu-primary,
+        .pxl-header-elementor-sticky .pxl-nav-menu ul {
+            display: flex !important;
+            flex-direction: row !important;
+            gap: 32px !important;
+            align-items: center !important;
+            margin: 0 !important;
+            padding: 0 !important;
+            list-style: none !important;
+        }
 
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a {
-    font-weight: 700 !important;
-    font-size: 15px !important;
-    color: #2c3e50 !important;
-    text-decoration: none !important;
-    padding: 6px 0 !important;
-    transition: color 0.2s ease !important;
-}
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li>a {
+            font-weight: 700 !important;
+            font-size: 15px !important;
+            color: #2c3e50 !important;
+            text-decoration: none !important;
+            padding: 6px 0 !important;
+            transition: color 0.2s ease !important;
+        }
 
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li.current-menu-item > a,
-.pxl-header-elementor-sticky .pxl-nav-menu ul > li > a:hover {
-    color: #3ca200 !important;
-}
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li.current-menu-item>a,
+        .pxl-header-elementor-sticky .pxl-nav-menu ul>li>a:hover {
+            color: #3ca200 !important;
+        }
 
-/* CTA Button in Sticky Nav */
-.pxl-header-elementor-sticky .elementor-element-b72ebad a,
-.pxl-header-elementor-sticky .elementor-element-b72ebad .btn {
-    background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
-    color: #0F172A !important;
-    padding: 6px 20px !important;
-    border-radius: 9999px !important;
-    font-weight: 700 !important;
-    font-size: 13.5px !important;
-    text-decoration: none !important;
-    box-shadow: 0 4px 14px rgba(229, 161, 0, 0.4) !important;
-    transition: all 0.3s ease !important;
-}
+        /* CTA Button in Sticky Nav */
+        .pxl-header-elementor-sticky .elementor-element-b72ebad a,
+        .pxl-header-elementor-sticky .elementor-element-b72ebad .btn {
+            background: linear-gradient(135deg, #FFD400 0%, #E5A100 100%) !important;
+            color: #0F172A !important;
+            padding: 6px 20px !important;
+            border-radius: 9999px !important;
+            font-weight: 700 !important;
+            font-size: 13.5px !important;
+            text-decoration: none !important;
+            box-shadow: 0 4px 14px rgba(229, 161, 0, 0.4) !important;
+            transition: all 0.3s ease !important;
+        }
 
-.pxl-header-elementor-sticky .elementor-element-b72ebad a:hover {
-    background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
-    transform: translateY(-2px) !important;
-}
+        .pxl-header-elementor-sticky .elementor-element-b72ebad a:hover {
+            background: linear-gradient(135deg, #FFE033 0%, #EEAF00 100%) !important;
+            transform: translateY(-2px) !important;
+        }
 
-/* Mobile Sticky Header */
-@media (max-width: 1199px) {
-    .pxl-header-elementor-sticky {
-        display: none !important;
-    }
-    #pxl-header-mobile.pxl-header-mobile-fixed {
-        position: fixed !important;
-        top: 0 !important;
-        left: 0 !important;
-        right: 0 !important;
-        width: 100% !important;
-        z-index: 999999 !important;
-        background-color: #ffffff !important;
-        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-    }
-}
+        /* Mobile Sticky Header */
+        @media (max-width: 1199px) {
+            .pxl-header-elementor-sticky {
+                display: none !important;
+            }
 
-</style>
+            #pxl-header-mobile.pxl-header-mobile-fixed {
+                position: fixed !important;
+                top: 0 !important;
+                left: 0 !important;
+                right: 0 !important;
+                width: 100% !important;
+                z-index: 999999 !important;
+                background-color: #ffffff !important;
+                box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+            }
+        }
+    </style>
 </head>
 
 <body
@@ -2982,7 +2984,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                 Call Us</h5>
                                                             <div
                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                +966500126016</div>
+                                                                0500126016</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3189,7 +3191,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                 Call Us</h5>
                                                             <div
                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                +966500126016</div>
+                                                                0500126016</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -3238,7 +3240,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                             class="pxl-item-menu-icon pxl-hide "></span>
                                                                     </div>
                                                                 </a>
-                                                                                                                 <li
+                                                            <li
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
                                                                 <a href="about-en.html">
                                                                     <div class="menu-text pxl-menu-item-text">
@@ -3328,7 +3330,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                     stroke="white" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round">
                                                                 </path>
-                                                             </svg> </span> <span class="pxl--btn-text"
+                                                            </svg> </span> <span class="pxl--btn-text"
                                                             data-text="Make Appointment"> Make Appointment </span> <span
                                                             class="btn-icon-right"> <svg
                                                                 xmlns="http://www.w3.org/2000/svg" width="11"
@@ -3337,7 +3339,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                     stroke="white" stroke-width="2"
                                                                     stroke-linecap="round" stroke-linejoin="round">
                                                                 </path>
-                                                             </svg> </span> </a></div>
+                                                            </svg> </span> </a></div>
                                             </div>
                                         </div>
                                     </div>
@@ -3359,13 +3361,16 @@ html[dir="rtl"] .footer-newsletter-form {
                                             class="pxl-icon-line pxl-icon-line2"></span> <span
                                             class="pxl-icon-line pxl-icon-line3"></span></div>
                                 </div>
-                                <div class="pxl-header-branding" style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;"> <a
-                                        href="index-en.html" title="Al-Duki Cleaning" rel="home"
+                                <div class="pxl-header-branding"
+                                    style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;">
+                                    <a href="index-en.html" title="Al-Duki Cleaning" rel="home"
                                         style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img
                                             src="assets/images/logo/logo.png"
                                             style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
                                             alt="Al-Duki Cleaning" />
-                                        <span style="font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif; white-space: nowrap;">Al-Duki Cleaning</span></a></div>
+                                        <span
+                                            style="font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif; white-space: nowrap;">Al-Duki
+                                            Cleaning</span></a></div>
                                 <div class="mobile-header-spacer" style="min-width: 40px; flex-shrink: 0;"></div>
                             </div>
                             <div class="pxl-header-menu">
@@ -3374,7 +3379,8 @@ html[dir="rtl"] .footer-newsletter-form {
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index-en.html"
                                             title="Al-Duki Cleaning" rel="home"><img src="assets/images/logo/logo.png"
                                                 alt="Al-Duki Cleaning" /><span class="mobile-brand-title"
-                                                style="font-family: 'Inter', sans-serif;">Al-Duki Cleaning</span></a></div>
+                                                style="font-family: 'Inter', sans-serif;">Al-Duki Cleaning</span></a>
+                                    </div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
 
                                     </div>
@@ -3481,8 +3487,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                 <div class="elementor-widget-container">
                                                                     <div id="pxl-pxl_button-a4d26fb-3794"
                                                                         class="pxl-button pxl-atc-link wow fadeInRight"
-                                                                        data-wow-delay="450ms"> <a
-                                                                            href="#service"
+                                                                        data-wow-delay="450ms"> <a href="#service"
                                                                             class="btn  btn-text-nina btn-icon inline pxl-icon--left"
                                                                             data-target=".pxl-page-popup-template-0">
                                                                             <span class="btn-icon-left"> <svg
@@ -4070,10 +4075,14 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <path d="M12 2L2 9l10 7 10-7-10-7z"></path>
+                                                                                    <path d="M12 2L2 9l10 7 10-7-10-7z">
+                                                                                    </path>
                                                                                     <path d="M2 15l10 7 10-7"></path>
-                                                                                    <path d="M7 11.5l5 3.5 5-3.5"></path>
-                                                                                    <path d="M19 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z"></path>
+                                                                                    <path d="M7 11.5l5 3.5 5-3.5">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M19 3l1 2 2 1-2 1-1 2-1-2-2-1 2-1 1-2z">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Cleaning &
@@ -4105,8 +4114,12 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <path d="M4 11V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4"></path>
-                                                                                    <path d="M2 13a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4z"></path>
+                                                                                    <path
+                                                                                        d="M4 11V7a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v4">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M2 13a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v4a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2v-4z">
+                                                                                    </path>
                                                                                     <path d="M4 19v2"></path>
                                                                                     <path d="M20 19v2"></path>
                                                                                     <path d="M8 11v4"></path>
@@ -4141,11 +4154,18 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <ellipse cx="12" cy="5" rx="8" ry="3"></ellipse>
-                                                                                    <path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"></path>
-                                                                                    <path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"></path>
+                                                                                    <ellipse cx="12" cy="5" rx="8"
+                                                                                        ry="3"></ellipse>
+                                                                                    <path
+                                                                                        d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3">
+                                                                                    </path>
                                                                                     <path d="M12 2v3"></path>
-                                                                                    <path d="M12 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"></path>
+                                                                                    <path
+                                                                                        d="M12 15a2 2 0 1 0 0-4 2 2 0 0 0 0 4z">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Cleaning &
@@ -4176,7 +4196,8 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <rect x="3" y="3" width="18" height="18" rx="2"></rect>
+                                                                                    <rect x="3" y="3" width="18"
+                                                                                        height="18" rx="2"></rect>
                                                                                     <path d="M3 12h18"></path>
                                                                                     <path d="M12 3v18"></path>
                                                                                     <path d="M16 6l3 3"></path>
@@ -4211,7 +4232,8 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <rect x="8" y="7" width="8" height="12" rx="4"></rect>
+                                                                                    <rect x="8" y="7" width="8"
+                                                                                        height="12" rx="4"></rect>
                                                                                     <path d="M12 7V3"></path>
                                                                                     <path d="M9 3h6"></path>
                                                                                     <path d="M4 11h4"></path>
@@ -4249,10 +4271,16 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <rect x="2" y="4" width="20" height="8" rx="2"></rect>
-                                                                                    <line x1="6" y1="8" x2="10" y2="8"></line>
-                                                                                    <path d="M6 16c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0"></path>
-                                                                                    <path d="M8 20c1.5 1 3 1 4.5 0s3-1 4.5 0"></path>
+                                                                                    <rect x="2" y="4" width="20"
+                                                                                        height="8" rx="2"></rect>
+                                                                                    <line x1="6" y1="8" x2="10" y2="8">
+                                                                                    </line>
+                                                                                    <path
+                                                                                        d="M6 16c1.5 1 3 1 4.5 0s3-1 4.5 0 3 1 4.5 0">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M8 20c1.5 1 3 1 4.5 0s3-1 4.5 0">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Air Conditioner
@@ -4284,8 +4312,12 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <path d="M22 10v6M2 10l10-5 10 5-10 5-10 5z"></path>
-                                                                                    <path d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5"></path>
+                                                                                    <path
+                                                                                        d="M22 10v6M2 10l10-5 10 5-10 5-10 5z">
+                                                                                    </path>
+                                                                                    <path
+                                                                                        d="M6 12v5c0 2 2 3 6 3s6-1 6-3v-5">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Schools
@@ -4354,10 +4386,15 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <rect x="2" y="7" width="20" height="14" rx="2"></rect>
-                                                                                    <path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"></path>
-                                                                                    <line x1="12" y1="12" x2="12" y2="12.01"></line>
-                                                                                    <path d="M2 13a20 20 0 0 0 20 0"></path>
+                                                                                    <rect x="2" y="7" width="20"
+                                                                                        height="14" rx="2"></rect>
+                                                                                    <path
+                                                                                        d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2">
+                                                                                    </path>
+                                                                                    <line x1="12" y1="12" x2="12"
+                                                                                        y2="12.01"></line>
+                                                                                    <path d="M2 13a20 20 0 0 0 20 0">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Companies & Offices
@@ -4389,9 +4426,13 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-width="2"
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
-                                                                                    <circle cx="8" cy="21" r="1"></circle>
-                                                                                    <circle cx="19" cy="21" r="1"></circle>
-                                                                                    <path d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12"></path>
+                                                                                    <circle cx="8" cy="21" r="1">
+                                                                                    </circle>
+                                                                                    <circle cx="19" cy="21" r="1">
+                                                                                    </circle>
+                                                                                    <path
+                                                                                        d="M2.05 2.05h2l2.66 12.42a2 2 0 0 0 2 1.58h9.78a2 2 0 0 0 1.95-1.57l1.65-7.43H5.12">
+                                                                                    </path>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Shopping Centers
@@ -4424,10 +4465,15 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                                     stroke-linecap="round"
                                                                                     stroke-linejoin="round">
                                                                                     <path d="M2 20h20"></path>
-                                                                                    <path d="M4 20V9l5 3V9l5 3V4h6v16H4z"></path>
-                                                                                    <line x1="16" y1="8" x2="16" y2="8.01"></line>
-                                                                                    <line x1="16" y1="12" x2="16" y2="12.01"></line>
-                                                                                    <line x1="16" y1="16" x2="16" y2="16.01"></line>
+                                                                                    <path
+                                                                                        d="M4 20V9l5 3V9l5 3V4h6v16H4z">
+                                                                                    </path>
+                                                                                    <line x1="16" y1="8" x2="16"
+                                                                                        y2="8.01"></line>
+                                                                                    <line x1="16" y1="12" x2="16"
+                                                                                        y2="12.01"></line>
+                                                                                    <line x1="16" y1="16" x2="16"
+                                                                                        y2="16.01"></line>
                                                                                 </svg>
                                                                             </div>
                                                                             <span class="card-title">Factories
@@ -6032,8 +6078,7 @@ html[dir="rtl"] .footer-newsletter-form {
                                                                 <div class="elementor-widget-container">
                                                                     <div id="pxl-pxl_button-185a413-8108"
                                                                         class="pxl-button pxl-atc-link wow fadeInRight"
-                                                                        data-wow-delay="450ms"> <a
-                                                                            href="about-en.html"
+                                                                        data-wow-delay="450ms"> <a href="about-en.html"
                                                                             class="btn  btn-text-nina btn-icon inline pxl-icon--left"
                                                                             data-target=".pxl-page-popup-template-0">
                                                                             <span class="btn-icon-left"> <svg
@@ -8228,130 +8273,159 @@ html[dir="rtl"] .footer-newsletter-form {
             </div>
         </div><!-- #main -->
         <footer id="pxl-footer-elementor" class="pxl-footer-show custom-premium-footer">
-    <div class="footer-main-wrap">
-        <div class="footer-container">
-            <div class="footer-grid">
-                <!-- Col 1: Brand & Bio -->
-                <div class="footer-col footer-brand-col">
-                    <a href="index-en.html" class="footer-logo-link">
-                        <img src="assets/images/logo/logo.png" alt="Al-Duki Cleaning" class="footer-brand-logo" />
-                        <div class="footer-brand-text">
-                            <span class="footer-company-name">Al-Duki Cleaning</span>
-                            <span class="footer-sub-name">Operation & Maintenance</span>
+            <div class="footer-main-wrap">
+                <div class="footer-container">
+                    <div class="footer-grid">
+                        <!-- Col 1: Brand & Bio -->
+                        <div class="footer-col footer-brand-col">
+                            <a href="index-en.html" class="footer-logo-link">
+                                <img src="assets/images/logo/logo.png" alt="Al-Duki Cleaning"
+                                    class="footer-brand-logo" />
+                                <div class="footer-brand-text">
+                                    <span class="footer-company-name">Al-Duki Cleaning</span>
+                                    <span class="footer-sub-name">Operation & Maintenance</span>
+                                </div>
+                            </a>
+                            <p class="footer-brand-desc">
+                                Your trusted partner for top-tier residential and commercial cleaning, marble polishing,
+                                water tank sanitization, and pest control in Saudi Arabia.
+                            </p>
+                            <div class="footer-social-icons">
+                                <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp"
+                                    class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
+                                <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i
+                                        class="fab fa-x-twitter"></i></a>
+                                <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i
+                                        class="fab fa-linkedin-in"></i></a>
+                                <a href="#" aria-label="Facebook" class="footer-social-btn"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="#" aria-label="YouTube" class="footer-social-btn"><i
+                                        class="fab fa-youtube"></i></a>
+                            </div>
                         </div>
-                    </a>
-                    <p class="footer-brand-desc">
-                        Your trusted partner for top-tier residential and commercial cleaning, marble polishing, water tank sanitization, and pest control in Saudi Arabia.
-                    </p>
-                    <div class="footer-social-icons">
-                        <a href="https://wa.me/966500126016" target="_blank" aria-label="WhatsApp" class="footer-social-btn"><i class="fab fa-whatsapp"></i></a>
-                        <a href="#" aria-label="Twitter / X" class="footer-social-btn"><i class="fab fa-x-twitter"></i></a>
-                        <a href="#" aria-label="LinkedIn" class="footer-social-btn"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" aria-label="Facebook" class="footer-social-btn"><i class="fab fa-facebook-f"></i></a>
-                        <a href="#" aria-label="YouTube" class="footer-social-btn"><i class="fab fa-youtube"></i></a>
+
+                        <!-- Col 2: Main Services -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">Main Services</h3>
+                            <div class="footer-title-divider"></div>
+                            <ul class="footer-links-list">
+                                <li><a href="service-detail-en.html?slug=building-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Building & Villa Cleaning</a></li>
+                                <li><a href="service-detail-en.html?slug=ceramics-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Ceramics & Marble Polishing</a></li>
+                                <li><a href="service-detail-en.html?slug=furniture-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Furniture & Sofa Care</a></li>
+                                <li><a href="service-detail-en.html?slug=water-tanks"><i
+                                            class="bi bi-chevron-right"></i> Water Tank Sanitization</a></li>
+                                <li><a href="service-detail-en.html?slug=facade-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Glass & Facade Washing</a></li>
+                                <li><a href="service-detail-en.html?slug=pest-control"><i
+                                            class="bi bi-chevron-right"></i> Pest Control & Spraying</a></li>
+                                <li><a href="service-detail-en.html?slug=ac-maintenance"><i
+                                            class="bi bi-chevron-right"></i> AC Cleaning & Maintenance</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 3: Facility Services -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">Facility Services</h3>
+                            <div class="footer-title-divider"></div>
+                            <ul class="footer-links-list">
+                                <li><a href="service-detail-en.html?slug=schools-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Schools & Universities</a></li>
+                                <li><a href="service-detail-en.html?slug=government-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Government Agencies</a></li>
+                                <li><a href="service-detail-en.html?slug=offices-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Commercial Offices</a></li>
+                                <li><a href="service-detail-en.html?slug=malls-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Shopping Centers</a></li>
+                                <li><a href="service-detail-en.html?slug=factories-cleaning"><i
+                                            class="bi bi-chevron-right"></i> Factories & Warehouses</a></li>
+                                <li><a href="about-en.html"><i class="bi bi-chevron-right"></i> About Our Company</a>
+                                </li>
+                                <li><a href="index-en.html#contact"><i class="bi bi-chevron-right"></i> Book
+                                        Appointment</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Col 4: Contact Info -->
+                        <div class="footer-col">
+                            <h3 class="footer-col-title">Contact Info</h3>
+                            <div class="footer-title-divider"></div>
+                            <div class="footer-contact-items">
+                                <div class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">Location</span>
+                                        <span class="footer-contact-val">Dammam, Eastern Province, Saudi Arabia</span>
+                                    </div>
+                                </div>
+                                <div class="footer-contact-item">
+                                    <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i>
+                                    </div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">Direct Phone & Booking</span>
+                                        <span class="footer-contact-val contact-highlight"><a href="tel:0500237428"
+                                                style="color: inherit; text-decoration: none;">0500237428</a>
+                                            &nbsp;|&nbsp; <a href="tel:0500126016"
+                                                style="color: inherit; text-decoration: none;">0500126016</a></span>
+                                    </div>
+                                </div>
+                                <a href="mailto:info@al-duki.com" class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">Email Support</span>
+                                        <span class="footer-contact-val">info@al-duki.com</span>
+                                    </div>
+                                </a>
+                                <div class="footer-contact-item">
+                                    <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
+                                    <div class="footer-contact-content">
+                                        <span class="footer-contact-label">Working Hours</span>
+                                        <span class="footer-contact-val">7 Days a Week: 7:00 AM - 12:00 PM</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Col 5: Newsletter -->
+                        <div class="footer-col footer-newsletter-col">
+                            <h3 class="footer-col-title">Join Our Newsletter</h3>
+                            <div class="footer-title-divider"></div>
+                            <p class="footer-newsletter-desc">
+                                Subscribe to receive our latest cleaning tips, maintenance guides, and exclusive
+                                seasonal offers.
+                            </p>
+                            <form class="footer-newsletter-form"
+                                onsubmit="event.preventDefault(); alert('Thank you for subscribing to our newsletter!');">
+                                <input type="email" placeholder="Enter your email address..." required
+                                    class="footer-newsletter-input" />
+                                <button type="submit" class="footer-newsletter-submit" aria-label="Subscribe">
+                                    <i class="bi bi-send-fill"></i>
+                                </button>
+                            </form>
+                            <div class="footer-trust-badge">
+                                <i class="bi bi-shield-fill-check"></i>
+                                <span>100% Satisfaction Guarantee & 24/7 Support</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <!-- Col 2: Main Services -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Main Services</h3>
-                    <div class="footer-title-divider"></div>
-                    <ul class="footer-links-list">
-                        <li><a href="service-detail-en.html?slug=building-cleaning"><i class="bi bi-chevron-right"></i> Building & Villa Cleaning</a></li>
-                        <li><a href="service-detail-en.html?slug=ceramics-cleaning"><i class="bi bi-chevron-right"></i> Ceramics & Marble Polishing</a></li>
-                        <li><a href="service-detail-en.html?slug=furniture-cleaning"><i class="bi bi-chevron-right"></i> Furniture & Sofa Care</a></li>
-                        <li><a href="service-detail-en.html?slug=water-tanks"><i class="bi bi-chevron-right"></i> Water Tank Sanitization</a></li>
-                        <li><a href="service-detail-en.html?slug=facade-cleaning"><i class="bi bi-chevron-right"></i> Glass & Facade Washing</a></li>
-                        <li><a href="service-detail-en.html?slug=pest-control"><i class="bi bi-chevron-right"></i> Pest Control & Spraying</a></li>
-                        <li><a href="service-detail-en.html?slug=ac-maintenance"><i class="bi bi-chevron-right"></i> AC Cleaning & Maintenance</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 3: Facility Services -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Facility Services</h3>
-                    <div class="footer-title-divider"></div>
-                    <ul class="footer-links-list">
-                        <li><a href="service-detail-en.html?slug=schools-cleaning"><i class="bi bi-chevron-right"></i> Schools & Universities</a></li>
-                        <li><a href="service-detail-en.html?slug=government-cleaning"><i class="bi bi-chevron-right"></i> Government Agencies</a></li>
-                        <li><a href="service-detail-en.html?slug=offices-cleaning"><i class="bi bi-chevron-right"></i> Commercial Offices</a></li>
-                        <li><a href="service-detail-en.html?slug=malls-cleaning"><i class="bi bi-chevron-right"></i> Shopping Centers</a></li>
-                        <li><a href="service-detail-en.html?slug=factories-cleaning"><i class="bi bi-chevron-right"></i> Factories & Warehouses</a></li>
-                        <li><a href="about-en.html"><i class="bi bi-chevron-right"></i> About Our Company</a></li>
-                        <li><a href="index-en.html#contact"><i class="bi bi-chevron-right"></i> Book Appointment</a></li>
-                    </ul>
-                </div>
-
-                <!-- Col 4: Contact Info -->
-                <div class="footer-col">
-                    <h3 class="footer-col-title">Contact Info</h3>
-                    <div class="footer-title-divider"></div>
-                    <div class="footer-contact-items">
-                        <div class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">Location</span>
-                                <span class="footer-contact-val">Dammam, Eastern Province, Saudi Arabia</span>
-                            </div>
+                <!-- Bottom Copyright Row -->
+                <div class="footer-bottom-bar">
+                    <div class="footer-container footer-bottom-container">
+                        <div class="footer-copyright-text">
+                            Copyright © 2026 <strong>Al-Duki Cleaning & Operation Co.</strong> All Rights Reserved.
                         </div>
-                        <div class="footer-contact-item">
-                            <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">Direct Phone & Booking</span>
-                                <span class="footer-contact-val contact-highlight"><a href="tel:0500237428" style="color: inherit; text-decoration: none;">0500237428</a> &nbsp;|&nbsp; <a href="tel:0500126016" style="color: inherit; text-decoration: none;">0500126016</a></span>
-                            </div>
+                        <div class="footer-legal-links">
+                            <a href="https://crebyt.com/" target="_blank" rel="noopener noreferrer">Designed and
+                                Developed by Crebyt</a>
                         </div>
-                        <a href="mailto:info@al-duki.com" class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-envelope-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">Email Support</span>
-                                <span class="footer-contact-val">info@al-duki.com</span>
-                            </div>
-                        </a>
-                        <div class="footer-contact-item">
-                            <div class="footer-contact-icon"><i class="bi bi-clock-fill"></i></div>
-                            <div class="footer-contact-content">
-                                <span class="footer-contact-label">Working Hours</span>
-                                <span class="footer-contact-val">7 Days a Week: 7:00 AM - 12:00 PM</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Col 5: Newsletter -->
-                <div class="footer-col footer-newsletter-col">
-                    <h3 class="footer-col-title">Join Our Newsletter</h3>
-                    <div class="footer-title-divider"></div>
-                    <p class="footer-newsletter-desc">
-                        Subscribe to receive our latest cleaning tips, maintenance guides, and exclusive seasonal offers.
-                    </p>
-                    <form class="footer-newsletter-form" onsubmit="event.preventDefault(); alert('Thank you for subscribing to our newsletter!');">
-                        <input type="email" placeholder="Enter your email address..." required class="footer-newsletter-input" />
-                        <button type="submit" class="footer-newsletter-submit" aria-label="Subscribe">
-                            <i class="bi bi-send-fill"></i>
-                        </button>
-                    </form>
-                    <div class="footer-trust-badge">
-                        <i class="bi bi-shield-fill-check"></i>
-                        <span>100% Satisfaction Guarantee & 24/7 Support</span>
                     </div>
                 </div>
             </div>
-        </div>
-
-        <!-- Bottom Copyright Row -->
-        <div class="footer-bottom-bar">
-            <div class="footer-container footer-bottom-container">
-                <div class="footer-copyright-text">
-                    Copyright © 2026 <strong>Al-Duki Cleaning & Operation Co.</strong> All Rights Reserved.
-                </div>
-                <div class="footer-legal-links">
-                    <a href="https://crebyt.com/" target="_blank" rel="noopener noreferrer">Designed and Developed by Crebyt</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
+        </footer> <a class="pxl-scroll-top style-default" href="#"> <i class="bi-arrow-right"></i> <svg
                 class="pxl-scroll-progress-circle" width="100%" height="100%" viewBox="-1 -1 102 102">
                 <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
             </svg> </a>
@@ -8744,17 +8818,17 @@ html[dir="rtl"] .footer-newsletter-form {
                         drawer = document.createElement('div');
                         drawer.className = 'service-mobile-drawer';
                         drawer.setAttribute('data-drawer-for', targetId);
-                        
+
                         const inner = document.createElement('div');
                         inner.className = 'service-mobile-drawer-inner';
-                        
+
                         const mobileCard = document.createElement('div');
                         mobileCard.className = 'service-mobile-card';
                         mobileCard.innerHTML = desktopPanel.innerHTML;
-                        
+
                         inner.appendChild(mobileCard);
                         drawer.appendChild(inner);
-                        
+
                         card.insertAdjacentElement('afterend', drawer);
                     }
 
@@ -9010,56 +9084,56 @@ html[dir="rtl"] .footer-newsletter-form {
         }
     </style>
 
-<!-- Sticky Header Controller Script -->
+    <!-- Sticky Header Controller Script -->
 
-<script>
-// Synchronized Sticky Header & Mobile Menu Controller
-(function() {
-    function initHeaderAndMobileMenu() {
-        const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
-        const mobileHeader = document.querySelector('#pxl-header-mobile');
-        
-        function onScroll() {
-            const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
-            if (scrollPos > 120) {
-                if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
-            } else {
-                if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
-                if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
-            }
-        }
-        
-        window.addEventListener('scroll', onScroll, { passive: true });
-        onScroll();
+    <script>
+        // Synchronized Sticky Header & Mobile Menu Controller
+        (function () {
+            function initHeaderAndMobileMenu() {
+                const stickyHeader = document.querySelector('.pxl-header-elementor-sticky');
+                const mobileHeader = document.querySelector('#pxl-header-mobile');
 
-        // Mobile Menu Auto-Close on Link / Close Button Click
-        document.addEventListener('click', function (e) {
-            const isCloseBtn = e.target.closest('.pxl-menu-close, .pxl-header-menu-backdrop');
-            const isMenuLink = e.target.closest('#pxl-header-mobile .pxl-header-menu a');
-            const isToggleArrow = e.target.classList.contains('pxl-menu-toggle');
-
-            if (isCloseBtn || (isMenuLink && !isToggleArrow)) {
-                function forceCloseDrawer() {
-                    document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
-                        el.classList.remove('active');
-                    });
-                    document.body.classList.remove('body-overflow');
+                function onScroll() {
+                    const scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+                    if (scrollPos > 120) {
+                        if (stickyHeader) stickyHeader.classList.add('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.add('pxl-header-mobile-fixed');
+                    } else {
+                        if (stickyHeader) stickyHeader.classList.remove('pxl-header-fixed');
+                        if (mobileHeader) mobileHeader.classList.remove('pxl-header-mobile-fixed');
+                    }
                 }
-                forceCloseDrawer();
-                setTimeout(forceCloseDrawer, 50);
-                setTimeout(forceCloseDrawer, 150);
+
+                window.addEventListener('scroll', onScroll, { passive: true });
+                onScroll();
+
+                // Mobile Menu Auto-Close on Link / Close Button Click
+                document.addEventListener('click', function (e) {
+                    const isCloseBtn = e.target.closest('.pxl-menu-close, .pxl-header-menu-backdrop');
+                    const isMenuLink = e.target.closest('#pxl-header-mobile .pxl-header-menu a');
+                    const isToggleArrow = e.target.classList.contains('pxl-menu-toggle');
+
+                    if (isCloseBtn || (isMenuLink && !isToggleArrow)) {
+                        function forceCloseDrawer() {
+                            document.querySelectorAll('.pxl-header-menu, #pxl-nav-mobile, .pxl-anchor-mobile-menu, .pxl-header-menu-backdrop').forEach(function (el) {
+                                el.classList.remove('active');
+                            });
+                            document.body.classList.remove('body-overflow');
+                        }
+                        forceCloseDrawer();
+                        setTimeout(forceCloseDrawer, 50);
+                        setTimeout(forceCloseDrawer, 150);
+                    }
+                }, true);
             }
-        }, true);
-    }
-    
-    if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initHeaderAndMobileMenu);
-    } else {
-        initHeaderAndMobileMenu();
-    }
-})();
-</script>
+
+            if (document.readyState === 'loading') {
+                document.addEventListener('DOMContentLoaded', initHeaderAndMobileMenu);
+            } else {
+                initHeaderAndMobileMenu();
+            }
+        })();
+    </script>
 
 </body>
 
