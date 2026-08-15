@@ -1502,6 +1502,115 @@
             transform: translateY(-2px) !important;
         }
 
+        /* =========================================================
+           TOPBAR HEADER SYNC (EXACT MATCH TO HOMEPAGE)
+           ========================================================= */
+        #pxl-header-elementor .pxl-header-elementor-main {
+            padding: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content {
+            padding: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content .col-12 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        #pxl-header-elementor .elementor-element-67d316b,
+        #pxl-header-elementor .elementor-element-67d316b.e-parent,
+        .elementor-14 .elementor-element-67d316b {
+            padding-top: 0px !important;
+            padding-bottom: 12px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            min-height: auto !important;
+            height: auto !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            background-color: #d4f4ca !important;
+            background: #d4f4ca !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-67d316b .e-con-inner,
+        .elementor-14 .elementor-element-67d316b .e-con-inner {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            min-height: auto !important;
+            align-items: center !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            flex-direction: row !important;
+            position: relative !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ca903cf,
+        #pxl-header-elementor .elementor-element-ba3c59a,
+        #pxl-header-elementor .elementor-element-2cb3631 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a,
+        .elementor-element-ba3c59a {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a .pxl-logo-inner,
+        .elementor-element-ba3c59a .pxl-logo-inner {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 14px !important;
+            direction: ltr !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a img,
+        .elementor-element-ba3c59a img,
+        .elementor-widget-pxl_logo .pxl-logo img {
+            max-height: 100px !important;
+            height: 100px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+            margin: 0 auto !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .elementor-element-ba3c59a .owner-name-tag {
+            font-weight: 800 !important;
+            font-size: 17px !important;
+            color: #0d2b0f !important;
+            letter-spacing: 0.3px !important;
+            line-height: 1.2 !important;
+            white-space: nowrap !important;
+        }
+
+        #pxl-header-elementor .elementor-shape-bottom,
+        #pxl-header-elementor .elementor-shape,
+        .elementor-element-67d316b .elementor-shape-bottom,
+        .elementor-element-67d316b .elementor-shape {
+            display: none !important;
+        }
+
         /* Mobile Sticky Header */
         @media (max-width: 1199px) {
             .pxl-header-elementor-sticky {
@@ -1518,30 +1627,7 @@
                 background-color: #ffffff !important;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
             }
-
-            @media (max-width: 1199px) {
-                .pxl-header-menu {
-                    transition: all 0.3s ease !important;
-                }
-
-                .pxl-header-menu:not(.active) {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                    pointer-events: none !important;
-                    transform: translateX(100%) !important;
-                }
-
-                body.rtl .pxl-header-menu:not(.active) {
-                    transform: translateX(-100%) !important;
-                }
-
-                .pxl-header-menu.active {
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                    pointer-events: auto !important;
-                    transform: translateX(0) !important;
-                }
-            }
+        }
     </style>
     <style id="hamburger-menu-sync-styles">
         /* EXACT MOBILE HAMBURGER MENU STYLING MATCHING HOMEPAGE */
@@ -1937,7 +2023,7 @@
                                                                 </a>
                                                             </li>
                                                             <li id="menu-item-6209"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209 current-menu-item">
                                                                 <a href="about.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>من نحن</span><svg class="pxl-hide"
@@ -2090,7 +2176,7 @@
                                                                 اتصل بنا</h5>
                                                             <div
                                                                 class="pxl-item--description pxl-icon-box__description el-empty">
-                                                                0500126016</div>
+                                                                ( +966)50126016</div>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -2107,7 +2193,7 @@
                                                             class="pxl-menu-primary clearfix">
                                                             <li
                                                                 class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6205">
-                                                                <a href="index.html" class="is-one-page">
+                                                                <a href="index.html#home" class="is-one-page">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>الرئيسية</span><svg class="pxl-hide"
                                                                             xmlns="http://www.w3.org/2000/svg"
@@ -2139,7 +2225,7 @@
                                                                 </a>
                                                             </li>
                                                             <li
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209 current-menu-item">
                                                                 <a href="about.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>من نحن</span><svg class="pxl-hide"

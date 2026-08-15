@@ -114,7 +114,8 @@
 }
 
 .elementor-element-ba3c59a img {
-    max-height: 42px !important;
+    max-height: 100px !important;
+    height: 100px !important;
     width: auto !important;
     object-fit: contain !important;
 }

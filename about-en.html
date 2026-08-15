@@ -1453,6 +1453,116 @@
             transform: translateY(-2px) !important;
         }
 
+        /* =========================================================
+           TOPBAR HEADER SYNC (EXACT MATCH TO HOMEPAGE)
+           ========================================================= */
+        #pxl-header-elementor .pxl-header-elementor-main {
+            padding: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content {
+            padding: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content .row {
+            margin-left: 0 !important;
+            margin-right: 0 !important;
+        }
+
+        #pxl-header-elementor .pxl-header-content .col-12 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+
+        #pxl-header-elementor .elementor-element-67d316b,
+        #pxl-header-elementor .elementor-element-67d316b.e-parent,
+        .elementor-14 .elementor-element-67d316b {
+            padding-top: 0px !important;
+            padding-bottom: 12px !important;
+            padding-left: 20px !important;
+            padding-right: 20px !important;
+            min-height: auto !important;
+            height: auto !important;
+            width: 100% !important;
+            max-width: 100% !important;
+            background-color: #d4f4ca !important;
+            background: #d4f4ca !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-67d316b .e-con-inner,
+        .elementor-14 .elementor-element-67d316b .e-con-inner {
+            padding-top: 2px !important;
+            padding-bottom: 2px !important;
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            min-height: auto !important;
+            align-items: center !important;
+            max-width: 100% !important;
+            width: 100% !important;
+            display: flex !important;
+            justify-content: space-between !important;
+            flex-direction: row !important;
+            position: relative !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ca903cf,
+        #pxl-header-elementor .elementor-element-ba3c59a,
+        #pxl-header-elementor .elementor-element-2cb3631 {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a,
+        .elementor-element-ba3c59a {
+            display: flex !important;
+            justify-content: center !important;
+            align-items: center !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a .pxl-logo-inner,
+        .elementor-element-ba3c59a .pxl-logo-inner {
+            display: flex !important;
+            align-items: center !important;
+            justify-content: center !important;
+            gap: 14px !important;
+            direction: ltr !important;
+            overflow: visible !important;
+        }
+
+        #pxl-header-elementor .elementor-element-ba3c59a img,
+        .elementor-element-ba3c59a img,
+        .elementor-widget-pxl_logo .pxl-logo img {
+            max-height: 100px !important;
+            height: 100px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+            margin: 0 auto !important;
+            transition: all 0.3s ease !important;
+        }
+
+        .elementor-element-ba3c59a .owner-name-tag {
+            font-weight: 800 !important;
+            font-size: 16px !important;
+            color: #0d2b0f !important;
+            letter-spacing: 0.4px !important;
+            line-height: 1.2 !important;
+            text-transform: uppercase !important;
+            white-space: nowrap !important;
+        }
+
+        #pxl-header-elementor .elementor-shape-bottom,
+        #pxl-header-elementor .elementor-shape,
+        .elementor-element-67d316b .elementor-shape-bottom,
+        .elementor-element-67d316b .elementor-shape {
+            display: none !important;
+        }
+
         /* Mobile Sticky Header */
         @media (max-width: 1199px) {
             .pxl-header-elementor-sticky {
@@ -1468,28 +1578,6 @@
                 z-index: 999999 !important;
                 background-color: #ffffff !important;
                 box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
-            @media (max-width: 1199px) {
-                .pxl-header-menu {
-                    transition: all 0.3s ease !important;
-                }
-
-                .pxl-header-menu:not(.active) {
-                    opacity: 0 !important;
-                    visibility: hidden !important;
-                    pointer-events: none !important;
-                    transform: translateX(-100%) !important;
-                }
-
-                body.rtl .pxl-header-menu:not(.active) {
-                    transform: translateX(100%) !important;
-                }
-
-                .pxl-header-menu.active {
-                    opacity: 1 !important;
-                    visibility: visible !important;
-                    pointer-events: auto !important;
-                    transform: translateX(0) !important;
-                }
             }
         }
     </style>
@@ -1718,7 +1806,7 @@
                                                     <div class="pxl-logo-inner"
                                                         style="display: flex; align-items: center; gap: 14px;">
                                                         <a href="index-en.html"> <img src="assets/images/logo/logo.png"
-                                                                style="max-height: 60px; width: auto; object-fit: contain;"
+                                                                style="max-height: 100px; width: auto; object-fit: contain;"
                                                                 class="attachment-full" alt="Al-Dokhi Cleaning" /> </a>
                                                         <span class="owner-name-tag"
                                                             style="font-weight: 800; font-size: 16px; color: #0d2b0f; letter-spacing: 0.4px; line-height: 1.2; text-transform: uppercase; white-space: nowrap;">Hasna
@@ -1889,7 +1977,7 @@
                                                                 </a>
                                                             </li>
                                                             <li id="menu-item-6209"
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209 current-menu-item">
                                                                 <a href="about-en.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span><svg
@@ -2095,7 +2183,7 @@
                                                                     </div>
                                                                 </a>
                                                             <li
-                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209">
+                                                                class="menu-item menu-item-type-custom menu-item-object-custom menu-item-6209 current-menu-item">
                                                                 <a href="about-en.html">
                                                                     <div class="menu-text pxl-menu-item-text">
                                                                         <span>A</span><span>b</span><span>o</span><span>u</span><span>t</span><svg
@@ -2224,7 +2312,8 @@
                                             alt="Al-Dokhi Cleaning" />
                                         <span
                                             style="font-size: 17px; font-weight: 800; color: #0F172A; font-family: 'Inter', sans-serif; white-space: nowrap;">Al-Dokhi
-                                            Cleaning</span></a></div>
+                                            Cleaning</span></a>
+                                </div>
                                 <div class="mobile-header-spacer" style="min-width: 40px; flex-shrink: 0;"></div>
                             </div>
                             <div class="pxl-header-menu">
@@ -2703,10 +2792,14 @@
                                     </div>
                                 </div>
                                 <div class="footer-contact-item">
-                                    <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i></div>
+                                    <div class="footer-contact-icon phone-icon"><i class="bi bi-telephone-fill"></i>
+                                    </div>
                                     <div class="footer-contact-content">
                                         <span class="footer-contact-label">Direct Phone & Booking</span>
-                                        <span class="footer-contact-val contact-highlight"><a href="tel:0500237428" style="color: inherit; text-decoration: none;">0500237428</a> &nbsp;|&nbsp; <a href="tel:0500126016" style="color: inherit; text-decoration: none;">0500126016</a></span>
+                                        <span class="footer-contact-val contact-highlight"><a href="tel:0500237428"
+                                                style="color: inherit; text-decoration: none;">0500237428</a>
+                                            &nbsp;|&nbsp; <a href="tel:0500126016"
+                                                style="color: inherit; text-decoration: none;">0500126016</a></span>
                                     </div>
                                 </div>
                                 <a href="mailto:info@al-duki.com" class="footer-contact-item">
@@ -2757,7 +2850,8 @@
                             Copyright © 2026 <strong>Al-Dokhi Cleaning & Operation Co.</strong> All Rights Reserved.
                         </div>
                         <div class="footer-legal-links">
-                            <a href="https://crebyt.com/" target="_blank" rel="noopener noreferrer">Designed and Developed by Crebyt</a>
+                            <a href="https://crebyt.com/" target="_blank" rel="noopener noreferrer">Designed and
+                                Developed by Crebyt</a>
                         </div>
                     </div>
                 </div>
@@ -2788,7 +2882,8 @@
     </div>
 
     <!-- Core Scripts for Header & Interactions -->
-    <script id="jquery-core-js" src="https://demo.casethemes.net/genfresco/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
+    <script id="jquery-core-js"
+        src="https://demo.casethemes.net/genfresco/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
     <script id="pxl-core-main-js" src="assets/images/pxl-core-main.min.js"></script>
     <script id="pxl-main-js" src="assets/images/pxl-main.min.js"></script>
 
