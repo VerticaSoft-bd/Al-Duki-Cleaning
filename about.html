@@ -147,6 +147,129 @@
             opacity: 1 !important;
             font-style: normal !important;
         }
+
+        .pxl-header-menu {
+            background-color: #ffffff !important;
+        }
+
+        .pxl-header-menu-scroll {
+            padding: 24px 20px 40px 20px !important;
+        }
+
+        .pxl-logo-mobile {
+            display: flex !important;
+            align-items: center !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            margin-bottom: 30px !important;
+            margin-right: 45px !important;
+            box-shadow: none !important;
+        }
+
+        body.rtl .pxl-logo-mobile {
+            margin-right: 0 !important;
+            margin-left: 45px !important;
+        }
+
+        .pxl-logo-mobile a {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            text-decoration: none !important;
+        }
+
+        .pxl-logo-mobile img {
+            height: 55px !important;
+            max-height: 58px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+
+        .pxl-logo-mobile .mobile-brand-title {
+            font-size: 21px !important;
+            font-weight: 900 !important;
+            color: #0B192C !important;
+            white-space: nowrap !important;
+            letter-spacing: -0.3px !important;
+            line-height: 1.1 !important;
+        }
+
+        .pxl-menu-close {
+            top: 24px !important;
+            right: 20px !important;
+            width: 36px !important;
+            height: 36px !important;
+            background-color: transparent !important;
+            border: none !important;
+            z-index: 10 !important;
+        }
+
+        body.rtl .pxl-menu-close {
+            right: auto !important;
+            left: 20px !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li {
+            border-bottom: 1px solid #F1F5F9 !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li:last-child {
+            border-bottom: none !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li>a {
+            padding: 14px 8px !important;
+            font-size: 16px !important;
+            font-weight: 700 !important;
+            color: #1E293B !important;
+            transition: all 0.2s ease !important;
+        }
+
+        .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            color: var(--primary-color, #007887) !important;
+            padding-left: 14px !important;
+        }
+
+        body.rtl .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            padding-left: 8px !important;
+            padding-right: 14px !important;
+        }
+
+        @media (max-width: 1199px) {
+            #pxl-header-mobile #pxl-header-main {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+            }
+
+            .pxl-header-branding img {
+                max-height: 70px !important;
+            }
+
+            .pxl-header-menu {
+                transition: all 0.3s ease !important;
+            }
+
+            .pxl-header-menu:not(.active) {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+                transform: translateX(100%) !important;
+            }
+
+            body.rtl .pxl-header-menu:not(.active) {
+                transform: translateX(-100%) !important;
+            }
+
+            .pxl-header-menu.active {
+                opacity: 1 !important;
+                visibility: visible !important;
+                pointer-events: auto !important;
+                transform: translateX(0) !important;
+            }
+        }
     </style>
 
     <style id="about-custom-styles">
@@ -1982,13 +2105,7 @@
                                                 style="font-family: 'Outfit', sans-serif;">الدوخي للتنظيف</span></a>
                                     </div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
-                                        /* <form role="search" method="get"
-                                            action="https://demo.casethemes.net/genfresco/">
-                                            <input type="text" placeholder="ابحث هنا..." name="s"
-                                                class="search-field" />
-                                            <button type="submit" class="search-submit"><i
-                                                    class="bi-search"></i></button>
-                                        </form> */
+
                                     </div>
                                     <nav class="pxl-header-nav">
                                         <ul id="menu-menu-onepage-home-3" class="pxl-menu-primary clearfix">
