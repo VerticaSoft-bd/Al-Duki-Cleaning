@@ -1,0 +1,158 @@
+{
+  "blogs": [
+    {
+      "id": 1,
+      "title": "Daily Habits for a Cleaner Living Space",
+      "content": "Discover simple daily cleaning habits that help keep your home fresh, hygienic, and perfectly maintained every day.",
+      "image": "assets/images/blog8-370x250.webp",
+      "day": "28",
+      "month": "May",
+      "category": "House Cleaning",
+      "filter": "house-cleaning",
+      "link": "service-detail-en.html?slug=building-cleaning"
+    },
+    {
+      "id": 2,
+      "title": "Smart Tips for a Healthier Home",
+      "content": "Learn practical cleaning tips to reduce dust, bacteria, and allergens to protect your family's health.",
+      "image": "assets/images/blog7-370x250.png",
+      "day": "25",
+      "month": "May",
+      "category": "Eco Cleaning",
+      "filter": "eco-cleaning",
+      "link": "service-detail-en.html?slug=ceramics-cleaning"
+    },
+    {
+      "id": 3,
+      "title": "The Deep Cleaning and Organizing Guide",
+      "content": "Explore effective deep cleaning and organizing techniques to refresh every corner of your living area.",
+      "image": "assets/images/blog6-370x250.png",
+      "day": "22",
+      "month": "May",
+      "category": "House Cleaning",
+      "filter": "house-cleaning",
+      "link": "service-detail-en.html?slug=building-cleaning"
+    },
+    {
+      "id": 4,
+      "title": "Eco-Friendly Products for Cleaning",
+      "content": "Find eco-friendly cleaning products that safely remove dirt while protecting indoor air quality.",
+      "image": "assets/images/blog5-370x250.png",
+      "day": "18",
+      "month": "May",
+      "category": "Eco Cleaning",
+      "filter": "eco-cleaning",
+      "link": "service-detail-en.html?slug=furniture-cleaning"
+    },
+    {
+      "id": 5,
+      "title": "House Cleaning Services Before Moving In",
+      "content": "Prepare your new home with professional move-in cleaning services that ensure total sanitation.",
+      "image": "assets/images/blog3-370x250.png",
+      "day": "15",
+      "month": "May",
+      "category": "Organizing",
+      "filter": "organizing",
+      "link": "service-detail-en.html?slug=building-cleaning"
+    },
+    {
+      "id": 6,
+      "title": "Benefits of Commercial & Office Hygiene",
+      "content": "Discover how eco-friendly commercial cleaning improves workplace productivity and air quality.",
+      "image": "assets/images/blog4-370x250.png",
+      "day": "12",
+      "month": "May",
+      "category": "Office Cleaning",
+      "filter": "office-cleaning",
+      "link": "service-detail-en.html?slug=office-cleaning"
+    },
+    {
+      "id": 7,
+      "title": "How to Maintain Upholstery and Carpets",
+      "content": "Extend the life of your furniture and carpets with specialized stain removal and deep washing routines.",
+      "image": "assets/images/Furniture & Upholstery Cleaning.webp",
+      "day": "10",
+      "month": "May",
+      "category": "Deep Cleaning",
+      "filter": "deep-cleaning",
+      "link": "service-detail-en.html?slug=furniture-cleaning"
+    },
+    {
+      "id": 8,
+      "title": "Exterior Glass & Facade Maintenance",
+      "content": "Keep high-rise glass and building exteriors spotless and glowing with high-pressure cleaning techniques.",
+      "image": "assets/images/Facade Cleaning.webp",
+      "day": "08",
+      "month": "May",
+      "category": "Building Cleaning",
+      "filter": "house-cleaning",
+      "link": "service-detail-en.html?slug=facade-cleaning"
+    },
+    {
+      "id": 9,
+      "title": "Air Conditioning & Duct Sanitation",
+      "content": "Improve cooling efficiency and reduce dust circulation by deep cleaning AC filters and ventilation ducts.",
+      "image": "assets/images/Air Conditioner Cleaning.webp",
+      "day": "05",
+      "month": "May",
+      "category": "Eco Cleaning",
+      "filter": "eco-cleaning",
+      "link": "service-detail-en.html?slug=air-conditioner-cleaning"
+    },
+    {
+      "id": 10,
+      "title": "Ceramic & Marble Floor Polishing Tips",
+      "content": "Restore the natural shine of ceramic, tile, and marble floors using professional buffing solutions.",
+      "image": "assets/images/Cleaning & Polishing Ceramics.webp",
+      "day": "03",
+      "month": "May",
+      "category": "Floor Care",
+      "filter": "house-cleaning",
+      "link": "service-detail-en.html?slug=ceramics-cleaning"
+    },
+    {
+      "id": 11,
+      "title": "Water Tank Disinfection & Health Standards",
+      "content": "Ensure safe water storage by following certified tank cleaning and chemical-free disinfection protocols.",
+      "image": "assets/images/Cleaning & Disinfecting Tanks.webp",
+      "day": "01",
+      "month": "May",
+      "category": "Disinfection",
+      "filter": "eco-cleaning",
+      "link": "service-detail-en.html?slug=tank-cleaning"
+    },
+    {
+      "id": 12,
+      "title": "Comprehensive Pest Control Prevention",
+      "content": "Protect your property from insects and rodents with proactive environmental pest control solutions.",
+      "image": "assets/images/Pest Control.webp",
+      "day": "28",
+      "month": "Apr",
+      "category": "Pest Control",
+      "filter": "organizing",
+      "link": "service-detail-en.html?slug=pest-control"
+    },
+    {
+      "id": 13,
+      "title": "Post-Construction Clean-Up Checklist",
+      "content": "Clear construction debris, fine plaster dust, and paint splatters efficiently before client handover.",
+      "image": "assets/images/Building Cleaning.webp",
+      "day": "25",
+      "month": "Apr",
+      "category": "Deep Cleaning",
+      "filter": "deep-cleaning",
+      "link": "service-detail-en.html?slug=building-cleaning"
+    },
+    {
+      "id": 14,
+      "title": "School & Public Facility Hygiene Protocols",
+      "content": "Maintain hygienic environments in educational and commercial spaces to prevent seasonal virus spread.",
+      "image": "assets/images/Schools Clean.webp",
+      "day": "20",
+      "month": "Apr",
+      "category": "Office Cleaning",
+      "filter": "office-cleaning",
+      "link": "service-detail-en.html?slug=schools-cleaning"
+    }
+  ]
+}
