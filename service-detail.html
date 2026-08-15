@@ -1709,60 +1709,58 @@
             }
 
             .pxl-header-menu-scroll {
-                padding: 20px 20px 40px 20px !important;
+                padding: 24px 20px 40px 20px !important;
             }
 
             .pxl-logo-mobile {
                 display: flex !important;
                 align-items: center !important;
-                padding: 10px 16px !important;
-                background: linear-gradient(135deg, #F8FAFC 0%, #F1F5F9 100%) !important;
-                border: 1px solid #E2E8F0 !important;
-                border-radius: 14px !important;
-                margin-bottom: 25px !important;
-                margin-right: 50px !important;
-                box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04) !important;
+                padding: 0 !important;
+                background: transparent !important;
+                border: none !important;
+                border-radius: 0 !important;
+                margin-bottom: 30px !important;
+                margin-right: 45px !important;
+                box-shadow: none !important;
             }
 
             body.rtl .pxl-logo-mobile {
                 margin-right: 0 !important;
-                margin-left: 50px !important;
+                margin-left: 45px !important;
             }
 
             .pxl-logo-mobile a {
                 display: inline-flex !important;
                 align-items: center !important;
-                gap: 10px !important;
+                gap: 12px !important;
                 text-decoration: none !important;
-                width: 100% !important;
             }
 
             .pxl-logo-mobile img {
-                height: 42px !important;
-                max-height: 42px !important;
+                height: 55px !important;
+                max-height: 58px !important;
                 width: auto !important;
                 object-fit: contain !important;
                 display: block !important;
             }
 
             .pxl-logo-mobile .mobile-brand-title {
-                font-size: 17px !important;
-                font-weight: 800 !important;
-                color: #0F172A !important;
+                font-size: 21px !important;
+                font-weight: 900 !important;
+                color: #0B192C !important;
                 white-space: nowrap !important;
-                letter-spacing: -0.2px !important;
+                letter-spacing: -0.3px !important;
+                line-height: 1.1 !important;
             }
 
             .pxl-menu-close {
-                top: 20px !important;
+                top: 24px !important;
                 right: 20px !important;
-                width: 38px !important;
-                height: 38px !important;
-                border-radius: 50% !important;
-                background-color: #F1F5F9 !important;
-                border: 1px solid #E2E8F0 !important;
+                width: 36px !important;
+                height: 36px !important;
+                background-color: transparent !important;
+                border: none !important;
                 z-index: 10 !important;
-                transition: all 0.2s ease !important;
             }
 
             body.rtl .pxl-menu-close {
@@ -2932,6 +2930,179 @@
             }
         }
     </style>
+    <style id="hamburger-menu-sync-styles">
+        /* EXACT MOBILE HAMBURGER MENU STYLING MATCHING HOMEPAGE */
+        #pxl-header-mobile .pxl-header-menu,
+        .pxl-header-menu {
+            background-color: #ffffff !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu-scroll,
+        .pxl-header-menu-scroll {
+            padding: 24px 20px 40px 20px !important;
+        }
+
+        /* Mobile Logo inside Drawer */
+        #pxl-header-mobile .pxl-logo-mobile,
+        .pxl-logo-mobile {
+            display: flex !important;
+            align-items: center !important;
+            padding: 0 !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            margin-bottom: 30px !important;
+            margin-right: 45px !important;
+            box-shadow: none !important;
+        }
+
+        body.rtl #pxl-header-mobile .pxl-logo-mobile,
+        body.rtl .pxl-logo-mobile,
+        html[dir="rtl"] .pxl-logo-mobile {
+            margin-right: 0 !important;
+            margin-left: 45px !important;
+        }
+
+        #pxl-header-mobile .pxl-logo-mobile a,
+        .pxl-logo-mobile a {
+            display: inline-flex !important;
+            align-items: center !important;
+            gap: 12px !important;
+            text-decoration: none !important;
+            background: transparent !important;
+            border: none !important;
+            padding: 0 !important;
+            box-shadow: none !important;
+        }
+
+        #pxl-header-mobile .pxl-logo-mobile img,
+        .pxl-logo-mobile img {
+            height: 55px !important;
+            max-height: 58px !important;
+            width: auto !important;
+            object-fit: contain !important;
+            display: block !important;
+        }
+
+        #pxl-header-mobile .pxl-logo-mobile .mobile-brand-title,
+        .pxl-logo-mobile .mobile-brand-title {
+            font-size: 21px !important;
+            font-weight: 900 !important;
+            color: #0B192C !important;
+            white-space: nowrap !important;
+            letter-spacing: -0.3px !important;
+            line-height: 1.1 !important;
+            font-family: 'Outfit', sans-serif !important;
+        }
+
+        /* Close Button 'X' */
+        #pxl-header-mobile .pxl-menu-close,
+        .pxl-menu-close {
+            top: 24px !important;
+            right: 20px !important;
+            width: 36px !important;
+            height: 36px !important;
+            background-color: transparent !important;
+            background: transparent !important;
+            border: none !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+            z-index: 10 !important;
+            cursor: pointer !important;
+        }
+
+        body.rtl #pxl-header-mobile .pxl-menu-close,
+        body.rtl .pxl-menu-close,
+        html[dir="rtl"] .pxl-menu-close {
+            right: auto !important;
+            left: 20px !important;
+        }
+
+        /* Menu Items */
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li,
+        .pxl-header-menu .pxl-menu-primary>li {
+            border-bottom: 1px solid #F1F5F9 !important;
+            list-style: none !important;
+            margin: 0 !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li:last-child,
+        .pxl-header-menu .pxl-menu-primary>li:last-child {
+            border-bottom: none !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li>a,
+        .pxl-header-menu .pxl-menu-primary>li>a {
+            display: block !important;
+            padding: 22px 8px !important;
+            font-size: 17px !important;
+            font-weight: 800 !important;
+            color: #0B192C !important;
+            font-family: 'Outfit', sans-serif !important;
+            text-decoration: none !important;
+            transition: all 0.2s ease !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li>a span,
+        .pxl-header-menu .pxl-menu-primary>li>a span {
+            font-size: 17px !important;
+            font-weight: 800 !important;
+            color: #0B192C !important;
+            font-family: 'Outfit', sans-serif !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li>a:hover,
+        .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            color: #3CA200 !important;
+            padding-left: 14px !important;
+        }
+
+        #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li>a:hover span,
+        .pxl-header-menu .pxl-menu-primary>li>a:hover span {
+            color: #3CA200 !important;
+        }
+
+        body.rtl #pxl-header-mobile .pxl-header-menu .pxl-menu-primary>li>a:hover,
+        body.rtl .pxl-header-menu .pxl-menu-primary>li>a:hover,
+        html[dir="rtl"] .pxl-header-menu .pxl-menu-primary>li>a:hover {
+            padding-left: 8px !important;
+            padding-right: 14px !important;
+        }
+
+        @media (max-width: 1199px) {
+            #pxl-header-mobile #pxl-header-main {
+                padding-top: 0px !important;
+                padding-bottom: 0px !important;
+            }
+
+            .pxl-header-branding img {
+                max-height: 70px !important;
+            }
+
+            .pxl-header-menu {
+                transition: all 0.3s ease !important;
+            }
+
+            .pxl-header-menu:not(.active) {
+                opacity: 0 !important;
+                visibility: hidden !important;
+                pointer-events: none !important;
+                transform: translateX(100%) !important;
+            }
+
+            body.rtl .pxl-header-menu:not(.active),
+            html[dir="rtl"] .pxl-header-menu:not(.active) {
+                transform: translateX(-100%) !important;
+            }
+
+            .pxl-header-menu.active {
+                opacity: 1 !important;
+                visibility: visible !important;
+                pointer-events: auto !important;
+                transform: translateX(0) !important;
+            }
+        }
+    </style>
 </head>
 
 <body
@@ -3529,9 +3700,9 @@
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index.html"
-                                            title="الدوكي للتنظيف" rel="home"><img src="assets/images/logo/logo.png"
-                                                alt="الدوكي للتنظيف" /><span class="mobile-brand-title"
-                                                style="font-family: 'Outfit', sans-serif;">الدوكي للتنظيف</span></a>
+                                            title="الدوخي للتنظيف" rel="home"><img src="assets/images/logo/logo.png"
+                                                alt="الدوخي للتنظيف" /><span class="mobile-brand-title"
+                                                style="font-family: 'Outfit', sans-serif;">الدوخي للتنظيف</span></a>
                                     </div>
                                     <div class="pxl-header-mobile-search pxl-hide-xl">
 
