@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+    <!-- ======================================================= -->
+    <!-- Homepages                                              -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/index-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+
+    <url>
+        <loc>https://aldukicleaning.com/index-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/index-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>daily</changefreq>
+        <priority>0.9</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- About Pages                                            -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/about.html</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/about-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/about.html"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <url>
+        <loc>https://aldukicleaning.com/about-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/about.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/about-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/about.html"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.7</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Main Service Hub Pages                                  -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/service-detail.html"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://aldukicleaning.com/service-detail.html"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Building Cleaning                      -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=building-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=building-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=building-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=building-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=building-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=building-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Ceramics Cleaning                      -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=ceramics-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=ceramics-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=ceramics-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=ceramics-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=ceramics-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=ceramics-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Furniture & Upholstery Cleaning        -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=furniture-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=furniture-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=furniture-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=furniture-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=furniture-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=furniture-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Water Tank Cleaning                    -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=tank-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=tank-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=tank-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=tank-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=tank-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=tank-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Facade Cleaning                        -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=facade-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=facade-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=facade-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=facade-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=facade-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=facade-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Pest Control                           -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=pest-control</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=pest-control"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=pest-control"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=pest-control</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=pest-control"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=pest-control"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Air Conditioning Cleaning              -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=ac-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=ac-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=ac-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=ac-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=ac-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=ac-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: School Cleaning                        -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=school-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=school-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=school-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=school-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=school-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=school-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Government Agencies Cleaning           -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=government-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=government-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=government-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=government-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=government-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=government-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Office & Corporate Cleaning            -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=office-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=office-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=office-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=office-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=office-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=office-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Shopping Center Cleaning               -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=shopping-center-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=shopping-center-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=shopping-center-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=shopping-center-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=shopping-center-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=shopping-center-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+    <!-- ======================================================= -->
+    <!-- Service Details: Factory & Industrial Cleaning          -->
+    <!-- ======================================================= -->
+    <url>
+        <loc>https://aldukicleaning.com/service-detail.html?slug=factory-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=factory-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=factory-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://aldukicleaning.com/service-detail-en.html?slug=factory-cleaning</loc>
+        <xhtml:link rel="alternate" hreflang="ar" href="https://aldukicleaning.com/service-detail.html?slug=factory-cleaning"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://aldukicleaning.com/service-detail-en.html?slug=factory-cleaning"/>
+        <lastmod>2026-09-07</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
+    </url>
+
+</urlset>
