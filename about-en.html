@@ -25,7 +25,7 @@
     <link rel='stylesheet' id='elementor-post-176-css' href='assets/css/post-176.css' media='all' />
     <link rel='stylesheet' id='elementor-post-6137-css' href='assets/css/post-6137.css' media='all' />
     <link rel='stylesheet' id='elementor-post-2511-css' href='assets/css/post-2511.css' media='all' />
-    <link rel='stylesheet' id='pxl-style-css' href='assets/css/pxl-style.min.css' media='all' />
+    <link rel='preload' as='style' id='pxl-style-css' href='assets/css/pxl-style.min.css' onload="this.onload=null;this.rel='stylesheet'" /><noscript><link rel='stylesheet' href='assets/css/pxl-style.min.css'></noscript>
     <link rel='stylesheet' id='pxl-main-css-css' href='assets/css/pxl-main-css.min.css' media='all' />
 
     <style id="en-native-styles">
@@ -1806,7 +1806,7 @@
                                                 <div class="pxl-logo " data-wow-delay="ms">
                                                     <div class="pxl-logo-inner"
                                                         style="display: flex; align-items: center; gap: 14px;">
-                                                        <a href="index-en.html"> <img src="assets/images/logo/logo.png"
+                                                        <a href="index-en.html"> <img src="assets/images/logo/logo.webp"
                                                                 style="max-height: 100px; width: auto; object-fit: contain;"
                                                                 class="attachment-full" alt="Al-Dokhi Cleaning" /> </a>
                                                         <span class="owner-name-tag"
@@ -2308,7 +2308,7 @@
                                     style="margin: 0; flex: 1; display: flex; justify-content: center; align-items: center;">
                                     <a href="index-en.html" title="Al-Dokhi Cleaning" rel="home"
                                         style="display: inline-flex; align-items: center; gap: 8px; text-decoration: none;"><img
-                                            src="assets/images/logo/logo.png"
+                                            src="assets/images/logo/logo.webp"
                                             style="height: 42px !important; max-height: 42px !important; width: auto; object-fit: contain;"
                                             alt="Al-Dokhi Cleaning" />
                                         <span
@@ -2321,7 +2321,7 @@
                                 <div class="pxl-header-menu-scroll">
                                     <div class="pxl-menu-close pxl-hide-xl pxl-close"></div>
                                     <div class="pxl-logo-mobile pxl-hide-xl"> <a href="index-en.html"
-                                            title="Al-Dokhi Cleaning" rel="home"><img src="assets/images/logo/logo.png"
+                                            title="Al-Dokhi Cleaning" rel="home"><img src="assets/images/logo/logo.webp"
                                                 alt="Al-Dokhi Cleaning" /><span class="mobile-brand-title"
                                                 style="font-family: 'Inter', sans-serif;">Al-Dokhi Cleaning</span></a>
                                     </div>
@@ -2711,7 +2711,7 @@
                         <!-- Col 1: Brand & Bio -->
                         <div class="footer-col footer-brand-col">
                             <a href="index-en.html" class="footer-logo-link">
-                                <img src="assets/images/logo/logo.png" alt="Al-Dokhi Cleaning"
+                                <img src="assets/images/logo/logo.webp" alt="Al-Dokhi Cleaning"
                                     class="footer-brand-logo" />
                                 <div class="footer-brand-text">
                                     <span class="footer-company-name">Al-Dokhi Cleaning</span>
@@ -2883,10 +2883,9 @@
     </div>
 
     <!-- Core Scripts for Header & Interactions -->
-    <script id="jquery-core-js"
-        src="https://demo.casethemes.net/genfresco/wp-includes/js/jquery/jquery.min.js?ver=3.7.1"></script>
-    <script id="pxl-core-main-js" src="assets/images/pxl-core-main.min.js"></script>
-    <script id="pxl-main-js" src="assets/images/pxl-main.min.js"></script>
+    <script defer id="jquery-core-js" src="assets/js/jquery.min.js"></script>
+    <script id="pxl-core-main-js" src="assets/js/pxl-core-main.min.js"></script>
+    <script id="pxl-main-js" src="assets/js/pxl-main.min.js"></script>
 
     <!-- Sticky Header & Mobile Menu Controller Script -->
     <script>
